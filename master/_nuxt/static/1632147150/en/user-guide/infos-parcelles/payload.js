@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/en/user-guide/infos-parcelles", {data:[{}],fetch:{},mutations:[]});

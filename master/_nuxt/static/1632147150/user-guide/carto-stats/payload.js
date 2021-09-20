@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/user-guide/carto-stats", {data:[{}],fetch:{},mutations:[]});
