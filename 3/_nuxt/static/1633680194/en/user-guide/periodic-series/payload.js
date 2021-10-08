@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/en/user-guide/periodic-series", {data:[{}],fetch:{},mutations:[]});

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/user-guide/geo-shapes", {data:[{}],fetch:{},mutations:[]});
