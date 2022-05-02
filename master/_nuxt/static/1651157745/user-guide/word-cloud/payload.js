@@ -1,1 +1,0 @@
-__NUXT_JSONP__("/user-guide/word-cloud", {data:[{}],fetch:{},mutations:[]});

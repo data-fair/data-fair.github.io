@@ -1,1 +1,0 @@
-__NUXT_JSONP__("/user-guide/game-localisation", {data:[{}],fetch:{},mutations:[]});

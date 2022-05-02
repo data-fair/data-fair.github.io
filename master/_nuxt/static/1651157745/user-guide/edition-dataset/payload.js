@@ -1,1 +1,0 @@
-__NUXT_JSONP__("/user-guide/edition-dataset", {data:[{}],fetch:{},mutations:[]});
