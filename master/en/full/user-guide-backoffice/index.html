@@ -1,0 +1,1642 @@
+<!doctype html>
+<html data-n-head-ssr>
+  <head>
+    <title>Data Fair - User guide back-office</title><meta data-n-head="ssr" charset="utf-8"><meta data-n-head="ssr" name="viewport" content="width=device-width,initial-scale=1"><meta data-n-head="ssr" data-hid="application" name="application-name" content="DataFair"><meta data-n-head="ssr" data-hid="description" name="description" content="DataFair - Documentation"><base href="/master/"><link data-n-head="ssr" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito:300,400,500,700,400italic|Material+Icons"><link data-n-head="ssr" rel="icon" type="image/x-icon" href="favicon.ico"><link data-n-head="ssr" rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Nunito:100,300,400,500,700,900&display=swap"><link data-n-head="ssr" rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@mdi/font@latest/css/materialdesignicons.min.css"><style data-n-head="vuetify" type="text/css" id="vuetify-theme-stylesheet" nonce="undefined">.v-application a{color:#1e88e5}.v-application .primary{background-color:#1e88e5!important;border-color:#1e88e5!important}.v-application .primary--text{color:#1e88e5!important;caret-color:#1e88e5!important}.v-application .primary.lighten-5{background-color:#cfffff!important;border-color:#cfffff!important}.v-application .primary--text.text--lighten-5{color:#cfffff!important;caret-color:#cfffff!important}.v-application .primary.lighten-4{background-color:#b0f5ff!important;border-color:#b0f5ff!important}.v-application .primary--text.text--lighten-4{color:#b0f5ff!important;caret-color:#b0f5ff!important}.v-application .primary.lighten-3{background-color:#91d8ff!important;border-color:#91d8ff!important}.v-application .primary--text.text--lighten-3{color:#91d8ff!important;caret-color:#91d8ff!important}.v-application .primary.lighten-2{background-color:#70bdff!important;border-color:#70bdff!important}.v-application .primary--text.text--lighten-2{color:#70bdff!important;caret-color:#70bdff!important}.v-application .primary.lighten-1{background-color:#4da2ff!important;border-color:#4da2ff!important}.v-application .primary--text.text--lighten-1{color:#4da2ff!important;caret-color:#4da2ff!important}.v-application .primary.darken-1{background-color:#006fc9!important;border-color:#006fc9!important}.v-application .primary--text.text--darken-1{color:#006fc9!important;caret-color:#006fc9!important}.v-application .primary.darken-2{background-color:#0057ad!important;border-color:#0057ad!important}.v-application .primary--text.text--darken-2{color:#0057ad!important;caret-color:#0057ad!important}.v-application .primary.darken-3{background-color:#004092!important;border-color:#004092!important}.v-application .primary--text.text--darken-3{color:#004092!important;caret-color:#004092!important}.v-application .primary.darken-4{background-color:#002b78!important;border-color:#002b78!important}.v-application .primary--text.text--darken-4{color:#002b78!important;caret-color:#002b78!important}.v-application .secondary{background-color:#42a5f5!important;border-color:#42a5f5!important}.v-application .secondary--text{color:#42a5f5!important;caret-color:#42a5f5!important}.v-application .secondary.lighten-5{background-color:#e4ffff!important;border-color:#e4ffff!important}.v-application .secondary--text.text--lighten-5{color:#e4ffff!important;caret-color:#e4ffff!important}.v-application .secondary.lighten-4{background-color:#c5ffff!important;border-color:#c5ffff!important}.v-application .secondary--text.text--lighten-4{color:#c5ffff!important;caret-color:#c5ffff!important}.v-application .secondary.lighten-3{background-color:#a6f8ff!important;border-color:#a6f8ff!important}.v-application .secondary--text.text--lighten-3{color:#a6f8ff!important;caret-color:#a6f8ff!important}.v-application .secondary.lighten-2{background-color:#87dcff!important;border-color:#87dcff!important}.v-application .secondary--text.text--lighten-2{color:#87dcff!important;caret-color:#87dcff!important}.v-application .secondary.lighten-1{background-color:#66c0ff!important;border-color:#66c0ff!important}.v-application .secondary--text.text--lighten-1{color:#66c0ff!important;caret-color:#66c0ff!important}.v-application .secondary.darken-1{background-color:#018bd8!important;border-color:#018bd8!important}.v-application .secondary--text.text--darken-1{color:#018bd8!important;caret-color:#018bd8!important}.v-application .secondary.darken-2{background-color:#0072bc!important;border-color:#0072bc!important}.v-application .secondary--text.text--darken-2{color:#0072bc!important;caret-color:#0072bc!important}.v-application .secondary.darken-3{background-color:#0059a1!important;border-color:#0059a1!important}.v-application .secondary--text.text--darken-3{color:#0059a1!important;caret-color:#0059a1!important}.v-application .secondary.darken-4{background-color:#004286!important;border-color:#004286!important}.v-application .secondary--text.text--darken-4{color:#004286!important;caret-color:#004286!important}.v-application .accent{background-color:#ff9800!important;border-color:#ff9800!important}.v-application .accent--text{color:#ff9800!important;caret-color:#ff9800!important}.v-application .accent.lighten-5{background-color:#ffffa2!important;border-color:#ffffa2!important}.v-application .accent--text.text--lighten-5{color:#ffffa2!important;caret-color:#ffffa2!important}.v-application .accent.lighten-4{background-color:#ffff85!important;border-color:#ffff85!important}.v-application .accent--text.text--lighten-4{color:#ffff85!important;caret-color:#ffff85!important}.v-application .accent.lighten-3{background-color:#ffeb69!important;border-color:#ffeb69!important}.v-application .accent--text.text--lighten-3{color:#ffeb69!important;caret-color:#ffeb69!important}.v-application .accent.lighten-2{background-color:#ffcf4d!important;border-color:#ffcf4d!important}.v-application .accent--text.text--lighten-2{color:#ffcf4d!important;caret-color:#ffcf4d!important}.v-application .accent.lighten-1{background-color:#ffb32f!important;border-color:#ffb32f!important}.v-application .accent--text.text--lighten-1{color:#ffb32f!important;caret-color:#ffb32f!important}.v-application .accent.darken-1{background-color:#df7e00!important;border-color:#df7e00!important}.v-application .accent--text.text--darken-1{color:#df7e00!important;caret-color:#df7e00!important}.v-application .accent.darken-2{background-color:#bf6400!important;border-color:#bf6400!important}.v-application .accent--text.text--darken-2{color:#bf6400!important;caret-color:#bf6400!important}.v-application .accent.darken-3{background-color:#a14c00!important;border-color:#a14c00!important}.v-application .accent--text.text--darken-3{color:#a14c00!important;caret-color:#a14c00!important}.v-application .accent.darken-4{background-color:#843300!important;border-color:#843300!important}.v-application .accent--text.text--darken-4{color:#843300!important;caret-color:#843300!important}.v-application .error{background-color:#ff5252!important;border-color:#ff5252!important}.v-application .error--text{color:#ff5252!important;caret-color:#ff5252!important}.v-application .error.lighten-5{background-color:#ffe4d5!important;border-color:#ffe4d5!important}.v-application .error--text.text--lighten-5{color:#ffe4d5!important;caret-color:#ffe4d5!important}.v-application .error.lighten-4{background-color:#ffc6b9!important;border-color:#ffc6b9!important}.v-application .error--text.text--lighten-4{color:#ffc6b9!important;caret-color:#ffc6b9!important}.v-application .error.lighten-3{background-color:#ffa99e!important;border-color:#ffa99e!important}.v-application .error--text.text--lighten-3{color:#ffa99e!important;caret-color:#ffa99e!important}.v-application .error.lighten-2{background-color:#ff8c84!important;border-color:#ff8c84!important}.v-application .error--text.text--lighten-2{color:#ff8c84!important;caret-color:#ff8c84!important}.v-application .error.lighten-1{background-color:#ff6f6a!important;border-color:#ff6f6a!important}.v-application .error--text.text--lighten-1{color:#ff6f6a!important;caret-color:#ff6f6a!important}.v-application .error.darken-1{background-color:#df323b!important;border-color:#df323b!important}.v-application .error--text.text--darken-1{color:#df323b!important;caret-color:#df323b!important}.v-application .error.darken-2{background-color:#bf0025!important;border-color:#bf0025!important}.v-application .error--text.text--darken-2{color:#bf0025!important;caret-color:#bf0025!important}.v-application .error.darken-3{background-color:#9f0010!important;border-color:#9f0010!important}.v-application .error--text.text--darken-3{color:#9f0010!important;caret-color:#9f0010!important}.v-application .error.darken-4{background-color:maroon!important;border-color:maroon!important}.v-application .error--text.text--darken-4{color:maroon!important;caret-color:maroon!important}.v-application .info{background-color:#2196f3!important;border-color:#2196f3!important}.v-application .info--text{color:#2196f3!important;caret-color:#2196f3!important}.v-application .info.lighten-5{background-color:#d4ffff!important;border-color:#d4ffff!important}.v-application .info--text.text--lighten-5{color:#d4ffff!important;caret-color:#d4ffff!important}.v-application .info.lighten-4{background-color:#b5ffff!important;border-color:#b5ffff!important}.v-application .info--text.text--lighten-4{color:#b5ffff!important;caret-color:#b5ffff!important}.v-application .info.lighten-3{background-color:#95e8ff!important;border-color:#95e8ff!important}.v-application .info--text.text--lighten-3{color:#95e8ff!important;caret-color:#95e8ff!important}.v-application .info.lighten-2{background-color:#75ccff!important;border-color:#75ccff!important}.v-application .info--text.text--lighten-2{color:#75ccff!important;caret-color:#75ccff!important}.v-application .info.lighten-1{background-color:#51b0ff!important;border-color:#51b0ff!important}.v-application .info--text.text--lighten-1{color:#51b0ff!important;caret-color:#51b0ff!important}.v-application .info.darken-1{background-color:#007cd6!important;border-color:#007cd6!important}.v-application .info--text.text--darken-1{color:#007cd6!important;caret-color:#007cd6!important}.v-application .info.darken-2{background-color:#0064ba!important;border-color:#0064ba!important}.v-application .info--text.text--darken-2{color:#0064ba!important;caret-color:#0064ba!important}.v-application .info.darken-3{background-color:#004d9f!important;border-color:#004d9f!important}.v-application .info--text.text--darken-3{color:#004d9f!important;caret-color:#004d9f!important}.v-application .info.darken-4{background-color:#003784!important;border-color:#003784!important}.v-application .info--text.text--darken-4{color:#003784!important;caret-color:#003784!important}.v-application .success{background-color:#4caf50!important;border-color:#4caf50!important}.v-application .success--text{color:#4caf50!important;caret-color:#4caf50!important}.v-application .success.lighten-5{background-color:#dcffd6!important;border-color:#dcffd6!important}.v-application .success--text.text--lighten-5{color:#dcffd6!important;caret-color:#dcffd6!important}.v-application .success.lighten-4{background-color:#beffba!important;border-color:#beffba!important}.v-application .success--text.text--lighten-4{color:#beffba!important;caret-color:#beffba!important}.v-application .success.lighten-3{background-color:#a2ff9e!important;border-color:#a2ff9e!important}.v-application .success--text.text--lighten-3{color:#a2ff9e!important;caret-color:#a2ff9e!important}.v-application .success.lighten-2{background-color:#85e783!important;border-color:#85e783!important}.v-application .success--text.text--lighten-2{color:#85e783!important;caret-color:#85e783!important}.v-application .success.lighten-1{background-color:#69cb69!important;border-color:#69cb69!important}.v-application .success--text.text--lighten-1{color:#69cb69!important;caret-color:#69cb69!important}.v-application .success.darken-1{background-color:#2d9437!important;border-color:#2d9437!important}.v-application .success--text.text--darken-1{color:#2d9437!important;caret-color:#2d9437!important}.v-application .success.darken-2{background-color:#00791e!important;border-color:#00791e!important}.v-application .success--text.text--darken-2{color:#00791e!important;caret-color:#00791e!important}.v-application .success.darken-3{background-color:#006000!important;border-color:#006000!important}.v-application .success--text.text--darken-3{color:#006000!important;caret-color:#006000!important}.v-application .success.darken-4{background-color:#004700!important;border-color:#004700!important}.v-application .success--text.text--darken-4{color:#004700!important;caret-color:#004700!important}.v-application .warning{background-color:#e91e63!important;border-color:#e91e63!important}.v-application .warning--text{color:#e91e63!important;caret-color:#e91e63!important}.v-application .warning.lighten-5{background-color:#ffc0e7!important;border-color:#ffc0e7!important}.v-application .warning--text.text--lighten-5{color:#ffc0e7!important;caret-color:#ffc0e7!important}.v-application .warning.lighten-4{background-color:#ffa3cb!important;border-color:#ffa3cb!important}.v-application .warning--text.text--lighten-4{color:#ffa3cb!important;caret-color:#ffa3cb!important}.v-application .warning.lighten-3{background-color:#ff85b0!important;border-color:#ff85b0!important}.v-application .warning--text.text--lighten-3{color:#ff85b0!important;caret-color:#ff85b0!important}.v-application .warning.lighten-2{background-color:#ff6795!important;border-color:#ff6795!important}.v-application .warning--text.text--lighten-2{color:#ff6795!important;caret-color:#ff6795!important}.v-application .warning.lighten-1{background-color:#ff467c!important;border-color:#ff467c!important}.v-application .warning--text.text--lighten-1{color:#ff467c!important;caret-color:#ff467c!important}.v-application .warning.darken-1{background-color:#c9004b!important;border-color:#c9004b!important}.v-application .warning--text.text--darken-1{color:#c9004b!important;caret-color:#c9004b!important}.v-application .warning.darken-2{background-color:#aa0035!important;border-color:#aa0035!important}.v-application .warning--text.text--darken-2{color:#aa0035!important;caret-color:#aa0035!important}.v-application .warning.darken-3{background-color:#8b0021!important;border-color:#8b0021!important}.v-application .warning--text.text--darken-3{color:#8b0021!important;caret-color:#8b0021!important}.v-application .warning.darken-4{background-color:#6c000a!important;border-color:#6c000a!important}.v-application .warning--text.text--darken-4{color:#6c000a!important;caret-color:#6c000a!important}.v-application .admin{background-color:#e53935!important;border-color:#e53935!important}.v-application .admin--text{color:#e53935!important;caret-color:#e53935!important}.v-application .admin.lighten-5{background-color:#ffccb3!important;border-color:#ffccb3!important}.v-application .admin--text.text--lighten-5{color:#ffccb3!important;caret-color:#ffccb3!important}.v-application .admin.lighten-4{background-color:#ffaf98!important;border-color:#ffaf98!important}.v-application .admin--text.text--lighten-4{color:#ffaf98!important;caret-color:#ffaf98!important}.v-application .admin.lighten-3{background-color:#ff927e!important;border-color:#ff927e!important}.v-application .admin--text.text--lighten-3{color:#ff927e!important;caret-color:#ff927e!important}.v-application .admin.lighten-2{background-color:#ff7565!important;border-color:#ff7565!important}.v-application .admin--text.text--lighten-2{color:#ff7565!important;caret-color:#ff7565!important}.v-application .admin.lighten-1{background-color:#ff584c!important;border-color:#ff584c!important}.v-application .admin--text.text--lighten-1{color:#ff584c!important;caret-color:#ff584c!important}.v-application .admin.darken-1{background-color:#c50f1f!important;border-color:#c50f1f!important}.v-application .admin--text.text--darken-1{color:#c50f1f!important;caret-color:#c50f1f!important}.v-application .admin.darken-2{background-color:#a50009!important;border-color:#a50009!important}.v-application .admin--text.text--darken-2{color:#a50009!important;caret-color:#a50009!important}.v-application .admin.darken-3{background-color:#860000!important;border-color:#860000!important}.v-application .admin--text.text--darken-3{color:#860000!important;caret-color:#860000!important}.v-application .admin.darken-4{background-color:#690000!important;border-color:#690000!important}.v-application .admin--text.text--darken-4{color:#690000!important;caret-color:#690000!important}</style><link rel="preload" href="/master/_nuxt/d2702f1.js" as="script"><link rel="preload" href="/master/_nuxt/4e62a7e.js" as="script"><link rel="preload" href="/master/_nuxt/css/6277c2a.css" as="style"><link rel="preload" href="/master/_nuxt/42b7367.js" as="script"><link rel="preload" href="/master/_nuxt/css/5c9a69b.css" as="style"><link rel="preload" href="/master/_nuxt/aaf1750.js" as="script"><link rel="preload" href="/master/_nuxt/css/775d6fe.css" as="style"><link rel="preload" href="/master/_nuxt/2dcdfbd.js" as="script"><link rel="preload" href="/master/_nuxt/css/8604506.css" as="style"><link rel="preload" href="/master/_nuxt/c8933ce.js" as="script"><link rel="stylesheet" href="/master/_nuxt/css/6277c2a.css"><link rel="stylesheet" href="/master/_nuxt/css/5c9a69b.css"><link rel="stylesheet" href="/master/_nuxt/css/775d6fe.css"><link rel="stylesheet" href="/master/_nuxt/css/8604506.css"><link rel="preload" href="/master/_nuxt/static/1651671421/en/full/user-guide-backoffice/state.js" as="script"><link rel="preload" href="/master/_nuxt/static/1651671421/en/full/user-guide-backoffice/payload.js" as="script"><link rel="preload" href="/master/_nuxt/static/1651671421/manifest.js" as="script">
+  </head>
+  <body>
+    <div data-server-rendered="true" id="__nuxt"><!----><div id="__layout"><div data-app="true" id="app" class="v-application v-application--is-ltr theme--light"><div class="v-application--wrap"><main class="v-main" style="padding-top:0;padding-right:0;padding-bottom:0;padding-left:0"><div class="v-main__wrap"><div class="full-chapter"><div class="mt-6 pt-6 text-center col"><div class="v-image v-responsive my-6 theme--light" style="height:160px"><div class="v-image__image v-image__image--preload v-image__image--contain" style="background-position:center center"></div><div class="v-responsive__content"></div></div> <h1 class="text-h3 grey--text text--darken-3">
+      Data Fair
+    </h1> <h4>
+      Version 3.20.1
+    </h4> <h1 class="text-h3 grey--text text--darken-3" style="margin-top:200px">User guide back-office</h1> <h4 style="margin-top:200px!important">
+      04 mai 2022<br></h4></div> <div class="page-break"></div> <h2 class="text-h4 my-4 grey--text text--darken-3">Table of contents</h2> <h4>
+      1 - Getting started with Data Fair
+    </h4><h4>
+      2 - Navigate in Data Fair
+    </h4><h5 class="ml-3">
+      2.1 - Data Fair menu
+    </h5><h4>
+      3 - Dashboard
+    </h4><h4>
+      4 - Datasets
+    </h4><h5 class="ml-3">
+      4.1 - Supported file formats
+    </h5><h5 class="ml-3">
+      4.2 - Import a dataset
+    </h5><h5 class="ml-3">
+      4.3 - Edit a dataset
+    </h5><h5 class="ml-3">
+      4.4 - Update a dataset
+    </h5><h5 class="ml-3">
+      4.5 - Concepts
+    </h5><h5 class="ml-3">
+      4.6 - Data enrichment
+    </h5><h5 class="ml-3">
+      4.7 - Row Attachments
+    </h5><h4>
+      5 - Visualizations
+    </h4><h5 class="ml-3">
+      5.1 - Create interactives visualizations
+    </h5><h5 class="ml-3">
+      5.2 - Visualization settings
+    </h5><h4>
+      6 - Map visualizations
+    </h4><h5 class="ml-3">
+      6.1 - Carto-stats
+    </h5><h5 class="ml-3">
+      6.2 - Administrative divisions
+    </h5><h5 class="ml-3">
+      6.3 - Geo Shapes
+    </h5><h5 class="ml-3">
+      6.4 - Parcel info
+    </h5><h5 class="ml-3">
+      6.5 - Location info
+    </h5><h5 class="ml-3">
+      6.6 - Catchment areas
+    </h5><h4>
+      7 - Graphic visualizations
+    </h4><h5 class="ml-3">
+      7.1 - Bar Chart Race
+    </h5><h5 class="ml-3">
+      7.2 - Waffle Charts
+    </h5><h5 class="ml-3">
+      7.3 - Diagramme Sunburst
+    </h5><h5 class="ml-3">
+      7.4 - Sankey diagram
+    </h5><h5 class="ml-3">
+      7.5 - Graphs / Networks
+    </h5><h5 class="ml-3">
+      7.6 - Network diagram
+    </h5><h5 class="ml-3">
+      7.7 - Charts
+    </h5><h5 class="ml-3">
+      7.8 - Periodic series
+    </h5><h5 class="ml-3">
+      8.1 - Cards and list
+    </h5><h5 class="ml-3">
+      8.2 - Word clouds
+    </h5><h4>
+      9 - Textual visualizations
+    </h4><h4>
+      9 - Gamification
+    </h4><h5 class="ml-3">
+      9.1 - Quiz game
+    </h5><h5 class="ml-3">
+      9.2 - Localization game
+    </h5><h5 class="ml-3">
+      9.3 - Sort game
+    </h5><h4>
+      10 - Organization
+    </h4><h5 class="ml-3">
+      10.1 - Organization management
+    </h5><h4>
+      11 - Configure your data portal
+    </h4><h5 class="ml-3">
+      11.1 - Create content pages on your portal
+    </h5><h5 class="ml-3">
+      11.2 - Analytics setup
+    </h5><h4>
+      12 - Account settings
+    </h4><h5 class="ml-3">
+      12.1 - Licenses and thematics
+    </h5><h5 class="ml-3">
+      12.2 - API
+    </h5><h5 class="ml-3">
+      12.3 - Webhooks
+    </h5><h4>
+      13 - Catalogs
+    </h4><h4>
+      14 - Periodic processings
+    </h4> <div class="page-break"></div> <div class="page-break"></div> <h2 class="text-h4 my-4 grey--text text--darken-3 section-title">
+      1 - Getting started with Data Fair
+    </h2> <div class="container doc-page"><div class="row"><div class="col"><!----> <div role="alert" class="v-alert v-sheet v-sheet--outlined theme--light v-alert--border v-alert--outlined v-alert--border-left warning--text"><div class="v-alert__wrapper"><i aria-hidden="true" class="v-icon notranslate v-alert__icon mdi mdi-exclamation theme--light warning--text"></i><div class="v-alert__content"></div><div class="v-alert__border v-alert__border--left"></div></div></div> <!----> <!----> <div cols="12" style="display:none"><p>Data Fair allows to <strong>enhance your data and share it internally or in opendata.</strong>  </p>
+<p>Your account allows to access the various features of Data Fair:</p>
+<ul>
+<li><a href="./user-guide-backoffice/datasets">Upload your data</a></li>
+<li><a href="./user-guide-backoffice/enrichment">Enrich your data</a> to add even more value.</li>
+<li>Represent your data in <a href="./user-guide-backoffice/reuses">interactive visualizations</a> (graphics, maps, search engine ...).</li>
+<li>Share your data in datastories, portals or API.</li>
+</ul>
+<p>
+</p>
+
+<p>It is possible to work alone (personal account) or in a group (<a href="./user-guide-backoffice/organisation">organization account</a>).</p>
+</div></div></div></div><div class="page-break"></div> <h2 class="text-h4 my-4 grey--text text--darken-3 section-title">
+      2 - Navigate in Data Fair
+    </h2> <div class="container doc-page"><div class="row"><div class="col"><!----> <div role="alert" class="v-alert v-sheet v-sheet--outlined theme--light v-alert--border v-alert--outlined v-alert--border-left warning--text"><div class="v-alert__wrapper"><i aria-hidden="true" class="v-icon notranslate v-alert__icon mdi mdi-exclamation theme--light warning--text"></i><div class="v-alert__content"></div><div class="v-alert__border v-alert__border--left"></div></div></div> <!----> <!----> <div cols="12" style="display:none"><p>The <strong>Data Fair</strong> interface allows to present your data in the form of APIs, data portal and interactive visualizations <strong>without any code</strong>.</p>
+<p><strong>Data Fair</strong> pages display five elements:</p>
+<ol>
+<li>The navigation bar allows you to access the different sections</li>
+<li>The breadcrumb trail allows you to know the section or sub-section displayed and to navigate in them.</li>
+<li>Page content</li>
+<li>Notifications and menu of the active account</li>
+<li>Activity, actions and navigation in the content</li>
+</ol>
+<p><img src="./images/user-guide-backoffice/navigation.jpg" alt="Navigation">
+<em>The Data Fair interface allows to quickly access your resources</em></p>
+</div></div></div></div><!----> <h3 class="text-h5 my-4 grey--text text--darken-3 section-title subsection-title">
+      2.1 - Data Fair menu
+    </h3> <div class="container doc-page"><div class="row"><div class="col"><!----> <div role="alert" class="v-alert v-sheet v-sheet--outlined theme--light v-alert--border v-alert--outlined v-alert--border-left warning--text"><div class="v-alert__wrapper"><i aria-hidden="true" class="v-icon notranslate v-alert__icon mdi mdi-exclamation theme--light warning--text"></i><div class="v-alert__content"></div><div class="v-alert__border v-alert__border--left"></div></div></div> <!----> <!----> <div cols="12" style="display:none"><p>The menu allows to change the active account and access the <strong>Notifications</strong> and <strong>Storage</strong> pages of the account.</p>
+<p><img src="./images/user-guide-backoffice/menu.jpg" alt="Menu"><br><em>The menu is available at the top right</em></p>
+<p>In the image above, the active account is the <strong>Koumoul</strong> account. It is possible to switch accounts to your <strong>personal account</strong>.</p>
+<h3 id="my-account">My account</h3>
+<p>The <strong>My account</strong> page provides access to your personal account information such as your registration email, your avatar, the first name, last name and birthday entered.<br>You can renew your password in this section.</p>
+<p>The <strong>My Organizations</strong> section displays a summary of the organizations you are a member.</p>
+<p>It is also possible to delete your personal account.</p>
+<p><img src="./images/user-guide-backoffice/menu-account.jpg" alt="Compte"><br><em>Manage your personnal account</em></p>
+<h3 id="notifications">Notifications</h3>
+<p>The notifications page allows to configure various email or browser alerts you will receive.</p>
+<p><img src="./images/user-guide-backoffice/notify.jpg" alt="Notifications"><br><em>Select the notifications you want to receive</em></p>
+<p>When a notification is triggered, a colored dot is present on the bell at the top right of Data Fair.<br>The bell display the summary of the alerts sent.</p>
+<h3 id="storage">Storage</h3>
+<p>The storage page presents a summary of the datasets in your account.<br><strong>Statistics</strong> of account are available such as number of datasets, total space consumed, total space available, and number of views.</p>
+</div></div></div></div><div class="page-break"></div> <h2 class="text-h4 my-4 grey--text text--darken-3 section-title">
+      3 - Dashboard
+    </h2> <div class="container doc-page"><div class="row"><div class="col"><!----> <div role="alert" class="v-alert v-sheet v-sheet--outlined theme--light v-alert--border v-alert--outlined v-alert--border-left warning--text"><div class="v-alert__wrapper"><i aria-hidden="true" class="v-icon notranslate v-alert__icon mdi mdi-exclamation theme--light warning--text"></i><div class="v-alert__content"></div><div class="v-alert__border v-alert__border--left"></div></div></div> <!----> <!----> <div cols="12" style="display:none"><p>The <strong>dashboard</strong> of your <a href="./user-guide-backoffice/organisation">active account</a> is accessible using the navigation bar.</p>
+<p>The dashboard page is a summary of the datasets and visualizations configured on your space.  </p>
+<ol>
+<li>Active account</li>
+<li>Latest changes or addition to the account</li>
+<li>Summary of datasets with access to the largest datasets and creation of datasets.</li>
+<li>Summary of visualizations</li>
+</ol>
+<p><img src="./images/user-guide-backoffice/dashboard.jpg" alt="Dashboard"><br><em>Organization dashboard</em></p>
+</div></div></div></div><div class="page-break"></div> <h2 class="text-h4 my-4 grey--text text--darken-3 section-title">
+      4 - Datasets
+    </h2> <div class="container doc-page"><div class="row"><div class="col"><!----> <div role="alert" class="v-alert v-sheet v-sheet--outlined theme--light v-alert--border v-alert--outlined v-alert--border-left warning--text"><div class="v-alert__wrapper"><i aria-hidden="true" class="v-icon notranslate v-alert__icon mdi mdi-exclamation theme--light warning--text"></i><div class="v-alert__content"></div><div class="v-alert__border v-alert__border--left"></div></div></div> <!----> <!----> <div cols="12" style="display:none"><p>On Data Fair, a dataset corresponds to an uploaded <a href="./user-guide-backoffice/file-formats">file</a> or an <a href="./user-guide-backoffice/import-dataset">editable or virutal source</a> whith metadata filled in.</p>
+<p>By default, all uploaded data is private on your account.<br>You can work with your team using an <a href="./user-guide-backoffice/organisation">organization</a> account.</p>
+<h3 id="metadata">Metadata</h3>
+<p>Metadata is the data characterizing your dataset, such as size, format, modification date, etc.<br>The title, description, provenance, license are metadata that you can modify in the edition page of a dataset.<br>With metadata your datasets are easier to find and to identify.</p>
+<h3 id="concepts">Concepts</h3>
+<p>On the dataset edition page, you will find the <strong>Schema</strong> section which allows to view the model of your data. The schema of a dataset corresponds to its architecture (all the columns). In this section you can fill in <a href="./user-guide-backoffice/concept">concepts</a>. When you fill in a concept on a column, you associate a known elements of Data Fair to this column. This makes your data more meaningful for Data Fair.</p>
+<p><a href="./user-guide-backoffice/concept">Concepts</a> are used in various functions, in some cases, they are essential. For example, if you want to project your data onto a map, the <strong>Latitude / Longitude</strong> or <strong>Geometry</strong> concepts must be present on your schema.</p>
+</div></div></div></div><!----> <h3 class="text-h5 my-4 grey--text text--darken-3 section-title subsection-title">
+      4.1 - Supported file formats
+    </h3> <div class="container doc-page"><div class="row"><div class="col"><!----> <div role="alert" class="v-alert v-sheet v-sheet--outlined theme--light v-alert--border v-alert--outlined v-alert--border-left warning--text"><div class="v-alert__wrapper"><i aria-hidden="true" class="v-icon notranslate v-alert__icon mdi mdi-exclamation theme--light warning--text"></i><div class="v-alert__content"></div><div class="v-alert__border v-alert__border--left"></div></div></div> <!----> <!----> <div cols="12" style="display:none"><p>The following table shows the file formats supported by Data Fair:</p>
+<div class="v-data-table v-data-table--dense theme--light"><div class="v-data-table__wrapper"><table>
+<thead>
+<tr>
+<th>Type</th>
+<th>Description</th>
+<th>Format</th>
+<th>Archived format (zip)</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>CSV</td>
+<td>Tabular data file format as comma separated values</td>
+<td>.csv</td>
+<td><strong>-</strong></td>
+</tr>
+<tr>
+<td>TSV</td>
+<td>Open format of text representing tabular data as tab-separated values</td>
+<td>.tsv</td>
+<td><strong>-</strong></td>
+</tr>
+<tr>
+<td>OpenDocument</td>
+<td>Open data file format for office applications</td>
+<td>.ods, .fods</td>
+<td><strong>-</strong></td>
+</tr>
+<tr>
+<td>XLSX</td>
+<td>Office Open XML Spreadsheet File Format</td>
+<td>.xlsx</td>
+<td><strong>-</strong></td>
+</tr>
+<tr>
+<td>XLS</td>
+<td>Excel spreadsheet file formatl</td>
+<td>.xls</td>
+<td><strong>-</strong></td>
+</tr>
+<tr>
+<td>DBF</td>
+<td>Format de fichier de base de données DBase</td>
+<td>.dbf</td>
+<td><strong>-</strong></td>
+</tr>
+<tr>
+<td>TXT</td>
+<td>Format de fichier texte qui ne contient qu'une suite de caractères</td>
+<td>.txt</td>
+<td><strong>-</strong></td>
+</tr>
+<tr>
+<td>DIF</td>
+<td>Format de fichier texte de données ASCII</td>
+<td>.dif</td>
+<td><strong>-</strong></td>
+</tr>
+<tr>
+<td>GeoJSON</td>
+<td>Format de de fichier de données géospatiales simples utilisant la norme JSON</td>
+<td>.geojson</td>
+<td><strong>-</strong></td>
+</tr>
+<tr>
+<td>KML/KMZ</td>
+<td>Format destiné à la gestion de l'affichage de données géospatiales basé sur le formalise XML</td>
+<td>.kml, .kmz</td>
+<td><strong>-</strong></td>
+</tr>
+<tr>
+<td>GPX</td>
+<td>Format de fichier permettant l'échange de coordonnées GPS</td>
+<td>.gpx ou .xml</td>
+<td><strong>-</strong></td>
+</tr>
+<tr>
+<td>ESRI Shapefile</td>
+<td>Format de fichier pour les systèmes d'informations géographiques</td>
+<td><strong>-</strong></td>
+<td>.shp, .dbf et .shx (.prj optionel)</td>
+</tr>
+</tbody></table></div></div>
+<p>
+</p>
+
+<p>At this time, only Shapefile data can be contained in a .zip file.<br><a href="https://koumoul.com/contact">Contact us</a> if you have a compatibility issue or if you need a new format.</p>
+</div></div></div></div><!----> <h3 class="text-h5 my-4 grey--text text--darken-3 section-title subsection-title">
+      4.2 - Import a dataset
+    </h3> <div class="container doc-page"><div class="row"><div class="col"><!----> <div role="alert" class="v-alert v-sheet v-sheet--outlined theme--light v-alert--border v-alert--outlined v-alert--border-left warning--text"><div class="v-alert__wrapper"><i aria-hidden="true" class="v-icon notranslate v-alert__icon mdi mdi-exclamation theme--light warning--text"></i><div class="v-alert__content"></div><div class="v-alert__border v-alert__border--left"></div></div></div> <!----> <!----> <div cols="12" style="display:none"><p>You can create a dataset on the <a href="./user-guide-backoffice/dashboard">dashbord</a> or on the <a href="./user-guide-backoffice/datasets">datasets</a> pages.</p>
+<p>Three differents datasets on Data Fair.  </p>
+<ol>
+<li>Upload a file from your computer</li>
+<li>An editable dataset</li>
+<li>A virtual dataset</li>
+</ol>
+<h3 id="upload-a-file">Upload a file</h3>
+<p>You can import files using any <strong>Create a dataset</strong> action buttons on Data Fair.<br>The upload file process contains a list of the <a href="./user-guide-backoffice/file-formats">formats</a> supported by Data fair.
+It is possible to add <a href="./user-guide-backoffice/attachements">attachments</a> in a zip archive to link it to the rows of the dataset.</p>
+<p>Once the file is loaded, you are redirected to the dataset edit page. Data Fair continues processing the file on the dataset edit page.</p>
+<p>Six have to be validated to use your dataset :</p>
+<ol>
+<li><strong>Loading</strong></li>
+<li><strong>Conversion</strong> to a format used by the platform internally.</li>
+<li><strong>Analysis</strong>, which will determine the schema of the dataset.</li>
+<li><strong>Indexing</strong>, which will allow you to quickly find and access the data in the file.</li>
+<li><strong>Enrichment</strong>, which supplements the data in the file with external data.</li>
+<li>The <strong>Finalization</strong>, which corresponds to the last processing before the dataset is available.</li>
+</ol>
+<p>
+</p>
+
+<p>When finalization is complete, the dataset state is set to "available". It can then be <a href="./user-guide-backoffice/edition-dataset">edited</a>, enriched or used in the various visualizations.</p>
+<h3 id="incremental-dataset">Incremental dataset</h3>
+<p>An <strong>editable dataset</strong> is an empty editable dataset created without a data file.<br>You will be able to define the columns of the dataset and then add the rows from Data Fair.</p>
+<p>Each column is defined by its label and its type.</p>
+<p>The schema of your <strong>editable dataset</strong> is defined when you have filled in all the columns of your dataset.</p>
+<p><img src="./images/user-guide-backoffice/import-schema-editable.jpg" alt="Choix de l'application"><br><em>Add columns to create your editable dataset</em></p>
+<p>You can then add rows to your dataset either through a form on a page of your site, your portal or through the <strong>Data</strong> section in the edit of the dataset.</p>
+<p><img src="./images/user-guide-backoffice/import-formulaire.jpg" alt="Formulaire"><br><em>Feedback form for portal visitors</em></p>
+<h3 id="virtual-dataset">Virtual dataset</h3>
+<p>A <strong>virtual dataset</strong> is a view of one or more datasets (children's dataset).<br>It is used to present a portion of a dataset or to concatenate datasets with the same schema.</p>
+<p>For exemple, it is possible to create a view of its municipality or its department on a national reference dataset without having to copy the data.<br>As a <strong>virtual dataset</strong> is a portion of a dataset, when the reference dataset is updated, the virtual dataset of the town (or department) will also be updated. The data always remains up to date with respect to the reference data set.</p>
+<p><img src="./images/user-guide-backoffice/import-virtuel-valeur.jpg" alt="Jeu virtuel"><br><em>Filter or aggregate your datasets values</em></p>
+</div></div></div></div><!----> <h3 class="text-h5 my-4 grey--text text--darken-3 section-title subsection-title">
+      4.3 - Edit a dataset
+    </h3> <div class="container doc-page"><div class="row"><div class="col"><!----> <div role="alert" class="v-alert v-sheet v-sheet--outlined theme--light v-alert--border v-alert--outlined v-alert--border-left warning--text"><div class="v-alert__wrapper"><i aria-hidden="true" class="v-icon notranslate v-alert__icon mdi mdi-exclamation theme--light warning--text"></i><div class="v-alert__content"></div><div class="v-alert__border v-alert__border--left"></div></div></div> <!----> <!----> <div cols="12" style="display:none"><p>Datasets are represented by a card. To edit a dataset click on the card.  </p>
+<p>The edition page contains several sections: structure, metadata, data, visualizations, data sharing, activity, action buttons and content.</p>
+<h2 id="structure">Structure</h2>
+<p>The <strong>Structure</strong> section contains of the Schema and the Enrichment.</p>
+<h3 id="schema">Schema</h3>
+<p>The data schema allows to visualize all of the columns in your dataset.<br>Clicking on a column allows you to access the column information</p>
+<ol>
+<li>Selected column</li>
+<li>Label and description of the column</li>
+<li>Key, type and cardinality of the column</li>
+<li><a href="./user-guide-backoffice/concept">Concept</a> associated to the column</li>
+</ol>
+<p>
+</p>
+
+<p><a href="./user-guide-backoffice/concept">Concepts</a> are known elements for the platform and are used in visualizations or the <a href="./user-guide-backoffice/enrichment">enrichment</a>.</p>
+<p><img src="./images/user-guide-backoffice/dataset-schema-edit.jpg" alt="schema"><br><em>Visualize the schemas of your data and fill in concepts to make sense of your data</em>  </p>
+<h3 id="enrichment">Enrichment</h3>
+<p>Enrichment allows to import columns from a reference base. It is possible to improuve you data and cross with data from open data such as the SIRENE database, INSEE data, the cadastre or the BAN.</p>
+<p>Several steps are necessary to create a data enrichment:</p>
+<ol>
+<li>On the schema, associate the <a href="./user-guide-backoffice/concept">concepts</a> necessary for the enrichment you need.  </li>
+<li>Choose the desired extension.  </li>
+<li>Choose the columns you want to add and apply the enrichment</li>
+</ol>
+<p><img src="./images/user-guide-backoffice/dataset-enrichement.jpg" alt="enrichissement"><br><em>Enrich your data get even more value</em></p>
+<p>The dataset will be processed and the progress can be viewed on the 6 different states of the dataset. Once the finalization step is complete, your data set is enriched.  </p>
+<p>In the lower part of the enrichment sheet, you will find the enrichment log, as well as a button to delete the enrichment.<br>The enrichment report allows you to check the quality of the enrichment and list the different lines that have not been enriched.</p>
+<p>The columns that you have added to your dataset with <a href="./user-guide-backoffice/enrichment">enrichment</a> will be automatically added to the dataset schema and it will be possible to download the enriched file with the additional columns.</p>
+<h2 id="metadata">Metadata</h2>
+<p>The <strong>Metadata</strong> section is made up of Information and Attachments.  </p>
+<h3 id="informations">Informations</h3>
+<p>In this section, you will find information about your dataset, such as:  </p>
+<ul>
+<li>The title</li>
+<li>The description,</li>
+<li>the name, extension and size of your file</li>
+<li>Last update date of metadata and data</li>
+<li>Lines number</li>
+<li>License</li>
+<li>The thematic</li>
+<li>The source</li>
+</ul>
+<p><img src="./images/user-guide-backoffice/dataset-informations.jpg" alt="Informations"></p>
+<h3 id="attachments">Attachments</h3>
+<p>Attachments are used to attach a document to data such as a description or documentation in a PDF file for example.<br>The attached files will be available for download on the dataset page on your portals.</p>
+<h2 id="data">Data</h2>
+<p>In this section, the data can be viewed in table or map form (if the <strong>Latitude</strong> / <strong>Longitude</strong> or <strong>Geometry</strong> concepts are assigned to your data ).  </p>
+<p><img src="./images/user-guide-backoffice/dataset-donnees.jpg" alt="Données"><br><em>Access your data in table or map form</em></p>
+<p>The table allows you to explore your data through several features.<br>It is possible to perform text searches and filters on a column value, the first 10,000 results will be displayed.</p>
+<p>Your search result can be dowloaded in various file formats.  </p>
+<h2 id="visualizations">Visualizations</h2>
+<p>In this section, there is a the list of visualizations using your dataset.<br>You can quickly navigate between the different visualizations to configure them or create a new visualization.<br>The order of the visualizations can be modified with a simple drag and drop of the visualization cards. This order will be applied on the dataset page of your portals.</p>
+<p><img src="./images/user-guide-backoffice/dataset-visualisations-edit.jpg" alt="Visualisations"><br><em>Configure multiple visualizations to better understand your data</em></p>
+<p>It is possible to add <strong>External Reuse</strong>.  
+External reuses will be displayed on the dataset portal page as a summary cards or the reuse will be framed on the page if you have the embed code.</p>
+<h2 id="share">Share</h2>
+<p>In this section you will be able to define the permissions of your dataset, the publication on your portals and the publication on external catalogs.<br>By default, a dataset is private.</p>
+<h3 id="permissions">Permissions</h3>
+<p>The list of your portals is available in this section.  </p>
+<p>Datasets can be published to multiple portals. Broadcast of data in stages is possible, you can publish your data internally, get feedback, then publish the data on an opendata portal. Publishing on different portals increase the quality of the shared data with multiple feedback.  </p>
+<p>Publishing on several portals allow to have the same data on all the portals without duplicating the data. In addition, when the data is updated, it will be updated for all portals.</p>
+<p><img src="./images/user-guide-backoffice/dataset-partage.jpg" alt="Permissions"></p>
+<h3 id="catalogue">Catalogue</h3>
+<p>The list of configured catalogs is available the <a href="./user-guide-backoffice/catalogues">Catalogues</a> page is available in this section.<br>You can thus publish your data to various external catalogs.</p>
+<h2 id="activity">Activity</h2>
+<p>The activity log allows you to view the history of the last modifications made to the dataset.  </p>
+<p><img src="./images/user-guide-backoffice/dataset-activity.jpg" alt="Activité"><br><em>Latest events in your dataset</em></p>
+<h2 id="action-buttons">Action buttons</h2>
+<p>On the right of the edit page you have access to several action buttons:</p>
+<ul>
+<li><strong>Original file</strong>, allows you to download the original file</li>
+<li><strong>Enriched file</strong>, allows you to download the file with all the new columns that you added thanks to the <a href="./user-guide-backoffice/enrichment">enrichissement</a> in CSV format.</li>
+<li><strong>Update</strong>, allows you to modify the dataset loaded on your account with a new one from your computer.</li>
+<li><strong>Integrate on a site</strong>, allows access to the HTML code to integrate the table or the data map to an external site.</li>
+<li><strong>View on the data portal</strong>, allows access to the page on your portal. If you have published the dataset on more than one portal, there will be various links.</li>
+<li><strong>API</strong>, provides access to the interactive documentation of the dataset API.</li>
+<li><strong>Delete</strong>, remove the dataset from the platform.</li>
+<li><strong>Change owner</strong>, allows you to transfer the dataset to another account.</li>
+</ul>
+<h2 id="contents">Contents</h2>
+<p>The content section allows you to quickly navigate between the different sections of the dataset edit page.</p>
+</div></div></div></div><!----> <h3 class="text-h5 my-4 grey--text text--darken-3 section-title subsection-title">
+      4.4 - Update a dataset
+    </h3> <div class="container doc-page"><div class="row"><div class="col"><!----> <div role="alert" class="v-alert v-sheet v-sheet--outlined theme--light v-alert--border v-alert--outlined v-alert--border-left warning--text"><div class="v-alert__wrapper"><i aria-hidden="true" class="v-icon notranslate v-alert__icon mdi mdi-exclamation theme--light warning--text"></i><div class="v-alert__content"></div><div class="v-alert__border v-alert__border--left"></div></div></div> <!----> <!----> <div cols="12" style="display:none"><p>Updating a dataset can be done manually on the <a href="./user-guide-backoffice/edition-dataset">dataset edition page</a>  or can be automated with <a href="./user-guide-backoffice/processing">periodic processing</a>.</p>
+<h3 id="manual-update">Manual update</h3>
+<p>Before performing a manual update, check your data schema. For example, if a visualization uses your dataset, verify that the columns used by the visualization are still present in the new file you are importing.</p>
+<p>The update is done using the <strong>Update</strong> action button on the <a href="./user-guide-backoffice/edition-dataset">dataset edit page</a> you want to update.<br>You need to choose the new file to load on your computer and upload your dataset on Data Fair.</p>
+<p>The file will be submitted to 6 processing steps:</p>
+<ol>
+<li>The <strong>Loading</strong>, which represents the progress bar.</li>
+<li>The <strong>Conversion</strong> to a format used by the platform.</li>
+<li>The <strong>Analysis</strong>, which will determine the schema of the dataset.</li>
+<li><strong>Indexing</strong>, which will allow quick access to the data in the file.</li>
+<li>The "<strong>Enrichment</strong>, which will take into account the new values ​​of the dataset and will perform a new enrichment according to the extensions added for the dataset.</li>
+<li>The <strong>Finalization</strong>, which corresponds to the last processing before the dataset is available.</li>
+</ol>
+<p>
+</p>
+
+<p><img src="./images/user-guide-backoffice/update.png" alt="Visualisations Carto"></p>
+<p>When the finalization is complete, the dataset goes into "draft".</p>
+<p>Draft mode allows to check the structure of the schema to add concepts to the <strong>new columns</strong> and to consult the first 100 lines of the new file.<br>New columns will be displayed in red.<br>You can <strong>cancel</strong> the update if the schema does not match what you want.</p>
+<p>After performing the schema verification and giving, the <strong>Validate draft</strong> button allows you to launch the last stage of the update.</p>
+<p>The file will again be subjected to the 6 processing steps.<br>When finalization is complete, the dataset goes to "available" state.<br>It can then be edited, enriched and used in visualizations.</p>
+</div></div></div></div><!----> <h3 class="text-h5 my-4 grey--text text--darken-3 section-title subsection-title">
+      4.5 - Concepts
+    </h3> <div class="container doc-page"><div class="row"><div class="col"><!----> <div role="alert" class="v-alert v-sheet v-sheet--outlined theme--light v-alert--border v-alert--outlined v-alert--border-left warning--text"><div class="v-alert__wrapper"><i aria-hidden="true" class="v-icon notranslate v-alert__icon mdi mdi-exclamation theme--light warning--text"></i><div class="v-alert__content"></div><div class="v-alert__border v-alert__border--left"></div></div></div> <!----> <!----> <div cols="12" style="display:none"><p>The concepts are known elements for the platform. Your data is more explicit.<br>Concepts increase the reusability of your data and   <strong>link your data to the functionalities of Data Fair</strong> such as <a href="./user-guide-backoffice/enrichment">enrichment</a>.  </p>
+<p>The dataset edition page allows to select the concepts in the <strong>Schema</strong> section.</p>
+<ol>
+<li>Selected column</li>
+<li>Label and description of the column</li>
+<li>Key, type and cardinality of the column</li>
+<li>Concept associated with the column</li>
+</ol>
+<p><img src="./images/user-guide-backoffice/schema-concept.jpg" alt="Concepts"><br><em>Concepts are needed to create of some visualizations.</em></p>
+<p>A concept is unique for a dataset, it can only be attributed once to a dataset. For example, if the <strong>Latitude</strong> concept is associated with a column of your dataset, it cannot be associated with another column.</p>
+<h3 id="list-of-concepts">List of concepts</h3>
+<p>It is possible to create your own concepts and use them in your <a href="./user-guide-backoffice/enrichment">reference data</a>.  
+Here is the default list of concepts used by Data Fair:</p>
+<ul>
+<li><strong>Label</strong>: An easily readable label</li>
+<li><strong>Description</strong>: A small descriptive text (HTML content accepted)</li>
+<li><strong>Image</strong>: URL to an illustration image of the current document</li>
+<li><strong>Street number</strong>: A house number, which can contain words like bis or ter</li>
+<li><strong>Street or locality</strong>: A street or locality name</li>
+<li><strong>Address</strong>: An full address written on one line</li>
+<li><strong>Municipality</strong>: Municipality name</li>
+<li><strong>Postal code</strong>: Postal code, on 5 digits</li>
+<li><strong>Municipality code</strong>: INSEE code of the municipality, on 5 characters, not to be confused with the postal code.</li>
+<li><strong>Department code</strong>: Department code on 2 or 3 characters</li>
+<li><strong>Region code</strong>: Region code on 2 digits</li>
+<li><strong>Latitude</strong>: Geographic coordinate related to the equator</li>
+<li><strong>Longitude</strong>: Geographic coordinate related to the Greenwich meridian</li>
+<li><strong>Latitude / Longitude</strong>: latitude / longitude separated by a comma</li>
+<li><strong>SIRET</strong>: The SIRET number is a 14-digit numeric identifier made up of the SIREN (9 digits) and the NIC (5 digits)</li>
+<li><strong>SIREN</strong>: The SIREN number is a company digital identifier (9 digits)</li>
+<li><strong>APE code</strong>: The APE code (main activity exercised) identifies the main branch of activity of the company or of the self-employed person with reference to the classification of French activities</li>
+<li><strong>Legal category (level 3)</strong>: The legal category of level 3, sometimes called legal nature is a code on 4 numeric characters. It comes from a nomenclature of the French government.</li>
+<li><strong>Date of the event</strong>: Corresponds to the date of the event</li>
+<li><strong>Creation date</strong>: Date on which the resource was created</li>
+<li><strong>Parcel code</strong>: The cadastral parcel code is the unique number assigned by the Cadastre Service to identify a cadastral parcel at the national level. It is composed of 14 characters: INSEE commune code of 5 digits + cadastre section code of 5 characters + cadastre parcel number of 4 digits. For example 56197037ZC0063 is a valid french code.</li>
+<li><strong>GeoJSON geometry</strong>: A geometry (point, polygon, line, etc.) in GeoJSON format.</li>
+<li><strong>Attached files</strong>: Relative path to a file attached to the dataset or URL to a file hosted outside</li>
+</ul>
+</div></div></div></div><!----> <h3 class="text-h5 my-4 grey--text text--darken-3 section-title subsection-title">
+      4.6 - Data enrichment
+    </h3> <div class="container doc-page"><div class="row"><div class="col"><!----> <div role="alert" class="v-alert v-sheet v-sheet--outlined theme--light v-alert--border v-alert--outlined v-alert--border-left warning--text"><div class="v-alert__wrapper"><i aria-hidden="true" class="v-icon notranslate v-alert__icon mdi mdi-exclamation theme--light warning--text"></i><div class="v-alert__content"></div><div class="v-alert__border v-alert__border--left"></div></div></div> <!----> <!----> <div cols="12" style="display:none"><p>Enrichment allows you to import columns from a reference base. It is possible to cross-reference its data with data from open data such as the SIRENE database, INSEE data, the cadastre or the BAN.</p>
+<ul>
+<li>The <strong>SIRENE</strong> database brings together economic and legal information from more than 28 million french business establishments, including more than 11 million active establishments.</li>
+<li><strong>INSEE</strong> data makes it possible to retrieve various informations on french administrative divisions (municipalities, departments, regions)</li>
+<li>The <strong>cadastre</strong> provides access to the various information concerning the plots. In particular, you can geocode plot codes or obtain the areas of your parcel on the french territory.</li>
+<li>The NAB is the <strong>French National Address Base</strong>. It allows you to geolocate addresses or find addresses from coordinates.</li>
+</ul>
+<p>Depending on your data, you can choose an enrichment and complete your data.</p>
+<h2 id="create-your-own-reference-data">Create your own reference data</h2>
+<p>At this time, only <strong>Super Instance Admins</strong> can set a dataset as <strong>Reference Data</strong>.</p>
+<ol>
+<li>Upload a file and associate at least one concept with a column.</li>
+<li>Switch to super administrator mode</li>
+<li>Define your <strong>Reference Data</strong></li>
+</ol>
+<p>Once these 3 steps have been completed, you can enrich other data with your <strong>Reference data</strong>.</p>
+<h3 id="upload-and-concept">Upload and concept</h3>
+<p>When your dataset is created on your account, you will need to associate a concept to the column containing the uniques values. This column is the link to join data. Your column must contain unique codes, such as <strong>INSEE codes</strong> of municipality, <strong>SIRENE codes</strong> or <strong>Parcel codes</strong>.  </p>
+<p><img src="./images/user-guide-backoffice/enrichment-concept.jpg" alt="Données de référence"><br><em>A column with a concept is in bold</em></p>
+<h3 id="super-admin-mode">Super admin mode</h3>
+<p>Super administrator mode is only available for users authorized in the instance.<br>This mode is available in the menu at the top right on Data Fair.</p>
+<p><img src="./images/user-guide-backoffice/enrichment-superadmin.jpg" alt="Données de référence"></p>
+<h3 id="reference-data">Reference data</h3>
+<p>The imported datasets with concepts can be used as reference data for <strong>unitary searches</strong> or / and for <strong>mass enrichments</strong>.  </p>
+<p>The <strong>unit searches</strong> will allow to validate a code in your <a href="./user-guide-backoffice/import-dataset">editable datasets</a>.  
+If your editable dataset has the same concept as one of your reference datasets, when a value is filled in this column, the user will have valid propositions of this concept.</p>
+<p>The <strong>mass enrichments</strong> will allow to perform a join and import columns from the reference data to your dataset.</p>
+<p><img src="./images/user-guide-backoffice/enrichment-master-data.jpg" alt="Données de référence"><br><em>Cross your data with reference data</em></p>
+<p>On our image, we have created a SITADEL reference data with the concept <strong>parcel code</strong> which can be used in mass enrichments.<br>Any other dataset in your account with the concept <strong>parcel code</strong> can use the SITADEL enrichment to import various columns from the SITADEL reference base.</p>
+<h3 id="create-a-concept">Create a concept</h3>
+<p>You can create your own unique value concepts in the <strong>Private Vocabulary</strong> section of <strong>Settings</strong> on your account. The concepts created will be available for your account.</p>
+<p>A concept is defined by its <strong>Identifier</strong>, its <strong>Title</strong>, its <strong>Description</strong> and its <strong>Category</strong>. The identifier and title are required.</p>
+<p><img src="./images/user-guide-backoffice/enrichment-vocabulaire.jpg" alt="Données de référence"><br><em>Create your own concepts</em></p>
+</div></div></div></div><!----> <h3 class="text-h5 my-4 grey--text text--darken-3 section-title subsection-title">
+      4.7 - Row Attachments
+    </h3> <div class="container doc-page"><div class="row"><div class="col"><!----> <div role="alert" class="v-alert v-sheet v-sheet--outlined theme--light v-alert--border v-alert--outlined v-alert--border-left warning--text"><div class="v-alert__wrapper"><i aria-hidden="true" class="v-icon notranslate v-alert__icon mdi mdi-exclamation theme--light warning--text"></i><div class="v-alert__content"></div><div class="v-alert__border v-alert__border--left"></div></div></div> <!----> <!----> <div cols="12" style="display:none"><p>When you load a dataset, it is possible to associate a zip archive containing PDF, JPG, etc ... files with your dataset. These files can be latter used in visualizations.</p>
+<p>In order for your zip file to be correctly associated with your dataset, your dataset and archive must follow these two rules:</p>
+<ol>
+<li>your dataset must have a column containing the paths and names of the files in the ZIP archive</li>
+<li>the name of your zip file must match the name column containing the paths of the files in the ZIP archive. Example: You column is <strong>Document</strong>, your file must be <strong>Document.zip</strong>.</li>
+</ol>
+<p>
+</p>
+
+<p><img src="./images/user-guide-backoffice/piece-jointe-1.jpg" alt="PJ-1"></p>
+<p>In the <strong>Schema</strong> section of your dataset, the concept <strong>Attached digital document</strong> will be automatically associated with the column containing the names of the files of your ZIP archive.</p>
+<p><img src="./images/user-guide-backoffice/piece-jointe-2.jpg" alt="PJ-2"></p>
+<p>The attachment indexing time can be long and will depend on the size of your attachments files.<br>The unzipped files size is counted in your data storage quota.  </p>
+<p>Please do <a href="https://koumoul.com/contact">contact</a> us if you have any trouble.</p>
+</div></div></div></div><div class="page-break"></div> <h2 class="text-h4 my-4 grey--text text--darken-3 section-title">
+      5 - Visualizations
+    </h2> <div class="container doc-page"><div class="row"><div class="col"><!----> <div role="alert" class="v-alert v-sheet v-sheet--outlined theme--light v-alert--border v-alert--outlined v-alert--border-left warning--text"><div class="v-alert__wrapper"><i aria-hidden="true" class="v-icon notranslate v-alert__icon mdi mdi-exclamation theme--light warning--text"></i><div class="v-alert__content"></div><div class="v-alert__border v-alert__border--left"></div></div></div> <!----> <!----> <div cols="12" style="display:none"><p>The services connected to Data Fair allow to present your data in <strong>dynamic visualizations</strong> and to make it more <strong>accessible</strong>.  
+You can create as many visualizations as you want.</p>
+<p>The visualizations are divided into several categories: maps, graphics, textual visualizations, etc.</p>
+<h2 id="map-visualizations">Map visualizations</h2>
+<p>Map visualizations allow to project your geographic data on a map using <a href="./user-guide-backoffice/concept">concepts</a> latitude, longitude or geometry.</p>
+<p><img src="./images/user-guide-backoffice/visu-carto.jpg" alt="Visualisations Carto"></p>
+<ul>
+<li><a href="./user-guide-backoffice/carto-stats">Carto-stats</a> allows to project statistical data. <a href="https://opendata.koumoul.com/reuses/cartographie-des-accidents-de-velo">Cycling accidents in France</a></li>
+<li><a href="./user-guide-backoffice/div-admin">Administrative divisions</a> allows to project data at the level of the municipality, the department or the region. <a href="https://opendata.koumoul.com/reuses/ratio-public-prive-du-nombre-d'eleves-dans-les-ecoles-par-commune">Students in the private sector in France</a>.</li>
+<li><a href="./user-guide-backoffice/geo-shapes">Géo Shapes</a> allows to project geometric shapes such as local urbanization plans or networks (energy, road). <a href="https://opendata.koumoul.com/reuses/plu-zone-urba-angers-loire-metropole">Angers local urbanization plan zones</a></li>
+<li><a href="./user-guide-backoffice/infos-parcelles">Parcel info</a> allows to project your data on the French cadastral map. <a href="https://opendata.koumoul.com/reuses/carte-des-parcelles-des-personnes-morales-majic">MAJIC - Legal persons Parcels</a></li>
+<li><a href="./user-guide-backoffice/infos-localisations">Location info</a> allows to project your data and create cards on each marker. The cards can display images, links, descriptions, etc ... <a href="https://opendata.koumoul.com/reuses/carte-des-evenements-des-journees-europeennes-du-patrimoine-en-france-2019">European Heritage Days 2019</a></li>
+<li><a href="./user-guide-backoffice/catchment-area">Catchment areas</a> allows to project areas of influence or indicators according to common codes. Geometries are calculated based on the values ​​in your data. <a href="https://opendata.koumoul.com/reuses/competence-territoriale-gendarmerie-et-police-nationales">Territorial jurisdiction of the national police and gendarmerie</a></li>
+</ul>
+<h2 id="graphic-visualizations">Graphic visualizations</h2>
+<p>Graphic visualizations allow to represent your data on different perspective visualizations.</p>
+<p><img src="./images/user-guide-backoffice/visu-graphs.jpg" alt="Visualisations graphiques"></p>
+<ul>
+<li><a href="./user-guide-backoffice/bar-chart-race">Bar chart race</a> allows to represent ranking data over time. <a href="https://opendata.koumoul.com/reuses/evolution-des-salaires-selon-la-region-entre-1966-et-2010">The evolution of french wages by region between 1966 and 2010</a></li>
+<li><a href="./user-guide-backoffice/proportion">Waffle Charts</a> allows to visualize the distribution of your data in percentage in the form of 100 squares and to compare them according to different variables. <a href="https://opendata.koumoul.com/reuses/proportions-des-resultats-du-baccalaureat">Rating of the 2018 baccalaureate results</a></li>
+<li><a href="./user-guide-backoffice/sunburst">Sunburst diagram</a> represent hierarchical data. <a href="https://opendata.koumoul.com/reuses/repartition-des-subventions-aux-associations-de-poitiers-par-secteur-d'activite">Subsidies to associations of Poitiers</a></li>
+<li><a href="./user-guide-backoffice/sankey">Sankey diagram</a> represent flow data.<a href="https://opendata.koumoul.com/reuses/relation-entre-classes-energetiques-et-ges-dans-les-logements">Energy class / GHG relationship of housing built since 2010</a></li>
+<li><a href="./user-guide-backoffice/network">Graphs / Networks</a> and <a href="./user-guide-backoffice/relations">Network diagram</a> allow to represent your relational data containing nodes and links. <a href="https://opendata.koumoul.com/reuses/reseau-de-tags-dans-stackoverflow">Tag network in Stackoverflow</a> or <a href="https://opendata.koumoul.com/reuses/relation-entre-les-joueurs-de-l'equipe-de-france-et-leurs-clubs">Relationship between the players of the France team and their clubs</a></li>
+<li><a href="./user-guide-backoffice/charts">Graphics</a> allows to represent your data in different types of graphs, such as histograms, area graphs, lines, etc. <a href="https://opendata.koumoul.com/datasets/dpe-logements">Various examples on the page of energy performance diagnostics for housing</a></li>
+<li><a href="./user-guide-backoffice/periodic-series">Periodic Series</a> allows to represent temporal data in an animated curve or radar. <a href="https://opendata.koumoul.com/reuses/variation-de-temperature-comparaison-climat-oceanique-et-continental">Oceanic and continental climate comparison</a></li>
+</ul>
+<h2 id="textual-visualizations">Textual visualizations</h2>
+<p>Textual visualizations can represent the majority of your data.</p>
+<p><img src="./images/user-guide-backoffice/visu-text.jpg" alt="Visualisations texte"></p>
+<ul>
+<li><a href="./user-guide-backoffice/liste-fiches">List and Cards</a> allows to create a search engine to explore your data. <a href="https://opendata.koumoul.com/reuses/liste-des-etablissements-de-l'education-en-france">List of educational establishments in France</a></li>
+<li><a href="./user-guide-backoffice/word-cloud">Word clouds</a> allows you to generate a word cloud with your data. <a href="https://opendata.koumoul.com/reuses/prenom-par-annee">French first names proportions in 1900</a></li>
+</ul>
+<h2 id="gamification">Gamification</h2>
+<p>Game visualizations present your data in mini-games. Gamification challenge your visitors, they will be able to test their knowledge and learn about your data.</p>
+<p><img src="./images/user-guide-backoffice/visu-jeu.jpg" alt="Visualisations texte"></p>
+<ul>
+<li><a href="./user-guide-backoffice/game-quizz">Quiz</a> : allows to create a quiz in which you need to match the labels to images or descriptions. <a href="https://opendata.koumoul.com/reuses/quizz-fete-de-la-science-2019">French Science Day 2019</a></li>
+<li><a href="./user-guide-backoffice/game-localisation">Location game</a> : allows to create a blind map to locate geographic points of your data. <a href="https://opendata.koumoul.com/reuses/localisez-les-capitales-du-monde">Locate the capitals of the world</a></li>
+<li><a href="./user-guide-backoffice/game-sort">Sort game</a> : allows to create a numeric sorting game based on your data to get a score. <a href="https://opendata.koumoul.com/reuses/classez-les-meilleurs-buteurs-de-l'euro">Rank the top scorers of the Euro</a>.</li>
+</ul>
+<h2 id="visualisations-scdl">Visualisations SCDL</h2>
+<p>SCDL visualizations make it possible to represent data respecting the format of the <a href="https://www.opendatafrance.net/scdl/">Common Base of Local Data</a> (SCDL).</p>
+<ul>
+<li><strong>SCDL-Deliberations</strong> allows you to view administrative decisions. <a href="https://opendata.koumoul.com/reuses/deliberations-grand-poitiers">Grand Poitiers deliberations</a></li>
+<li><strong>SCDL-Equiements</strong> allows you to view the equipment of a territory on a map</li>
+</ul>
+</div></div></div></div><!----> <h3 class="text-h5 my-4 grey--text text--darken-3 section-title subsection-title">
+      5.1 - Create interactives visualizations
+    </h3> <div class="container doc-page"><div class="row"><div class="col"><!----> <div role="alert" class="v-alert v-sheet v-sheet--outlined theme--light v-alert--border v-alert--outlined v-alert--border-left warning--text"><div class="v-alert__wrapper"><i aria-hidden="true" class="v-icon notranslate v-alert__icon mdi mdi-exclamation theme--light warning--text"></i><div class="v-alert__content"></div><div class="v-alert__border v-alert__border--left"></div></div></div> <!----> <!----> <div cols="12" style="display:none"><p>Interactive visualizations present and explore your data in a fun way.</p>
+<p>The creation of a visualization can be initiated from the various buttons <strong>Configure a visualization</strong> available on Data Fair</p>
+<p>Remark : Check your datasets to match the type of visualization you want to create and also check <a href="./user-guide-backoffice/concept">the concepts</a> on your dataset.
+For example, to configure a map, the concepts <strong>Latitude</strong> and <strong>Longitude</strong> must be associated with the columns that contain these values ​​in your dataset. Please do <a href="https://koumoul.com/contact">contact</a> us if you have any trouble.</p>
+<p>Once you clicked on <strong>Configure visualization</strong> you are redirected to the configuration page of your visualization.<br>This page is divided into several parts:</p>
+<ul>
+<li><strong>Metadata</strong> at the top of the page with the title, description and thematic.</li>
+<li><strong>Configuration</strong> which includes the configuration menu on the left and the visualization preview on the right</li>
+<li><strong>Share</strong> section allows you to manage permissions, the sharing link for private viewing, publications on various portals and on external catalogs.</li>
+<li><strong>Activity</strong> to keep track of the latest changes to your visualization.<p>
+</p>
+
+</li>
+</ul>
+<p>On the right of the page, <strong>action buttons</strong> are available.</p>
+<p><img src="./images/user-guide-backoffice/add-reuse-config.jpg" alt="Menu"><br><em>Customize the rendering of your visualization</em></p>
+<h2 id="configuration-menu">Configuration menu</h2>
+<p>The configuration menu consists of different sections which may differ depending on the application.<br>The menu is made up of at least three sections, the <strong>Data</strong>, the <strong>Render</strong> (or <strong>Presentation</strong>) and finally the <strong>Navigation</strong>.  
+The <strong>Data</strong> section allows you to choose the dataset used in the visualization.</p>
+<h2 id="preview">Preview</h2>
+<p>The preview allows you to view the rendering of your visualisation. The preview is split into two modes <strong>sketch</strong> and <strong>Registered Version</strong>.  </p>
+<p>When you make changes to the configuration menu, they are directly represented in the <strong>sketch</strong> mode of the preview. You can modify and test different renderings of your visualization. When you are satisfied with your rendering, click on the <strong>Save</strong> button and the <strong>Registered Version</strong> will change to represent the saved visualization.  </p>
+<h2 id="share-my-visualization">Share my visualization</h2>
+<p>A visualization can be public or private. By default, a visualization is private.<br>If your data is accessible to the public then your visualization can also be accessible to the public.  </p>
+<p>The <strong>Protected link</strong> section allows to create a link to access a private visualization.</p>
+<p>Visualizations can be published on multiple portals. It's possible to publish your visualization internally to get feedback from your team and then publish the visualization on an opendata portal for exemple.</p>
+<p><img src="./images/user-guide-backoffice/visu-partage.jpg" alt="partage visu">  </p>
+<h2 id="action-buttons">Action buttons</h2>
+<p>On the right, there are the action buttons:</p>
+<ul>
+<li><strong>Full page</strong>.</li>
+<li><strong>Integrate into site</strong>. Allows you to display the code necessary to integrate the visualization in another site.</li>
+<li><strong>Capture</strong>. Image in PNG format.</li>
+<li><strong>API</strong></li>
+<li><strong>Delete</strong></li>
+<li><strong>Change owner</strong><p>
+</p>
+
+</li>
+</ul>
+<p>The <strong>Content</strong> allows to quickly navigate in the page.</p>
+</div></div></div></div><!----> <h3 class="text-h5 my-4 grey--text text--darken-3 section-title subsection-title">
+      5.2 - Visualization settings
+    </h3> <div class="container doc-page"><div class="row"><div class="col"><!----> <div role="alert" class="v-alert v-sheet v-sheet--outlined theme--light v-alert--border v-alert--outlined v-alert--border-left warning--text"><div class="v-alert__wrapper"><i aria-hidden="true" class="v-icon notranslate v-alert__icon mdi mdi-exclamation theme--light warning--text"></i><div class="v-alert__content"></div><div class="v-alert__border v-alert__border--left"></div></div></div> <!----> <!----> <div cols="12" style="display:none"><p>The configuration menu of a visualization is divided into several sections.</p>
+<p>The <strong>Save</strong> button turns orange when you modify any element of the configuration of your application.</p>
+<h2 id="menu">Menu</h2>
+<p>The configuration menu contains the <strong>Data</strong>, <strong>Data preparation</strong>, <strong>Presentation</strong> sections.</p>
+<p><img src="./images/user-guide-backoffice/Menu-graph.jpg" alt="Menu de configuration d'une visualisation graphique"></p>
+<h3 id="data">Data</h3>
+<p>The <strong>Data</strong> section is available in all the configuration menus and allows to choose the dataset represented in the visualization.</p>
+<p>On some configurations, static filters or interactive filters can be defined. Filters allow to restrict data to some values ​​or exclude values. You control the lines thanks to these filters.</p>
+<h4 id="static-filters">Static filters</h4>
+<p>Static filters allow you to perform a hard filter on your data.</p>
+<h3 id="data-preparation">Data preparation</h3>
+<p>In this section, you can perform controls on the columns. You are able to define which columns you want to represent in your visualization.</p>
+<h3 id="presentation">Presentation</h3>
+<p>This section allows to configure the graphical aspect of the visualization. You can change colors and define interactive filters for exemple.</p>
+<h4 id="filters">Filters</h4>
+<p>Interactive filters allow to have a filter section displayed in your visualization. The visualization will be dynamically modified according to the value entered in the filter by the users.</p>
+<h2 id="map-menu">Map menu</h2>
+<p>The map visualization configuration menu contains the <strong>Data</strong>, <strong>Render</strong>, <strong>Navigation</strong> sections.</p>
+<p><img src="./images/user-guide-backoffice/Menu-carto.jpg" alt="Menu de configuration d'une visualisation cartographique"></p>
+<h3 id="render">Render</h3>
+<p>In this section you have the possibility to:</p>
+<ul>
+<li>Fill in the field that corresponds to your legend.</li>
+<li>Modify the content of cards or tooltips.</li>
+<li>Display information specific to each of the visualizations.</li>
+</ul>
+<h3 id="navigation">Navigation</h3>
+<p>This section groups the elements related to the navigation of your visualization. You can activate geolocation, define an initial position of the map or display an address search bar.</p>
+</div></div></div></div><div class="page-break"></div> <h2 class="text-h4 my-4 grey--text text--darken-3 section-title">
+      6 - Map visualizations
+    </h2> <div class="container doc-page"><div class="row"><div class="col"><!----> <div role="alert" class="v-alert v-sheet v-sheet--outlined theme--light v-alert--border v-alert--outlined v-alert--border-left warning--text"><div class="v-alert__wrapper"><i aria-hidden="true" class="v-icon notranslate v-alert__icon mdi mdi-exclamation theme--light warning--text"></i><div class="v-alert__content"></div><div class="v-alert__border v-alert__border--left"></div></div></div> <!----> <!----> <div cols="12" style="display:none"><p>Map visualizations allow to project your geographic data on a map using <a href="./user-guide-backoffice/concept">concepts</a> latitude, longitude or geometry.</p>
+<p><img src="./images/user-guide-backoffice/visu-carto.jpg" alt="Visualisations Carto"></p>
+<ul>
+<li><a href="./user-guide-backoffice/carto-stats">Carto-stats</a> allows to project statistical data. <a href="https://opendata.koumoul.com/reuses/cartographie-des-accidents-de-velo">Cycling accidents in France</a></li>
+<li><a href="./user-guide-backoffice/div-admin">Administrative divisions</a> allows to project data at the level of the municipality, the department or the region. <a href="https://opendata.koumoul.com/reuses/ratio-public-prive-du-nombre-d'eleves-dans-les-ecoles-par-commune">Students in the private sector in France</a>.</li>
+<li><a href="./user-guide-backoffice/geo-shapes">Géo Shapes</a> allows to project geometric shapes such as local urbanization plans or networks (energy, road). <a href="https://opendata.koumoul.com/reuses/plu-zone-urba-angers-loire-metropole">Angers local urbanization plan zones</a></li>
+<li><a href="./user-guide-backoffice/infos-parcelles">Parcel info</a> allows to project your data on the French cadastral map. <a href="https://opendata.koumoul.com/reuses/carte-des-parcelles-des-personnes-morales-majic">MAJIC - Legal persons Parcels</a></li>
+<li><a href="./user-guide-backoffice/infos-localisations">Location info</a> allows to project your data and create cards on each marker. The cards can display images, links, descriptions, etc ... <a href="https://opendata.koumoul.com/reuses/carte-des-evenements-des-journees-europeennes-du-patrimoine-en-france-2019">European Heritage Days 2019</a></li>
+<li><a href="./user-guide-backoffice/catchment-area">Catchment areas</a> allows to project areas of influence or indicators according to common codes. Geometries are calculated based on the values ​​in your data. <a href="https://opendata.koumoul.com/reuses/competence-territoriale-gendarmerie-et-police-nationales">Territorial jurisdiction of the national police and gendarmerie</a></li>
+</ul>
+</div></div></div></div><!----> <h3 class="text-h5 my-4 grey--text text--darken-3 section-title subsection-title">
+      6.1 - Carto-stats
+    </h3> <div class="container doc-page"><div class="row"><div class="col"><!----> <div role="alert" class="v-alert v-sheet v-sheet--outlined theme--light v-alert--border v-alert--outlined v-alert--border-left warning--text"><div class="v-alert__wrapper"><i aria-hidden="true" class="v-icon notranslate v-alert__icon mdi mdi-exclamation theme--light warning--text"></i><div class="v-alert__content"></div><div class="v-alert__border v-alert__border--left"></div></div></div> <!----> <!----> <div cols="12" style="display:none"><p><strong>Carto-stats</strong> visualization is a map with geolocated data and dynamic filters.<br>An example of this visualization is the <a href="https://opendata.koumoul.com/reuses/cartographie-des-accidents-de-velo/full">bicycle accidents map</a>.</p>
+<p>Carto-stats allows to create dynamic filters and to have filtered data on the map.<br>Compared to <a href="./user-guide-backoffice/infos-localisations">Infos-location</a>, <strong>Carto-stats</strong> will be more suitable for large data and <strong>Info-locations</strong> will be more suitable for data containing special fields such as URL, images, descriptions, ...</p>
+<h3 id="concepts">Concepts</h3>
+<p>To configure a <strong>Carto-stats</strong> visualization, your active account contains a monthly dataset with [concepts] (./ user-guide / concept) <strong>Latitude</strong> and <strong>Longitude</strong> of associates in its schema.<br>Once you have updated your data schema, you can preview your data using the <strong>generic map</strong>. YOu can verify that the data is correctly projected on a map.</p>
+<h3 id="create-a-carto-stats-map">Create a Carto-stats map</h3>
+<p>To configure a <strong>Carto-stats</strong> visualization, click on <strong>Visualizations</strong> in the navigation bar, then on <strong>Configure visualization</strong>.  </p>
+<ol>
+<li>Choose the application <strong>Carto-stats</strong></li>
+<li>Enter the title of your visualization</li>
+</ol>
+<p>
+</p>
+
+<p>You are redirected to the configuration page of your application with its different sections:  </p>
+<ol>
+<li>Information</li>
+<li>Action buttons (full screen, integration on a site, capture, ...)</li>
+<li>Configuration menu</li>
+<li>Preview</li>
+</ol>
+<p><img src="./images/user-guide-backoffice/carto-stats-config.jpg" alt="Page de configuration"></p>
+<p>The title of the visualization can be changed anytime.<br>The <strong>Informations</strong> section shows a summary of the characteristics of your application.  </p>
+<h3 id="configuration-menu">Configuration menu</h3>
+<p>The configuration menu contains three submenus : <strong>Sources</strong>, <strong>Preparation</strong> and <strong>Presentation</strong>.  </p>
+<h4 id="1sources">1.Sources</h4>
+<p><strong>Sources</strong> allows to choose a dataset.  </p>
+<p>Once you have choosen a dataset compatible with the <strong>Carto-stats</strong> visualization, a map preview is displayed with geolocalised data.</p>
+<p>You can configure dynamic filters, predefined filters and a slider.</p>
+<ul>
+<li>Dynamic filters allow to choose fields that will be available to users of your visualization. These users will be able to use the filters to restrict the number of dots on the map.</li>
+<li>Predefined filters allow to restrict or exclude values ​​in your data. The fields, or values, that you configure in this section will not be available in your visualization.</li>
+<li>The Slider allows to choose an integer field, such as a <strong>year</strong> field. The user will be able to choose a year value on the slider, the data will be filtered on this year and displayed on the map.</li>
+</ul>
+<h4 id="2render-options">2.Render options</h4>
+<p>In the menu <strong>Render options</strong>, you can customize the cards available on the markers and customize your legend.  </p>
+<p>The <strong>Tooltip</strong> menu allows you to select the different fields to be displayed on the cards of your markers.<br>The <strong>Color by value of a field</strong> defines the column used for your legend. The palette allows to choose a set of colors that will be associated with your legend values.</p>
+<h4 id="3navigation">3.Navigation</h4>
+<p>In the <strong>Navigation</strong> menu, you can hide the search bar and set the initial position of the map</p>
+<p>When you are satisfied with the preview click on <strong>Save</strong> to finalize your configuration.<br>You can add a description at the bottom of the page and make your application public.<br>You can consult it using the <strong>consult</strong> or <strong>full screen</strong> buttons.</p>
+</div></div></div></div><!----> <h3 class="text-h5 my-4 grey--text text--darken-3 section-title subsection-title">
+      6.2 - Administrative divisions
+    </h3> <div class="container doc-page"><div class="row"><div class="col"><!----> <div role="alert" class="v-alert v-sheet v-sheet--outlined theme--light v-alert--border v-alert--outlined v-alert--border-left warning--text"><div class="v-alert__wrapper"><i aria-hidden="true" class="v-icon notranslate v-alert__icon mdi mdi-exclamation theme--light warning--text"></i><div class="v-alert__content"></div><div class="v-alert__border v-alert__border--left"></div></div></div> <!----> <!----> <div cols="12" style="display:none"><p>The <strong>Administrative divisions</strong> visualization allows to create administrative, thematic or choropleth maps.<br><strong>Administrative divisions</strong> is used to project statistical data on a set of territories. It is possible to navigate between the levels of territories using the zoom. To access the data, click on a territory.<br>An example of this visualization on <a href="https://opendata.koumoul.com/reuses/resultats-aux-elections-europeennes-2019/full">the 2019 European election results map</a>.  </p>
+<p><strong>Administrative divisions</strong> allows to create maps at the levels of IRIS, EPCI, municipalities, departments and / or regions.</p>
+<h3 id="concepts">Concepts</h3>
+<p>To configure a <strong>Administrative divisions</strong> visualization, your active account contains a dataset with any of the <a href="./user-guide-backoffice/concept">concepts</a> <strong>IRIS code</strong>, <strong>EPCI code</strong>, <strong>Municipality code</strong>, <strong>Department code</strong> and / or <strong>Region code</strong>.</p>
+<h3 id="create-an-administrative-divisions-visualization">Create an Administrative Divisions visualization</h3>
+<p>Click on <strong>Visualizations</strong> then on <strong>Configure a visualization</strong>.</p>
+<ol>
+<li>Choose the application <strong>Administrative divisions</strong></li>
+<li>Enter the title of the visualization</li>
+</ol>
+<p>
+</p>
+
+<p>You are redirected to the configuration page of your application with its different sections:  </p>
+<ol>
+<li>Information</li>
+<li>Action buttons (full screen, integration on a site, capture, ...)</li>
+<li>Configuration menu</li>
+<li>Preview</li>
+</ol>
+<p><img src="./images/user-guide-backoffice/div-admin-config.jpg" alt="Page de configuration"></p>
+<p>The title of the visualization can be changed anytime.<br>The <strong>Informations</strong> section shows a summary of the characteristics of your application.  </p>
+<h3 id="configuration-menu">Configuration menu</h3>
+<p>The configuration menu contains four sub-menus: <strong>Data</strong>, <strong>Metric</strong>, <strong>Render</strong> and <strong>Navigation</strong>.  </p>
+<h4 id="1data">1.Data</h4>
+<p>In the <strong>Data</strong> menu, you can choose the dataset you want to use.<br>Once you chose a dataset compatible with the application <strong>Administrative divisions</strong>, a map preview is displayed.  </p>
+<h4 id="2metric">2.Metric</h4>
+<p>In the <strong>Metric</strong> menu, the <strong>Numerator</strong> section allows to define the value of your dataset that you want to display on your map. It is possible to count, sum or average the values ​​of this field.</p>
+<p>The <strong>Denominator</strong> section allows you to perform a ratio. For example, if you have the populations of the territories in a column of your dataset, you can enter a value in the <strong>Numerator</strong> divided by the population to have the ratio per capita.</p>
+<h4 id="3render">3.Render</h4>
+<p>The <strong>Render</strong> menu allows to customize your visualization.<br>The <strong>Colors</strong> section allows to choose a set of colors that will be associated with the values ​​of your data. You can invert the colors in the palette and set a default color for your values.<br>The <strong>Calculation of intervals</strong> allows to define the type of intervals you want to display. It is possible to have intervals of the same size, from quantiles or to define them yourself.</p>
+<h4 id="4navigation">4.Navigation</h4>
+<p>The <strong>Navigation</strong> menu is used to define the initial position of the map.</p>
+<p>When you are satisfied with the preview click on <strong>Save</strong> to finalize your configuration.<br>You can add a description at the bottom of the page and make your application public.<br>You can consult it using the <strong>consult</strong> or <strong>full screen</strong> buttons.</p>
+</div></div></div></div><!----> <h3 class="text-h5 my-4 grey--text text--darken-3 section-title subsection-title">
+      6.3 - Geo Shapes
+    </h3> <div class="container doc-page"><div class="row"><div class="col"><!----> <div role="alert" class="v-alert v-sheet v-sheet--outlined theme--light v-alert--border v-alert--outlined v-alert--border-left warning--text"><div class="v-alert__wrapper"><i aria-hidden="true" class="v-icon notranslate v-alert__icon mdi mdi-exclamation theme--light warning--text"></i><div class="v-alert__content"></div><div class="v-alert__border v-alert__border--left"></div></div></div> <!----> <!----> <div cols="12" style="display:none"><p>The <strong>Geo Shapes</strong> visualization display geometric data on a map. It is thus possible to visualize data such as the zones of the local urbanization plan or energy networks.<br>An example is the <a href="https://opendata.koumoul.com/reuses/plu-zone-urba-angers-loire-metropole/full">map of the Angers Loire Métropole LUP zones</a>.  
+You can click on each zone to get more details and click on a color in the legend to filter by zone type.</p>
+<h3 id="concepts">Concepts</h3>
+<p>To configure a <strong>Geo Shapes</strong> visualization, your active account contains at least one dataset with the <a href="./user-guide-backoffice/concept">concept</a> <strong>GeoJSON geometry</strong> to be able to project your data on the map.</p>
+<p>Once you updated your data schema, you can preview your data using the <strong>generic map</strong> button. This allows to verify that your data is correctly projected on a map.</p>
+<h3 id="create-a-geo-shapes-visualization">Create a Geo Shapes visualization</h3>
+<p>Click on <strong>Visualizations</strong> then on <strong>Configure a visualization</strong>.</p>
+<ol>
+<li>Choose the application <strong>Geo Shapes</strong></li>
+<li>Enter the title of the visualization</li>
+</ol>
+<p>
+</p>
+
+<p>You are redirected to the configuration page of your application with its different sections:  </p>
+<ol>
+<li>Information</li>
+<li>Action buttons (full screen, integration on a site, capture, ...)</li>
+<li>Configuration menu</li>
+<li>Preview</li>
+</ol>
+<p><img src="./images/user-guide-backoffice/geo-shapes-config.jpg" alt="Page de configuration"></p>
+<p>The title of the visualization can be changed anytime.<br>The <strong>Informations</strong> section shows a summary of the characteristics of your application.</p>
+<h3 id="configuration-menu">Configuration menu</h3>
+<p>The configuration menu contains three submenus: <strong>Data</strong>, <strong>Render</strong> and <strong>Presentation</strong>.</p>
+<h4 id="1data">1.Data</h4>
+<p>In the <strong>Data</strong> menu, you choose the dataset you want to use.
+Once you chose a dataset compatible with the <strong>Geo Shapes</strong> visualization, a map preview is displayed.  </p>
+<h4 id="2render">2.Render</h4>
+<p>In the <strong>Render</strong> menu, the <strong>Value color</strong> defines the column used for your legend. A legend color can be defined by clicking on the <strong>color</strong> circle or each legend value. You manage the legend order with a drag and drop on the hamburger menu.  </p>
+<p>The <strong>Details Fiels</strong> allows to choose the fields to display when a user clicks on a geometric shape. Without any value in this section, the side panel will only be useful for navigation.<br>The <strong>map style</strong> allows to modify your basemap. You can customize the basemap of your application to have a better rendering.</p>
+<h4 id="3navigation">3.Navigation</h4>
+<p>The <strong>Navigation</strong> menu is used to activate geolocation and define the initial position of the map.</p>
+<p>When you are satisfied with the preview click on <strong>Save</strong> to finalize your configuration.<br>You can add a description at the bottom of the page and make your application public.<br>You can consult it using the <strong>consult</strong> or <strong>full screen</strong> buttons.</p>
+</div></div></div></div><!----> <h3 class="text-h5 my-4 grey--text text--darken-3 section-title subsection-title">
+      6.4 - Parcel info
+    </h3> <div class="container doc-page"><div class="row"><div class="col"><!----> <div role="alert" class="v-alert v-sheet v-sheet--outlined theme--light v-alert--border v-alert--outlined v-alert--border-left warning--text"><div class="v-alert__wrapper"><i aria-hidden="true" class="v-icon notranslate v-alert__icon mdi mdi-exclamation theme--light warning--text"></i><div class="v-alert__content"></div><div class="v-alert__border v-alert__border--left"></div></div></div> <!----> <!----> <div cols="12" style="display:none"><p>The <strong>Parcel Info</strong> visualization allows you to project your data onto an interactive French cadastral map.</p>
+<h3 id="prerequisites">Prerequisites</h3>
+<p>To view your data on <strong>Parcel Info</strong>, your dataset must contain a column of <strong>parcel identifiers of 14 characters</strong>.  
+These identifier (or parcel code) are made up of this method: common INSEE code of 5 digits + cadastre section code of 5 characters + cadastral parcel number of 4 digits = structured parcel identifier for Parcel info.</p>
+<p>For example <strong>56197037ZC0063</strong> is a valid code for <strong>Parcel info</strong>. An exemple is the <a href="https://koumoul.com/s/data-fair/api/v1/datasets/domaine-agricole-toulouse/full">dataset of agricultural plots managed by the agricultural management of the City of Toulouse</a> which has a column with identifiers of 14 characters valid for Parcel info.</p>
+<p>Your dataset must also contain latitudes and longitudes associated with each field code.<br>If you only have 14 character identifiers, it is possible to <a href="./user-guide-backoffice/enrichment">enrich your dataset</a> and import the latitudes and longitudes according to the parcel identifiers with the help for the <strong>cadastre</strong> enrichment of the Koumoul platform.</p>
+<h3 id="concepts">Concepts</h3>
+<p>To configure a <strong>Parcel info</strong> visualization, your active account contains a data set with <a href="./user-guide-backoffice/concept">concepts</a> <strong>Parcel code</strong>, <strong>Latitude</strong> and <strong>Longitude</strong> associated in its schema.</p>
+<p>Once you update your data schema, the <strong>Map</strong> preview is available in the <strong>Data</strong> section. This allows to verify that your data is correctly projected on a map.</p>
+<h3 id="create-a-parcel-info-visualization">Create a Parcel info visualization</h3>
+<p>lick on <strong>Visualizations</strong> then on <strong>Configure a visualization</strong>.</p>
+<ol>
+<li>Choose the application <strong>Parcel info</strong></li>
+<li>Enter the title of the visualization</li>
+</ol>
+<p>
+</p>
+
+<p>You are redirected to the configuration page of your application with its different sections:  </p>
+<ol>
+<li>Information</li>
+<li>Action buttons (full screen, integration on a site, capture, ...)</li>
+<li>Configuration menu</li>
+<li>Preview</li>
+</ol>
+<p><img src="./images/user-guide-backoffice/infos-parcelles-config.jpg" alt="Page de configuration"></p>
+<p>The title of the visualization can be changed anytime.<br>The <strong>Informations</strong> section shows a summary of the characteristics of your application.</p>
+<h3 id="configuration-menu">Configuration menu</h3>
+<p>The configuration menu contains four sub-menus: <strong>Data</strong>, <strong>Render</strong> and <strong>Navigation</strong>.</p>
+<h4 id="1data">1.Data</h4>
+<p>In the <strong>Data</strong> menu, you choose the dataset you want to use.  </p>
+<p>Note: If your dataset is not available in this menu, make sure you have updated the <a href="./user-guide-backoffice/concept">concepts</a> <strong>Latitude</strong>, <strong>Longitude</strong> and <strong>Parcel Code</strong> in your dataset.</p>
+<h4 id="2render">2.Render</h4>
+<p>In the <strong>Render</strong> menu, the <strong>Color by value</strong> defines the column used for the colors of your legend. You can choose the different colors you want to associate with your legend values.  </p>
+<p>In the <strong>Tooltip</strong> parameter, you can select multiple columns to display when a user clicks on a parcel.</p>
+<p>You can have a 3D render with the <strong>Field height</strong>.</p>
+<h4 id="3navigation">3.Navigation</h4>
+<p>The <strong>Navigation</strong> menu is used to activate geolocation and define the initial position of the map.</p>
+<p>When you are satisfied with the preview click on <strong>Save</strong> to finalize your configuration.<br>You can add a description at the bottom of the page and make your application public.<br>You can consult it using the <strong>consult</strong> or <strong>full screen</strong> buttons.</p>
+</div></div></div></div><!----> <h3 class="text-h5 my-4 grey--text text--darken-3 section-title subsection-title">
+      6.5 - Location info
+    </h3> <div class="container doc-page"><div class="row"><div class="col"><!----> <div role="alert" class="v-alert v-sheet v-sheet--outlined theme--light v-alert--border v-alert--outlined v-alert--border-left warning--text"><div class="v-alert__wrapper"><i aria-hidden="true" class="v-icon notranslate v-alert__icon mdi mdi-exclamation theme--light warning--text"></i><div class="v-alert__content"></div><div class="v-alert__border v-alert__border--left"></div></div></div> <!----> <!----> <div cols="12" style="display:none"><p>The <strong>Location info</strong> visualization allows to project geolocated data on a map. The coordinates are represented by a clickable marker with a personalized card on each point.</p>
+<h3 id="prerequisites">Prerequisites</h3>
+<p>The data you want to project must contain latitudes and longitudes.<br>The visualization supports Lambert 93, Lambert II and WGS 84 system projections.</p>
+<h3 id="configuration">Configuration</h3>
+<h4 id="1concepts">1.Concepts</h4>
+<p>To use your data in a <strong>Location Info</strong> visualization, <a href="./user-guide-backoffice/concept">the concepts</a> <strong>Latitude</strong> and <strong>Longitude</strong> must be associated with the schema of the dataset you want to use.</p>
+<p>Then, associate the concept <strong>Label</strong> with the corresponding column of your dataset.<br>The values of this column will be used as card titles in your visualisation.  </p>
+<p>You can combine other concepts such as <strong>images</strong>, <strong>descriptions</strong> or <strong>web page</strong> to better inform your data. These concepts will be used on the marker cards.<br>Once you updated your data schema, you can preview your data using the <strong>generic map</strong> button. This allows to verify that your data is correctly projected on a map.</p>
+<h4 id="2create-a-location-info-map">2.Create a Location info map</h4>
+<p>Click on <strong>Visualizations</strong> then on <strong>Configure a visualization</strong>.</p>
+<ol>
+<li>Choose the application <strong>Location Info</strong></li>
+<li>Enter the title of the visualization</li>
+</ol>
+<p>
+</p>
+
+<p>You are redirected to the configuration page of your application with its different sections:  </p>
+<ol>
+<li>Information</li>
+<li>Action buttons (full screen, integration on a site, capture, ...)</li>
+<li>Configuration menu</li>
+<li>Preview</li>
+</ol>
+<p><img src="./images/user-guide-backoffice/infos-localisations-config.jpg" alt="Page de configuration"></p>
+<p>The title of the visualization can be changed anytime.<br>The <strong>Informations</strong> section shows a summary of the characteristics of your application.</p>
+<h3 id="configuration-menu">Configuration menu</h3>
+<p>The configuration menu contains four sub-menus: <strong>Data</strong>, <strong>Render</strong>, <strong>Card</strong> and <strong>Navigation</strong>.</p>
+<h4 id="1data">1.Data</h4>
+<p>In the <strong>Data</strong> menu, you choose the dataset you want to use.  </p>
+<p>Note: If your dataset is not available in this menu, make sure you have updated the <a href="./user-guide-backoffice/concept">concepts</a> <strong>Latitude</strong> and <strong>Longitude</strong> in your dataset.</p>
+<h4 id="2render">2.Render</h4>
+<p>In the <strong>Render</strong> menu, you can choose the <strong>Map Style</strong> that suits you the most.<br>The <strong>Color by value</strong> defines the column used for the colors of your legend. You can choose the different colors you want to associate with your legend values.  </p>
+<p>You can also choose <strong>Icons by field value</strong> to define the column used for the icons in your legend. You can define different icons for each value of one of your columns.</p>
+<h4 id="3card">3.Card</h4>
+<p>The marker cards display certain concepts automatically. For example, on the <a href="https://opendata.koumoul.com/reuses/carte-des-evenements-des-journees-europeennes-du-patrimoine-en-france-2019">European Heritage Days dataset</a>, the concepts <strong>Latitude</strong>, <strong>Longitude</strong>, <strong>Label</strong>, <strong>Image</strong>, <strong>Description</strong> and <strong>Web page</strong> are associated with the corresponding columns.</p>
+<p>In the <strong>Card</strong> menu, you can add <strong>Fields to be used</strong> in order to display them in each of the marker files.<br>You can add as much information as you want on a record, however, a card with a lot of information will be too large to display.</p>
+<h4 id="4navigation">4.Navigation</h4>
+<p>The <strong>Navigation</strong> menu is used to activate geolocation and define the initial position of the map.</p>
+<p>When you are satisfied with the preview click on <strong>Save</strong> to finalize your configuration.<br>You can add a description at the bottom of the page and make your application public.<br>You can consult it using the <strong>consult</strong> or <strong>full screen</strong> buttons.</p>
+</div></div></div></div><!----> <h3 class="text-h5 my-4 grey--text text--darken-3 section-title subsection-title">
+      6.6 - Catchment areas
+    </h3> <div class="container doc-page"><div class="row"><div class="col"><!----> <div role="alert" class="v-alert v-sheet v-sheet--outlined theme--light v-alert--border v-alert--outlined v-alert--border-left warning--text"><div class="v-alert__wrapper"><i aria-hidden="true" class="v-icon notranslate v-alert__icon mdi mdi-exclamation theme--light warning--text"></i><div class="v-alert__content"></div><div class="v-alert__border v-alert__border--left"></div></div></div> <!----> <!----> <div cols="12" style="display:none"><p>The <strong>Catchment areas</strong> visualization is a map offering the possibility of identifying areas of responsibility or influence of an establishment, an entity or even an organization, for example.<br>The map uses EPCI, municipality, department, region codes to calculate the geometry according to values ​​of a column.</p>
+<h3 id="create-your-catchment-area-map">Create your catchment area map</h3>
+<p>To configure a <strong>Catchment areas</strong> visualization, click on <strong>Visualizations</strong> in the navigation bar, then on <strong>Configure visualization</strong>.  </p>
+<ol>
+<li>Choose the application <strong>Catchment areas</strong></li>
+<li>Enter the title of your visualization</li>
+</ol>
+<p>
+</p>
+
+<p>You are redirected to the configuration page of your application with its different sections:  </p>
+<ol>
+<li>Information</li>
+<li>Action buttons (full screen, integration on a site, capture, ...)</li>
+<li>Configuration menu</li>
+<li>Preview</li>
+</ol>
+<p><img src="./images/user-guide-backoffice/chalandise-config.jpg" alt="Page de configuration"></p>
+<p>The title of the visualization can be changed anytime.<br>The <strong>Informations</strong> section shows a summary of the characteristics of your application.  </p>
+<h3 id="configuration-menu">Configuration menu</h3>
+<p>The configuration menu contains two submenus: <strong>Data</strong> and <strong>Render</strong>.  </p>
+<h4 id="1data">1.Data</h4>
+<p>The <strong>Territory code</strong> section allows to define the ladder of the territory IRIS code, EPCI code, town code  or Department code).<br>The <strong>Aggregate values</strong> section allows to define the field to aggregate your data.<br><strong>Filters</strong> are used to restrict the data displayed in the application.</p>
+<h4 id="2render">2.Render</h4>
+<p>The <strong>Render</strong> menu manage the initial position, hide the position search bar and activate geolocation.</p>
+<p>When you are satisfied with the preview click on <strong>Save</strong> to finalize your configuration.<br>You can add a description at the bottom of the page and make your application public.<br>You can consult it using the <strong>consult</strong> or <strong>full screen</strong> buttons.</p>
+</div></div></div></div><div class="page-break"></div> <h2 class="text-h4 my-4 grey--text text--darken-3 section-title">
+      7 - Graphic visualizations
+    </h2> <div class="container doc-page"><div class="row"><div class="col"><!----> <div role="alert" class="v-alert v-sheet v-sheet--outlined theme--light v-alert--border v-alert--outlined v-alert--border-left warning--text"><div class="v-alert__wrapper"><i aria-hidden="true" class="v-icon notranslate v-alert__icon mdi mdi-exclamation theme--light warning--text"></i><div class="v-alert__content"></div><div class="v-alert__border v-alert__border--left"></div></div></div> <!----> <!----> <div cols="12" style="display:none"><p>Graphic visualizations allow to represent your data on different perspective visualizations.</p>
+<p><img src="./images/user-guide-backoffice/visu-graphs.jpg" alt="Visualisations graphiques"></p>
+<ul>
+<li><a href="./user-guide-backoffice/bar-chart-race">Bar chart race</a> allows to represent ranking data over time. <a href="https://opendata.koumoul.com/reuses/evolution-des-salaires-selon-la-region-entre-1966-et-2010">The evolution of french wages by region between 1966 and 2010</a></li>
+<li><a href="./user-guide-backoffice/proportion">Waffle Charts</a> allows to visualize the distribution of your data in percentage in the form of 100 squares and to compare them according to different variables. <a href="https://opendata.koumoul.com/reuses/proportions-des-resultats-du-baccalaureat">Rating of the 2018 baccalaureate results</a></li>
+<li><a href="./user-guide-backoffice/sunburst">Sunburst diagram</a> represent hierarchical data. <a href="https://opendata.koumoul.com/reuses/repartition-des-subventions-aux-associations-de-poitiers-par-secteur-d'activite">Subsidies to associations of Poitiers</a></li>
+<li><a href="./user-guide-backoffice/sankey">Sankey diagram</a> represent flow data.<a href="https://opendata.koumoul.com/reuses/relation-entre-classes-energetiques-et-ges-dans-les-logements">Energy class / GHG relationship of housing built since 2010</a></li>
+<li><a href="./user-guide-backoffice/network">Graphs / Networks</a> and <a href="./user-guide-backoffice/relations">Network diagram</a> allow to represent your relational data containing nodes and links. <a href="https://opendata.koumoul.com/reuses/reseau-de-tags-dans-stackoverflow">Tag network in Stackoverflow</a> or <a href="https://opendata.koumoul.com/reuses/relation-entre-les-joueurs-de-l'equipe-de-france-et-leurs-clubs">Relationship between the players of the France team and their clubs</a></li>
+<li><a href="./user-guide-backoffice/charts">Graphics</a> allows to represent your data in different types of graphs, such as histograms, area graphs, lines, etc. <a href="https://opendata.koumoul.com/datasets/dpe-logements">Various examples on the page of energy performance diagnostics for housing</a></li>
+<li><a href="./user-guide-backoffice/periodic-series">Periodic Series</a> allows to represent temporal data in an animated curve or radar. <a href="https://opendata.koumoul.com/reuses/variation-de-temperature-comparaison-climat-oceanique-et-continental">Oceanic and continental climate comparison</a></li>
+</ul>
+</div></div></div></div><!----> <h3 class="text-h5 my-4 grey--text text--darken-3 section-title subsection-title">
+      7.1 - Bar Chart Race
+    </h3> <div class="container doc-page"><div class="row"><div class="col"><!----> <div role="alert" class="v-alert v-sheet v-sheet--outlined theme--light v-alert--border v-alert--outlined v-alert--border-left warning--text"><div class="v-alert__wrapper"><i aria-hidden="true" class="v-icon notranslate v-alert__icon mdi mdi-exclamation theme--light warning--text"></i><div class="v-alert__content"></div><div class="v-alert__border v-alert__border--left"></div></div></div> <!----> <!----> <div cols="12" style="display:none"><p><strong>Bar Chart Race</strong> represent rankings data over time.<br>An example of this visualization is the <a href="https://opendata.koumoul.com/reuses/evolution-des-salaires-selon-la-region-entre-1966-et-2010">evolution of wages by region between 1966 and 2010 in France</a></p>
+<h3 id="prerequisites">Prerequisites</h3>
+<p>The data you want to visualise must have a column containing a temporality. In the evolution of wages example, the temporality is the years.</p>
+<h3 id="bar-chart-race-initialization">Bar Chart Race initialization</h3>
+<p>To configure a <strong>Bar Chart Bace</strong> visualization, click on <strong>Visualizations</strong> in the navigation bar, then on <strong>Configure visualization</strong>.  </p>
+<ol>
+<li>Choose the application <strong>Bar Chart Race</strong></li>
+<li>Enter the title of your visualization</li>
+</ol>
+<p>
+</p>
+
+<p>You are redirected to the configuration page of your application with its different sections:  </p>
+<ol>
+<li>Information</li>
+<li>Action buttons (full screen, integration on a site, capture, ...)</li>
+<li>Configuration menu</li>
+<li>Preview</li>
+</ol>
+<p><img src="./images/user-guide-backoffice/barchart-config.jpg" alt="Page de configuration"></p>
+<p>The title of the visualization can be changed anytime.<br>The <strong>Informations</strong> section shows a summary of the characteristics of your application.  </p>
+<h3 id="configuration-menu">Configuration menu</h3>
+<p>The configuration menu contains three submenus : <strong>Sources</strong>, <strong>Preparation</strong> and <strong>Presentation</strong>.  </p>
+<h4 id="1sources">1.Sources</h4>
+<p><strong>Sources</strong> allows to choose a dataset and define the <strong>Filters</strong>. <strong>Filters</strong> restrict the data displayed in the visualization.<br>It's possible to <strong>Restrict to Values</strong> from a column, <strong>Restrict to Range of Values</strong> from a column, or <strong>Exclude Values</strong> from a column.  </p>
+<h4 id="2preparation">2.Preparation</h4>
+<p><strong>Preparation</strong> section define which columns you will use in your visualization.  </p>
+<ul>
+<li><strong>Calculation</strong> allows to count rows, sum or average on column values.</li>
+<li><strong>Column</strong> allows to choose the column used for the <strong>Calculation</strong>.</li>
+<li><strong>Time field</strong> allows to choose the column containing the time values.</li>
+<li><strong>Value field</strong> allows to define the column containing the labels used on each bar.</li>
+</ul>
+<p>Once all the options are filled in, you have a first glimpse of your visualization.</p>
+<p><img src="./images/user-guide-backoffice/barchart-preparation.gif" alt="Premier aperçu"><br><em>Evolution of the ranking of Ligue 1 teams for the 2016-2017 season</em></p>
+<h4 id="3presentation">3.Presentation</h4>
+<p>The <strong>Presentation</strong> submenu allows to modify the <strong>Maximum number</strong>, the <strong>Duration in seconds</strong>, the <strong>Width</strong>, the <strong>Position</strong>, the colors of the bars of bars and if the visualization starts automatically.</p>
+<p>When you are satisfied with the preview click on <strong>Save</strong> to finalize your configuration.<br>You can add a description at the bottom of the page and make your application public.<br>You can consult it using the <strong>consult</strong> or <strong>full screen</strong> buttons.</p>
+</div></div></div></div><!----> <h3 class="text-h5 my-4 grey--text text--darken-3 section-title subsection-title">
+      7.2 - Waffle Charts
+    </h3> <div class="container doc-page"><div class="row"><div class="col"><!----> <div role="alert" class="v-alert v-sheet v-sheet--outlined theme--light v-alert--border v-alert--outlined v-alert--border-left warning--text"><div class="v-alert__wrapper"><i aria-hidden="true" class="v-icon notranslate v-alert__icon mdi mdi-exclamation theme--light warning--text"></i><div class="v-alert__content"></div><div class="v-alert__border v-alert__border--left"></div></div></div> <!----> <!----> <div cols="12" style="display:none"><p>The <strong>Waffle Charts</strong> visualization provide an intuitive overview of proportions in a dataset and the ability to compare them based on different categories / variables.<br>For example, they can be used to highlight indicators of achievement of objectives.</p>
+<h2 id="create-your-waffle-charts">Create your waffle charts</h2>
+<p>To configure a <strong>Waffle Charts</strong> visualization, click on <strong>Visualizations</strong> in the navigation bar, then on <strong>Configure visualization</strong>.  </p>
+<ol>
+<li>Choose the application <strong>Waffle Charts</strong></li>
+<li>Enter the title of your visualization</li>
+</ol>
+<p>
+</p>
+
+<p>You are redirected to the configuration page of your application with its different sections:  </p>
+<ol>
+<li>Information</li>
+<li>Action buttons (full screen, integration on a site, capture, ...)</li>
+<li>Configuration menu</li>
+<li>Preview</li>
+</ol>
+<p><img src="./images/user-guide-backoffice/proportion-config.jpg" alt="Page de configuration"></p>
+<p>The title of the visualization can be changed anytime.<br>The <strong>Informations</strong> section shows a summary of the characteristics of your application.</p>
+<h2 id="configuration-menu">Configuration menu</h2>
+<p>The configuration menu contains two submenus: <strong>Data</strong> and <strong>Render</strong>.</p>
+<h3 id="data">Data</h3>
+<p>In the <strong>Data</strong> menu, you can choose the data set you want to use.<br>The <strong>Value to compare</strong> section allows to define the comparison field of the 100 squares of a "waffle".<br>The <strong>Category</strong> section allows to define the number of different waffles you will display on your visualization.</p>
+<p>The <strong>Calculation</strong> section allows to add a sum to a column or to count the rows
+The <strong>Calculate Field</strong> section allows to define the column that contains the values ​​for your sum.  </p>
+<p><strong>Filters</strong> are used to restrict the data displayed in the application.</p>
+<h3 id="render">Render</h3>
+<p>The <strong>Render</strong> menu is used to modify the displayed icon in the waffles and to choose the colors.</p>
+<p>When you are satisfied with the preview click on <strong>Save</strong> to finalize your configuration.<br>You can add a description at the bottom of the page and make your application public.<br>You can consult it using the <strong>consult</strong> or <strong>full screen</strong> buttons.</p>
+</div></div></div></div><!----> <h3 class="text-h5 my-4 grey--text text--darken-3 section-title subsection-title">
+      7.3 - Diagramme Sunburst
+    </h3> <div class="container doc-page"><div class="row"><div class="col"><!----> <div role="alert" class="v-alert v-sheet v-sheet--outlined theme--light v-alert--border v-alert--outlined v-alert--border-left warning--text"><div class="v-alert__wrapper"><i aria-hidden="true" class="v-icon notranslate v-alert__icon mdi mdi-exclamation theme--light warning--text"></i><div class="v-alert__content"></div><div class="v-alert__border v-alert__border--left"></div></div></div> <!----> <!----> <div cols="12" style="display:none"><p><strong>Sunburst</strong> diagram allows to visualize hierarchical data and to access to several levels of this data in a few clicks.</p>
+<h3 id="create-a-sankey-diagram">Create a Sankey diagram</h3>
+<p>Click on <strong>Visualizations</strong> then on <strong>Configure a visualization</strong>.</p>
+<ol>
+<li>Choose the application <strong>Sunburst</strong></li>
+<li>Enter the title of the visualization</li>
+</ol>
+<p>
+</p>
+
+<p>You are redirected to the configuration page of your application with its different sections:  </p>
+<ol>
+<li>Information</li>
+<li>Action buttons (full screen, integration on a site, capture, ...)</li>
+<li>Configuration menu</li>
+<li>Preview</li>
+</ol>
+<p><img src="./images/user-guide-backoffice/sunburst-config.jpg" alt="Page de configuration"></p>
+<p>The title of the visualization can be changed anytime.<br>The <strong>Informations</strong> section shows a summary of the characteristics of your application.</p>
+<h3 id="configuration-menu">Configuration menu</h3>
+<p>The configuration menu contains three submenus: <strong>Data</strong>, <strong>Preperation</strong> and <strong>Presentation</strong>.</p>
+<h4 id="1data">1.Data</h4>
+<p>In the <strong>Data</strong> menu, you can choose the dataset to use.</p>
+<h4 id="2preperation">2.Preperation</h4>
+<p>The <strong>Preperation</strong> menu allows to enter the columns you want to display and to have your first rendering.<br><strong>Calculation</strong> allows to count the number of non-zero rows of a column or to calculate the sums of the values ​​of a column.<br>The <strong>Groups</strong> represent the number of levels you want to display on your sunburst diagram.</p>
+<h4 id="3presentation">3.Presentation</h4>
+<p>In the <strong>Presentation</strong> menu, you can turn off the display of unique descendants, change the text color and change the color of your categories.</p>
+<p>When you are satisfied with the preview click on <strong>Save</strong> to finalize your configuration.<br>You can add a description at the bottom of the page and make your application public.<br>You can consult it using the <strong>consult</strong> or <strong>full screen</strong> buttons.</p>
+</div></div></div></div><!----> <h3 class="text-h5 my-4 grey--text text--darken-3 section-title subsection-title">
+      7.4 - Sankey diagram
+    </h3> <div class="container doc-page"><div class="row"><div class="col"><!----> <div role="alert" class="v-alert v-sheet v-sheet--outlined theme--light v-alert--border v-alert--outlined v-alert--border-left warning--text"><div class="v-alert__wrapper"><i aria-hidden="true" class="v-icon notranslate v-alert__icon mdi mdi-exclamation theme--light warning--text"></i><div class="v-alert__content"></div><div class="v-alert__border v-alert__border--left"></div></div></div> <!----> <!----> <div cols="12" style="display:none"><p>A <strong>Sankey</strong> diagram represent data flow and can acces to the information of each flow in one click.</p>
+<h3 id="prerequisites">Prerequisites</h3>
+<p>To configure a <strong>Sankey</strong> diagram, you need a dataset with one column containing numbers (<strong>integer</strong>) and two columns containing strings (<strong>string</strong>).</p>
+<p><img src="./images/user-guide-backoffice/sankey-type.jpg" alt="Deux colonnes string et une colonne integer"><br><em>Dataset with the columns of type string, Country and Candidates, and one column of type integer, Number_of_voices</em></p>
+<p>The values ​​of the two columns of character strings, <strong>Country</strong> and <strong>Candidates</strong>, are related to the numerical values ​​of the column of <strong>Number_of_voices</strong>.</p>
+<h3 id="create-a-sankey-diagram">Create a Sankey diagram</h3>
+<p>Click on <strong>Visualizations</strong> then on <strong>Configure a visualization</strong>.</p>
+<ol>
+<li>Choose the application <strong>Sankey</strong></li>
+<li>Enter the title of the visualization</li>
+</ol>
+<p>
+</p>
+
+<p>You are redirected to the configuration page of your application with its different sections:  </p>
+<ol>
+<li>Information</li>
+<li>Action buttons (full screen, integration on a site, capture, ...)</li>
+<li>Configuration menu</li>
+<li>Preview</li>
+</ol>
+<p><img src="./images/user-guide-backoffice/sankey-config.jpg" alt="Page de configuration"></p>
+<p>The title of the visualization can be changed anytime.<br>The <strong>Informations</strong> section shows a summary of the characteristics of your application.</p>
+<h3 id="configuration-menu">Configuration menu</h3>
+<p>The configuration menu contains three submenus: <strong>Data</strong>, <strong>Preperation</strong> and <strong>Presentation</strong>.</p>
+<h4 id="1data">1.Data</h4>
+<p>In the <strong>Data</strong> menu, you can choose the data set you want to use.</p>
+<h4 id="2preperation">2.Preperation</h4>
+<p>The <strong>Preperation</strong> menu allows to configure the columns you want to display and have your first rendering.</p>
+<p><strong>Maximum sources</strong> allows to select the number of elements displayed. The <strong>Others</strong> group includes all the data elements that are not displayed individually.  </p>
+<p><strong>Sort</strong> allows to sort the elements in alphabetical order or in descending order. If you have an <strong>Others</strong> category, it will be placed at the bottom of the diagram when sorting.  </p>
+<p><strong>Palette color</strong> and <strong>Color palette name</strong> allow to choose the color of the elements.</p>
+<p>When you are satisfied with the preview click on <strong>Save</strong> to finalize your configuration.<br>You can add a description at the bottom of the page and make your application public.<br>You can consult it using the <strong>consult</strong> or <strong>full screen</strong> buttons.</p>
+</div></div></div></div><!----> <h3 class="text-h5 my-4 grey--text text--darken-3 section-title subsection-title">
+      7.5 - Graphs / Networks
+    </h3> <div class="container doc-page"><div class="row"><div class="col"><!----> <div role="alert" class="v-alert v-sheet v-sheet--outlined theme--light v-alert--border v-alert--outlined v-alert--border-left warning--text"><div class="v-alert__wrapper"><i aria-hidden="true" class="v-icon notranslate v-alert__icon mdi mdi-exclamation theme--light warning--text"></i><div class="v-alert__content"></div><div class="v-alert__border v-alert__border--left"></div></div></div> <!----> <!----> <div cols="12" style="display:none"><p>The <strong>Graphs / Networks</strong> visualization allows to generate dynamic graphs from two datasets, one containing the nodes and the other containing the links. An example is the <a href="https://opendata.koumoul.com/reuses/reseau-de-tags-dans-stackoverflow">tag network in Stackoverflow</a>.</p>
+<h3 id="create-a-graphs--networks-visualization">Create a Graphs / Networks visualization</h3>
+<p>Click on <strong>Visualizations</strong> then on <strong>Configure a visualization</strong>.</p>
+<ol>
+<li>Choose the application <strong>Graphs / Networks</strong></li>
+<li>Enter the title of the visualization</li>
+</ol>
+<p>
+</p>
+
+<p>You are redirected to the configuration page of your application with its different sections:  </p>
+<ol>
+<li>Information</li>
+<li>Action buttons (full screen, integration on a site, capture, ...)</li>
+<li>Configuration menu</li>
+<li>Preview</li>
+</ol>
+<p><img src="./images/user-guide-backoffice/graphes-config.jpg" alt="Page de configuration"></p>
+<p>The title of the visualization can be changed anytime.<br>The <strong>Informations</strong> section shows a summary of the characteristics of your application.</p>
+<h3 id="configuration-menu">Configuration menu</h3>
+<p>The configuration menu contains two submenus: <strong>Data</strong> and <strong>Render</strong>.</p>
+<h4 id="1dataset">1.Dataset</h4>
+<p>In the <strong>Data</strong> menu, you choose the two datasets of your vizualization.</p>
+<h4 id="2render">2.Render</h4>
+<p>The <strong>Render</strong> menu allows to configure your graph.<br>You can choose the rendering method, SVG or Canvas, the strength of the links to better space the nodes of your graph and the font size of your labels.</p>
+<p>In the section <strong>nodes</strong> you configure the rendering of your nodes by choosing the size of your nodes, the field of the names of your nodes and the color of your nodes.</p>
+<p>When you are satisfied with the preview click on <strong>Save</strong> to finalize your configuration.<br>You can add a description at the bottom of the page and make your application public.<br>You can consult it using the <strong>consult</strong> or <strong>full screen</strong> buttons.</p>
+</div></div></div></div><!----> <h3 class="text-h5 my-4 grey--text text--darken-3 section-title subsection-title">
+      7.6 - Network diagram
+    </h3> <div class="container doc-page"><div class="row"><div class="col"><!----> <div role="alert" class="v-alert v-sheet v-sheet--outlined theme--light v-alert--border v-alert--outlined v-alert--border-left warning--text"><div class="v-alert__wrapper"><i aria-hidden="true" class="v-icon notranslate v-alert__icon mdi mdi-exclamation theme--light warning--text"></i><div class="v-alert__content"></div><div class="v-alert__border v-alert__border--left"></div></div></div> <!----> <!----> <div cols="12" style="display:none"><p>Network diagram allows to generate dynamic graphs from two datasets, one containing the nodes and the other containing the links between the nodes.<br>An example of this visualization is the <a href="https://opendata.koumoul.com/reuses/relation-entre-les-joueurs-de-l'equipe-de-france-et-leurs-clubs">relationship between the players of the France team and their clubs</a>.</p>
+<h2 id="create-your-network-diagram">Create your Network diagram</h2>
+<p>To configure a <strong>Network diagram</strong> visualization, click on <strong>Visualizations</strong> in the navigation bar, then on <strong>Configure visualization</strong>.  </p>
+<ol>
+<li>Choose the application <strong>Network diagram</strong></li>
+<li>Enter the title of your visualization</li>
+</ol>
+<p>
+</p>
+
+<p>You are redirected to the configuration page of your application with its different sections:  </p>
+<ol>
+<li>Information</li>
+<li>Action buttons (full screen, integration on a site, capture, ...)</li>
+<li>Configuration menu</li>
+<li>Preview</li>
+</ol>
+<p><img src="./images/user-guide-backoffice/relation-config.jpg" alt="Page de configuration"></p>
+<p>The title of the visualization can be changed anytime.<br>The <strong>Informations</strong> section shows a summary of the characteristics of your application.</p>
+<h2 id="configuration-menu">Configuration menu</h2>
+<p>The configuration menu contains three submenus: <strong>Data</strong>, <strong>Nodes</strong> and <strong>Links</strong>.</p>
+<h3 id="data">Data</h3>
+<p>In the <strong>Data</strong> menu, you choose the dataset you want to use.</p>
+<h3 id="nodes">Nodes</h3>
+<p>The <strong>Nodes</strong> menu allows to customize the two types of nodes in your visualization.<br>It is possible to modify the color and the icon representing your nodes.</p>
+<p>You can customize the spacing of the nodes, sum or count the rows, the minimum and maximum size of the nodes as well as the size of the font of the nodes.</p>
+<h3 id="links">Links</h3>
+<p>The <strong>Links</strong> menu allows you to configure the size, minimum and maximum size of links. The thickness of the links corresponds to the force between the different nodes.</p>
+<p>When you are satisfied with the preview click on <strong>Save</strong> to finalize your configuration.<br>You can add a description at the bottom of the page and make your application public.<br>You can consult it using the <strong>consult</strong> or <strong>full screen</strong> buttons.</p>
+</div></div></div></div><!----> <h3 class="text-h5 my-4 grey--text text--darken-3 section-title subsection-title">
+      7.7 - Charts
+    </h3> <div class="container doc-page"><div class="row"><div class="col"><!----> <div role="alert" class="v-alert v-sheet v-sheet--outlined theme--light v-alert--border v-alert--outlined v-alert--border-left warning--text"><div class="v-alert__wrapper"><i aria-hidden="true" class="v-icon notranslate v-alert__icon mdi mdi-exclamation theme--light warning--text"></i><div class="v-alert__content"></div><div class="v-alert__border v-alert__border--left"></div></div></div> <!----> <!----> <div cols="12" style="display:none"><p>The <strong>Charts</strong> visualization allows to compare several columns of your data with each other in different charts :</p>
+<ul>
+<li><strong>Histogram</strong>, chart in the form of vertical or horizontal columns, grouped or stacked.</li>
+<li><strong>Lines</strong>, chart as single lines or multiple lines.</li>
+<li><strong>Areas</strong>, chart in the form of areas and stacked areas.</li>
+<li><strong>Radar</strong>, spider web chart.</li>
+<li><strong>Pie</strong>, circle chart.</li>
+</ul>
+<p><img src="./images/user-guide-backoffice/Charts-Visu.jpg" alt="Différentes visualisations"></p>
+<p>In this visualization, you can aggregate the values of your data.<br>This visualization is a quite powerful, its configuration is more complex than other visualizations.</p>
+<h3 id="create-a-chart">Create a chart</h3>
+<p>To configure a <strong>Chart</strong> visualization, click on <strong>Visualizations</strong> in the navigation bar, then on <strong>Configure visualization</strong>.  </p>
+<ol>
+<li>Choose the application <strong>Chart</strong></li>
+<li>Enter the title of your visualization</li>
+</ol>
+<p>
+</p>
+
+<p>You are redirected to the configuration page of your application with its different sections:  </p>
+<ol>
+<li>Information</li>
+<li>Action buttons (full screen, integration on a site, capture, ...)</li>
+<li>Configuration menu</li>
+<li>Preview</li>
+</ol>
+<p><img src="./images/user-guide-backoffice/charts-config.jpg" alt="Page de configuration"></p>
+<p>The title of the visualization can be changed anytime.<br>The <strong>Informations</strong> section shows a summary of the characteristics of your application.</p>
+<h3 id="configuration-menu">Configuration Menu</h3>
+<p>The configuration menu contains five sub-menus: <strong>Data</strong>, <strong>Type</strong>, <strong>Preparation</strong>, <strong>Presentation</strong> and <strong>Navigation</strong>.</p>
+<h4 id="1data">1.Data</h4>
+<p>The <strong>Data</strong> menu allows to select the columns to display and to have the first preview of your chart.  </p>
+<p>The <strong>Data type</strong> parameter allows to choose how you will represent your data. A different menu is displaued depending on the option you selected.  </p>
+<ul>
+<li>Option 1: <strong>Read rows one by one</strong>, the values ​​of your data are read directly from a column of your dataset.</li>
+<li>Option 2: <strong>Group the rows and count them</strong>, the rows of the dataset are grouped according to one or two criterias and the displayed values ​​represent the sum of rows for each group.</li>
+<li>Option 3: <strong>Group the rows and aggregate</strong>, the rows of the dataset are grouped according to one or two criterias and the displayed values ​​are the results of a calculation on a numerical column (sum, average, etc ...) that you choose.</li>
+</ul>
+<p>
+</p>
+
+<ol>
+<li><strong>Read rows one by one</strong> :</li>
+</ol>
+<ul>
+<li><strong>Values ​column</strong> corresponds to the values re​​presented on the Y-Axis.</li>
+<li><strong>Columns of labels</strong> corresponds to the values represented on the X-Axis, these values ​​can be sorted.</li>
+<li><strong>Sort by</strong> allows you to sort your values.</li>
+<li><strong>Sequence</strong> allows you to order to your sort.  </li>
+<li><strong>Maximum number of lines</strong> allows to limit the number of elements in the legend.</li>
+</ul>
+<p>
+</p>
+
+<ol start="2">
+<li><strong>Group the rows and count them</strong> :<br>This option allows to group rows and count them on two levels. The first level corresponds to the value on the X-Axis, the second level corresponds to the legend.  </li>
+</ol>
+<p><strong>1st level</strong> on the X-axis:  </p>
+<ul>
+<li><strong>Group by</strong>, define the method to group the values. The graph will be able to read the <strong>exact values ​​of a column</strong>, define <strong>intervals of a date type column</strong>, define <strong>intervals of a numeric column</strong></li>
+<li><strong>Group according to this column</strong> define the column you want to use on the X-axis.</li>
+<li><strong>Sort by</strong> allows to choose a sorting method</li>
+</ul>
+<p><strong>2nd level</strong> in legend: This group level is optional, it allows to separate the values even more​. For example it's possible to separate a line into several lines or delimit different sections on a bar in a histogram.</p>
+<p>
+</p>
+
+<ol start="3">
+<li><strong>Group the rows and aggregate</strong> :</li>
+</ol>
+<ul>
+<li><strong>Group by</strong>, allows to define the method to group the values. The chart can read the <strong>exact values ​​of a column</strong>, set the <strong>intervals of a date type column</strong> or define <strong>intervals of a numeric column</strong>.  </li>
+<li><strong>Group according to this column</strong> allows to define the column you want to use on the X-axis.</li>
+<li><strong>Sort by</strong> allows to choose a sorting method.</li>
+<li><strong>Aggregate</strong> options: average, minimum value, maximum value, sum</li>
+<li><strong>Values column</strong> allows to choose the column for the aggregation.</li>
+</ul>
+<h4 id="2presentation">2.Presentation</h4>
+<p>This section allows you to choose a color palette to use on your application.</p>
+<h4 id="3navigation">3.Navigation</h4>
+<p>This section allows to define different types of interactive filters. The visualization with an interactive filter will be modified according to the values ​​provided in the filters by the visitor.</p>
+<p>When you are satisfied with the preview click on <strong>Save</strong> to finalize your configuration.<br>You can add a description at the bottom of the page and make your application public.<br>You can consult it using the <strong>consult</strong> or <strong>full screen</strong> buttons.</p>
+</div></div></div></div><!----> <h3 class="text-h5 my-4 grey--text text--darken-3 section-title subsection-title">
+      7.8 - Periodic series
+    </h3> <div class="container doc-page"><div class="row"><div class="col"><!----> <div role="alert" class="v-alert v-sheet v-sheet--outlined theme--light v-alert--border v-alert--outlined v-alert--border-left warning--text"><div class="v-alert__wrapper"><i aria-hidden="true" class="v-icon notranslate v-alert__icon mdi mdi-exclamation theme--light warning--text"></i><div class="v-alert__content"></div><div class="v-alert__border v-alert__border--left"></div></div></div> <!----> <!----> <div cols="12" style="display:none"><p>The <strong>Periodic series</strong> visualization is used to visualize a series of data to compare its evolution over time over a period.<br>You have an example of this visualization on the <a href="https://opendata.koumoul.com/reuses/variation-de-temperature-comparaison-climat-oceanique-et-continental">temperature variation and comparison between oceanic / continental climate</a>.</p>
+<h3 id="create-your-graph">Create your graph</h3>
+<p>Click on <strong>Visualizations</strong> then on <strong>Configure a visualization</strong>.</p>
+<ol>
+<li>Choose the application <strong>Periodic series</strong></li>
+<li>Enter the title of the visualization</li>
+</ol>
+<p>
+</p>
+
+<p>You are redirected to the configuration page of your application with its different sections:  </p>
+<ol>
+<li>Information</li>
+<li>Action buttons (full screen, integration on a site, capture, ...)</li>
+<li>Configuration menu</li>
+<li>Preview</li>
+</ol>
+<p><img src="./images/user-guide-backoffice/periodic-config.jpg" alt="Page de configuration"></p>
+<p>The title of the visualization can be changed anytime.<br>The <strong>Informations</strong> section shows a summary of the characteristics of your application.</p>
+<h3 id="configuration-menu">Configuration menu</h3>
+<p>The configuration menu contains two submenus: <strong>Data</strong> and <strong>Render</strong>.  </p>
+<h4 id="1data">1.Data</h4>
+<p>In the <strong>Data</strong> menu, you choose the data set you want to use.<br><strong>Filters</strong> are used to restrict the data displayed in the application.<br>You can <strong>Restrict to Values</strong> from a column, <strong>Restrict Range of Values</strong> from a column, or <strong>Exclude Values</strong> from a column.</p>
+<p>The <strong>Measurement</strong> allows to choose the column of values you want to represent.
+The <strong>Metric</strong> allows to perform a calculation on your data according to the period you have chosen.
+The <strong>Category</strong> allows to choose a column to filter the <strong>Mesurement</strong> values of your visualization.
+The <strong>Transform the value</strong> section allows to perform a calculation in the form of a formula on all the values.</p>
+<h4 id="2render">2.Render</h4>
+<p>In the <strong>Render</strong> menu , you choose the period of the graph and the unit of the graph.</p>
+<p>When you are satisfied with the preview click on <strong>Save</strong> to finalize your configuration.<br>You can add a description at the bottom of the page and make your application public.<br>You can consult it using the <strong>consult</strong> or <strong>full screen</strong> buttons.</p>
+</div></div></div></div><!----> <h3 class="text-h5 my-4 grey--text text--darken-3 section-title subsection-title">
+      8.1 - Cards and list
+    </h3> <div class="container doc-page"><div class="row"><div class="col"><!----> <div role="alert" class="v-alert v-sheet v-sheet--outlined theme--light v-alert--border v-alert--outlined v-alert--border-left warning--text"><div class="v-alert__wrapper"><i aria-hidden="true" class="v-icon notranslate v-alert__icon mdi mdi-exclamation theme--light warning--text"></i><div class="v-alert__content"></div><div class="v-alert__border v-alert__border--left"></div></div></div> <!----> <!----> <div cols="12" style="display:none"><p>The <strong>Cards and list</strong> visualization allows to filter, search and explore each of the rows of your data. It can for example be used to embed a search engine for your data on a site. The results are presented in the form of cards which may contain images.</p>
+<h3 id="create-a-cards-and-list-visualization">Create a Cards and list visualization</h3>
+<p>Click on <strong>Visualizations</strong> then on <strong>Configure a visualization</strong>.</p>
+<ol>
+<li>Choose the application <strong>Cards and list</strong></li>
+<li>Enter the title of the visualization</li>
+</ol>
+<p>
+</p>
+
+<p>You are redirected to the configuration page of your application with its different sections:  </p>
+<ol>
+<li>Information</li>
+<li>Action buttons (full screen, integration on a site, capture, ...)</li>
+<li>Configuration menu</li>
+<li>Preview</li>
+</ol>
+<p><img src="./images/user-guide-backoffice/liste-et-fiches-config.jpg" alt="Page de configuration"></p>
+<p>The title of the visualization can be changed anytime.<br>The <strong>Informations</strong> section shows a summary of the characteristics of your application.</p>
+<h3 id="configuration-menu">Configuration menu</h3>
+<p>The configuration menu contains five sub-menus: <strong>Data</strong>, <strong>Thumbnail</strong>, <strong>Detailed card</strong>, <strong>Navigation</strong> and <strong>Display</strong>.</p>
+<h4 id="1data">1.Data</h4>
+<p>The <strong>Data</strong> submenu allows to choose a dataset and define <strong>Predefined filters</strong>. <strong>Predefined filters</strong> restrict the data displayed in the application. You can <strong>Restrict to Values</strong> from a column, <strong>Restrict to Range of Values</strong> from a column, or <strong>Exclude Values​​</strong> from a column.  </p>
+<h4 id="2thumbnail">2.Thumbnail</h4>
+<p>The <strong>Thumbnail</strong> sub-menu allows to choose the different fields displayed in the cards. If your dataset you contains the <a href="./user-guide-backoffice/concept">concepts</a> <strong>Label</strong>, <strong>Image</strong> and <strong>Description</strong>, the application <strong>List and Forms</strong> will automatically display them in the cards.</p>
+<h4 id="3detailed-card">3.Detailed card</h4>
+<p>The <strong>Detailed card</strong> sub-menu allows to activate the detailed cards. When the option <strong>Activate detailed cards</strong> is selected, the cards become clickable and will display a larger and more detailed card according to the fields that you choose.</p>
+<h4 id="4navigation">4.Navigation</h4>
+<p>The <strong>Navigation</strong> sub-menu is used to manage the filters of your visualization. With filtering and sorting options, users will be able to explore your dataset smoothly.</p>
+<h4 id="5display">5.Display</h4>
+<p>The <strong>Display</strong> submenu allows to choose the rendering of the image on the thumbnail. The image can be displayed as a banner, logo or not displayed.</p>
+<p>When you are satisfied with the preview click on <strong>Save</strong> to finalize your configuration.<br>You can add a description at the bottom of the page and make your application public.<br>You can consult it using the <strong>consult</strong> or <strong>full screen</strong> buttons.</p>
+</div></div></div></div><!----> <h3 class="text-h5 my-4 grey--text text--darken-3 section-title subsection-title">
+      8.2 - Word clouds
+    </h3> <div class="container doc-page"><div class="row"><div class="col"><!----> <div role="alert" class="v-alert v-sheet v-sheet--outlined theme--light v-alert--border v-alert--outlined v-alert--border-left warning--text"><div class="v-alert__wrapper"><i aria-hidden="true" class="v-icon notranslate v-alert__icon mdi mdi-exclamation theme--light warning--text"></i><div class="v-alert__content"></div><div class="v-alert__border v-alert__border--left"></div></div></div> <!----> <!----> <div cols="12" style="display:none"><p>The <strong>Word Clouds</strong> visualization allows to generate word clouds containing textual data.<br>You have an example of this visualization on our <a href="https://opendata.koumoul.com/reuses/prenom-par-annee">cloud of most popular names in 1900</a>. The number of births is available by hovering over a first name.</p>
+<p>To set up a <strong>Word Clouds</strong> visualization, choose the active account you want to work on. Your active account contains at least one dataset with textual data.</p>
+<h2 id="create-your-word-clouds">Create your Word Clouds</h2>
+<p>Click on <strong>Visualizations</strong> then on <strong>Configure a visualization</strong>.</p>
+<ol>
+<li>Choose the application <strong>Word Clouds</strong></li>
+<li>Enter the title of the visualization</li>
+</ol>
+<p>
+</p>
+
+<p>You are redirected to the configuration page of your application with its different sections:  </p>
+<ol>
+<li>Information</li>
+<li>Action buttons (full screen, integration on a site, capture, ...)</li>
+<li>Configuration menu</li>
+<li>Preview</li>
+</ol>
+<p><img src="./images/user-guide-backoffice/nuages-config.jpg" alt="Page de configuration"></p>
+<p>The title of the visualization can be changed anytime.<br>The <strong>Informations</strong> section shows a summary of the characteristics of your application.</p>
+<h2 id="configuration-menu">Configuration menu</h2>
+<p>The configuration menu contains three submenus: <strong>Data</strong>, <strong>Preperation</strong> and <strong>Presentation</strong>.  </p>
+<h3 id="data">Data</h3>
+<p>In the <strong>Data</strong> menu, you can choose the dataset you want to use.<br><strong>Filters</strong> are used to restrict the data displayed in the application.<br>You can <strong>Restrict to Values</strong> from a column, <strong>Restrict to Range of Values​​</strong> from a column, or <strong>Exclude Values</strong> from a column.</p>
+<h3 id="preperation">Preperation</h3>
+<p>In the <strong>Preperation</strong> menu, <strong>Text fields</strong> allows you to select the column you want to use in your word cloud.<br><strong>Calculation</strong> allows to classify your text by the most significant words, by frequency or by a value from another column.</p>
+<h3 id="presentation">Presentation</h3>
+<p>The <strong>Presentation</strong> menu allows to customize your word cloud.<br>The <strong>Palette</strong> allows to choose a set of colors that will be associated with the values ​​of your data.<br>The <strong>Interactive filter</strong> makes the words clickable, a new word cloud will be created in relation to the word on which you clicked.<br>The <strong>other rendering options</strong> allos to choose the maximum number of words, the font, the minimum and maximum size of a word, the progression of the size of the words, the directions of rotation of the words and the spiral type of words.</p>
+<p>When you are satisfied with the preview click on <strong>Save</strong> to finalize your configuration.<br>You can add a description at the bottom of the page and make your application public.<br>You can consult it using the <strong>consult</strong> or <strong>full screen</strong> buttons.</p>
+</div></div></div></div><div class="page-break"></div> <h2 class="text-h4 my-4 grey--text text--darken-3 section-title">
+      9 - Textual visualizations
+    </h2> <div class="container doc-page"><div class="row"><div class="col"><!----> <div role="alert" class="v-alert v-sheet v-sheet--outlined theme--light v-alert--border v-alert--outlined v-alert--border-left warning--text"><div class="v-alert__wrapper"><i aria-hidden="true" class="v-icon notranslate v-alert__icon mdi mdi-exclamation theme--light warning--text"></i><div class="v-alert__content"></div><div class="v-alert__border v-alert__border--left"></div></div></div> <!----> <!----> <div cols="12" style="display:none"><p>Textual visualizations can represent the majority of your data.</p>
+<p><img src="./images/user-guide-backoffice/visu-text.jpg" alt="Visualisations texte"></p>
+<ul>
+<li><a href="./user-guide-backoffice/liste-fiches">List and Cards</a> allows to create a search engine to explore your data. <a href="https://opendata.koumoul.com/reuses/liste-des-etablissements-de-l'education-en-france">List of educational establishments in France</a></li>
+<li><a href="./user-guide-backoffice/word-cloud">Word clouds</a> allows you to generate a word cloud with your data. <a href="https://opendata.koumoul.com/reuses/prenom-par-annee">French first names proportions in 1900</a></li>
+</ul>
+</div></div></div></div><div class="page-break"></div> <h2 class="text-h4 my-4 grey--text text--darken-3 section-title">
+      9 - Gamification
+    </h2> <div class="container doc-page"><div class="row"><div class="col"><!----> <div role="alert" class="v-alert v-sheet v-sheet--outlined theme--light v-alert--border v-alert--outlined v-alert--border-left warning--text"><div class="v-alert__wrapper"><i aria-hidden="true" class="v-icon notranslate v-alert__icon mdi mdi-exclamation theme--light warning--text"></i><div class="v-alert__content"></div><div class="v-alert__border v-alert__border--left"></div></div></div> <!----> <!----> <div cols="12" style="display:none"><p>Game visualizations present your data in mini-games. Gamification challenge your visitors, they will be able to test their knowledge and learn about your data.</p>
+<p><img src="./images/user-guide-backoffice/visu-jeu.jpg" alt="Visualisations texte"></p>
+<ul>
+<li><a href="./user-guide-backoffice/game-quizz">Quiz</a> : allows to create a quiz in which you need to match the labels to images or descriptions. <a href="https://opendata.koumoul.com/reuses/quizz-fete-de-la-science-2019">French Science Day 2019</a></li>
+<li><a href="./user-guide-backoffice/game-localisation">Location game</a> : allows to create a blind map to locate geographic points of your data. <a href="https://opendata.koumoul.com/reuses/localisez-les-capitales-du-monde">Locate the capitals of the world</a></li>
+<li><a href="./user-guide-backoffice/game-sort">Sort game</a> : allows to create a numeric sorting game based on your data to get a score. <a href="https://opendata.koumoul.com/reuses/classez-les-meilleurs-buteurs-de-l'euro">Rank the top scorers of the Euro</a>.</li>
+</ul>
+</div></div></div></div><!----> <h3 class="text-h5 my-4 grey--text text--darken-3 section-title subsection-title">
+      9.1 - Quiz game
+    </h3> <div class="container doc-page"><div class="row"><div class="col"><!----> <div role="alert" class="v-alert v-sheet v-sheet--outlined theme--light v-alert--border v-alert--outlined v-alert--border-left warning--text"><div class="v-alert__wrapper"><i aria-hidden="true" class="v-icon notranslate v-alert__icon mdi mdi-exclamation theme--light warning--text"></i><div class="v-alert__content"></div><div class="v-alert__border v-alert__border--left"></div></div></div> <!----> <!----> <div cols="12" style="display:none"><p>The <strong>Quiz Game</strong> visualization allows to create a game in which labels are matched to descriptions or images.
+An example of this game is the <a href="https://opendata.koumoul.com/reuses/quizz-fete-de-la-science-2019">quiz on the 2019 science festival</a>.  
+A score is awarded to the player based on the number of correct answers and the time spent answering the questions.</p>
+<h3 id="quiz-game">Quiz game</h3>
+<p>Click on <strong>Visualizations</strong> then on <strong>Configure a visualization</strong>.</p>
+<ol>
+<li>Choose the application <strong>Quiz game</strong></li>
+<li>Enter the title of the visualization</li>
+</ol>
+<p>
+</p>
+
+<p>You are redirected to the configuration page of your application with its different sections:  </p>
+<ol>
+<li>Information</li>
+<li>Action buttons (full screen, integration on a site, capture, ...)</li>
+<li>Configuration menu</li>
+<li>Preview</li>
+</ol>
+<p><img src="./images/user-guide-backoffice/quizz-config.jpg" alt="Page de configuration"></p>
+<p>The title of the visualization can be changed anytime.<br>The <strong>Informations</strong> section shows a summary of the characteristics of your application.</p>
+<h3 id="configuration-menu">Configuration menu</h3>
+<p>The configuration menu contains two submenus: <strong>Data</strong> and <strong>Presentation</strong>.</p>
+<h3 id="1data">1.Data</h3>
+<p>In the <strong>Data</strong> menu, you choose the dataset you want to use.</p>
+<p>The <strong>Label field</strong> allows to choose the column of your labels.<br>The <strong>Description, image, or question field</strong> allows  to select the column of items to find.<br>The <strong>Elements number</strong> allows to choose the number of questions the visitors will have to answer before obtaining their score.<br>The <strong>Choices  Number</strong> is used to define the number of possible answers for a question.<br>The <strong>Transform the value</strong> section allows to perform a calculation in the form of a formula on all the values.<br>The <strong>minimum label length</strong> allows to filter the <strong>Description, image, or question field</strong> to have understandable descriptions or questions displayed.</p>
+<p><strong>Filters</strong> are used to restrict the data displayed in the application.<br>You can <strong>Restrict to Values</strong> from a column, <strong>Restrict to Range of Values​​</strong> from a column, or <strong>Exclude Values​​</strong> from a column</p>
+<h3 id="2presentation">2.Presentation</h3>
+<p>In the <strong>Presentation</strong> menu, you define the overall description of your game and you can select a presentation image of the game if you have added an image as an attachment to your data.  </p>
+<p>When you are satisfied with the preview click on <strong>Save</strong> to finalize your configuration.<br>You can add a description at the bottom of the page and make your application public.<br>You can consult it using the <strong>consult</strong> or <strong>full screen</strong> buttons.</p>
+</div></div></div></div><!----> <h3 class="text-h5 my-4 grey--text text--darken-3 section-title subsection-title">
+      9.2 - Localization game
+    </h3> <div class="container doc-page"><div class="row"><div class="col"><!----> <div role="alert" class="v-alert v-sheet v-sheet--outlined theme--light v-alert--border v-alert--outlined v-alert--border-left warning--text"><div class="v-alert__wrapper"><i aria-hidden="true" class="v-icon notranslate v-alert__icon mdi mdi-exclamation theme--light warning--text"></i><div class="v-alert__content"></div><div class="v-alert__border v-alert__border--left"></div></div></div> <!----> <!----> <div cols="12" style="display:none"><p>The <strong>Localization game</strong> allows to create a game on a blind map. You have an example of this visualization on the map of <a href="https://opendata.koumoul.com/reuses/localisez-les-capitales-du-monde">location of world capitals</a>.  
+A score is awarded to the player based on the distance from the correct answer and the time spent answering the questions.  </p>
+<h3 id="create-your-localization-game">Create your localization game</h3>
+<p>Click on <strong>Visualizations</strong> then on <strong>Configure a visualization</strong>.</p>
+<ol>
+<li>Choose the application <strong>Localization game</strong></li>
+<li>Enter the title of the visualization</li>
+</ol>
+<p>
+</p>
+
+<p>You are redirected to the configuration page of your application with its different sections:  </p>
+<ol>
+<li>Information</li>
+<li>Action buttons (full screen, integration on a site, capture, ...)</li>
+<li>Configuration menu</li>
+<li>Preview</li>
+</ol>
+<p><img src="./images/user-guide-backoffice/localisation-config.jpg" alt="Page de configuration"></p>
+<p>The title of the visualization can be changed anytime.<br>The <strong>Informations</strong> section shows a summary of the characteristics of your application.</p>
+<h3 id="configuration-menu">Configuration menu</h3>
+<p>The configuration menu contains three submenus: <strong>Data</strong>, <strong>Render</strong> and <strong>Presentation</strong>.</p>
+<h4 id="1data">1.Data</h4>
+<p>In the <strong>Data</strong> menu, you choose the dataset you want to use.  </p>
+<p><strong>Filters</strong> are used to restrict the data displayed in the application.<br>You can <strong>Restrict to Values</strong> from a column, <strong>Restrict to Range of Values​​</strong> from a column, or <strong>Exclude Values​​</strong> from a column.</p>
+<p>The <strong>Number of elements</strong> defines the number of points to find on the map.</p>
+<h4 id="2render">2.Render</h4>
+<p>The <strong>Render</strong> menu allows you to choose the style of your map, the default markers icon, the size of the icons and the initial position of the map.</p>
+<h4 id="3presentation">3.Presentation</h4>
+<p>In the <strong>Presentation</strong> menu, you define the overall description of your game and you can select a presentation image of the game if you have added an image as an attachment.</p>
+<p>When you are satisfied with the preview click on <strong>Save</strong> to finalize your configuration.<br>You can add a description at the bottom of the page and make your application public.<br>You can consult it using the <strong>consult</strong> or <strong>full screen</strong> buttons.</p>
+</div></div></div></div><!----> <h3 class="text-h5 my-4 grey--text text--darken-3 section-title subsection-title">
+      9.3 - Sort game
+    </h3> <div class="container doc-page"><div class="row"><div class="col"><!----> <div role="alert" class="v-alert v-sheet v-sheet--outlined theme--light v-alert--border v-alert--outlined v-alert--border-left warning--text"><div class="v-alert__wrapper"><i aria-hidden="true" class="v-icon notranslate v-alert__icon mdi mdi-exclamation theme--light warning--text"></i><div class="v-alert__content"></div><div class="v-alert__border v-alert__border--left"></div></div></div> <!----> <!----> <div cols="12" style="display:none"><p>The <strong>Sort game</strong> allows to create a game of classification of your data according to a numerical value. An example is the <a href="https://opendata.koumoul.com/reuses/classez-les-meilleurs-buteurs-de-l'euro">ranking of the top scorers of the Euro</a>.  
+A score is assigned to the player based on the number of permutations and the time spent sorting the items.</p>
+<h3 id="create-your-sort-game">Create your Sort game</h3>
+<p>Click on <strong>Visualizations</strong> then on <strong>Configure a visualization</strong>.</p>
+<ol>
+<li>Choose the application <strong>Sort game</strong></li>
+<li>Enter the title of the visualization</li>
+</ol>
+<p>
+</p>
+
+<p>You are redirected to the configuration page of your application with its different sections:  </p>
+<ol>
+<li>Information</li>
+<li>Action buttons (full screen, integration on a site, capture, ...)</li>
+<li>Configuration menu</li>
+<li>Preview</li>
+</ol>
+<p><img src="./images/user-guide-backoffice/tri-config.jpg" alt="Page de configuration"></p>
+<p>The title of the visualization can be changed anytime.<br>The <strong>Informations</strong> section shows a summary of the characteristics of your application.</p>
+<h3 id="configuration-menu">Configuration menu</h3>
+<p>The configuration menu contains two submenus: <strong>Data</strong> and <strong>Presentation</strong>.</p>
+<h4 id="1data">1.Data</h4>
+<p>In the <strong>Data</strong> menu, you choose the dataset you want to use.</p>
+<p>The <strong>Label field</strong> is used to define the column containing the values ​​to be sorted.<br>The <strong>Comparaison value field</strong> is used to define the column containing the numerical values.<br>The <strong>Game Mode</strong> allows to choose your game mode <strong>number of distant elements as much as possible</strong> or <strong>one element of each value</strong>.  </p>
+<p><strong>Filters</strong> are used to restrict the data displayed in the application.<br>You can <strong>Restrict to Values</strong> from a column, <strong>Restrict to Range of Values​​</strong> from a column, or <strong>Exclude Values​​</strong> from a column.  </p>
+<h4 id="2presentation">2.Presentation</h4>
+<p>In the <strong>Presentation</strong> menu, you define the overall description of your game. You can select an image for the game if you have added an image as an attachment on your dataset.</p>
+<p>When you are satisfied with the preview click on <strong>Save</strong> to finalize your configuration.<br>You can add a description at the bottom of the page and make your application public.<br>You can consult it using the <strong>consult</strong> or <strong>full screen</strong> buttons.</p>
+</div></div></div></div><div class="page-break"></div> <h2 class="text-h4 my-4 grey--text text--darken-3 section-title">
+      10 - Organization
+    </h2> <div class="container doc-page"><div class="row"><div class="col"><!----> <div role="alert" class="v-alert v-sheet v-sheet--outlined theme--light v-alert--border v-alert--outlined v-alert--border-left warning--text"><div class="v-alert__wrapper"><i aria-hidden="true" class="v-icon notranslate v-alert__icon mdi mdi-exclamation theme--light warning--text"></i><div class="v-alert__content"></div><div class="v-alert__border v-alert__border--left"></div></div></div> <!----> <!----> <div cols="12" style="display:none"><p>An organization account allows to work together on the same datasets and visualizations with various persons.<br>A personal account can create an organization.</p>
+<h3 id="create-an-organization">Create an organization</h3>
+<p>Organizations can be created in the <strong>My Account</strong> space of the the Data Fair menu.<br>Click on the <strong>Create an organization</strong> button and fill in the title and description of your organization, you will then be the administrator of this new organization.</p>
+<p>If you are an administrator of the organization, you can access <a href="./user-guide-backoffice/members">member management</a>. This allows you to invite members, define their roles, and remove members from your organization.</p>
+<h3 id="active-account">Active account</h3>
+<p>If you are a member of an organization, you have access to the organization workspace.</p>
+<p><img src="./images/user-guide-backoffice/organisation-menu.jpg" alt="Compte actif"></p>
+<p>On our capture, the <strong>personal account</strong> is active.
+If you click on <strong>Koumoul organization</strong>, the active account will be the Koumoul organization account and you will have access to all the datasets and visualizations of the <strong>Koumoul organization</strong>.</p>
+</div></div></div></div><!----> <h3 class="text-h5 my-4 grey--text text--darken-3 section-title subsection-title">
+      10.1 - Organization management
+    </h3> <div class="container doc-page"><div class="row"><div class="col"><!----> <div role="alert" class="v-alert v-sheet v-sheet--outlined theme--light v-alert--border v-alert--outlined v-alert--border-left warning--text"><div class="v-alert__wrapper"><i aria-hidden="true" class="v-icon notranslate v-alert__icon mdi mdi-exclamation theme--light warning--text"></i><div class="v-alert__content"></div><div class="v-alert__border v-alert__border--left"></div></div></div> <!----> <!----> <div cols="12" style="display:none"><p>As an administrator of your organization, the <strong>Organization management</strong> section is accessible in the Data Fair navigation bar.</p>
+<p>On this page, you can manage the different members of your organization:</p>
+<ul>
+<li>Invite new members with their email</li>
+<li>Change members roles</li>
+<li>Exclude members</li>
+</ul>
+<p><img src="./images/user-guide-backoffice/orga-membres.jpg" alt="Membres"><br><em>Manage the members of your organization</em></p>
+<p>Changing roles and removing a member can be accomplished through the action buttons on the member's row.</p>
+<h3 id="invitation">Invitation</h3>
+<p>To invite a member to your organization, all you need is their email.</p>
+<p><img src="./images/user-guide-backoffice/orga-invitation.jpg" alt="Invitation"><br><em>Invite members of your organization by email</em></p>
+<p>An invitation email is sent to their address.<br>The email contains a link to validate the account on the platform and be part of your organization.<br>Once logged in, the invited person will have access to the different pages of the organization according to the role you assigned them.</p>
+<h3 id="role">Role</h3>
+<p>An organization allows people to work together on different datasets and visualizations.</p>
+<p>Organizations follow this rules:</p>
+<ul>
+<li>Not all members of an organization have the same rights.</li>
+<li>Administrators of an organization can change the roles of different members of the organization.</li>
+<li>There are three different roles, user, contributor and administrator</li>
+</ul>
+<p>
+</p>
+
+<p>Each role has different permissions:</p>
+<div class="v-data-table v-data-table--dense theme--light"><div class="v-data-table__wrapper"><table>
+<thead>
+<tr>
+<th>Actions</th>
+<th>User</th>
+<th>Contributor</th>
+<th>Administrator</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Add a dataset</td>
+<td></td>
+<td>x</td>
+<td>x</td>
+</tr>
+<tr>
+<td>Read a dataset</td>
+<td>x</td>
+<td>x</td>
+<td>x</td>
+</tr>
+<tr>
+<td>Edit a dataset</td>
+<td></td>
+<td>x</td>
+<td>x</td>
+</tr>
+<tr>
+<td>Dataset administration</td>
+<td></td>
+<td></td>
+<td>x</td>
+</tr>
+<tr>
+<td>Add a visualization</td>
+<td></td>
+<td>x</td>
+<td>x</td>
+</tr>
+<tr>
+<td>Read a visualization</td>
+<td>x</td>
+<td>x</td>
+<td>x</td>
+</tr>
+<tr>
+<td>Edit a visualization</td>
+<td></td>
+<td>x</td>
+<td>x</td>
+</tr>
+<tr>
+<td>Visualization administration</td>
+<td></td>
+<td></td>
+<td>x</td>
+</tr>
+<tr>
+<td>Modify organization settings</td>
+<td></td>
+<td></td>
+<td>x</td>
+</tr>
+<tr>
+<td>Creation and modification of the portal</td>
+<td></td>
+<td></td>
+<td>x</td>
+</tr>
+</tbody></table></div></div>
+<p>Dataset or visualization administration is about deletion and visibility.<br>The administrator is the only one who can publish or delete a dataset or a visualization.</p>
+<p>If you need more permissions in your organizations, contact an administrator of the organization.</p>
+</div></div></div></div><div class="page-break"></div> <h2 class="text-h4 my-4 grey--text text--darken-3 section-title">
+      11 - Configure your data portal
+    </h2> <div class="container doc-page"><div class="row"><div class="col"><!----> <div role="alert" class="v-alert v-sheet v-sheet--outlined theme--light v-alert--border v-alert--outlined v-alert--border-left warning--text"><div class="v-alert__wrapper"><i aria-hidden="true" class="v-icon notranslate v-alert__icon mdi mdi-exclamation theme--light warning--text"></i><div class="v-alert__content"></div><div class="v-alert__border v-alert__border--left"></div></div></div> <!----> <!----> <div cols="12" style="display:none"><p>Data Fair allows to present your data in a portal.<br>It is possible to configure <strong>several portals</strong> for the same account.<br>Portals can be <strong>public</strong>, for open data, or <strong>private</strong> to share data internally.  </p>
+<p>The portal configuration page is accessible through the navigation bar. A list of your portals is available.
+You can <strong>create, delete, configure and duplicate</strong> your portals.</p>
+<p><img src="./images/user-guide-backoffice/portal-list.jpg" alt="Liste des portails"></p>
+<h2 id="configure-a-portal">Configure a portal</h2>
+<p>A portal can be created with the <strong>Create a new portal</strong> button.<br>A default configuration is available on your portal.</p>
+<p>When setting up your portal, you are working on a <strong>Draft</strong>. Once you are satisfied with your draft, you can save it to <strong>Current Version</strong>.
+The <strong>Current version</strong> is the version presented to the visitors of your portal.</p>
+<p>The <strong>portal configuration</strong> interface is divided into 5 parts:</p>
+<ol>
+<li>The configuration menu allows to modify the various parameters of your portal.</li>
+<li>Allows you to switch from draft to current version</li>
+<li>The preview allows you to view the draft or the current version of your portal.</li>
+<li>The <strong>Publish draft</strong> button allows you to switch your draft to the current version. The <strong>Reset</strong> button allows to return to the default configuration.</li>
+<li>Edit content pages, allows you to add new written page to your portal</li>
+</ol>
+<p><img src="./images/user-guide-backoffice/portal-config.jpg" alt="Configuration portail"><br><em>Customize your data portals, without code</em></p>
+<h2 id="configuration-menu">Configuration menu</h2>
+<h3 id="general">General</h3>
+<p>The <strong>General</strong> section allows you to customize the elements common to the different portal pages such as colors, logo, main image and favicon.<br>You can activate or remove the authentication for your portal (open data portal, public portal with certain data in private, private portal).  </p>
+<p>It is possible to add several links in the footer.</p>
+<h3 id="home-page">Home page</h3>
+<p>This section allows you to customize the home page.<br>The main image can be displayed as a banner and it is also possible to display a visualization as a banner.  </p>
+<p>An editorial text will be displayed by entering a <strong>description</strong>.  
+It is possible to display the <strong>key indicators</strong>, the <strong>thematics</strong> and to highlight a visualization on your home page.<br>You can also define the number of datasets and / or visualizations you want to highlight.  </p>
+<h3 id="content">Content</h3>
+<p>The <strong>content</strong> section allows to set the navigation mode on the dataset and visualization pages.<br>You can choose to have infinite scroll navigation or a pagination navigation.</p>
+<h3 id="communication--contact">Communication & contact</h3>
+<p>Allows to enter your website, twitter, Facebook, linkedin, youtube and instagram account.<br>By adding your contact email, the <strong>Contact</strong> page will be available in the navigation bar of your portal.</p>
+<h3 id="monitoring">Monitoring</h3>
+<p>The monitoring allows to configure the <strong>activity tracking</strong> used on your portal such as Matomo (Piwik) or Google Analytics.</p>
+<h3 id="technical-settings">Technical settings</h3>
+<p>The technical settings allow you to customize the portal header and footer a little more.<br>It is possible to modify these two sections with HTML and CSS code.</p>
+<h3 id="edit-content-pages">Edit content pages</h3>
+<p><a href="./user-guide-backoffice/content">Content pages</a> allow to create different types of pages: articles, thematic pages around several datasets, news pages, data storytelling, licenses, conditions of use, etc. and to give them even more context or create dashboards integrating different data.</p>
+<p>A page is created with 3 steps: First you choose the page template, then you fill in the different elements using a form adapted to the chosen page template with a preview of the result.<br>It is possible to prepare pages and publish them later.<br>In addition to entering free text, it is possible to integrate different types of elements: dataset table, visualizations, list of datasets, integration of external content, etc.  </p>
+<p><img src="./images/user-guide-backoffice/portal-contenu.jpg" alt="Configuration portail"><br><em>Customize your portal</em></p>
+<p>It's possible to chose the acces to the content pages of your portal. Links can be displayed on the navigation bar, or in a scroll menu.  </p>
+<p>Content pages can be public or private.</p>
+</div></div></div></div><!----> <h3 class="text-h5 my-4 grey--text text--darken-3 section-title subsection-title">
+      11.1 - Create content pages on your portal
+    </h3> <div class="container doc-page"><div class="row"><div class="col"><!----> <div role="alert" class="v-alert v-sheet v-sheet--outlined theme--light v-alert--border v-alert--outlined v-alert--border-left warning--text"><div class="v-alert__wrapper"><i aria-hidden="true" class="v-icon notranslate v-alert__icon mdi mdi-exclamation theme--light warning--text"></i><div class="v-alert__content"></div><div class="v-alert__border v-alert__border--left"></div></div></div> <!----> <!----> <div cols="12" style="display:none"><p>Content pages allow to highlight data, write articles, do data storytelling or even describe a license on your portal.  </p>
+<h3 id="create-a-content-page">Create a content page</h3>
+<p>The <strong>Portals</strong> section of Data Fair allows you to access the configuration of your portals. You can then access the editing of <strong>content pages</strong> using the <strong>Edit content pages</strong> button at the top right.</p>
+<p><img src="./images/user-guide-backoffice/page-contenu-1.jpg" alt="Configurer votre portail"></p>
+<p>Then click on the <strong>create a new content page</strong> button.</p>
+<p>A menu is displayed allowing you to enter the parameters of your page:</p>
+<ul>
+<li>Published or/and Public</li>
+<li>The template allows you to choose a predefined page layout.</li>
+<li>The position in the menu, in direct link or in a submenu</li>
+<li>The page title</li>
+<li>Thematics</li>
+</ul>
+<p><img src="./images/user-guide-backoffice/page-contenu-2.jpg" alt="Configurer votre portail"><br><em>Parameters of this menu can be modified later.</em></p>
+<p>On the image, the content page is called <strong>Land</strong>, has a <strong>thematic</strong> page template, a sub-menu layout and a <strong>Thematic</strong> as block name.</p>
+<p>The <strong>blank page</strong> template allows to add and arrange the elements freely.<br>The <strong>thematic page</strong> template allows to add description of the page and a banner.</p>
+<h3 id="configuration-of-your-thematic-page">Configuration of your thematic page</h3>
+<p>On the left side of the editing page is the editorial content.<br>On the right side of your page, there is a preview of your content page updated in real time.  </p>
+<p>The editing part allows to add elements and page blocks like a CMS.</p>
+<p>A block has different sections:</p>
+<ul>
+<li>The title</li>
+<li>General description</li>
+<li>The <strong>visualization</strong> you want to present</li>
+<li>The <strong>associated datasets</strong> which allow you to choose the datasets to highlight.</li>
+<li><strong>An accented text</strong> which allows to highlight an important text such as an information, a success, a warning or an error.</li>
+</ul>
+<p>You can use the following video as an example to complete your first block:  </p>
+<iframe width="560" height="315" sandbox="allow-same-origin allow-scripts allow-popups" src="https://videos.koumoul.com/videos/embed/954b9a9c-055d-4b39-a8c8-4bf61c44264f?loop=1&warningTitle=0" frameborder="0" allowfullscreen></iframe>
+
+
+<p>Once your block has been edited, click on the pencil to exit edit mode.<br>You can then create multiple custom blocks.  </p>
+<p>After adding different blocks, you can <strong>publish</strong> your page so that it is accessible to visitors to your portal.<br>For an opendata portal, your page must be public to be available to visitors of your portal.</p>
+</div></div></div></div><!----> <h3 class="text-h5 my-4 grey--text text--darken-3 section-title subsection-title">
+      11.2 - Analytics setup
+    </h3> <div class="container doc-page"><div class="row"><div class="col"><!----> <div role="alert" class="v-alert v-sheet v-sheet--outlined theme--light v-alert--border v-alert--outlined v-alert--border-left warning--text"><div class="v-alert__wrapper"><i aria-hidden="true" class="v-icon notranslate v-alert__icon mdi mdi-exclamation theme--light warning--text"></i><div class="v-alert__content"></div><div class="v-alert__border v-alert__border--left"></div></div></div> <!----> <!----> <div cols="12" style="display:none"><p>There are 2 steps in the  configuration of the user tracking system</p>
+<ol>
+<li>Choosing the monitoring system on the portal</li>
+<li>Event configuration</li>
+</ol>
+<p>You can choose between three different tracking systems, Matotmo, Google Analytics Universal Analytics (old version of GA) and Google Analytics 4 (new version of GA).</p>
+<h3 id="matomo-configuration">Matomo configuration</h3>
+<p>After creating the web site on Matoto, it will provide <strong>tracker url</strong> and <strong>th site id</strong> of your portal. You can then enter these codes on the configuration of your portal.</p>
+<h3 id="google-analytics-ua-old-tracking-system">Google Analytics UA (old tracking system)</h3>
+<p>For Google Analytics Universal Analytics you will need the <strong>Tracking ID</strong> which you can find after creating your property on Google Analytics: <strong>Administration</strong>> <strong>Property Settings</strong>> <strong>Tracking ID</strong> .<br>The tracking ID is a code starting with UA- *</p>
+<p>You can then enter this code on the configuration of your portal.</p>
+<p><img src="./images/user-guide-backoffice/config-GA-1.jpg" alt="Configuration"></p>
+<h3 id="google-analytics-4-new-tracking-system">Google Analytics 4 (new tracking system)</h3>
+<p>For Google Analytics Universal Analytics you will need the <strong>MEASURE ID</strong> which you can find after creating your property on Google Analytics: <strong>Administration</strong>> <strong>Property settings</strong>> <strong>Data feed</strong> > Add or click on data feed> <strong>MEASUREMENT ID</strong>.  
+The measure ID is a code starting with G- *.</p>
+<p>You can then enter this code on the configuration of your portal.</p>
+<p><img src="./images/user-guide-backoffice/config-GA4.jpg" alt="Configuration"></p>
+<h3 id="event-configuration">Event configuration</h3>
+<p>The event configuration is available in the Data Fair settings in the <strong>Webhooks</strong> category.</p>
+<p>You can select which events you want to track in your analytics:</p>
+<ul>
+<li>A new dataset has been created</li>
+<li>A dataset has encountered an error</li>
+<li>A dataset has been finalized and uploaded</li>
+<li>A dataset has been published to a catalog</li>
+<li>A new reuse has been created</li>
+<li>A reuse encountered an error</li>
+<li>A reuse has been published in a catalog</li>
+<li>The file of a dataset has been updated</li>
+</ul>
+<p><img src="./images/user-guide-backoffice/config-GA-2.jpg" alt="Configuration"></p>
+</div></div></div></div><div class="page-break"></div> <h2 class="text-h4 my-4 grey--text text--darken-3 section-title">
+      12 - Account settings
+    </h2> <div class="container doc-page"><div class="row"><div class="col"><!----> <div role="alert" class="v-alert v-sheet v-sheet--outlined theme--light v-alert--border v-alert--outlined v-alert--border-left warning--text"><div class="v-alert__wrapper"><i aria-hidden="true" class="v-icon notranslate v-alert__icon mdi mdi-exclamation theme--light warning--text"></i><div class="v-alert__content"></div><div class="v-alert__border v-alert__border--left"></div></div></div> <!----> <!----> <div cols="12" style="display:none"><p>Account settings are accessible from the navigation bar.</p>
+<p>Sections in the account settings:</p>
+<ul>
+<li><a href="./user-guide-backoffice/licences-thematics">Licenses and thematics</a></li>
+<li><a href="./user-guide-backoffice/api">API</a></li>
+<li><a href="./user-guide-backoffice/webhooks">Webhooks</a>  </li>
+</ul>
+</div></div></div></div><!----> <h3 class="text-h5 my-4 grey--text text--darken-3 section-title subsection-title">
+      12.1 - Licenses and thematics
+    </h3> <div class="container doc-page"><div class="row"><div class="col"><!----> <div role="alert" class="v-alert v-sheet v-sheet--outlined theme--light v-alert--border v-alert--outlined v-alert--border-left warning--text"><div class="v-alert__wrapper"><i aria-hidden="true" class="v-icon notranslate v-alert__icon mdi mdi-exclamation theme--light warning--text"></i><div class="v-alert__content"></div><div class="v-alert__border v-alert__border--left"></div></div></div> <!----> <!----> <div cols="12" style="display:none"><p>On the settings page you will find the <strong>Licenses</strong> and <strong>Themes</strong> sections.</p>
+<p>Data can manage licenses and thematics lists for your data.</p>
+<p>A license is referenced by its name and the address of a page that describes the content of that license.<br>A theme is defined by its name and color.</p>
+<p><img src="./images/user-guide-backoffice/licence-thematics.jpg" alt="Licences"><br><em>Add new licenses and themes easily</em></p>
+<p>The licenses and thematics added to your configuration can then be assigned to the data.<br>The licenses and thematis will be available on your portal.</p>
+</div></div></div></div><!----> <h3 class="text-h5 my-4 grey--text text--darken-3 section-title subsection-title">
+      12.2 - API
+    </h3> <div class="container doc-page"><div class="row"><div class="col"><!----> <div role="alert" class="v-alert v-sheet v-sheet--outlined theme--light v-alert--border v-alert--outlined v-alert--border-left warning--text"><div class="v-alert__wrapper"><i aria-hidden="true" class="v-icon notranslate v-alert__icon mdi mdi-exclamation theme--light warning--text"></i><div class="v-alert__content"></div><div class="v-alert__border v-alert__border--left"></div></div></div> <!----> <!----> <div cols="12" style="display:none"><p>On the settings page you will find the <strong>API Keys</strong> section.</p>
+<p>API keys allow to use your account's global API for managing datasets, visualizations, catalogs or retrieving statistical informations.</p>
+<p>You can create multiple different API keys.<br>Each key has its own label which allows them to be differentiated.</p>
+<p><img src="./images/user-guide-backoffice/api-edit.jpg" alt="API-edition"><br><em>Access your API</em></p>
+<p>You can edit or delete your keys.<br>Help is available with the <strong>How to use this key</strong> button.</p>
+</div></div></div></div><!----> <h3 class="text-h5 my-4 grey--text text--darken-3 section-title subsection-title">
+      12.3 - Webhooks
+    </h3> <div class="container doc-page"><div class="row"><div class="col"><!----> <div role="alert" class="v-alert v-sheet v-sheet--outlined theme--light v-alert--border v-alert--outlined v-alert--border-left warning--text"><div class="v-alert__wrapper"><i aria-hidden="true" class="v-icon notranslate v-alert__icon mdi mdi-exclamation theme--light warning--text"></i><div class="v-alert__content"></div><div class="v-alert__border v-alert__border--left"></div></div></div> <!----> <!----> <div cols="12" style="display:none"><p><strong>Webhooks</strong> are used to synchronize computer systems. It is possible to send messages during updates on data for example.</p>
+<p>List of triggering events:</p>
+<ul>
+<li>Creation of a dataset</li>
+<li>Errors on a dataset</li>
+<li>Finalization of a dataset</li>
+<li>Publication of a dataset in a catalog</li>
+<li>Downloading a dataset</li>
+<li>Creation of a visualization</li>
+<li>Error on a visualization</li>
+<li>Publication of a visualization in a catalog</li>
+</ul>
+<h3 id="configure-the-event-tracking-for-google-analytics">Configure the event tracking for Google Analytics</h3>
+<p>To configure event tracking for Google Analytics, you will need a <a href="https://support.google.com/analytics/answer/1008015?hl=fr">Google Analytics account</a>
+with a configured property and a UA-XXXXXXXX-X number configured for your site.</p>
+<p>Once you configured your Google Analytics account and got your UA-XXXXXXXX-X number, you can use it on the <strong>Webhooks</strong> section of your Data Fair account.</p>
+<p>When you are on the settings page, you can add an 'External calls' using the <strong>+</strong> button.<br>A window appears to configure your call.<br>Fill in the title, the trigger events you want to track from the list, then choose <strong>Google Analytics</strong> as the target type.<br>In the Tracker ID section, enter your UA-XXXXXXXX-X number.</p>
+<p>Once your webhook is validated, you will have a rendering like this:</p>
+<p><img src="./images/user-guide-backoffice/web-2-identifiant.jpg" alt="webhook"><br><em>Koumoul webhook for Google Analytics configured</em></p>
+<p>If you have correctly configured your calls, you will be able to view the number of events by type that the users of your portal have carried out in the <strong>Behavior</strong>> <strong>Events</strong>> <strong>Main events</strong> section of your account Google Analytics.</p>
+<p><img src="./images/user-guide-backoffice/web-3-events.jpg" alt="webhook"></p>
+<p>To obtain the details of the downloads, click on <strong>Event action</strong> for the type of events <strong>dataset</strong>.</p>
+<p><img src="./images/user-guide-backoffice/web-4-liste-events.jpg" alt="webhook"></p>
+</div></div></div></div><div class="page-break"></div> <h2 class="text-h4 my-4 grey--text text--darken-3 section-title">
+      13 - Catalogs
+    </h2> <div class="container doc-page"><div class="row"><div class="col"><!----> <div role="alert" class="v-alert v-sheet v-sheet--outlined theme--light v-alert--border v-alert--outlined v-alert--border-left warning--text"><div class="v-alert__wrapper"><i aria-hidden="true" class="v-icon notranslate v-alert__icon mdi mdi-exclamation theme--light warning--text"></i><div class="v-alert__content"></div><div class="v-alert__border v-alert__border--left"></div></div></div> <!----> <!----> <div cols="12" style="display:none"><p>Connectors allow you to interact, read and write, with other platforms or data services.</p>
+<p>With the writing interaction, metadata is pushed into other catalogs.<br>An example of a catalog is the French National Open Data Catalog <a href="https://www.data.gouv.fr/fr/">data.gouv.fr</a> : datasets published with Data Fair can be <strong>automatically synchronized</strong> and any metadata changes on Data Fair are propagated to the remote catalog.</p>
+<p>With the reading interaction, connectors are harvesters of metadata and data.<br>It is  possible, for each connector, to configure the collection frequencies and the types of sources to harvest.</p>
+<p><img src="./images/user-guide-backoffice/catalogue-data-gouv.jpg" alt="Catalogue"><br><em>Configure catalogs and your data will be accessible from other platforms</em></p>
+</div></div></div></div><div class="page-break"></div> <h2 class="text-h4 my-4 grey--text text--darken-3 section-title">
+      14 - Periodic processings
+    </h2> <div class="container doc-page"><div class="row"><div class="col"><!----> <div role="alert" class="v-alert v-sheet v-sheet--outlined theme--light v-alert--border v-alert--outlined v-alert--border-left warning--text"><div class="v-alert__wrapper"><i aria-hidden="true" class="v-icon notranslate v-alert__icon mdi mdi-exclamation theme--light warning--text"></i><div class="v-alert__content"></div><div class="v-alert__border v-alert__border--left"></div></div></div> <!----> <!----> <div cols="12" style="display:none"><p><strong>Periodic processing</strong> allows to fetch data, transform it and publish it on the platform.<br>They can be used for <strong>automatic data update</strong> on regular intervals.</p>
+<p>Periodic processing differs from <a href="./user-guide-backoffice/catalogues">catalog connectors</a> on several points:</p>
+<ul>
+<li>Processing are limited to a small set of input and output sources. Typically, it can retrieve data in one place, metadata in another, and dump the data into a Data Fair source.</li>
+<li><strong>Collection frequencies can be higher</strong>: Data can be collected with a few seconds intervals, which is suitable for publishing IOT data.</li>
+</ul>
+<p><img src="./images/user-guide-backoffice/processings.jpg" alt="Traitements périodiques"><br><em>Collect, transform and publish your data automatically</em></p>
+</div></div></div></div></div></div></main></div></div></div></div><script defer src="/master/_nuxt/static/1651671421/en/full/user-guide-backoffice/state.js"></script><script src="/master/_nuxt/d2702f1.js" defer></script><script src="/master/_nuxt/2dcdfbd.js" defer></script><script src="/master/_nuxt/c8933ce.js" defer></script><script src="/master/_nuxt/4e62a7e.js" defer></script><script src="/master/_nuxt/42b7367.js" defer></script><script src="/master/_nuxt/aaf1750.js" defer></script>
+  </body>
+</html>
