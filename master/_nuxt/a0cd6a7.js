@@ -754,6 +754,8 @@ published: true
 
 Le catalogue de donn\xE9es est un moteur de recherche permettant d\u2019**acc\xE9der rapidement** aux jeux de donn\xE9es susceptibles d'int\xE9resser l'utilisateur. Outre le champ de recherche textuelle, il est possible d'acc\xE9der aux jeux de donn\xE9es par th\xE9matique ou par concept pr\xE9sent dans les donn\xE9es. Il est par exemple possible de lister tous les jeux de donn\xE9es g\xE9ographiques en filtrant par concept *Latitude*, ou toutes les donn\xE9es li\xE9es \xE0 des entreprises en filtrant par *SIREN*.
 
+![recherche](./images/functional-presentation/search.jpg)
+
 La liste des jeux de donn\xE9es est parcourue au moyen d\u2019un m\xE9canisme de scroll infini, aussi bien adapt\xE9 \xE0 une utilisation **bureautique ou mobile**. Il est \xE9galement possible de trier les r\xE9sultats suivant diff\xE9rent crit\xE8res (Alphab\xE9tique, date de cr\xE9ation, ...). La liste des r\xE9sultats obtenus peut \xEAtre export\xE9e au format CSV en un clic.
 
 Les r\xE9sultats sur cette page sont pr\xE9sent\xE9s sous forme de vignettes qui affichent des informations comme le titre du jeu de donn\xE9es, sa date de mise \xE0 jour ou les th\xE9matiques qui lui sont associ\xE9e. Un bout de la description est \xE9galement affich\xE9, mais il peut \xEAtre remplac\xE9 par une image pour faire un catalogue plus "visuel".
@@ -763,9 +765,9 @@ En plus de permettre de naviguer vers la page de d\xE9tails d'un jeu de donn\xE9
 * Eventuellement visualiser les donn\xE9es avec une **vue cartographique** quand les donn\xE9es le permettent.
 * Acc\xE9der \xE0 la **documentation interactive de l\u2019API**
 * Consulter le **sch\xE9ma des donn\xE9es**
+<p></p>
 
-![Catalogue de donn\xE9es](./images/functional-presentation/catalogue.jpg)
-
+![Catalogue de donn\xE9es](./images/functional-presentation/home-dataset.jpg)
 `},function(t,e,n){"use strict";n.r(e),e.default=`---
 title: Extensions
 section: 4
