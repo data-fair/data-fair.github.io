@@ -105,11 +105,11 @@ description : Comptes utilisateur
 published: true
 ---
 
-Les utilisateurs peuvent si il le souhaitent cr\xE9er un compte sur le portail. Cela leur permet de **s'abonner \xE0 des notifications** et de cr\xE9er des **cl\xE9s d'APIs** pour utiliser les APIs avec moins de restrictions.
+Si le portail de donn\xE9es est public, il n'y a pas d'obligation de cr\xE9er de compte pour l'utiliser. Les utilisateurs peuvent si il le souhaitent cr\xE9er un compte pour **s'abonner \xE0 des notifications** et cr\xE9er des **cl\xE9s d'APIs** pour utiliser les APIs avec moins de restrictions. Dans le cas ou le portail est priv\xE9, les utilisateurs auront besoin d'un compte, mais il leur faudra aussi des autorisations donn\xE9es par un administrateur de l'organisation propri\xE9taire du portail.
 
 Pour limiter les probl\xE9matiques li\xE9es au RGPD, un **minimum de donn\xE9es est collect\xE9** et la seule donn\xE9e requise est l'email de l'utilisateur. Il peut renseigner un pr\xE9nom et un nom si il le souhaite, ou mettre un pseudonyme \xE0 la place. Si l'utilisateur ne se connecte pas \xE0 son compte pendant 3 ans, il est automatiquement supprim\xE9. Mais l'utilisateur peut \xE9galement **supprimer lui m\xEAme son compte** avec un bouton, sans \xE0 avoir \xE0 formuler une demande par mail ou autre.
 
-La cr\xE9ation de compte se fait en renseignant un email et un mot de passe, et il y a aussi la possibilit\xE9 de  passer par un compte Gmail, Facebook, LinkedIn ou Github via le **protocole oAuth2**.
+La cr\xE9ation de compte se fait en renseignant un email et un mot de passe, et il y a aussi la possibilit\xE9 de  passer par un compte Gmail, Facebook, LinkedIn ou Github via le **protocole oAuth2**. Un m\xE9canisme de renouvellement de mot de passe est disponible pour les utilisateurs ayant perdu celui-ci ou d\xE9sirant le changer.
 
 <img src="./images/functional-presentation/connexion.jpg"
      height="200" style="margin:20px auto;" />
