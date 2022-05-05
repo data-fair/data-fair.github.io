@@ -1,1 +1,0 @@
-__NUXT_JSONP__("/user-guide-frontoffice/use-portal", {data:[{}],fetch:{},mutations:[]});

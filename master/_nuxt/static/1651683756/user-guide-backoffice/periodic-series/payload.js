@@ -1,1 +1,0 @@
-__NUXT_JSONP__("/user-guide-backoffice/periodic-series", {data:[{}],fetch:{},mutations:[]});

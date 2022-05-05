@@ -1,1 +1,0 @@
-__NUXT_JSONP__("/user-guide-backoffice/geo-shapes", {data:[{}],fetch:{},mutations:[]});
