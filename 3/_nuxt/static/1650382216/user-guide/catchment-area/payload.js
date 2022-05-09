@@ -1,1 +1,0 @@
-__NUXT_JSONP__("/user-guide/catchment-area", {data:[{}],fetch:{},mutations:[]});
