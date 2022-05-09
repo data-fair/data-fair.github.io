@@ -1121,14 +1121,15 @@ Plusieurs applications permettent d'afficher des donn\xE9es g\xE9olocalis\xE9es.
 
 D'autres applications sont adapt\xE9es aux donn\xE9es territorialis\xE9es, ce sont les donn\xE9es poss\xE9dant des code territoire : code commune, d\xE9partement ou m\xEAme code parcelles. *Infos parcelles* permet de projeter les donn\xE9es sur le **plan cadastral** fran\xE7ais. *Cartographie territoriale multi-niveaux* affiche une **carte choropl\xE8the** des terrtoires allant de l'IRIS \xE0 la r\xE9gion et est adapt\xE9e \xE0 pr\xE9senter des donn\xE9es comme les r\xE9sultats d'\xE9lections ou d'autres indicateurs. *Zones de chalandise* permet de **fusionner les g\xE9om\xE9tries des territoires** pour avoir des zones de couverture, par exemple le perim\xE8tre d'action des gendarmeries.
 
-#### Visualisations graphiques
-D\xE8s que les donn\xE9es poss\xE8dent des colonnes avec des types num\xE9riques, il est possible de param\xE9trer pour elles des visualisations graphiques. 
+#### Visualisations en diagrammes
+D\xE8s que les donn\xE9es poss\xE8dent des colonnes avec des types num\xE9riques, il est possible de param\xE9trer pour elles des visualisations en diagrammes. *Graphiques divers* permet de faire diff\xE9rents type de graphiques communs : **histogrammes, lignes, aires, camemberts**, ... *Diagramme de Sankey* est adapt\xE9 \xE0 la **visualisation de flux**. *Graphique en radar* permet de comparer les lignes de donn\xE9es sur **diff\xE9rents crit\xE8res**. *Comparaison de proportions* produit des diagrammes en gaufre, pour par exemple comparer la r\xE9partitions des \xE9l\xE9ments suivant diff\xE9rentes cat\xE9gories.
 
-* **Diagramme de Sankey** : Visualiser ses donn\xE9es de flux.
-* **Diagramme Sunburst** : Visualiser ses donn\xE9es hi\xE9rarchiques.
-* **Bar chart race** : Visualiser ses donn\xE9es de classement \xE0 travers le temps.
-* **Charts** : Visualiser ses donn\xE9es dans diff\xE9rents type de graphiques, tels que des histogrammes, des graphiques d'aires, de lignes, etc\u2026
-* **Relations et graphes/r\xE9seaux** : visualiser des donn\xE9es avec des noeuds, des liens ou des r\xE9seaux.
+*Graphes / R\xE9seaux* et *R\xE9seau de relations* permettent de faire des **graphes**, dans le premiers cas en utilisant des n\u0153uds et des liens, et dans le second cas en se basant sur 2 crit\xE8res dans 2 colonnes diff\xE9rentes d'un jeu de donn\xE9es. Pour les **donn\xE9es hi\xE9rarchiques**, 2 visualisations sont disponibles : *Treemap* et *Diagramme Sunburst*, et sont bien adapt\xE9e pour visualiser des donn\xE9es de budget ou d'allocation d'aides.
+
+#### Visualisations temporelles
+Les donn\xE9es ayant des concepts li\xE9s aux dates peuvent \xEAtre visualis\xE9es avec des visualisation temporelles. Certaines sont interactives, comme *S\xE9ries temporelles* qui permet de comparer des **courbes au cours du temps** (d\xE9c\xE8s li\xE9s au covid par exemple), ou *Diagramme Timeline*  et *Calendrier* pour visualiser les donn\xE9es ayant des dates de d\xE9but et dates de fin.
+
+D'autres visualisation temporelles sont anim\xE9es : elles poss\xE8de un bouton lecture et l'utilisateur peut les regarder de mani\xE8re passive. Ces visualisations sont int\xE9ressantes pour les r\xE9seaux sociaux car elles permettent d'augmenter l'engagement des autres utilisateurs, qui n'ont pas a cliquer sur le lien pour voir le r\xE9sultat. *Bar chart race* permet de voir des courses de barres horizontales et est adapt\xE9 quand il y a un **nombre important d'\xE9l\xE9ments qui ont la valeur maximale**, par exemple pour voir le pr\xE9nom le plus donn\xE9 au cours du temps. *Periodic Series* permet d'analyser les **donn\xE9es cycliques** pour voir comment elle se comportent d'une p\xE9riode sur une autre (par exemple des temp\xE9ratures ou du trafic de v\xE9hicules).
 
 #### Visualisations textuelles
 
@@ -1136,16 +1137,21 @@ D\xE8s que les donn\xE9es poss\xE8dent des colonnes avec des types num\xE9riques
 * **Nuage de mots** : G\xE9n\xE9rer son propre nuage de mots \xE0 partir d\u2019une analyse du contenu de la source.
 
 #### Gamification
+En plus des visualisations de donn\xE9es "traditionnelles", il est possible de configurer des mini-jeux. Le jeu est l'un des **meilleurs moyens d'apprentissage** et permet de m\xE9moriser certaines choses sans parfois m\xEAme s\u2019en rendre compte. Cela permet de rendre les donn\xE9es **plus attractives**, favorise l'engagement des utilisateurs qui peuvent r\xE9essayer les jeux plusieurs fois jusqu'\xE0 avoir un bon score et **augmenter la visibilit\xE9 des donn\xE9es** sur les r\xE9seaux sociaux via les m\xE9canismes de partage de scores et de "mise au d\xE9fi".
+
+*Jeu de localisation* est destin\xE9 aux donn\xE9es g\xE9olocalis\xE9es et demande a placer des \xE9l\xE9ments sur une carte. *Jeu de Quizz* permet de r\xE9aliser un questionnaire a choix multiples. *Jeu de tri* demande \xE0 l'utilisateur de trier des donn\xE9es par glisser / d\xE9poser pour les classer suivant un certain crit\xE8re, par exemple pour trier des aliments en fonction de leur empreinte carbone. Tous ces jeux prennent en compte le temps dans le calcul du score, pour \xE9viter la "triche" et inciter l'utilisateur a m\xE9moriser les bonnes r\xE9ponses par essai / erreur.
 
 #### Autre types de visualisations
+Certaines visualisations sont compliqu\xE9es \xE0 classer et nous les mentionnons ici. *Diaporama* permet d'afficher des donn\xE9es ayant des **images en pi\xE8ces-jointes**. *Formulaire de saisie* offre la possibilit\xE9 de collecter des retour directement stock\xE9s dans un jeu de donn\xE9es, de faire du **crowd sourcing** ou d'offrir une interface de mise \xE0 jour des donn\xE9es plus l\xE9g\xE8re que l'int\xE9gralit\xE9 du back-office pour une personne qui ne serait responsable de la mise \xE0 jour que d'un jeu de donn\xE9es.
 
-
+Il y a aussi des visualisation qui sont **adapt\xE9es \xE0 certains sch\xE9mas de donn\xE9es**, comme les *d\xE9lib\xE9rations* ou les *\xE9quipements* publi\xE9s suivant les sch\xE9mas du **Socle Commun des Donn\xE9es Locales (SCDL)**.
 
 ### Permissions et publication des visualisations
 
 Les m\xE9canismes de permission et de publication des visualisations sont les m\xEAme que pour les jeux de donn\xE9es. Par d\xE9faut, une visualisation est priv\xE9e. Elle peut \xEAtre rendue publique par la suite. Dans tous les cas, il est recommand\xE9 de renseigner une description. Cette description est visible sur la page de consultation de la visualisation, mais aussi sur la page du jeu de donn\xE9es associ\xE9.
 
-Il est aussi possible de partager une visualisation priv\xE9e avec des utilisateurs non authentifi\xE9s. Cela se fait en g\xE9n\xE9rant un lien de partage qui contient un code secret. Toute personne connaissant ce lien peut acc\xE9der \xE0 la visualisation, m\xEAme si les donn\xE9es qu'elle utilise sont priv\xE9es. Si le lien est compromis, il peut \xEAtre supprim\xE9 puis r\xE9g\xE9n\xE9r\xE9 avec un code secret diff\xE9rent. Cela permet d'embarquer des visualisations dans des sites priv\xE9s, sans avoir \xE0 cr\xE9er un ou plusieurs comptes utilsateur et transmettre des identifiants d'acc\xE8s.`},function(t,e,n){"use strict";n.r(e),e.default=`---
+Il est aussi possible de partager une visualisation priv\xE9e avec des utilisateurs non authentifi\xE9s. Cela se fait en g\xE9n\xE9rant un lien de partage qui contient un code secret. Toute personne connaissant ce lien peut acc\xE9der \xE0 la visualisation, m\xEAme si les donn\xE9es qu'elle utilise sont priv\xE9es. Si le lien est compromis, il peut \xEAtre supprim\xE9 puis r\xE9g\xE9n\xE9r\xE9 avec un code secret diff\xE9rent. Cela permet d'embarquer des visualisations dans des sites priv\xE9s, sans avoir \xE0 cr\xE9er un ou plusieurs comptes utilisateur et transmettre des identifiants d'acc\xE8s.
+`},function(t,e,n){"use strict";n.r(e),e.default=`---
 title: Data Visualization
 section: 2
 subsection : 5
