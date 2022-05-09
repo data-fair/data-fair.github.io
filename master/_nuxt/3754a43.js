@@ -1,4 +1,4 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[1],Array(121).concat([function(t,e){t.exports=function(n){n.options.__i18n=n.options.__i18n||[],n.options.__i18n.push(`{"fr":{"tableOfContents":"Table des mati\xE8res","functional-presentation":"Pr\xE9sentation fonctionnelle","interoperate":"Interop\xE9rer","technical-architecture":"Architecture technique","user-guide-backoffice":"Manuel utilisateur back-office","user-guide-frontoffice":"Manuel utilisateur front-office","constructionWarning":"Cette page est en chantier et les informations qu'elle contient peuvent ne pas \xEAtre \xE0 jour.","install":"Installation et configuration","onlyEnglish":"Cette page est disponible uniquement en anglais.","onlyFrench":null}}`),delete n.options._Ctor}},function(t,e){t.exports=function(n){n.options.__i18n=n.options.__i18n||[],n.options.__i18n.push('{"en":{"tableOfContents":"Table of contents","functional-presentation":"Functional presentation","interoperate":"Interoperate","technical-architecture":"Technical architecture","user-guide-backoffice":"User guide back-office","user-guide-frontoffice":"User guide front-office","constructionWarning":"This page is in construction and the information it contains can be outdated.","install":"Install and configure","onlyEnglish":null,"onlyFrench":"This page is only available in french for the time being"}}'),delete n.options._Ctor}},,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,function(t,e,n){"use strict";n.r(e);var i=function(){var s=this,z=s.$createElement,f=s._self._c||z;return f("v-list",{attrs:{dense:"",expand:""}},[s._l(s.chapters,function(y,l){return[f("v-list-group",{key:y.id,attrs:{"no-action":"",value:l===0}},[f("v-list-item",{attrs:{slot:"activator",to:s.localePath({name:y.id}),nuxt:"",exact:""},slot:"activator"},[f("v-list-item-title",[s._v(`
+(window.webpackJsonp=window.webpackJsonp||[]).push([[1],Array(121).concat([function(t,e){t.exports=function(n){n.options.__i18n=n.options.__i18n||[],n.options.__i18n.push(`{"fr":{"tableOfContents":"Table des mati\xE8res","functional-presentation":"Pr\xE9sentation fonctionnelle","interoperate":"Interop\xE9rer","technical-architecture":"Architecture technique","user-guide-backoffice":"Manuel utilisateur back-office","user-guide-frontoffice":"Manuel utilisateur front-office","constructionWarning":"Cette page est en chantier et les informations qu'elle contient peuvent ne pas \xEAtre \xE0 jour.","install":"Installation et configuration","onlyEnglish":"Cette page est disponible uniquement en anglais.","onlyFrench":null}}`),delete n.options._Ctor}},function(t,e){t.exports=function(n){n.options.__i18n=n.options.__i18n||[],n.options.__i18n.push('{"en":{"tableOfContents":"Table of contents","functional-presentation":"Functional presentation","interoperate":"Interoperate","technical-architecture":"Technical architecture","user-guide-backoffice":"User guide back-office","user-guide-frontoffice":"User guide front-office","constructionWarning":"This page is in construction and the information it contains can be outdated.","install":"Install and configure","onlyEnglish":null,"onlyFrench":"This page is only available in french for the time being"}}'),delete n.options._Ctor}},,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,function(t,e,n){"use strict";n.r(e);var a=function(){var s=this,z=s.$createElement,f=s._self._c||z;return f("v-list",{attrs:{dense:"",expand:""}},[s._l(s.chapters,function(y,l){return[f("v-list-group",{key:y.id,attrs:{"no-action":"",value:l===0}},[f("v-list-item",{attrs:{slot:"activator",to:s.localePath({name:y.id}),nuxt:"",exact:""},slot:"activator"},[f("v-list-item-title",[s._v(`
           `+s._s(y.title)+`
         `)])],1),s._v(" "),s._l(s.content.filter(function(u){return u.chapter===y.id&&!u.subsection}),function(u){return[s.content.filter(function(c){return c.chapter===y.id&&c.section==u.section&&c.subsection}).length?f("v-list-group",{key:u.id,attrs:{"no-action":"","sub-group":""}},[f("v-list-item",{attrs:{slot:"activator",to:s.localePath({name:y.id+"-id",params:{id:u.id}}),nuxt:""},slot:"activator"},[f("v-list-item-title",[s._v(`
               `+s._s(u.title)+`
@@ -10,13 +10,13 @@
             `+s._s(u.title||u.id)+`
             `),u.published?s._e():f("v-icon",{attrs:{color:"error",small:""}},[s._v(`
               mdi-alert
-            `)])],1)],1)]})],2)]})],2)},o=[],b=n(8),p=n(35),h=n(16),S=n(33),C=n(50),D=n(37),L=n(30),T=n(38),k=n(43),A=n(158),j=n(351),q={props:["folder"],computed:{content:function(){var z=this;if(!!this.$route){var f=n(353),y=f.keys().filter(function(l){return l.startsWith("./install")||l.startsWith("./interoperate")||l.startsWith("./technical-architecture")?!0:l.includes("-".concat(z.$i18n.locale,".md"))}).map(function(l){return Object.assign(j(f(l).default).meta||{},{chapter:l.split("/")[1],id:l.split("/")[2].split(".").shift().replace("-".concat(z.$i18n.locale),"")})}).filter(function(l){return l.published||!0});return y.sort(function(l,u){return z.chapters.findIndex(function(c){return c.id===l.chapter})<z.chapters.findIndex(function(c){return c.id===u.chapter})?-1:z.chapters.findIndex(function(c){return c.id===l.chapter})>z.chapters.findIndex(function(c){return c.id===u.chapter})?1:l.section&&!u.section?-1:!l.section&&u.section?1:l.section<u.section?-1:l.section>u.section?1:l.subsection&&!u.subsection?-1:!l.subsection&&u.subsection?1:l.subsection<u.subsection?-1:1}),y}},chapters:function(){return[{id:"functional-presentation",title:this.$t("functional-presentation")},{id:"user-guide-backoffice",title:this.$t("user-guide-backoffice")},{id:"user-guide-frontoffice",title:this.$t("user-guide-frontoffice")},{id:"technical-architecture",title:this.$t("technical-architecture")},{id:"interoperate",title:this.$t("interoperate")},{id:"install",title:this.$t("install")}]}}},w=q,v=n(47),m=n(169),d=n(170),g=n(65),I=n.n(g),F=n(162),x=n(163),E=n(166),a=n(103),V=n(45),r=Object(v.a)(w,i,o,!1,null,null,null);typeof m.default=="function"&&Object(m.default)(r),typeof d.default=="function"&&Object(d.default)(r);var P=e.default=r.exports;I()(r,{VIcon:F.a,VList:x.a,VListGroup:E.a,VListItem:a.a,VListItemTitle:V.b})},,,,,function(t,e,n){"use strict";var i=n(121),o=n.n(i);e.default=o.a},function(t,e,n){"use strict";var i=n(122),o=n.n(i);e.default=o.a},,function(t,e,n){"use strict";var i=n(1),o=n(0);n(161),i.a.use(n(636),{moment:o})},,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,function(t,e,n){},,function(t,e,n){},,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,function(t,e,n){"use strict";var i=function(){var a=this,V=a.$createElement,r=a._self._c||V;return r("v-app",[r("v-navigation-drawer",{attrs:{app:"",fixed:"",width:"300"}},[r("v-list-item",{attrs:{to:a.localePath({name:"index"}),nuxt:"",exact:""}},[r("v-list-item-avatar",{staticClass:"brand-logo"},[r("v-img",{attrs:{src:"./logo.png"}})],1),a._v(" "),r("v-list-item-content",[r("v-list-item-title",{staticClass:"text-h5 font-weight-bold"},[a._v(`
+            `)])],1)],1)]})],2)]})],2)},o=[],b=n(8),p=n(35),h=n(16),S=n(33),C=n(50),D=n(37),L=n(30),T=n(38),k=n(43),A=n(158),j=n(351),q={props:["folder"],computed:{content:function(){var z=this;if(!!this.$route){var f=n(353),y=f.keys().filter(function(l){return l.startsWith("./install")||l.startsWith("./interoperate")||l.startsWith("./technical-architecture")?!0:l.includes("-".concat(z.$i18n.locale,".md"))}).map(function(l){return Object.assign(j(f(l).default).meta||{},{chapter:l.split("/")[1],id:l.split("/")[2].split(".").shift().replace("-".concat(z.$i18n.locale),"")})}).filter(function(l){return l.published||!0});return y.sort(function(l,u){return z.chapters.findIndex(function(c){return c.id===l.chapter})<z.chapters.findIndex(function(c){return c.id===u.chapter})?-1:z.chapters.findIndex(function(c){return c.id===l.chapter})>z.chapters.findIndex(function(c){return c.id===u.chapter})?1:l.section&&!u.section?-1:!l.section&&u.section?1:l.section<u.section?-1:l.section>u.section?1:l.subsection&&!u.subsection?-1:!l.subsection&&u.subsection?1:l.subsection<u.subsection?-1:1}),y}},chapters:function(){return[{id:"functional-presentation",title:this.$t("functional-presentation")},{id:"user-guide-backoffice",title:this.$t("user-guide-backoffice")},{id:"user-guide-frontoffice",title:this.$t("user-guide-frontoffice")},{id:"technical-architecture",title:this.$t("technical-architecture")},{id:"interoperate",title:this.$t("interoperate")},{id:"install",title:this.$t("install")}]}}},w=q,v=n(47),m=n(169),d=n(170),g=n(65),I=n.n(g),F=n(162),x=n(163),E=n(166),i=n(103),V=n(45),r=Object(v.a)(w,a,o,!1,null,null,null);typeof m.default=="function"&&Object(m.default)(r),typeof d.default=="function"&&Object(d.default)(r);var P=e.default=r.exports;I()(r,{VIcon:F.a,VList:x.a,VListGroup:E.a,VListItem:i.a,VListItemTitle:V.b})},,,,,function(t,e,n){"use strict";var a=n(121),o=n.n(a);e.default=o.a},function(t,e,n){"use strict";var a=n(122),o=n.n(a);e.default=o.a},,function(t,e,n){"use strict";var a=n(1),o=n(0);n(161),a.a.use(n(636),{moment:o})},,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,function(t,e,n){},,function(t,e,n){},,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,function(t,e,n){"use strict";var a=function(){var i=this,V=i.$createElement,r=i._self._c||V;return r("v-app",[r("v-navigation-drawer",{attrs:{app:"",fixed:"",width:"300"}},[r("v-list-item",{attrs:{to:i.localePath({name:"index"}),nuxt:"",exact:""}},[r("v-list-item-avatar",{staticClass:"brand-logo"},[r("v-img",{attrs:{src:"./logo.png"}})],1),i._v(" "),r("v-list-item-content",[r("v-list-item-title",{staticClass:"text-h5 font-weight-bold"},[i._v(`
           Data Fair
-        `)])],1)],1),a._v(" "),r("v-divider"),a._v(" "),r("folder-menu")],1),a._v(" "),r("v-main",[r("v-speed-dial",{attrs:{direction:"bottom",transition:"fade-transition",absolute:"",top:"",right:""},scopedSlots:a._u([{key:"activator",fn:function(){return[r("v-btn",{staticStyle:{"font-weight":"bold"},attrs:{icon:"",color:"primary"}},[a._v(`
-          `+a._s(a.$i18n.locale)+`
-        `)])]},proxy:!0}])},[a._v(" "),a._l(a.$i18n.locales.filter(function(P){return P!==a.$i18n.locale}),function(P){return r("v-btn",{key:P,staticStyle:{"font-weight":"bold"},attrs:{to:a.switchLocalePath(P),icon:"",nuxt:""}},[a._v(`
-        `+a._s(P)+`
-      `)])})],2),a._v(" "),r("nuxt")],1),a._v(" "),r("v-footer",{staticClass:"pa-3"},[r("v-spacer"),a._v(" "),r("div",[a._v("Maintained by "),r("a",{attrs:{href:"https://koumoul.com"}},[a._v("Koumoul")])])],1)],1)},o=[],b=n(164),p={components:{FolderMenu:b.default}},h=p,S=n(617),C=n(47),D=n(65),L=n.n(D),T=n(648),k=n(640),A=n(649),j=n(650),q=n(350),w=n(103),v=n(165),m=n(45),d=n(651),g=n(654),I=n(652),F=n(653),x=Object(C.a)(h,i,o,!1,null,null,null),E=e.a=x.exports;L()(x,{FolderMenu:n(164).default}),L()(x,{VApp:T.a,VBtn:k.a,VDivider:A.a,VFooter:j.a,VImg:q.a,VListItem:w.a,VListItemAvatar:v.a,VListItemContent:m.a,VListItemTitle:m.b,VMain:d.a,VNavigationDrawer:g.a,VSpacer:I.a,VSpeedDial:F.a})},function(t,e,n){"use strict";var i=function(){var j=this,q=j.$createElement,w=j._self._c||q;return w("v-app",[w("v-main",[w("nuxt")],1)],1)},o=[],b={},p=b,h=n(629),S=n(47),C=n(65),D=n.n(C),L=n(648),T=n(651),k=Object(S.a)(p,i,o,!1,null,null,null),A=e.a=k.exports;D()(k,{VApp:L.a,VMain:T.a})},,,,function(t,e,n){var i={"./about/overview-fr.md":355,"./functional-presentation/access-control-en.md":356,"./functional-presentation/access-control-fr.md":357,"./functional-presentation/account-en.md":358,"./functional-presentation/account-fr.md":359,"./functional-presentation/analitycs-en.md":360,"./functional-presentation/analitycs-fr.md":361,"./functional-presentation/api-en.md":362,"./functional-presentation/api-fr.md":363,"./functional-presentation/api-stats-en.md":364,"./functional-presentation/api-stats-fr.md":365,"./functional-presentation/back-office-en.md":366,"./functional-presentation/back-office-fr.md":367,"./functional-presentation/connectors-en.md":368,"./functional-presentation/connectors-fr.md":369,"./functional-presentation/contact-en.md":370,"./functional-presentation/contact-fr.md":371,"./functional-presentation/content-pages-edit-en.md":372,"./functional-presentation/content-pages-edit-fr.md":373,"./functional-presentation/content-pages-en.md":374,"./functional-presentation/content-pages-fr.md":375,"./functional-presentation/dataset-details-en.md":376,"./functional-presentation/dataset-details-fr.md":377,"./functional-presentation/dataset-management-en.md":378,"./functional-presentation/dataset-management-fr.md":379,"./functional-presentation/datasets-catalog-en.md":380,"./functional-presentation/datasets-catalog-fr.md":381,"./functional-presentation/extensions-en.md":382,"./functional-presentation/extensions-fr.md":383,"./functional-presentation/home-en.md":384,"./functional-presentation/home-fr.md":385,"./functional-presentation/introduction-en.md":386,"./functional-presentation/introduction-fr.md":387,"./functional-presentation/notify-en.md":388,"./functional-presentation/notify-fr.md":389,"./functional-presentation/periodic-processings-en.md":390,"./functional-presentation/periodic-processings-fr.md":391,"./functional-presentation/portal-config-en.md":392,"./functional-presentation/portal-config-fr.md":393,"./functional-presentation/portal-en.md":394,"./functional-presentation/portal-fr.md":395,"./functional-presentation/portal-publication-en.md":396,"./functional-presentation/portal-publication-fr.md":397,"./functional-presentation/user-management-en.md":398,"./functional-presentation/user-management-fr.md":399,"./functional-presentation/visu-config-en.md":400,"./functional-presentation/visu-config-fr.md":401,"./functional-presentation/visualization-details-en.md":402,"./functional-presentation/visualization-details-fr.md":403,"./functional-presentation/visualizations-catalog-en.md":404,"./functional-presentation/visualizations-catalog-fr.md":405,"./install/config.md":406,"./install/install.md":407,"./interoperate/api.md":408,"./interoperate/applications.md":409,"./interoperate/collectors.md":410,"./interoperate/connectors.md":411,"./interoperate/services.md":412,"./technical-architecture/analytics.md":413,"./technical-architecture/backup.md":414,"./technical-architecture/capture.md":415,"./technical-architecture/connectors.md":416,"./technical-architecture/data-fair.md":417,"./technical-architecture/http-log.md":418,"./technical-architecture/introduction.md":419,"./technical-architecture/notify.md":420,"./technical-architecture/portal.md":421,"./technical-architecture/processings.md":422,"./technical-architecture/simple-directory.md":423,"./technical-architecture/thumbor.md":424,"./user-guide-backoffice/add-reuse-en.md":425,"./user-guide-backoffice/add-reuse-fr.md":426,"./user-guide-backoffice/analytics-en.md":427,"./user-guide-backoffice/analytics-fr.md":428,"./user-guide-backoffice/api-en.md":429,"./user-guide-backoffice/api-fr.md":430,"./user-guide-backoffice/attachements-en.md":431,"./user-guide-backoffice/attachements-fr.md":432,"./user-guide-backoffice/bar-chart-race-en.md":433,"./user-guide-backoffice/bar-chart-race-fr.md":434,"./user-guide-backoffice/carto-stats-en.md":435,"./user-guide-backoffice/carto-stats-fr.md":436,"./user-guide-backoffice/catalogues-en.md":437,"./user-guide-backoffice/catalogues-fr.md":438,"./user-guide-backoffice/catchment-area-en.md":439,"./user-guide-backoffice/catchment-area-fr.md":440,"./user-guide-backoffice/charts-en.md":441,"./user-guide-backoffice/charts-fr.md":442,"./user-guide-backoffice/concept-en.md":443,"./user-guide-backoffice/concept-fr.md":444,"./user-guide-backoffice/content-en.md":445,"./user-guide-backoffice/content-fr.md":446,"./user-guide-backoffice/dashboard-en.md":447,"./user-guide-backoffice/dashboard-fr.md":448,"./user-guide-backoffice/datasets-en.md":449,"./user-guide-backoffice/datasets-fr.md":450,"./user-guide-backoffice/div-admin-en.md":451,"./user-guide-backoffice/div-admin-fr.md":452,"./user-guide-backoffice/edition-dataset-en.md":453,"./user-guide-backoffice/edition-dataset-fr.md":454,"./user-guide-backoffice/enrichment-en.md":455,"./user-guide-backoffice/enrichment-fr.md":456,"./user-guide-backoffice/file-formats-en.md":457,"./user-guide-backoffice/file-formats-fr.md":458,"./user-guide-backoffice/game-localisation-en.md":459,"./user-guide-backoffice/game-localisation-fr.md":460,"./user-guide-backoffice/game-quizz-en.md":461,"./user-guide-backoffice/game-quizz-fr.md":462,"./user-guide-backoffice/game-sort-en.md":463,"./user-guide-backoffice/game-sort-fr.md":464,"./user-guide-backoffice/geo-shapes-en.md":465,"./user-guide-backoffice/geo-shapes-fr.md":466,"./user-guide-backoffice/import-dataset-en.md":467,"./user-guide-backoffice/import-dataset-fr.md":468,"./user-guide-backoffice/infos-localisations-en.md":469,"./user-guide-backoffice/infos-localisations-fr.md":470,"./user-guide-backoffice/infos-parcelles-en.md":471,"./user-guide-backoffice/infos-parcelles-fr.md":472,"./user-guide-backoffice/licences-thematics-en.md":473,"./user-guide-backoffice/licences-thematics-fr.md":474,"./user-guide-backoffice/liste-fiches-en.md":475,"./user-guide-backoffice/liste-fiches-fr.md":476,"./user-guide-backoffice/members-en.md":477,"./user-guide-backoffice/members-fr.md":478,"./user-guide-backoffice/menu-en.md":479,"./user-guide-backoffice/menu-fr.md":480,"./user-guide-backoffice/navigation-en.md":481,"./user-guide-backoffice/navigation-fr.md":482,"./user-guide-backoffice/network-en.md":483,"./user-guide-backoffice/network-fr.md":484,"./user-guide-backoffice/organisation-en.md":485,"./user-guide-backoffice/organisation-fr.md":486,"./user-guide-backoffice/parameter-reuse-en.md":487,"./user-guide-backoffice/parameter-reuse-fr.md":488,"./user-guide-backoffice/parameters-en.md":489,"./user-guide-backoffice/parameters-fr.md":490,"./user-guide-backoffice/periodic-series-en.md":491,"./user-guide-backoffice/periodic-series-fr.md":492,"./user-guide-backoffice/portal-en.md":493,"./user-guide-backoffice/portal-fr.md":494,"./user-guide-backoffice/processing-en.md":495,"./user-guide-backoffice/processing-fr.md":496,"./user-guide-backoffice/proportion-en.md":497,"./user-guide-backoffice/proportion-fr.md":498,"./user-guide-backoffice/relations-en.md":499,"./user-guide-backoffice/relations-fr.md":500,"./user-guide-backoffice/reuses-carto-en.md":501,"./user-guide-backoffice/reuses-carto-fr.md":502,"./user-guide-backoffice/reuses-en.md":503,"./user-guide-backoffice/reuses-fr.md":504,"./user-guide-backoffice/reuses-game-en.md":505,"./user-guide-backoffice/reuses-game-fr.md":506,"./user-guide-backoffice/reuses-graphics-en.md":507,"./user-guide-backoffice/reuses-graphics-fr.md":508,"./user-guide-backoffice/reuses-text-en.md":509,"./user-guide-backoffice/reuses-text-fr.md":510,"./user-guide-backoffice/sankey-en.md":511,"./user-guide-backoffice/sankey-fr.md":512,"./user-guide-backoffice/sigin-en.md":513,"./user-guide-backoffice/sigin-fr.md":514,"./user-guide-backoffice/sunburst-en.md":515,"./user-guide-backoffice/sunburst-fr.md":516,"./user-guide-backoffice/update-dataset-en.md":517,"./user-guide-backoffice/update-dataset-fr.md":518,"./user-guide-backoffice/webhooks-en.md":519,"./user-guide-backoffice/webhooks-fr.md":520,"./user-guide-backoffice/word-cloud-en.md":521,"./user-guide-backoffice/word-cloud-fr.md":522,"./user-guide-frontoffice/contentpage-en.md":523,"./user-guide-frontoffice/contentpage-fr.md":524,"./user-guide-frontoffice/datapage-en.md":525,"./user-guide-frontoffice/datapage-fr.md":526,"./user-guide-frontoffice/datasetpage-en.md":527,"./user-guide-frontoffice/datasetpage-fr.md":528,"./user-guide-frontoffice/homepage-en.md":529,"./user-guide-frontoffice/homepage-fr.md":530,"./user-guide-frontoffice/use-portal-en.md":531,"./user-guide-frontoffice/use-portal-fr.md":532,"./user-guide-frontoffice/visualisation-en.md":533,"./user-guide-frontoffice/visualisation-fr.md":534,"./user-guide-frontoffice/visualisationspage-en.md":535,"./user-guide-frontoffice/visualisationspage-fr.md":536};function o(p){var h=b(p);return n(h)}function b(p){if(!n.o(i,p)){var h=new Error("Cannot find module '"+p+"'");throw h.code="MODULE_NOT_FOUND",h}return i[p]}o.keys=function(){return Object.keys(i)},o.resolve=b,t.exports=o,o.id=353},,function(t,e,n){"use strict";n.r(e),e.default=`Data Fair permet d'enrichir et de partager facilement ses donn\xE9es pour pouvoir ensuite les utiliser dans des applications. Le partage des donn\xE9es peut se faire en mode priv\xE9 (private data) ou public (open data). Les donn\xE9es partageables sont des donn\xE9es de type tabulaire ou g\xE9ographiques. Data Fair permet de mettre facilement des donn\xE9es \xE0 disposition, mais les m\xE9tadonn\xE9es sont minimes et **ce n'est donc pas un service de catalogage**. Il peut donc \xEAtre un excellent compl\xE9ment \xE0 un service comme [udata](https://github.com/opendatateam/udata) utilis\xE9 sur le site [data.gouv.fr](http://data.gouv.fr).
+        `)])],1)],1),i._v(" "),r("v-divider"),i._v(" "),r("folder-menu")],1),i._v(" "),r("v-main",[r("v-speed-dial",{attrs:{direction:"bottom",transition:"fade-transition",absolute:"",top:"",right:""},scopedSlots:i._u([{key:"activator",fn:function(){return[r("v-btn",{staticStyle:{"font-weight":"bold"},attrs:{icon:"",color:"primary"}},[i._v(`
+          `+i._s(i.$i18n.locale)+`
+        `)])]},proxy:!0}])},[i._v(" "),i._l(i.$i18n.locales.filter(function(P){return P!==i.$i18n.locale}),function(P){return r("v-btn",{key:P,staticStyle:{"font-weight":"bold"},attrs:{to:i.switchLocalePath(P),icon:"",nuxt:""}},[i._v(`
+        `+i._s(P)+`
+      `)])})],2),i._v(" "),r("nuxt")],1),i._v(" "),r("v-footer",{staticClass:"pa-3"},[r("v-spacer"),i._v(" "),r("div",[i._v("Maintained by "),r("a",{attrs:{href:"https://koumoul.com"}},[i._v("Koumoul")])])],1)],1)},o=[],b=n(164),p={components:{FolderMenu:b.default}},h=p,S=n(617),C=n(47),D=n(65),L=n.n(D),T=n(648),k=n(640),A=n(649),j=n(650),q=n(350),w=n(103),v=n(165),m=n(45),d=n(651),g=n(654),I=n(652),F=n(653),x=Object(C.a)(h,a,o,!1,null,null,null),E=e.a=x.exports;L()(x,{FolderMenu:n(164).default}),L()(x,{VApp:T.a,VBtn:k.a,VDivider:A.a,VFooter:j.a,VImg:q.a,VListItem:w.a,VListItemAvatar:v.a,VListItemContent:m.a,VListItemTitle:m.b,VMain:d.a,VNavigationDrawer:g.a,VSpacer:I.a,VSpeedDial:F.a})},function(t,e,n){"use strict";var a=function(){var j=this,q=j.$createElement,w=j._self._c||q;return w("v-app",[w("v-main",[w("nuxt")],1)],1)},o=[],b={},p=b,h=n(629),S=n(47),C=n(65),D=n.n(C),L=n(648),T=n(651),k=Object(S.a)(p,a,o,!1,null,null,null),A=e.a=k.exports;D()(k,{VApp:L.a,VMain:T.a})},,,,function(t,e,n){var a={"./about/overview-fr.md":355,"./functional-presentation/access-control-en.md":356,"./functional-presentation/access-control-fr.md":357,"./functional-presentation/account-en.md":358,"./functional-presentation/account-fr.md":359,"./functional-presentation/analitycs-en.md":360,"./functional-presentation/analitycs-fr.md":361,"./functional-presentation/api-en.md":362,"./functional-presentation/api-fr.md":363,"./functional-presentation/api-stats-en.md":364,"./functional-presentation/api-stats-fr.md":365,"./functional-presentation/back-office-en.md":366,"./functional-presentation/back-office-fr.md":367,"./functional-presentation/connectors-en.md":368,"./functional-presentation/connectors-fr.md":369,"./functional-presentation/contact-en.md":370,"./functional-presentation/contact-fr.md":371,"./functional-presentation/content-pages-edit-en.md":372,"./functional-presentation/content-pages-edit-fr.md":373,"./functional-presentation/content-pages-en.md":374,"./functional-presentation/content-pages-fr.md":375,"./functional-presentation/dataset-details-en.md":376,"./functional-presentation/dataset-details-fr.md":377,"./functional-presentation/dataset-management-en.md":378,"./functional-presentation/dataset-management-fr.md":379,"./functional-presentation/datasets-catalog-en.md":380,"./functional-presentation/datasets-catalog-fr.md":381,"./functional-presentation/extensions-en.md":382,"./functional-presentation/extensions-fr.md":383,"./functional-presentation/home-en.md":384,"./functional-presentation/home-fr.md":385,"./functional-presentation/introduction-en.md":386,"./functional-presentation/introduction-fr.md":387,"./functional-presentation/notify-en.md":388,"./functional-presentation/notify-fr.md":389,"./functional-presentation/periodic-processings-en.md":390,"./functional-presentation/periodic-processings-fr.md":391,"./functional-presentation/portal-config-en.md":392,"./functional-presentation/portal-config-fr.md":393,"./functional-presentation/portal-en.md":394,"./functional-presentation/portal-fr.md":395,"./functional-presentation/portal-publication-en.md":396,"./functional-presentation/portal-publication-fr.md":397,"./functional-presentation/user-management-en.md":398,"./functional-presentation/user-management-fr.md":399,"./functional-presentation/visu-config-en.md":400,"./functional-presentation/visu-config-fr.md":401,"./functional-presentation/visualization-details-en.md":402,"./functional-presentation/visualization-details-fr.md":403,"./functional-presentation/visualizations-catalog-en.md":404,"./functional-presentation/visualizations-catalog-fr.md":405,"./install/config.md":406,"./install/install.md":407,"./interoperate/api.md":408,"./interoperate/applications.md":409,"./interoperate/collectors.md":410,"./interoperate/connectors.md":411,"./interoperate/services.md":412,"./technical-architecture/analytics.md":413,"./technical-architecture/backup.md":414,"./technical-architecture/capture.md":415,"./technical-architecture/connectors.md":416,"./technical-architecture/data-fair.md":417,"./technical-architecture/http-log.md":418,"./technical-architecture/introduction.md":419,"./technical-architecture/notify.md":420,"./technical-architecture/portal.md":421,"./technical-architecture/processings.md":422,"./technical-architecture/simple-directory.md":423,"./technical-architecture/thumbor.md":424,"./user-guide-backoffice/add-reuse-en.md":425,"./user-guide-backoffice/add-reuse-fr.md":426,"./user-guide-backoffice/analytics-en.md":427,"./user-guide-backoffice/analytics-fr.md":428,"./user-guide-backoffice/api-en.md":429,"./user-guide-backoffice/api-fr.md":430,"./user-guide-backoffice/attachements-en.md":431,"./user-guide-backoffice/attachements-fr.md":432,"./user-guide-backoffice/bar-chart-race-en.md":433,"./user-guide-backoffice/bar-chart-race-fr.md":434,"./user-guide-backoffice/carto-stats-en.md":435,"./user-guide-backoffice/carto-stats-fr.md":436,"./user-guide-backoffice/catalogues-en.md":437,"./user-guide-backoffice/catalogues-fr.md":438,"./user-guide-backoffice/catchment-area-en.md":439,"./user-guide-backoffice/catchment-area-fr.md":440,"./user-guide-backoffice/charts-en.md":441,"./user-guide-backoffice/charts-fr.md":442,"./user-guide-backoffice/concept-en.md":443,"./user-guide-backoffice/concept-fr.md":444,"./user-guide-backoffice/content-en.md":445,"./user-guide-backoffice/content-fr.md":446,"./user-guide-backoffice/dashboard-en.md":447,"./user-guide-backoffice/dashboard-fr.md":448,"./user-guide-backoffice/datasets-en.md":449,"./user-guide-backoffice/datasets-fr.md":450,"./user-guide-backoffice/div-admin-en.md":451,"./user-guide-backoffice/div-admin-fr.md":452,"./user-guide-backoffice/edition-dataset-en.md":453,"./user-guide-backoffice/edition-dataset-fr.md":454,"./user-guide-backoffice/enrichment-en.md":455,"./user-guide-backoffice/enrichment-fr.md":456,"./user-guide-backoffice/file-formats-en.md":457,"./user-guide-backoffice/file-formats-fr.md":458,"./user-guide-backoffice/game-localisation-en.md":459,"./user-guide-backoffice/game-localisation-fr.md":460,"./user-guide-backoffice/game-quizz-en.md":461,"./user-guide-backoffice/game-quizz-fr.md":462,"./user-guide-backoffice/game-sort-en.md":463,"./user-guide-backoffice/game-sort-fr.md":464,"./user-guide-backoffice/geo-shapes-en.md":465,"./user-guide-backoffice/geo-shapes-fr.md":466,"./user-guide-backoffice/import-dataset-en.md":467,"./user-guide-backoffice/import-dataset-fr.md":468,"./user-guide-backoffice/infos-localisations-en.md":469,"./user-guide-backoffice/infos-localisations-fr.md":470,"./user-guide-backoffice/infos-parcelles-en.md":471,"./user-guide-backoffice/infos-parcelles-fr.md":472,"./user-guide-backoffice/licences-thematics-en.md":473,"./user-guide-backoffice/licences-thematics-fr.md":474,"./user-guide-backoffice/liste-fiches-en.md":475,"./user-guide-backoffice/liste-fiches-fr.md":476,"./user-guide-backoffice/members-en.md":477,"./user-guide-backoffice/members-fr.md":478,"./user-guide-backoffice/menu-en.md":479,"./user-guide-backoffice/menu-fr.md":480,"./user-guide-backoffice/navigation-en.md":481,"./user-guide-backoffice/navigation-fr.md":482,"./user-guide-backoffice/network-en.md":483,"./user-guide-backoffice/network-fr.md":484,"./user-guide-backoffice/organisation-en.md":485,"./user-guide-backoffice/organisation-fr.md":486,"./user-guide-backoffice/parameter-reuse-en.md":487,"./user-guide-backoffice/parameter-reuse-fr.md":488,"./user-guide-backoffice/parameters-en.md":489,"./user-guide-backoffice/parameters-fr.md":490,"./user-guide-backoffice/periodic-series-en.md":491,"./user-guide-backoffice/periodic-series-fr.md":492,"./user-guide-backoffice/portal-en.md":493,"./user-guide-backoffice/portal-fr.md":494,"./user-guide-backoffice/processing-en.md":495,"./user-guide-backoffice/processing-fr.md":496,"./user-guide-backoffice/proportion-en.md":497,"./user-guide-backoffice/proportion-fr.md":498,"./user-guide-backoffice/relations-en.md":499,"./user-guide-backoffice/relations-fr.md":500,"./user-guide-backoffice/reuses-carto-en.md":501,"./user-guide-backoffice/reuses-carto-fr.md":502,"./user-guide-backoffice/reuses-en.md":503,"./user-guide-backoffice/reuses-fr.md":504,"./user-guide-backoffice/reuses-game-en.md":505,"./user-guide-backoffice/reuses-game-fr.md":506,"./user-guide-backoffice/reuses-graphics-en.md":507,"./user-guide-backoffice/reuses-graphics-fr.md":508,"./user-guide-backoffice/reuses-text-en.md":509,"./user-guide-backoffice/reuses-text-fr.md":510,"./user-guide-backoffice/sankey-en.md":511,"./user-guide-backoffice/sankey-fr.md":512,"./user-guide-backoffice/sigin-en.md":513,"./user-guide-backoffice/sigin-fr.md":514,"./user-guide-backoffice/sunburst-en.md":515,"./user-guide-backoffice/sunburst-fr.md":516,"./user-guide-backoffice/update-dataset-en.md":517,"./user-guide-backoffice/update-dataset-fr.md":518,"./user-guide-backoffice/webhooks-en.md":519,"./user-guide-backoffice/webhooks-fr.md":520,"./user-guide-backoffice/word-cloud-en.md":521,"./user-guide-backoffice/word-cloud-fr.md":522,"./user-guide-frontoffice/contentpage-en.md":523,"./user-guide-frontoffice/contentpage-fr.md":524,"./user-guide-frontoffice/datapage-en.md":525,"./user-guide-frontoffice/datapage-fr.md":526,"./user-guide-frontoffice/datasetpage-en.md":527,"./user-guide-frontoffice/datasetpage-fr.md":528,"./user-guide-frontoffice/homepage-en.md":529,"./user-guide-frontoffice/homepage-fr.md":530,"./user-guide-frontoffice/use-portal-en.md":531,"./user-guide-frontoffice/use-portal-fr.md":532,"./user-guide-frontoffice/visualisation-en.md":533,"./user-guide-frontoffice/visualisation-fr.md":534,"./user-guide-frontoffice/visualisationspage-en.md":535,"./user-guide-frontoffice/visualisationspage-fr.md":536};function o(p){var h=b(p);return n(h)}function b(p){if(!n.o(a,p)){var h=new Error("Cannot find module '"+p+"'");throw h.code="MODULE_NOT_FOUND",h}return a[p]}o.keys=function(){return Object.keys(a)},o.resolve=b,t.exports=o,o.id=353},,function(t,e,n){"use strict";n.r(e),e.default=`Data Fair permet d'enrichir et de partager facilement ses donn\xE9es pour pouvoir ensuite les utiliser dans des applications. Le partage des donn\xE9es peut se faire en mode priv\xE9 (private data) ou public (open data). Les donn\xE9es partageables sont des donn\xE9es de type tabulaire ou g\xE9ographiques. Data Fair permet de mettre facilement des donn\xE9es \xE0 disposition, mais les m\xE9tadonn\xE9es sont minimes et **ce n'est donc pas un service de catalogage**. Il peut donc \xEAtre un excellent compl\xE9ment \xE0 un service comme [udata](https://github.com/opendatateam/udata) utilis\xE9 sur le site [data.gouv.fr](http://data.gouv.fr).
 
 Ce service permet d'exposer facilement ses donn\xE9es via une API web, **contractualis\xE9e et document\xE9e**, ce qui permet aux d\xE9veloppeurs de les **r\xE9utiliser facilement dans leurs applications**. De plus les donn\xE9es peuvent \xEAtre **s\xE9mantis\xE9es, ce qui permet ensuite de les enrichir** avec d'autres donn\xE9es s\xE9mantis\xE9es. Ainsi, des donn\xE9es qui ont une adresse peuvent par exemple \xEAtre compl\xE9t\xE9es par des coordonn\xE9es GPS, ce qui permet ensuite de les afficher sur une carte. Mais bien qu'il puisse \xEAtre utilis\xE9 pour de l'enrichissement, Data Fair **n'est pas un atelier de traitement de la donn\xE9e**. Il est plut\xF4t compl\xE9mentaire et permet de publier de la donn\xE9e pr\xE9trait\xE9e.
 
@@ -1949,7 +1949,7 @@ section: 5
 subsection : 1
 updated: 2021-09-20
 description : Create interactives visualizations
-published: false
+published: true
 ---
 Interactive visualizations present and explore your data in a fun way.
 
@@ -2017,7 +2017,7 @@ section: 5
 subsection : 1
 updated: 2021-09-20
 description : Comment cr\xE9er des visualisations interactives pour mettre en valeur ses donn\xE9es
-published: false
+published: true
 ---
 Les visualisations interactives permettent de pr\xE9senter et d'explorer vos donn\xE9es de mani\xE8re ludique.   
 
@@ -2085,7 +2085,7 @@ section: 11
 subsection : 2
 updated: 2021-11-09
 description : Configure your analytics
-published: false
+published: true
 ---
 
 There are 2 steps in the  configuration of the user tracking system
@@ -2137,7 +2137,7 @@ section: 11
 subsection : 2
 updated: 2021-11-09
 description : Configurer le syst\xE8me de suivi de votre portail
-published: false
+published: true
 ---
 
 La configuration du syst\xE8me de suivi des utilisateurs se compose en deux points.
@@ -2191,7 +2191,7 @@ section: 12
 subsection: 2
 updated: 2021-09-20
 description : Access data via API. Manage your different API keys easily.
-published: false
+published: true
 ---
 On the settings page you will find the **API Keys** section.
 
@@ -2211,7 +2211,7 @@ section: 12
 subsection: 2
 updated: 2021-09-20
 description : Acc\xE9der aux donn\xE9es par API. G\xE9rer ses diff\xE9rentes cl\xE9s d'API facilement.
-published: false
+published: true
 ---
 Sur la page des param\xE8tres vous retrouvez la section des **Cl\xE9s d'API**.  
 Les cl\xE9s d'API permettent d'utiliser l'API globale de votre compte pour la gestion des jeux de donn\xE9es, des visualisations, des catalogues ou la r\xE9cup\xE9ration d'informations statistiques.
@@ -2230,7 +2230,7 @@ section: 4
 subsection: 7
 updated: 2021-09-20
 description: Row Attachments
-published: false
+published: true
 ---
 
 When you load a dataset, it is possible to associate a zip archive containing PDF, JPG, etc ... files with your dataset. These files can be latter used in visualizations.
@@ -2241,13 +2241,13 @@ In order for your zip file to be correctly associated with your dataset, your da
 2. the name of your zip file must match the name column containing the paths of the files in the ZIP archive. Example: You column is **Document**, your file must be **Document.zip**.
 
 <p>
-</p>
+</p>s
 
-![PJ-1](./images/user-guide-backoffice/piece-jointe-1.jpg)
+![PJ-1](./images/user-guide-backoffice/piece-jointe-1.png)
 
 In the **Schema** section of your dataset, the concept **Attached digital document** will be automatically associated with the column containing the names of the files of your ZIP archive.
 
-![PJ-2](./images/user-guide-backoffice/piece-jointe-2.jpg)
+![PJ-2](./images/user-guide-backoffice/piece-jointe-2.png)
 
 The attachment indexing time can be long and will depend on the size of your attachments files.   
 The unzipped files size is counted in your data storage quota.  
@@ -2259,7 +2259,7 @@ section: 4
 subsection: 7
 updated: 2021-09-20
 description: Pi\xE8ces jointes par ligne
-published: false
+published: true
 ---
 
 Lorsque vous chargez un jeu de donn\xE9es, il est possible d'associer une archive zip contenant des fichiers PDF, JPG, etc... \xE0 votre jeu de donn\xE9es. Ces fichiers pourront \xEAtre utilis\xE9s dans les applications.
@@ -2272,7 +2272,7 @@ Pour que votre archive soit correctement associ\xE9e \xE0 votre jeu de donn\xE9e
 <p>
 </p>
 
-![PJ-1](./images/user-guide-backoffice/piece-jointe-1.jpg)
+![PJ-1](./images/user-guide-backoffice/piece-jointe-1.png)
 
 Dans le sch\xE9ma de votre jeu de donn\xE9es, le concept **Document num\xE9rique attach\xE9** sera automatiquement associ\xE9 \xE0 la colonne contenant les noms des fichiers de votre archive ZIP.
 
@@ -2288,7 +2288,7 @@ section: 7
 subsection : 1
 updated: 2021-09-20
 description : Data racing for first place
-published: false
+published: true
 application : https://koumoul.com/apps/bar-chart-race/0.2/
 ---
 
@@ -2355,7 +2355,7 @@ section: 7
 subsection : 1
 updated: 2021-09-20
 description : Vos donn\xE9es font la course \xE0 la premi\xE8re place
-published: false
+published: true
 application : https://koumoul.com/apps/bar-chart-race/0.2/
 ---
 La visualisation **Bar Chart Race** permet de repr\xE9senter des donn\xE9es de classement \xE0 travers le temps.
@@ -2416,7 +2416,7 @@ section: 6
 subsection : 1
 updated: 2021-09-20
 description : Project your geolocated data on a map.
-published: false
+published: true
 application : https://koumoul.com/apps/carto-stats/0.6/
 ---
 
@@ -2491,7 +2491,7 @@ section: 6
 subsection : 1
 updated: 2021-09-20
 description : Projeter vos donn\xE9es g\xE9olocalis\xE9es sur une carte
-published: false
+published: true
 application : https://koumoul.com/apps/carto-stats/0.6/
 ---
 
@@ -2562,7 +2562,7 @@ title: Catalogs
 section: 13
 updated: 2021-09-20
 description : Broadcast or import data from catalogs.
-published: false
+published: true
 ---
 Connectors allow you to interact, read and write, with other platforms or data services.
 
@@ -2579,7 +2579,7 @@ title: Catalogues
 section: 13
 updated: 2021-09-20
 description : Diffusez ou importez des donn\xE9es de diff\xE9rents catalogues.
-published: false
+published: true
 ---
 Les connecteurs permettent d\u2019interagir avec d\u2019autres plateformes ou services de donn\xE9es, en lecture comme en \xE9criture.
 
@@ -2596,7 +2596,7 @@ section: 6
 subsection : 6
 updated: 2021-09-20
 description : Generate catchment area maps
-published: false
+published: true
 application : https://koumoul.com/apps/admin-divs-catchment/0.1/
 ---
 
@@ -2652,7 +2652,7 @@ section: 6
 subsection : 6
 updated: 2021-09-20
 description : G\xE9n\xE9rer des cartes de zones de chalandise
-published: false
+published: true
 application : https://koumoul.com/apps/admin-divs-catchment/0.1/
 ---
 
@@ -2705,7 +2705,7 @@ section: 7
 subsection : 7
 updated: 2021-09-20
 description : Histograms, lines, areas, radar ... visualize your data in interactive charts!
-published: false
+published: true
 application : https://cdn.jsdelivr.net/npm/@koumoul/data-fair-charts@0.9/dist/
 ---
 
@@ -2812,7 +2812,7 @@ section: 7
 subsection : 7
 updated: 2021-09-20
 description : Histogrammes, lignes, aires, radar... visualiser vos donn\xE9es dans des graphiques interactifs!
-published: false
+published: true
 application : https://cdn.jsdelivr.net/npm/@koumoul/data-fair-charts@0.9/dist/
 ---
 
@@ -2918,7 +2918,7 @@ section: 4
 subsection: 5
 updated: 2021-09-20
 description: Make sens of your data
-published: false
+published: true
 ---
 
 The concepts are known elements for the platform. Your data is more explicit.  
@@ -2971,7 +2971,7 @@ section: 4
 subsection: 5
 updated: 2021-09-20
 description: Donnez du sens \xE0 vos donn\xE9es
-published: false
+published: true
 ---
 
 Les concepts sont des notions connues pour la plateforme. Les concepts vont donner du sens \xE0 vos donn\xE9es.  
@@ -3026,7 +3026,7 @@ section: 11
 subsection : 1
 updated: 2021-09-30
 description : Add thematic pages to your portal
-published: false
+published: true
 ---
 
 Content pages allow to highlight data, write articles, do data storytelling or even describe a license on your portal.  
@@ -3085,7 +3085,7 @@ section: 11
 subsection : 1
 updated: 2021-09-30
 description : Ajouter des pages th\xE9matiques sur votre portail
-published: false
+published: true
 ---
 
 Les pages de contenu permettent de mettre en avant certaines donn\xE9es, d'\xE9crire des articles, de faire du data storytelling, ou encore de pr\xE9senter une licence sur votre portail.
@@ -3144,7 +3144,7 @@ title: Dashboard
 section: 3
 updated: 2021-09-20
 description : Dashboard
-published: false
+published: true
 ---
 
 The **dashboard** of your [active account](./user-guide-backoffice/organisation) is accessible using the navigation bar.
@@ -3164,7 +3164,7 @@ title: Tableau de bord
 section: 3
 updated: 2021-09-20
 description : Dashboard
-published: false
+published: true
 ---
 
 Le **tableau de bord** de votre compte [compte actif](./user-guide-backoffice/organisation) est accessible \xE0 l'aide de la barre de navigation.
@@ -3184,7 +3184,7 @@ title: Datasets
 section: 4
 updated: 2021-09-20
 description : Datasets
-published: false
+published: true
 ---
 
 
@@ -3209,7 +3209,7 @@ title: Jeu de donn\xE9es
 section: 4
 updated: 2021-09-20
 description : Datasets
-published: false
+published: true
 ---
 
 Sur Data Fair, un jeu de donn\xE9es correspond \xE0 un [fichier](./user-guide-backoffice/file-formats) que vous avez charg\xE9 ou \xE0 un [jeu virtuel ou un jeu \xE9ditable](./user-guide-backoffice/import-dataset) dont vous avez renseign\xE9 les meta-donn\xE9es.  
@@ -3234,7 +3234,7 @@ section: 6
 subsection : 2
 updated: 2021-09-20
 description : Create interactive administrative maps
-published: false
+published: true
 application : https://koumoul.com/apps/data-fair-admin-divs/0.2/
 ---
 
@@ -3307,7 +3307,7 @@ section: 6
 subsection : 2
 updated: 2021-09-20
 description : Cr\xE9er facilement des cartes administratives interactives.
-published: false
+published: true
 application : https://koumoul.com/apps/data-fair-admin-divs/0.2/
 ---
 
@@ -3378,7 +3378,7 @@ section: 4
 subsection: 3
 updated: 2021-09-20
 description: Add metadata to your dataset
-published: false
+published: true
 ---
 
 Datasets are represented by a card. To edit a dataset click on the card.  
@@ -3522,7 +3522,7 @@ section: 4
 subsection: 3
 updated: 2021-09-20
 description: Ajouter les metadonn\xE9es \xE0 votre jeu de donn\xE9es
-published: false
+published: true
 ---
 
 Les jeux de donn\xE9es sont repr\xE9sent\xE9s par une fiche. L'\xE9dition d'une jeu de donn\xE9es est accessible en cliquant sur cette fiche.
@@ -3664,7 +3664,7 @@ section: 4
 subsection: 6
 updated: 2021-09-20
 description: Data enrichment
-published: false
+published: true
 ---
 
 
@@ -3736,7 +3736,7 @@ section: 4
 subsection: 6
 updated: 2021-09-20
 description: Jointures de donn\xE9es
-published: false
+published: true
 ---
 
 L'enrichissement permet d'importer des colonnes d'une base de r\xE9f\xE9rence. Il est ainsi possible de croiser ses donn\xE9es avec des donn\xE9es issues de l'open data telles que la base SIRENE, les donn\xE9es INSEE, le cadastre ou la BAN.
@@ -3802,7 +3802,7 @@ section: 4
 subsection: 1
 updated: 2021-09-20
 description: Supported file formats
-published: false
+published: true
 ---
 
 The following table shows the file formats supported by Data Fair:
@@ -3833,7 +3833,7 @@ section: 4
 subsection: 1
 updated: 2021-09-20
 description: Formats de fichier support\xE9s
-published: false
+published: true
 ---
 
 Le tableau suivant reprend les formats de fichier support\xE9s par Data Fair :
@@ -3864,7 +3864,7 @@ section: 9
 subsection : 2
 updated: 2021-09-20
 description :  Explore the data by locating points on a map.
-published: false
+published: true
 application : https://koumoul.com/apps/data-fair-locate-game/0.1/
 ---
 
@@ -3926,7 +3926,7 @@ section: 9
 subsection : 2
 updated: 2021-09-20
 description :  Explorer les donn\xE9es en localisant les points sur une carte.
-published: false
+published: true
 application : https://koumoul.com/apps/data-fair-locate-game/0.1/
 ---
 
@@ -3984,7 +3984,7 @@ section: 9
 subsection : 1
 updated: 2021-09-20
 description :  Data exploration with quiz questions.
-published: false
+published: true
 application : https://koumoul.com/apps/data-fair-quizz/0.1/
 ---
 
@@ -4046,7 +4046,7 @@ section: 9
 subsection : 1
 updated: 2021-09-20
 description :  Explorer les donn\xE9es avec des questions sous forme de quizz.
-published: false
+published: true
 application : https://koumoul.com/apps/data-fair-quizz/0.1/
 ---
 
@@ -4106,7 +4106,7 @@ section: 9
 subsection : 3
 updated: 2021-09-20
 description :  Data exploration in a sort game
-published: false
+published: true
 application : https://koumoul.com/apps/data-fair-sort-game/0.1/
 ---
 
@@ -4165,7 +4165,7 @@ section: 9
 subsection : 3
 updated: 2021-09-20
 description :  Explorer les donn\xE9es en les triant suivant une valeur num\xE9rique.
-published: false
+published: true
 application : https://koumoul.com/apps/data-fair-sort-game/0.1/
 ---
 
@@ -4224,7 +4224,7 @@ section: 6
 subsection : 3
 updated: 2021-09-20
 description : Visualize geometric data on a map.
-published: false
+published: true
 application : https://koumoul.com/apps/data-fair-geo-shapes/0.1/
 ---
 
@@ -4289,7 +4289,7 @@ section: 6
 subsection : 3
 updated: 2021-09-20
 description : Visualiser des donn\xE9es g\xE9om\xE9triques sur une carte.
-published: false
+published: true
 application : https://koumoul.com/apps/data-fair-geo-shapes/0.1/
 ---
 
@@ -4350,7 +4350,7 @@ section: 4
 subsection: 2
 updated: 2021-09-20
 description: Import a dataset
-published: false
+published: true
 ---
 
 You can create a dataset on the [dashbord](./user-guide-backoffice/dashboard) or on the [datasets](./user-guide-backoffice/datasets) pages.
@@ -4418,7 +4418,7 @@ section: 4
 subsection: 2
 updated: 2021-09-20
 description: Ajouter un dataset
-published: false
+published: true
 ---
 
 Vous pouvez cr\xE9er un jeu de donn\xE9es sur la [page du tableau de bord](./user-guide-backoffice/dashboard) ou sur la [page des jeux de donn\xE9es](./user-guide-backoffice/datasets).
@@ -4483,7 +4483,7 @@ section: 6
 subsection : 5
 updated: 2021-09-20
 description : Project your geolocated data on a map with custom markers
-published: false
+published: true
 application : https://koumoul.com/apps/infos-loc/0.9/
 ---
 
@@ -4567,7 +4567,7 @@ section: 6
 subsection : 5
 updated: 2021-09-20
 description : Projeter vos donn\xE9es g\xE9olocalis\xE9es sur une carte avec des marqueurs personnalis\xE9s
-published: false
+published: true
 application : https://koumoul.com/apps/infos-loc/0.9/
 ---
 
@@ -4639,7 +4639,7 @@ section: 6
 subsection : 4
 updated: 2021-09-20
 description : Project your data on the French cadastral map.
-published: false
+published: true
 application : https://koumoul.com/apps/infos-parcelles/2.4/
 ---
 
@@ -4716,7 +4716,7 @@ section: 6
 subsection : 4
 updated: 2021-09-20
 description : Projeter vos donn\xE9es sur le plan cadastral fran\xE7ais.
-published: false
+published: true
 application : https://koumoul.com/apps/infos-parcelles/2.4/
 ---
 
@@ -4786,7 +4786,7 @@ section: 12
 subsection: 1
 updated: 2021-09-20
 description : Add and manage the licenses and thematics of your portal
-published: false
+published: true
 ---
 
 On the settings page you will find the **Licenses** and **Themes** sections.
@@ -4807,7 +4807,7 @@ section: 12
 subsection: 1
 updated: 2021-09-20
 description : Ajouter et g\xE9rer les licences et th\xE9matiques de votre portail
-published: false
+published: true
 ---
 Sur la page des param\xE8tres vous retrouvez les sections des **Licences** et des **Th\xE9matiques**.  
 
@@ -4827,7 +4827,7 @@ section: 8
 subsection : 1
 updated: 2021-09-20
 description : Explore your data
-published: false
+published: true
 application : https://koumoul.com/apps/list-details/0.3/
 ---
 
@@ -4888,7 +4888,7 @@ section: 8
 subsection : 1
 updated: 2021-09-20
 description : Explorer vos donn\xE9es
-published: false
+published: true
 application : https://koumoul.com/apps/list-details/0.3/
 ---
 
@@ -4947,7 +4947,7 @@ section: 10
 subsection : 1
 updated: 2021-09-20
 description : Invite members in your organization through their email.
-published: false
+published: true
 ---
 
 As an administrator of your organization, the **Organization management** section is accessible in the Data Fair navigation bar.
@@ -5011,7 +5011,7 @@ section: 10
 subsection : 1
 updated: 2021-09-20
 description : Inviter les membres de votre organisation gr\xE2ce \xE0 leur e-mail.
-published: false
+published: true
 ---
 
 Lorsque vous \xEAtes administrateur de votre organisation, la section **Gestion de l'organisation** est accessible dans la barre de navigation de Data Fair.
@@ -5074,7 +5074,7 @@ section: 2
 subsection : 1
 updated: 2021-09-20
 description : Menu
-published: false
+published: true
 ---
 
 The menu allows to change the active account and access the **Notifications** and **Storage** pages of the account.
@@ -5116,7 +5116,7 @@ section: 2
 subsection : 1
 updated: 2021-09-20
 description : Menu
-published: false
+published: true
 ---
 
 Le menu permet principalement de changer de compte actif et d'acc\xE9der aux pages de **Notifications** et **Stockage** du compte actif.
@@ -5160,7 +5160,7 @@ title: Navigate in Data Fair
 section: 2
 updated: 2021-09-20
 description : An intuitive interface
-published: false
+published: true
 ---
 
 The **Data Fair** interface allows to present your data in the form of APIs, data portal and interactive visualizations **without any code**.
@@ -5180,7 +5180,7 @@ title: Naviguer dans votre espace Data Fair
 section: 2
 updated: 2021-09-20
 description : Une interface intuitive
-published: false
+published: true
 ---
 
 L'interface de **Data Fair** vous permet de pr\xE9senter vos donn\xE9es sous forme d'API, de portail de donn\xE9es et de visualisations interactives **sans avoir besoin de programmer**.
@@ -5201,7 +5201,7 @@ section: 7
 subsection : 5
 updated: 2021-09-20
 description :  View networks
-published: false
+published: true
 application : https://koumoul.com/apps/data-fair-networks/0.1/
 ---
 
@@ -5254,7 +5254,7 @@ section: 7
 subsection : 5
 updated: 2021-09-20
 description :  Visualiser des r\xE9seaux
-published: false
+published: true
 application : https://koumoul.com/apps/data-fair-networks/0.1/
 ---
 
@@ -5305,7 +5305,7 @@ title: Organization
 section: 10
 updated: 2021-09-20
 description : Create and manage your organization
-published: false
+published: true
 ---
 
 An organization account allows to work together on the same datasets and visualizations with various persons.  
@@ -5331,7 +5331,7 @@ title: Organisation
 section: 10
 updated: 2021-09-20
 description : Cr\xE9er et g\xE9rer son organisation
-published: false
+published: true
 ---
 Une compte organisation vous permet de travailler \xE0 plusieurs sur les m\xEAme fichiers et visualisations.  
 Un compte personnel peut cr\xE9er une ou plusieurs organisations en fonction de ses limites.
@@ -5357,7 +5357,7 @@ section: 5
 subsection : 2
 updated: 2021-09-20
 description : Configure your visualizations within minutes
-published: false
+published: true
 ---
 The configuration menu of a visualization is divided into several sections.
 
@@ -5413,7 +5413,7 @@ section: 5
 subsection : 2
 updated: 2021-09-20
 description : Configurer ses visualisations en quelques minutes
-published: false
+published: true
 ---
 
 Le menu de configuration d'une visualisation est divis\xE9 en plusieurs sections.  
@@ -5463,7 +5463,7 @@ title: Account settings
 section: 12
 updated: 2021-09-20
 description : Manage the settings of your Data Fair account
-published: false
+published: true
 ---
 
 Account settings are accessible from the navigation bar.
@@ -5478,7 +5478,7 @@ title: Param\xE8tres du compte
 section: 12
 updated: 2021-09-20
 description : G\xE9rer les diff\xE9rents param\xE8tres de son compte Data Fair
-published: false
+published: true
 ---
 Les param\xE8tres d'un compte sont accessibles \xE0 partir de la barre de navigation
 
@@ -5492,7 +5492,7 @@ section: 7
 subsection : 8
 updated: 2021-09-20
 description :  Graphs on evolution of temporal data.
-published: false
+published: true
 application : https://koumoul.com/apps/periodic-series/0.1/
 ---
 
@@ -5551,7 +5551,7 @@ section: 7
 subsection : 8
 updated: 2021-09-20
 description :  Visualiser l'\xE9volution de donn\xE9es temporelles sur des graphiques.
-published: false
+published: true
 application : https://koumoul.com/apps/periodic-series/0.1/
 ---
 
@@ -5606,7 +5606,7 @@ title: Configure your data portal
 section: 11
 updated: 2021-09-20
 description : Configure your data portal for Open Data or to private share.
-published: false
+published: true
 ---
 
 Data Fair allows to present your data in a portal.  
@@ -5687,7 +5687,7 @@ title: Configurer son portail de donn\xE9es
 section: 11
 updated: 2021-09-20
 description : Apprenez comment configurer votre solution pour diffuser vos donn\xE9es en interne ou en Open Data.
-published: false
+published: true
 ---
 
 Data Fair vous permet de pr\xE9senter vos donn\xE9es dans un portail.  
@@ -5768,7 +5768,7 @@ title: Periodic processings
 section: 14
 updated: 2021-09-20
 description : Process and update your data frequently
-published: false
+published: true
 ---
 
 **Periodic processing** allows to fetch data, transform it and publish it on the platform.  
@@ -5786,7 +5786,7 @@ title: Traitements p\xE9riodiques
 section: 14
 updated: 2021-09-20
 description : Automatisation de vos donn\xE9es \xE0 l'aide des traitements p\xE9riodiques
-published: false
+published: true
 ---
 
 Les **traitements p\xE9riodiques** vont chercher des donn\xE9es \xE0 certains endroits, les transforment et les publient sur la plateforme.
@@ -5805,7 +5805,7 @@ section: 7
 subsection : 2
 updated: 2021-09-20
 description : Comparison of proportions
-published: false
+published: true
 application : https://koumoul.com/apps/data-fair-proportions/0.2/
 ---
 
@@ -5862,7 +5862,7 @@ section: 7
 subsection : 2
 updated: 2021-09-20
 description : Diagramme de comparaison de proportions
-published: false
+published: true
 application : https://koumoul.com/apps/data-fair-proportions/0.2/
 ---
 
@@ -5920,7 +5920,7 @@ section: 7
 subsection : 6
 updated: 2021-09-20
 description :  Visualize interconnections between nodes
-published: false
+published: true
 application : https://koumoul.com/apps/data-fair-relations/0.2/
 ---
 
@@ -5975,7 +5975,7 @@ section: 7
 subsection : 6
 updated: 2021-09-20
 description :  R\xE9seau de relations
-published: false
+published: true
 application : https://koumoul.com/apps/data-fair-relations/0.2/
 ---
 
@@ -6030,7 +6030,7 @@ title: Map visualizations
 section: 6
 updated: 2021-09-20
 description : Map visualizations
-published: false
+published: true
 ---
 
 Map visualizations allow to project your geographic data on a map using [concepts](./user-guide-backoffice/concept) latitude, longitude or geometry.
@@ -6048,7 +6048,7 @@ title: Visualisations cartographiques
 section: 6
 updated: 2021-09-20
 description : Visualisations cartographiques
-published: false
+published: true
 ---
 
 Les visualisations cartographiques vous permettent de projeter vos donn\xE9es g\xE9olocalis\xE9es sur une carte \xE0 l'aide des [concepts](./user-guide-backoffice/concept) latitude, longitude ou g\xE9om\xE9trie.
@@ -6066,7 +6066,7 @@ title: Visualizations
 section: 5
 updated: 2021-09-20
 description : Visualizations
-published: false
+published: true
 ---
 
 The services connected to Data Fair allow to present your data in **dynamic visualizations** and to make it more **accessible**.  
@@ -6130,7 +6130,7 @@ title: Visualisations
 section: 5
 updated: 2021-09-20
 description : Visualisations
-published: false
+published: true
 ---
 
 Les services compl\xE9tant Data Fair permettent de pr\xE9senter vos donn\xE9es dans des **visualisations dynamiques** et ainsi rendre vos donn\xE9es plus **accessibles**.  
@@ -6196,7 +6196,7 @@ title: Gamification
 section: 9
 updated: 2021-09-20
 description : Gamification
-published: false
+published: true
 ---
 
 Game visualizations present your data in mini-games. Gamification challenge your visitors, they will be able to test their knowledge and learn about your data.
@@ -6211,7 +6211,7 @@ title: Visualisations de jeux
 section: 9
 updated: 2021-09-20
 description : Visualisations
-published: false
+published: true
 ---
 
 Les visualisations jeux pr\xE9sentent vos donn\xE9es sous forme de mini-jeux. La gamification permet d'explorer les donn\xE9es sous forme de challenge. Les visiteurs vont pouvoir tester leurs connaissances sur les donn\xE9es.
@@ -6226,7 +6226,7 @@ title: Graphic visualizations
 section: 7
 updated: 2021-09-20
 description : Graphic visualizations
-published: false
+published: true
 ---
 
 Graphic visualizations allow to represent your data on different perspective visualizations.
@@ -6245,7 +6245,7 @@ title: Visualisations graphiques
 section: 7
 updated: 2021-09-20
 description : Visualisations
-published: false
+published: true
 ---
 
 Les visualisations graphiques vous permettent de repr\xE9senter vos donn\xE9es sous diff\xE9rents angles.
@@ -6264,7 +6264,7 @@ title: Textual visualizations
 section: 9
 updated: 2021-09-20
 description : Textual visualizations
-published: false
+published: true
 ---
 
 Textual visualizations can represent the majority of your data.
@@ -6278,7 +6278,7 @@ title: Visualisations textuelles
 section: 8
 updated: 2021-09-20
 description : Visualisations
-published: false
+published: true
 ---
 
 Les visualisations textuelles peuvent repr\xE9senter la majorit\xE9 de vos donn\xE9es.
@@ -6293,7 +6293,7 @@ section: 7
 subsection : 4
 updated: 2021-09-20
 description : View your information flows.
-published: false
+published: true
 application : https://koumoul.com/apps/sankey/0.5/
 ---
 
@@ -6357,7 +6357,7 @@ section: 7
 subsection : 4
 updated: 2021-09-20
 description : Visualiser vos flux d'informations.
-published: false
+published: true
 application : https://koumoul.com/apps/sankey/0.5/
 ---
 
@@ -6429,7 +6429,7 @@ title: Getting started with Data Fair
 section: 1
 updated: 2021-09-20
 description : Connect to Data Fair
-published: false
+published: true
 ---
 
 Data Fair allows to **enhance your data and share it internally or in opendata.**  
@@ -6450,7 +6450,7 @@ title: Premiers pas avec Data Fair
 section: 1
 updated: 2021-09-20
 description : Connectez vous sur Data Fair
-published: false
+published: true
 ---
 
 Data Fair permet de **valoriser ses donn\xE9es et de les partager en interne ou en opendata.**
@@ -6472,7 +6472,7 @@ section: 7
 subsection : 3
 updated: 2021-09-20
 description : Visualisation interactive de vos donn\xE9es hi\xE9rarchiques.
-published: false
+published: true
 application : https://koumoul.com/apps/sunburst/0.2/
 ---
 
@@ -6526,7 +6526,7 @@ section: 7
 subsection : 3
 updated: 2021-09-20
 description : Visualisation interactive de vos donn\xE9es hi\xE9rarchiques.
-published: false
+published: true
 application : https://koumoul.com/apps/sunburst/0.2/
 ---
 
@@ -6583,7 +6583,7 @@ section: 4
 subsection: 4
 updated: 2021-09-20
 description: Update a dataset
-published: false
+published: true
 ---
 
 Updating a dataset can be done manually on the [dataset edition page](./user-guide-backoffice/edition-dataset)  or can be automated with [periodic processing](./user-guide-backoffice/processing).
@@ -6626,7 +6626,7 @@ section: 4
 subsection: 4
 updated: 2021-09-20
 description: Mettre \xE0 jour ses donn\xE9es
-published: false
+published: true
 ---
 
 La mise \xE0 jour d'un jeu de donn\xE9es peut \xEAtre r\xE9alis\xE9e manuellement sur la [page d'\xE9dition du jeu de donn\xE9es](./user-guide-backoffice/edition-dataset) ou peut \xEAtre automatis\xE9 \xE0 l'aide des [traitements p\xE9riodiques](./user-guide-backoffice/processing).
@@ -6670,7 +6670,7 @@ section: 12
 subsection: 3
 updated: 2021-09-20
 description : Keep informed on your data
-published: false
+published: true
 ---
 
 **Webhooks** are used to synchronize computer systems. It is possible to send messages during updates on data for example.
@@ -6716,7 +6716,7 @@ section: 12
 subsection: 3
 updated: 2021-09-20
 description : Rester inform\xE9s de la vie de ses donn\xE9es
-published: false
+published: true
 ---
 
 Les **Webhooks** permettent de synchroniser des syst\xE8mes informatiques. On peut ainsi obtenir des messages lors de mises \xE0 jour ou ajouts de donn\xE9es par exemple.
@@ -6762,7 +6762,7 @@ section: 8
 subsection : 2
 updated: 2021-09-20
 description : Generate word clouds
-published: false
+published: true
 application : https://koumoul.com/apps/word-cloud/0.3/
 ---
 
@@ -6823,7 +6823,7 @@ section: 8
 subsection : 2
 updated: 2021-09-20
 description : G\xE9n\xE9rer des nuages de mots
-published: false
+published: true
 application : https://koumoul.com/apps/word-cloud/0.3/
 ---
 
@@ -6883,7 +6883,7 @@ title: Content page
 section: 5
 updated: 2022-04-25
 description : Thematic pages
-published: false
+published: true
 ---
 
 Content pages are available in the navigation bar as a direct link to the page or as submenus.  
@@ -6913,7 +6913,7 @@ title: Page de contenu
 section: 5
 updated: 2022-04-25
 description : Pages th\xE9matiques
-published: false
+published: true
 ---
 
 Les pages de contenus sont disponibles dans la barre de navigation sous forma de lien direct vers la page ou de sous menus.  
@@ -6934,7 +6934,7 @@ Les  blocs sont compos\xE9es d'un titre, d'une description, une visualisation et
 ### Pages libres
 
 Les pages libres sont moins structur\xE9es que les pages th\xE9matiques et sont plus facilement personnalisables.
-  
+
 ![page des donn\xE9es](./images/user-guide-frontoffice/libre.png)
 
 Les pages libres permettent d'afficher plus de contenu diff\xE9rents et de modifier plus facilement les composants de la page.
@@ -6943,7 +6943,7 @@ title: Data page
 section: 3
 updated: 2022-04-25
 description : Access portal data
-published: false
+published: true
 ---
 
 The data page gives you access to all of the portal's data.  
@@ -6964,7 +6964,7 @@ title: Page des donn\xE9es
 section: 3
 updated: 2022-04-25
 description : Acc\xE9der aux donn\xE9es du portail
-published: false
+published: true
 ---
 
 La page de donn\xE9es vous permet d'acc\xE9der \xE0 l'ensemble des donn\xE9es du portail.
@@ -6986,7 +6986,7 @@ section: 3
 subsection : 1
 updated: 2022-04-25
 description : Access portal data
-published: false
+published: true
 ---
 
 The page of a dataset is composed of several elements:
@@ -7110,7 +7110,7 @@ section: 3
 subsection : 1
 updated: 2022-04-25
 description : Acc\xE9der aux donn\xE9es du portail
-published: false
+published: true
 ---
 
 La page d'un jeu de donn\xE9es est compos\xE9 de plusieurs \xE9l\xE9ments :
@@ -7235,7 +7235,7 @@ title: Home page
 section: 2
 updated: 2022-04-25
 description : Explore the portal
-published: false
+published: true
 ---
 
 The home page provides an overview of the data present on the data portal.  
@@ -7276,7 +7276,7 @@ title: Page d'accueil
 section: 2
 updated: 2022-04-25
 description : D\xE9couvrez les donn\xE9es du portail
-published: false
+published: true
 ---
 
 La page d'accueil permet d'avoir un aper\xE7u des donn\xE9es pr\xE9sentes sur le portail de donn\xE9es.  
@@ -7317,7 +7317,7 @@ title: Use the portal
 section: 1
 updated: 2022-04-25
 description : Check the functionalities of a portal
-published: false
+published: true
 ---
 
 The data portal allows visitors to quickly access data.  
@@ -7333,7 +7333,7 @@ title: Utiliser le portail
 section: 1
 updated: 2022-04-25
 description : D\xE9couvrez les fonctionnalit\xE9s d'un portail
-published: false
+published: true
 ---
 
 Le portail de donn\xE9es permet au visiteurs d'acc\xE9der rapidement aux donn\xE9es.
@@ -7350,7 +7350,7 @@ section: 4
 subsection : 1
 updated: 2022-04-25
 description : Access the visualisation on a full page
-published: false
+published: true
 ---
 
 The page of a dataset is composed of several elements:  
@@ -7392,7 +7392,7 @@ section: 4
 subsection : 1
 updated: 2022-04-25
 description : Acc\xE9der \xE0 la page de visualisation du portail
-published: false
+published: true
 ---
 
 La page d'un jeu de donn\xE9es est compos\xE9 de plusieurs \xE9l\xE9ments :
@@ -7431,7 +7431,7 @@ title: Visualizations page
 section: 4
 updated: 2022-04-25
 description : Access portal visualizations
-published: false
+published: true
 ---
 
 The visualizations page gives you access to all of the portal's visualizations.  
@@ -7451,7 +7451,7 @@ title: Page des visualisations
 section: 4
 updated: 2022-04-25
 description : Acc\xE9der aux visualisations du portail
-published: false
+published: true
 ---
 
 La page de visualisations vous permet d'acc\xE9der \xE0 l'ensemble des visualisations du portail.  
@@ -7466,4 +7466,4 @@ Chaque visualisation est pr\xE9sent\xE9 sous forme d'une fiche contenant le titr
 Les boutons d'actions vous permettent d'acc\xE9der \xE0 la visualisation dans une fen\xEAtre ou en plein \xE9cran.
 
 Un clic sur la fiche vous fait naviguer vers la page de la visualisation.
-`},,,function(t,e,n){n(540),t.exports=n(541)},,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,function(t,e,n){"use strict";var i=n(206),o=n.n(i)},,,,,,,,,,,,function(t,e,n){"use strict";var i=n(208),o=n.n(i)},function(t,e,n){"use strict";n.r(e);var i=n(7),o=n.n(i),b=n(6),p=n.n(b),h=n(8),S=n.n(h),C=n(11),D=n.n(C),L=n(12),T=n.n(L),k=n(3),A=n(1),j=n(55);function q(v,m){var d=Object.keys(v);if(Object.getOwnPropertySymbols){var g=Object.getOwnPropertySymbols(v);m&&(g=g.filter(function(I){return Object.getOwnPropertyDescriptor(v,I).enumerable})),d.push.apply(d,g)}return d}function w(v){for(var m=1;m<arguments.length;m++){var d=arguments[m]!=null?arguments[m]:{};m%2?q(Object(d),!0).forEach(function(g){Object(k.a)(v,g,d[g])}):Object.getOwnPropertyDescriptors?Object.defineProperties(v,Object.getOwnPropertyDescriptors(d)):q(Object(d)).forEach(function(g){Object.defineProperty(v,g,Object.getOwnPropertyDescriptor(d,g))})}return v}A.a.use(j.a),e.default=function(){return new j.a.Store({state:{env:{}},mutations:{setAny:function(m,d){Object.assign(m,d)}},actions:{nuxtServerInit:function(m,d){var g=m.commit,I=m.dispatch,F=d.req,x=d.env,E=d.app;g("setAny",{env:w({},x)})}}})}},,,,,function(t,e,n){var i={"./af":210,"./af.js":210,"./ar":211,"./ar-dz":212,"./ar-dz.js":212,"./ar-kw":213,"./ar-kw.js":213,"./ar-ly":214,"./ar-ly.js":214,"./ar-ma":215,"./ar-ma.js":215,"./ar-sa":216,"./ar-sa.js":216,"./ar-tn":217,"./ar-tn.js":217,"./ar.js":211,"./az":218,"./az.js":218,"./be":219,"./be.js":219,"./bg":220,"./bg.js":220,"./bm":221,"./bm.js":221,"./bn":222,"./bn-bd":223,"./bn-bd.js":223,"./bn.js":222,"./bo":224,"./bo.js":224,"./br":225,"./br.js":225,"./bs":226,"./bs.js":226,"./ca":227,"./ca.js":227,"./cs":228,"./cs.js":228,"./cv":229,"./cv.js":229,"./cy":230,"./cy.js":230,"./da":231,"./da.js":231,"./de":232,"./de-at":233,"./de-at.js":233,"./de-ch":234,"./de-ch.js":234,"./de.js":232,"./dv":235,"./dv.js":235,"./el":236,"./el.js":236,"./en-au":237,"./en-au.js":237,"./en-ca":238,"./en-ca.js":238,"./en-gb":239,"./en-gb.js":239,"./en-ie":240,"./en-ie.js":240,"./en-il":241,"./en-il.js":241,"./en-in":242,"./en-in.js":242,"./en-nz":243,"./en-nz.js":243,"./en-sg":244,"./en-sg.js":244,"./eo":245,"./eo.js":245,"./es":246,"./es-do":247,"./es-do.js":247,"./es-mx":248,"./es-mx.js":248,"./es-us":249,"./es-us.js":249,"./es.js":246,"./et":250,"./et.js":250,"./eu":251,"./eu.js":251,"./fa":252,"./fa.js":252,"./fi":253,"./fi.js":253,"./fil":254,"./fil.js":254,"./fo":255,"./fo.js":255,"./fr":161,"./fr-ca":256,"./fr-ca.js":256,"./fr-ch":257,"./fr-ch.js":257,"./fr.js":161,"./fy":258,"./fy.js":258,"./ga":259,"./ga.js":259,"./gd":260,"./gd.js":260,"./gl":261,"./gl.js":261,"./gom-deva":262,"./gom-deva.js":262,"./gom-latn":263,"./gom-latn.js":263,"./gu":264,"./gu.js":264,"./he":265,"./he.js":265,"./hi":266,"./hi.js":266,"./hr":267,"./hr.js":267,"./hu":268,"./hu.js":268,"./hy-am":269,"./hy-am.js":269,"./id":270,"./id.js":270,"./is":271,"./is.js":271,"./it":272,"./it-ch":273,"./it-ch.js":273,"./it.js":272,"./ja":274,"./ja.js":274,"./jv":275,"./jv.js":275,"./ka":276,"./ka.js":276,"./kk":277,"./kk.js":277,"./km":278,"./km.js":278,"./kn":279,"./kn.js":279,"./ko":280,"./ko.js":280,"./ku":281,"./ku.js":281,"./ky":282,"./ky.js":282,"./lb":283,"./lb.js":283,"./lo":284,"./lo.js":284,"./lt":285,"./lt.js":285,"./lv":286,"./lv.js":286,"./me":287,"./me.js":287,"./mi":288,"./mi.js":288,"./mk":289,"./mk.js":289,"./ml":290,"./ml.js":290,"./mn":291,"./mn.js":291,"./mr":292,"./mr.js":292,"./ms":293,"./ms-my":294,"./ms-my.js":294,"./ms.js":293,"./mt":295,"./mt.js":295,"./my":296,"./my.js":296,"./nb":297,"./nb.js":297,"./ne":298,"./ne.js":298,"./nl":299,"./nl-be":300,"./nl-be.js":300,"./nl.js":299,"./nn":301,"./nn.js":301,"./oc-lnc":302,"./oc-lnc.js":302,"./pa-in":303,"./pa-in.js":303,"./pl":304,"./pl.js":304,"./pt":305,"./pt-br":306,"./pt-br.js":306,"./pt.js":305,"./ro":307,"./ro.js":307,"./ru":308,"./ru.js":308,"./sd":309,"./sd.js":309,"./se":310,"./se.js":310,"./si":311,"./si.js":311,"./sk":312,"./sk.js":312,"./sl":313,"./sl.js":313,"./sq":314,"./sq.js":314,"./sr":315,"./sr-cyrl":316,"./sr-cyrl.js":316,"./sr.js":315,"./ss":317,"./ss.js":317,"./sv":318,"./sv.js":318,"./sw":319,"./sw.js":319,"./ta":320,"./ta.js":320,"./te":321,"./te.js":321,"./tet":322,"./tet.js":322,"./tg":323,"./tg.js":323,"./th":324,"./th.js":324,"./tk":325,"./tk.js":325,"./tl-ph":326,"./tl-ph.js":326,"./tlh":327,"./tlh.js":327,"./tr":328,"./tr.js":328,"./tzl":329,"./tzl.js":329,"./tzm":330,"./tzm-latn":331,"./tzm-latn.js":331,"./tzm.js":330,"./ug-cn":332,"./ug-cn.js":332,"./uk":333,"./uk.js":333,"./ur":334,"./ur.js":334,"./uz":335,"./uz-latn":336,"./uz-latn.js":336,"./uz.js":335,"./vi":337,"./vi.js":337,"./x-pseudo":338,"./x-pseudo.js":338,"./yo":339,"./yo.js":339,"./zh-cn":340,"./zh-cn.js":340,"./zh-hk":341,"./zh-hk.js":341,"./zh-mo":342,"./zh-mo.js":342,"./zh-tw":343,"./zh-tw.js":343};function o(p){var h=b(p);return n(h)}function b(p){if(!n.o(i,p)){var h=new Error("Cannot find module '"+p+"'");throw h.code="MODULE_NOT_FOUND",h}return i[p]}o.keys=function(){return Object.keys(i)},o.resolve=b,t.exports=o,o.id=635}]),[[539,20,2,21]]]);
+`},,,function(t,e,n){n(540),t.exports=n(541)},,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,function(t,e,n){"use strict";var a=n(206),o=n.n(a)},,,,,,,,,,,,function(t,e,n){"use strict";var a=n(208),o=n.n(a)},function(t,e,n){"use strict";n.r(e);var a=n(7),o=n.n(a),b=n(6),p=n.n(b),h=n(8),S=n.n(h),C=n(11),D=n.n(C),L=n(12),T=n.n(L),k=n(3),A=n(1),j=n(55);function q(v,m){var d=Object.keys(v);if(Object.getOwnPropertySymbols){var g=Object.getOwnPropertySymbols(v);m&&(g=g.filter(function(I){return Object.getOwnPropertyDescriptor(v,I).enumerable})),d.push.apply(d,g)}return d}function w(v){for(var m=1;m<arguments.length;m++){var d=arguments[m]!=null?arguments[m]:{};m%2?q(Object(d),!0).forEach(function(g){Object(k.a)(v,g,d[g])}):Object.getOwnPropertyDescriptors?Object.defineProperties(v,Object.getOwnPropertyDescriptors(d)):q(Object(d)).forEach(function(g){Object.defineProperty(v,g,Object.getOwnPropertyDescriptor(d,g))})}return v}A.a.use(j.a),e.default=function(){return new j.a.Store({state:{env:{}},mutations:{setAny:function(m,d){Object.assign(m,d)}},actions:{nuxtServerInit:function(m,d){var g=m.commit,I=m.dispatch,F=d.req,x=d.env,E=d.app;g("setAny",{env:w({},x)})}}})}},,,,,function(t,e,n){var a={"./af":210,"./af.js":210,"./ar":211,"./ar-dz":212,"./ar-dz.js":212,"./ar-kw":213,"./ar-kw.js":213,"./ar-ly":214,"./ar-ly.js":214,"./ar-ma":215,"./ar-ma.js":215,"./ar-sa":216,"./ar-sa.js":216,"./ar-tn":217,"./ar-tn.js":217,"./ar.js":211,"./az":218,"./az.js":218,"./be":219,"./be.js":219,"./bg":220,"./bg.js":220,"./bm":221,"./bm.js":221,"./bn":222,"./bn-bd":223,"./bn-bd.js":223,"./bn.js":222,"./bo":224,"./bo.js":224,"./br":225,"./br.js":225,"./bs":226,"./bs.js":226,"./ca":227,"./ca.js":227,"./cs":228,"./cs.js":228,"./cv":229,"./cv.js":229,"./cy":230,"./cy.js":230,"./da":231,"./da.js":231,"./de":232,"./de-at":233,"./de-at.js":233,"./de-ch":234,"./de-ch.js":234,"./de.js":232,"./dv":235,"./dv.js":235,"./el":236,"./el.js":236,"./en-au":237,"./en-au.js":237,"./en-ca":238,"./en-ca.js":238,"./en-gb":239,"./en-gb.js":239,"./en-ie":240,"./en-ie.js":240,"./en-il":241,"./en-il.js":241,"./en-in":242,"./en-in.js":242,"./en-nz":243,"./en-nz.js":243,"./en-sg":244,"./en-sg.js":244,"./eo":245,"./eo.js":245,"./es":246,"./es-do":247,"./es-do.js":247,"./es-mx":248,"./es-mx.js":248,"./es-us":249,"./es-us.js":249,"./es.js":246,"./et":250,"./et.js":250,"./eu":251,"./eu.js":251,"./fa":252,"./fa.js":252,"./fi":253,"./fi.js":253,"./fil":254,"./fil.js":254,"./fo":255,"./fo.js":255,"./fr":161,"./fr-ca":256,"./fr-ca.js":256,"./fr-ch":257,"./fr-ch.js":257,"./fr.js":161,"./fy":258,"./fy.js":258,"./ga":259,"./ga.js":259,"./gd":260,"./gd.js":260,"./gl":261,"./gl.js":261,"./gom-deva":262,"./gom-deva.js":262,"./gom-latn":263,"./gom-latn.js":263,"./gu":264,"./gu.js":264,"./he":265,"./he.js":265,"./hi":266,"./hi.js":266,"./hr":267,"./hr.js":267,"./hu":268,"./hu.js":268,"./hy-am":269,"./hy-am.js":269,"./id":270,"./id.js":270,"./is":271,"./is.js":271,"./it":272,"./it-ch":273,"./it-ch.js":273,"./it.js":272,"./ja":274,"./ja.js":274,"./jv":275,"./jv.js":275,"./ka":276,"./ka.js":276,"./kk":277,"./kk.js":277,"./km":278,"./km.js":278,"./kn":279,"./kn.js":279,"./ko":280,"./ko.js":280,"./ku":281,"./ku.js":281,"./ky":282,"./ky.js":282,"./lb":283,"./lb.js":283,"./lo":284,"./lo.js":284,"./lt":285,"./lt.js":285,"./lv":286,"./lv.js":286,"./me":287,"./me.js":287,"./mi":288,"./mi.js":288,"./mk":289,"./mk.js":289,"./ml":290,"./ml.js":290,"./mn":291,"./mn.js":291,"./mr":292,"./mr.js":292,"./ms":293,"./ms-my":294,"./ms-my.js":294,"./ms.js":293,"./mt":295,"./mt.js":295,"./my":296,"./my.js":296,"./nb":297,"./nb.js":297,"./ne":298,"./ne.js":298,"./nl":299,"./nl-be":300,"./nl-be.js":300,"./nl.js":299,"./nn":301,"./nn.js":301,"./oc-lnc":302,"./oc-lnc.js":302,"./pa-in":303,"./pa-in.js":303,"./pl":304,"./pl.js":304,"./pt":305,"./pt-br":306,"./pt-br.js":306,"./pt.js":305,"./ro":307,"./ro.js":307,"./ru":308,"./ru.js":308,"./sd":309,"./sd.js":309,"./se":310,"./se.js":310,"./si":311,"./si.js":311,"./sk":312,"./sk.js":312,"./sl":313,"./sl.js":313,"./sq":314,"./sq.js":314,"./sr":315,"./sr-cyrl":316,"./sr-cyrl.js":316,"./sr.js":315,"./ss":317,"./ss.js":317,"./sv":318,"./sv.js":318,"./sw":319,"./sw.js":319,"./ta":320,"./ta.js":320,"./te":321,"./te.js":321,"./tet":322,"./tet.js":322,"./tg":323,"./tg.js":323,"./th":324,"./th.js":324,"./tk":325,"./tk.js":325,"./tl-ph":326,"./tl-ph.js":326,"./tlh":327,"./tlh.js":327,"./tr":328,"./tr.js":328,"./tzl":329,"./tzl.js":329,"./tzm":330,"./tzm-latn":331,"./tzm-latn.js":331,"./tzm.js":330,"./ug-cn":332,"./ug-cn.js":332,"./uk":333,"./uk.js":333,"./ur":334,"./ur.js":334,"./uz":335,"./uz-latn":336,"./uz-latn.js":336,"./uz.js":335,"./vi":337,"./vi.js":337,"./x-pseudo":338,"./x-pseudo.js":338,"./yo":339,"./yo.js":339,"./zh-cn":340,"./zh-cn.js":340,"./zh-hk":341,"./zh-hk.js":341,"./zh-mo":342,"./zh-mo.js":342,"./zh-tw":343,"./zh-tw.js":343};function o(p){var h=b(p);return n(h)}function b(p){if(!n.o(a,p)){var h=new Error("Cannot find module '"+p+"'");throw h.code="MODULE_NOT_FOUND",h}return a[p]}o.keys=function(){return Object.keys(a)},o.resolve=b,t.exports=o,o.id=635}]),[[539,20,2,21]]]);
