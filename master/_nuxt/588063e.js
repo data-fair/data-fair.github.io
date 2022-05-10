@@ -1102,31 +1102,48 @@ Un aper\xE7u donne un rendu de la visualisation. Lorsque l\u2019on r\xE9alise de
 ### Types de visualisations
 Data Fair offre une grande vari\xE9t\xE9 de visualisations en constante progression, il y a ce jour pr\xE8s d'une **trentaine de visualisations diff\xE9rentes**. ([Cette section](./interoperate/applications) d\xE9crit en d\xE9tails la mani\xE8re de les cr\xE9er).
 
-<img src="./images/functional-presentation/valorisations.jpg"
-     height="500" style="margin:40px auto;" />
-
 
 #### Visualisations cartographiques
+
+<img src="./images/functional-presentation/visu-carto.jpg"
+     height="500" style="margin:40px auto;" />
+
 Plusieurs applications permettent d'afficher des donn\xE9es g\xE9olocalis\xE9es. *Infos localisations* permet d'afficher des **marqueurs** qui pr\xE9sentent au clic une **fiche d\xE9taill\xE9e**, \xE9ventuellement accompagn\xE9e d'une image. *Carto stats* affiche les donn\xE9es sous forme de **cercles color\xE9s et proportionnels** \xE0 une donn\xE9e dans une colonne, elle se pr\xEAte bien \xE0 la visualisation d'un **grand nombre de points**. *G\xE9o shapes* est quand \xE0 elle adapt\xE9e \xE0 l'affichage de **g\xE9om\xE9trie complexes**, par exemple un r\xE9seau routier ou un PLU.
 
 D'autres applications sont adapt\xE9es aux donn\xE9es territorialis\xE9es, ce sont les donn\xE9es poss\xE9dant des code territoire : code commune, d\xE9partement ou m\xEAme code parcelles. *Infos parcelles* permet de projeter les donn\xE9es sur le **plan cadastral** fran\xE7ais. *Cartographie territoriale multi-niveaux* affiche une **carte choropl\xE8the** des terrtoires allant de l'IRIS \xE0 la r\xE9gion et est adapt\xE9e \xE0 pr\xE9senter des donn\xE9es comme les r\xE9sultats d'\xE9lections ou d'autres indicateurs. *Zones de chalandise* permet de **fusionner les g\xE9om\xE9tries des territoires** pour avoir des zones de couverture, par exemple le perim\xE8tre d'action des gendarmeries.
 
 #### Visualisations en diagrammes
+
+<img src="./images/functional-presentation/visu-diag.jpg"
+     height="500" style="margin:40px auto;" />
+
 D\xE8s que les donn\xE9es poss\xE8dent des colonnes avec des types num\xE9riques, il est possible de param\xE9trer pour elles des visualisations en diagrammes. *Graphiques divers* permet de faire diff\xE9rents type de graphiques communs : **histogrammes, lignes, aires, camemberts**, ... *Diagramme de Sankey* est adapt\xE9 \xE0 la **visualisation de flux**. *Graphique en radar* permet de comparer les lignes de donn\xE9es sur **diff\xE9rents crit\xE8res**. *Comparaison de proportions* produit des diagrammes en gaufre, pour par exemple comparer la r\xE9partitions des \xE9l\xE9ments suivant diff\xE9rentes cat\xE9gories.
 
 *Graphes / R\xE9seaux* et *R\xE9seau de relations* permettent de faire des **graphes**, dans le premiers cas en utilisant des n\u0153uds et des liens, et dans le second cas en se basant sur 2 crit\xE8res dans 2 colonnes diff\xE9rentes d'un jeu de donn\xE9es. Pour les **donn\xE9es hi\xE9rarchiques**, 2 visualisations sont disponibles : *Treemap* et *Diagramme Sunburst*, et sont bien adapt\xE9e pour visualiser des donn\xE9es de budget ou d'allocation d'aides.
 
 #### Visualisations temporelles
+
+<img src="./images/functional-presentation/visu-temp.jpg"
+     height="500" style="margin:40px auto;" />
+
 Les donn\xE9es ayant des concepts li\xE9s aux dates peuvent \xEAtre visualis\xE9es avec des visualisation temporelles. Certaines sont interactives, comme *S\xE9ries temporelles* qui permet de comparer des **courbes au cours du temps** (d\xE9c\xE8s li\xE9s au covid par exemple), ou *Diagramme Timeline*  et *Calendrier* pour visualiser les donn\xE9es ayant des dates de d\xE9but et dates de fin.
 
 D'autres visualisation temporelles sont anim\xE9es : elles poss\xE8de un bouton lecture et l'utilisateur peut les regarder de mani\xE8re passive. Ces visualisations sont int\xE9ressantes pour les r\xE9seaux sociaux car elles permettent d'augmenter l'engagement des autres utilisateurs, qui n'ont pas a cliquer sur le lien pour voir le r\xE9sultat. *Bar chart race* permet de voir des courses de barres horizontales et est adapt\xE9 quand il y a un **nombre important d'\xE9l\xE9ments qui ont la valeur maximale**, par exemple pour voir le pr\xE9nom le plus donn\xE9 au cours du temps. *Periodic Series* permet d'analyser les **donn\xE9es cycliques** pour voir comment elle se comportent d'une p\xE9riode sur une autre (par exemple des temp\xE9ratures ou du trafic de v\xE9hicules).
 
 #### Visualisations textuelles
+
+<img src="./images/functional-presentation/visu-text.jpg"
+     height="500" style="margin:40px auto;" />
+
 Ce type de visualisations pr\xE9sente les donn\xE9es sous forme de texte, y compris les donn\xE9es num\xE9riques. *M\xE9triques* permet de mettre en avant des **chiffres cl\xE9s** sous la forme de tuiles. *Tableau synth\xE9tique* calcule des **agr\xE9gats sur 1 ou 2 axes**, et peut par exemple montrer des moyennes d'une valeur par d\xE9partements. *Simple Table* permet d'afficher quelques colonnes du jeu de donn\xE9es en proposant des **filtres ou une arborescence** pour acc\xE9der plus rapidement aux donn\xE9es (par exemple r\xE9gion > d\xE9partement > commune). *Nuage de mots* analyse la fr\xE9quence des diff\xE9rents termes d'un jeu de donn\xE9es, ou de l'une de ses colonnes, pour mettre en avant ceux qui sont les plus pr\xE9sents.
 
 Il est \xE9galement possible de cr\xE9er un moteur de recherche pour pouvoir explorer ses donn\xE9es sous formes de fiches avec *Liste et fiches*. Cela est bien adapt\xE9 quand les donn\xE9es poss\xE8dent des colonnes avec des textes longs, qui ne sont pas faciles \xE0 lire dans une vue tableau. Le rendu des fiches peut \xEAtre param\xE9tr\xE9 finement et il est m\xEAme possible de faire un rendu pdf du jeu de donn\xE9es. Cette application est bien adapt\xE9e pour r\xE9aliser des annuaires ou des catalogues.
 
 #### Gamification
+
+<img src="./images/functional-presentation/visu-jeu.jpg"
+     height="500" style="margin:40px auto;" />
+
 En plus des visualisations de donn\xE9es "traditionnelles", il est possible de configurer des mini-jeux. Le jeu est l'un des **meilleurs moyens d'apprentissage** et permet de m\xE9moriser certaines choses sans parfois m\xEAme s\u2019en rendre compte. Cela permet de rendre les donn\xE9es **plus attractives**, favorise l'engagement des utilisateurs qui peuvent r\xE9essayer les jeux plusieurs fois jusqu'\xE0 avoir un bon score et **augmenter la visibilit\xE9 des donn\xE9es** sur les r\xE9seaux sociaux via les m\xE9canismes de partage de scores et de "mise au d\xE9fi".
 
 *Jeu de localisation* est destin\xE9 aux donn\xE9es g\xE9olocalis\xE9es et demande a placer des \xE9l\xE9ments sur une carte. *Jeu de Quizz* permet de r\xE9aliser un questionnaire a choix multiples. *Jeu de tri* demande \xE0 l'utilisateur de trier des donn\xE9es par glisser / d\xE9poser pour les classer suivant un certain crit\xE8re, par exemple pour trier des aliments en fonction de leur empreinte carbone. Tous ces jeux prennent en compte le temps dans le calcul du score, pour \xE9viter la "triche" et inciter l'utilisateur a m\xE9moriser les bonnes r\xE9ponses par essai / erreur.
