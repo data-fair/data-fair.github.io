@@ -64,16 +64,16 @@ It is possible to :
 
 ![Compte](./images/functional-presentation/compte.jpg)
 `},function(t,e,n){"use strict";n.r(e),e.default=`---
-title: Comptes utilisateur
+title: Compte utilisateur
 section: 2
 subsection : 7
-description : Comptes utilisateur
+description : Compte utilisateur
 published: true
 ---
 
-Si le portail de donn\xE9es est public, il n'y a pas d'obligation de cr\xE9er de compte pour l'utiliser. Les utilisateurs peuvent si il le souhaitent cr\xE9er un compte pour **s'abonner \xE0 des notifications** et cr\xE9er des **cl\xE9s d'APIs** pour utiliser les APIs avec moins de restrictions. Dans le cas ou le portail est priv\xE9, les utilisateurs auront besoin d'un compte, mais il leur faudra aussi des autorisations donn\xE9es par un administrateur de l'organisation propri\xE9taire du portail.
+Si le portail de donn\xE9es est public, il n'y a pas d'obligation de cr\xE9er de compte pour l'utiliser. Les utilisateurs peuvent, si il le souhaitent, cr\xE9er un compte pour **s'abonner \xE0 des notifications** et cr\xE9er des **cl\xE9s d'APIs** pour utiliser les APIs avec moins de restrictions. Dans le cas ou le portail est priv\xE9, les utilisateurs auront besoin d'un compte, mais il leur faudra aussi des autorisations donn\xE9es par un administrateur de l'organisation propri\xE9taire du portail.
 
-Pour limiter les probl\xE9matiques li\xE9es au RGPD, un **minimum de donn\xE9es est collect\xE9** et la seule donn\xE9e requise est l'email de l'utilisateur. Il peut renseigner un pr\xE9nom et un nom si il le souhaite, ou mettre un pseudonyme \xE0 la place. Si l'utilisateur ne se connecte pas \xE0 son compte pendant 3 ans, il est automatiquement supprim\xE9. Mais l'utilisateur peut \xE9galement **supprimer lui m\xEAme son compte** avec un bouton, sans \xE0 avoir \xE0 formuler une demande par mail ou autre.
+Pour limiter les probl\xE9matiques li\xE9es au RGPD, un **minimum de donn\xE9es est collect\xE9** et la seule donn\xE9e requise est l'email de l'utilisateur. Il peut renseigner un pr\xE9nom et un nom si il le souhaite, ou mettre un pseudonyme \xE0 la place. Si l'utilisateur ne se connecte pas \xE0 son compte pendant 3 ans, il est automatiquement supprim\xE9. Les utilisateurs peut \xE9galement **supprimer leur compte** \xE0 l'aide d'un bouton, sans \xE0 avoir \xE0 formuler une demande par mail ou autre.
 
 La cr\xE9ation de compte se fait en renseignant un email et un mot de passe, et il y a aussi la possibilit\xE9 de  passer par un compte Gmail, Facebook, LinkedIn ou Github via le **protocole oAuth2**. Un m\xE9canisme de renouvellement de mot de passe est disponible pour les utilisateurs ayant perdu celui-ci ou d\xE9sirant le changer.
 
@@ -82,7 +82,8 @@ La cr\xE9ation de compte se fait en renseignant un email et un mot de passe, et 
 
 Les utilisateurs qui cr\xE9ent des comptes par eux m\xEAme ont leur donn\xE9es stock\xE9es dans des bases de donn\xE9es. Leur mot de passe est encrypt\xE9 avec sels et multiple hachage pour garantir une s\xE9curit\xE9 maximale. Il y a des r\xE8gles de saisie de mot de passe pour \xE9viter d'en avoir de facilement trouvables.
 
-Il est \xE9galement possible de configurer une connexion \xE0 un annuaire d'utilisateur externe au travers du protocole LDAP.`},function(t,e,n){"use strict";n.r(e),e.default=`---
+Il est \xE9galement possible de configurer une connexion \xE0 un annuaire d'utilisateur externe au travers du protocole LDAP.
+`},function(t,e,n){"use strict";n.r(e),e.default=`---
 title: Portal analytics
 section: 3
 subsection : 12
@@ -400,7 +401,7 @@ published: true
 
 Les **pages de contenus** permettent de cr\xE9er diff\xE9rents type de pages : articles, pages th\xE9matiques autour de plusieurs jeux de donn\xE9es, pages d'actualit\xE9s, data storytelling, licences, conditions d'utilisation, ...  Il est ainsi possible de **mettre en avant certaines donn\xE9es** et de leur donner encore plus de contexte, ou de faire des tableaux de bord int\xE9grants diff\xE9rentes donn\xE9es.
 
-En plus de la saisie de texte libre, il est possible d'int\xE9grer diff\xE9rents type d'\xE9l\xE9ments : tableau d'un jeu de donn\xE9es, visualisation, liste de jeux de donn\xE9es, int\xE9gration de contenus externe, ...
+En plus de la saisie de texte libre, il est possible d'int\xE9grer diff\xE9rents types d'\xE9l\xE9ments : tableau d'un jeu de donn\xE9es, visualisation, liste de jeux de donn\xE9es, int\xE9gration de contenus externe, ...
 
 Pour acc\xE9der aux pages de contenus cr\xE9\xE9es, il est possible de renseigner des liens dans la barre de navigation. Les liens peuvent appara\xEEtre directement dans la barre, ou dans un menu ajout\xE9 \xE0 celle-ci. Il est possible de cr\xE9er des pages **publiques** ou des pages **priv\xE9es**.
 `},function(t,e,n){"use strict";n.r(e),e.default=`---
@@ -641,11 +642,11 @@ Le catalogue de donn\xE9es est un moteur de recherche permettant d\u2019**acc\xE
 
 La liste des jeux de donn\xE9es est parcourue au moyen d\u2019un m\xE9canisme de scroll infini, aussi bien adapt\xE9 \xE0 une utilisation **bureautique ou mobile**. Il est \xE9galement possible de trier les r\xE9sultats suivant diff\xE9rent crit\xE8res (Alphab\xE9tique, date de cr\xE9ation, ...). La liste des r\xE9sultats obtenus peut \xEAtre export\xE9e au format CSV en un clic.
 
-Les r\xE9sultats sur cette page sont pr\xE9sent\xE9s sous forme de vignettes qui affichent des informations comme le titre du jeu de donn\xE9es, sa date de mise \xE0 jour ou les th\xE9matiques qui lui sont associ\xE9e. Un bout de la description est \xE9galement affich\xE9, mais il peut \xEAtre remplac\xE9 par une image pour faire un catalogue plus "visuel".
+Les r\xE9sultats sur cette page sont pr\xE9sent\xE9s sous forme de vignettes qui affichent des informations comme le titre du jeu de donn\xE9es, sa date de mise \xE0 jour ou les th\xE9matiques qui lui sont associ\xE9es. Un bout de la description est \xE9galement affich\xE9, mais il peut \xEAtre remplac\xE9 par une image pour faire un catalogue plus "visuel".
 
 En plus de permettre de naviguer vers la page de d\xE9tails d'un jeu de donn\xE9es, les vignettes pr\xE9sentent des boutons d'action permettant de :
 * Visualiser les donn\xE9es avec une **vue tabulaire** dans laquelle on peut trier les colonnes, paginer, effectuer des recherches fulltext et t\xE9l\xE9charger les donn\xE9es filtr\xE9es
-* Eventuellement visualiser les donn\xE9es avec une **vue cartographique** quand les donn\xE9es le permettent.
+* Visualiser les donn\xE9es avec une **vue cartographique** quand les donn\xE9es le permettent
 * Acc\xE9der \xE0 la **documentation interactive de l\u2019API**
 * Consulter le **sch\xE9ma des donn\xE9es**
 <p></p>
@@ -675,14 +676,12 @@ published: true
 
 La page d'accueil est le point d\u2019entr\xE9e principal du portail de donn\xE9es. Elle permet **d'acc\xE9der rapidement aux donn\xE9es** \xE0 partir des th\xE9matiques et d'un champ de recherche textuelle. Des **chiffres cl\xE9s** permettent de quantifier les donn\xE9es pr\xE9sentes sur le portail.
 
-Il est possible de mettre en avant du **contenu \xE9ditorial** (texte expliquant la d\xE9marche ou pr\xE9sentant le portail) ainsi qu'une visualisation de donn\xE9es qui est directement utilisable sur cette page. On peut par exemple mettre en avant une carte pr\xE9sentant la localisation de centres de vaccination, ou les menus des cantines pour la semaine.
+Il est possible de mettre en avant du **contenu \xE9ditorial** (texte expliquant la d\xE9marche ou pr\xE9sentant le portail) ainsi qu'une visualisation de donn\xE9es qui est directement utilisable sur cette page. On peut, par exemple, mettre en avant une carte pr\xE9sentant la localisation de centres de vaccination, ou les menus des cantines pour la semaine.
 Dans le cadre d'une d\xE9marche de communication, il est \xE9galement possible d'afficher un fil tweeter sur cette page.
 
 Pour les visiteurs r\xE9guliers, des sections pr\xE9sentent les **derniers jeux de donn\xE9es ajout\xE9s** ainsi que les derni\xE8res visualisations r\xE9alis\xE9es, avec une navigation rapide pour voir plus en d\xE9tails ces nouveaux contenus.
 
-Il est possible de personnaliser quels \xE9l\xE9ments sont affich\xE9s sur cette page, d'afficher une banni\xE8re plut\xF4t qu'un texte \xE9ditorialis\xE9 ou m\xEAme d'utiliser un visualisation \xE0 la place de la banni\xE8re ! Cette derni\xE8re option permet d'avoir un **caroussel avec des liens de navigation**.
-
-
+Il est possible de personnaliser quels \xE9l\xE9ments sont affich\xE9s sur cette page, d'afficher une banni\xE8re plut\xF4t qu'un texte \xE9ditorialis\xE9 ou m\xEAme d'utiliser une visualisation \xE0 la place de la banni\xE8re ! Cette derni\xE8re option permet d'avoir un **caroussel avec des liens de navigation**.
 `},function(t,e,n){"use strict";n.r(e),e.default=`---
 title: Introduction
 section: 1
@@ -737,14 +736,14 @@ published: true
 Le mot **FAIR** fait r\xE9f\xE9rence \xE0 de la donn\xE9e [\xAB Facile \xE0 trouver, Accessible, Interop\xE9rable et R\xE9utilisable \xBB](https://fr.wikipedia.org/wiki/Fair_data). Cela est rendu possible gr\xE2ce \xE0 **l'indexation** des donn\xE9es sur la plateforme. Elle permet de r\xE9aliser des recherches complexes dans des volumes de plusieurs millions d\u2019enregistrements et d'acc\xE9der plus facilement et rapidement \xE0 ce qui nous int\xE9resse. L'acc\xE8s aux donn\xE9es aux travers **d'APIs normalis\xE9es et document\xE9es** permet d'interfacer la plateforme avec d'autres syst\xE8mes d'information et facilite la r\xE9utilisabilit\xE9 des donn\xE9es.
 
 <img src="./images/functional-presentation/FAIR.jpg"
-     height="160" style="margin:40px auto;" />
+     height="160" style="margin:30px auto;" />
 
 Les utilisateurs des donn\xE9es acc\xE8dent \xE0 la plateforme au travers **d'un ou plusieurs portails de donn\xE9es**. Ils permettent d\u2019acc\xE9der au catalogue de jeux de donn\xE9es et de pouvoir rechercher dans celui-ci de diff\xE9rentes mani\xE8res. Il est possible de consulter directement les jeux de donn\xE9es, que ce soit avec des vues g\xE9n\xE9riques (tableaux, cartes simples, ...) ou des visualisations plus sp\xE9cifiques pr\xE9configur\xE9es. Les donn\xE9es sont diffus\xE9es au travers de pages qui les pr\xE9sentent sous la forme d\u2019histoires (data storytelling), **permettant \xE0 n'importe qui de les comprendre plus facilement**. Les utilisateurs peuvent s'abonner \xE0 des notifications sur les mises \xE0 jour et les d\xE9veloppeurs peuvent acc\xE9der \xE0 la documentation interactive des diverses APIs de la plateforme. Les portails peuvent \xEAtre agr\xE9ment\xE9s de diverses **pages de contenu** pr\xE9sentant les d\xE9marches, contributeurs ou r\xE9utilisations mises en avant par exemple.
 
-Les administrateurs et contributeurs de donn\xE9es ont acc\xE8s \xE0 un **back-office** qui permet de g\xE9rer les diff\xE9rents \xE9l\xE9ments de la plateforme : comptes utilisateurs, jeux de donn\xE9es et visualisations. Les administrateurs peuvent param\xE9trer l'environnement et g\xE9rer les permissions d\u2019acc\xE8s aux donn\xE9es et visualisations. Selon leur profil, les utilisateurs du back-office pourront cr\xE9er, \xE9diter, enrichir, supprimer les jeux de donn\xE9es, les cartes et les graphiques.Le back-office permet de cr\xE9er des **portails de donn\xE9es** (interne ou open data) et aussi d\u2019acc\xE9der \xE0 diff\xE9rentes m\xE9triques d\u2019utilisation des portails.
+Les administrateurs et contributeurs de donn\xE9es ont acc\xE8s \xE0 un **back-office** qui permet de g\xE9rer les diff\xE9rents \xE9l\xE9ments de la plateforme : comptes utilisateurs, jeux de donn\xE9es et visualisations. Les administrateurs peuvent param\xE9trer l'environnement et g\xE9rer les permissions d\u2019acc\xE8s aux donn\xE9es et visualisations. Selon leur profil, les utilisateurs du back-office pourront cr\xE9er, \xE9diter, enrichir, supprimer les jeux de donn\xE9es, les cartes et les graphiques. Le back-office permet de cr\xE9er des **portails de donn\xE9es** (interne ou open data) et aussi d\u2019acc\xE9der \xE0 diff\xE9rentes m\xE9triques d\u2019utilisation des portails.
 
 ### Fonctionnement g\xE9n\xE9ral
-Les **jeux de donn\xE9es** sont en g\xE9n\xE9ral cr\xE9\xE9s par les utilisateurs en **chargeant des fichiers tabulaires ou g\xE9ographiques** : le service stocke le fichier, l'analyse et d\xE9duit un sch\xE9ma de donn\xE9es. Les donn\xE9es sont ensuite index\xE9es suivant ce sch\xE9ma et peuvent \xEAtre requ\xEAt\xE9es au travers d'une API Web propre. 
+Les **jeux de donn\xE9es** sont en g\xE9n\xE9ral cr\xE9\xE9s par les utilisateurs en **chargeant des fichiers tabulaires ou g\xE9ographiques** : le service stocke le fichier, l'analyse et d\xE9duit un sch\xE9ma de donn\xE9es. Les donn\xE9es sont ensuite index\xE9es suivant ce sch\xE9ma et peuvent \xEAtre requ\xEAt\xE9es au travers d'une API Web propre.
 
 En compl\xE9ment des jeux de donn\xE9es bas\xE9s fichiers, Data Fair permet \xE9galement de cr\xE9er des jeux de donn\xE9es **\xE9ditables par formulaire** et des jeux de donn\xE9es virtuels qui sont des **vues configurables d'un ou plusieurs jeux de donn\xE9es**.
 
@@ -762,7 +761,6 @@ Data Fair permet de mettre en place une organisation centr\xE9e autour de la don
 * Cr\xE9ation facilit\xE9 d'APIs de donn\xE9es et enrichissement des donn\xE9es pour leur donner encore plus de valeur
 * Mise en place de traitements p\xE9riodiques permettant d'alimenter automatiquement la plateforme en donn\xE9es
 * Cadre s\xE9curis\xE9, code source ouvert et utilisation de standards
-
 `},function(t,e,n){"use strict";n.r(e),e.default=`---
 title: Portal notification
 section: 2
@@ -906,16 +904,17 @@ description : Portail de donn\xE9es (Front Office)
 published: true
 ---
 
-Les utilisateurs des donn\xE9es acc\xE8dent \xE0 la plateforme au travers **d'un ou plusieurs portails de donn\xE9es** d\xE9di\xE9s \xE0 diff\xE9rents cas d'usage. Il peut y avoir par exemple un portail de donn\xE9es publiques (opendata), un portail pour les donn\xE9es internes et un portail de *pr\xE9production* pr\xE9sentant les donn\xE9es en cours de consolidation ou qui ne sont pas encore pr\xEAte \xE0 \xEAtre publi\xE9es.
+Les utilisateurs des donn\xE9es acc\xE8dent \xE0 la plateforme au travers **d'un ou plusieurs portails de donn\xE9es** d\xE9di\xE9s \xE0 diff\xE9rents cas d'usage. Il peut y avoir, par exemple, un portail de donn\xE9es publiques (opendata), un portail pour les donn\xE9es internes et un portail de *pr\xE9production* pr\xE9sentant les donn\xE9es en cours de consolidation ou qui ne sont pas encore pr\xEAte \xE0 \xEAtre publi\xE9es.
 
-Un portail de donn\xE9es est compos\xE9 de diff\xE9rentes pages (accueil, contact, ...), de moteurs de  **recherche multicrit\xE8res** de jeux de donn\xE9es et de visualisations et de pages de contenu (actualit\xE9s, th\xE9matiques, contributeurs, d\xE9marche, ...). Il est possible de pr\xE9senter des chiffres cl\xE9s et **d'\xE9ditorialiser des contenus** mis en avant.
+Un portail de donn\xE9es est compos\xE9 de diff\xE9rentes pages (accueil, contact, ...), de moteurs de  **recherche multicrit\xE8res**, de jeux de donn\xE9es, de visualisations et de pages de contenu (actualit\xE9s, th\xE9matiques, contributeurs, d\xE9marche, ...). Il est possible de pr\xE9senter des chiffres cl\xE9s et **d'\xE9ditorialiser des contenus** mis en avant.
 
 Le portail de donn\xE9es a un **design responsive** et son affichage est adapt\xE9 \xE0 une grande diversit\xE9 de terminaux, permettant une utilisation sur **poste fixe ou mobile**. Il est possible de configurer diff\xE9rents \xE9l\xE9ments pour personnaliser au maximum le portal (titre et description, choix des couleurs principale et secondaire, logo, favicone et image d'accueil, liens dans le footer, ...).
 
 Une **mire d\u2019authentification** est accessible sur toutes les pages du portail pour pouvoir se connecter ou cr\xE9er un compte. Le compte permet d'acc\xE9der aux donn\xE9es priv\xE9es selon ses droits dans le cas de portails interne, et s'abonner \xE0 des **notifications** sur les jeux de donn\xE9es.
 
 <img src="./images/functional-presentation/portal.jpg"
-     height="500" style="margin:20px auto;" />`},function(t,e,n){"use strict";n.r(e),e.default=`---
+     height="450" style="margin:20px auto;" />
+`},function(t,e,n){"use strict";n.r(e),e.default=`---
 title: Periodic processings
 section: 3
 subsection : 5
@@ -1177,14 +1176,14 @@ subsection : 5
 description : Consultation d\u2019une visualisation
 published: true
 ---
-Chaque visualisation est pr\xE9sent\xE9e au travers d\u2019une **page d\xE9di\xE9e** ce qui permet de lui associer du contexte, titre et description, et diff\xE9rentes actions. Il est possible d\u2019acc\xE9der \xE0 la visualisation en plein \xE9cran (les visualisations sont consultables aussi bien sur **poste fixe que smartphone**) et de r\xE9cup\xE9rer un code HTML qui permet d\u2019embarquer la visualisation dans un autre site web.
+Chaque visualisation est pr\xE9sent\xE9e au travers d\u2019une **page d\xE9di\xE9e** ce qui permet de lui associer du contexte, titre et description, ainsi que d'offrir diff\xE9rentes actions \xE0 l'utilisateur. Il est possible d\u2019acc\xE9der \xE0 la visualisation en plein \xE9cran (les visualisations sont consultables aussi bien sur **poste fixe que smartphone**) et de r\xE9cup\xE9rer un code HTML qui permet d\u2019embarquer la visualisation dans un autre site web.
 
 <img src="./images/functional-presentation/detail-visualisation.jpg"
      height="500" style="margin:20px auto;" />
-     
+
 Tout comme pour les jeux de donn\xE9es, il y a en bas de page diff\xE9rents boutons pour **partager** la page de la visualisation sur diff\xE9rents r\xE9seaux sociaux (Facebook, Twitter, Linkedin, ...).
 
-La page de la visualisation poss\xE8de des **m\xE9tadonn\xE9es enrichies** qui permettent une meilleure indexation par les moteurs de recherche et un affichage d\u2019une miniature sur les r\xE9seaux sociaux.
+La page de la visualisation poss\xE8de des **m\xE9tadonn\xE9es enrichies** qui permettent une meilleure indexation par les moteurs de recherche et l'affichage d\u2019une miniature sur les r\xE9seaux sociaux.
 `},function(t,e,n){"use strict";n.r(e),e.default=`---
 title: Visualizations catalog
 section: 2
