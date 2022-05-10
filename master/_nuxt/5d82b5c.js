@@ -78,7 +78,7 @@ Pour limiter les probl\xE9matiques li\xE9es au RGPD, un **minimum de donn\xE9es 
 La cr\xE9ation de compte se fait en renseignant un email et un mot de passe, et il y a aussi la possibilit\xE9 de  passer par un compte Gmail, Facebook, LinkedIn ou Github via le **protocole oAuth2**. Un m\xE9canisme de renouvellement de mot de passe est disponible pour les utilisateurs ayant perdu celui-ci ou d\xE9sirant le changer.
 
 <img src="./images/functional-presentation/connexion.jpg"
-     height="200" style="margin:20px auto;" />
+     height="160" style="margin:15px auto;" />
 
 Les utilisateurs qui cr\xE9ent des comptes par eux m\xEAme ont leur donn\xE9es stock\xE9es dans des bases de donn\xE9es. Leur mot de passe est encrypt\xE9 avec sels et multiple hachage pour garantir une s\xE9curit\xE9 maximale. Il y a des r\xE8gles de saisie de mot de passe pour \xE9viter d'en avoir de facilement trouvables.
 
@@ -289,14 +289,14 @@ Il a acc\xE8s \xE0 une vue tableau en plein \xE9cran, qui lui permet de voir plu
 Il est \xE9galement possible d'acc\xE9der aux **pi\xE8ces jointes** du jeu de donn\xE9es. Ce sont en g\xE9n\xE9ral des fichiers charg\xE9s en compl\xE9ment des fichiers de donn\xE9es, comme par exemple un manuel d'utilisation des donn\xE9es au format pdf.
 
 <img src="./images/functional-presentation/detail-2.jpg"
-     height="400" style="margin:20px auto;" />
+     height="500" style="margin:20px auto;" />
 
 En plus des visualisations du portail qui sont des r\xE9utilisations des donn\xE9es "internes", d'autres r\xE9utilisations de donn\xE9es peuvent \xEAtre mentionn\xE9es. Ces r\xE9utilisations peuvent \xEAtre pr\xE9sent\xE9es au travers d'une vignette cliquable, ou directement embarqu\xE9es dans la page en iframe.
 
 Diff\xE9rents boutons permettent de partager la page du jeu de donn\xE9es sur les r\xE9seaux sociaux (Facebook, Twitter, Linkedin, ...). La page de donn\xE9es poss\xE8de des **m\xE9tadonn\xE9es enrichies** qui permettent une meilleure indexation par les moteurs de recherche et un affichage d\u2019une miniature sur les r\xE9seaux sociaux. Cette miniature pr\xE9sente la premi\xE8re visualisation associ\xE9e au jeu de donn\xE9es, et ce c\xF4t\xE9 graphique permet d\u2019**augmenter l\u2019engagement** des utilisateurs des r\xE9seaux sociaux.
 
 <img src="./images/functional-presentation/detail-3.jpg"
-     height="200" style="margin:20px auto;" />
+     height="160" style="margin:20px auto;" />
 `},function(t,e,n){"use strict";n.r(e),e.default=`---
 title: Dataset management
 section: 3
@@ -409,7 +409,7 @@ La plateforme supporte l'indexation de donn\xE9es tabulaires. Chaque jeu de donn
 Un libell\xE9 et une description permettent d'avoir des ent\xEAtes de colonne plus lisibles et compr\xE9hensibles. Le champ peut avoir un groupe qui permet de le retrouver plus rapidement quand il y a beaucoup de colonnes. Si le champ est de type texte, on peut opter pour du formatage riche : il sera alors possible de mettre du HTML ou Markdown dans ce champ. Le champ peut \xE9galement \xEAtre d\xE9fini comme \xE9tant multi-valu\xE9, dans ce cas on sp\xE9cifie le s\xE9parateur utilis\xE9 dans la colonne entre les diff\xE9rentes valeurs.
 
 <img src="./images/functional-presentation/schema.jpg"
-     height="300" style="margin:40px auto;" />
+     height="300" style="margin:20px auto;" />
 
 Le dernier \xE9l\xE9ment qui peut \xEAtre renseign\xE9, et qui a une importance consid\xE9rable, est le **type m\xE9tier** associ\xE9 au champ. Cela se fait en s\xE9lectionnant un **concept issu d'un th\xE9saurus**. Il y a une base de concepts communs \xE0 toute la plateforme, et il est possible de **rajouter ses propres concepts**. Ceux-ci sont en g\xE9n\xE9ral li\xE9s \xE0 du vocabulaire issu du Web S\xE9mantique, le concept de code postal a par exemple l'identifiant \`http://schema.org/postalCode\`.
 
@@ -438,7 +438,7 @@ La deuxi\xE8me possibilit\xE9 pour compl\xE9ter les donn\xE9es est de mettre en 
 Un administrateur peut contr\xF4ler finement les permissions d\u2019**acc\xE8s aux donn\xE9es**. Les donn\xE9es sont de base *priv\xE9es*, c'est \xE0 dire que seuls les membres de l'organisation authentifi\xE9s peuvent les consulter. Il est possible de rendre les donn\xE9es *publiques*, dans ce cas tout le monde, y compris les utilisateurs non-enregistr\xE9s, pourra y acc\xE9der. On peut \xE9galement d\xE9finir des droits d'acc\xE8s \xE0 certains utilisateurs ou des organisations partenaires. Un mode avanc\xE9 permet de d\xE9finir les permissions pour chaque point d'acc\xE8s de l'API d'un jeu de donn\xE9es : on peut par exemple rendre l'acc\xE8s aux m\xE9tadonn\xE9es public alors que l'acc\xE8s aux donn\xE9es reste restreint.
 
 <img src="./images/functional-presentation/permissions.jpg"
-     height="300" style="margin:40px auto;" />
+     height="300" style="margin:20px auto;" />
 
 Quand un jeu de donn\xE9es vient d'\xEAtre cr\xE9\xE9, il n'est pas de base disponible dans les diff\xE9rents portails de donn\xE9es de l'organisation. Il doit d'abord \xEAtre **publi\xE9 dans un ou plusieurs portails**. Dans le cadre de portails opendata, le jeu de donn\xE9es doit aussi avoir une permission d'acc\xE8s public en plus d'\xEAtre publi\xE9.
 
@@ -447,7 +447,7 @@ Ce m\xE9canisme de publication permet de travailler de mani\xE8re agile pour la 
 Les visualisations peuvent mettre en avant un probl\xE8me dans les donn\xE9es ou une mauvaise structuration de celle-ci, probl\xE8me qui peut \xEAtre vu par plusieurs personnes car les donn\xE9es sont d\xE9j\xE0 publi\xE9es sur un portail. Une fois que l\u2019on atteint la **qualit\xE9 de publication souhait\xE9e**, on d\xE9-publie le jeu de donn\xE9es du portail de recette et on le publie sur un ou plusieurs portails de production.
 
 <img src="./images/functional-presentation/portail-publication.jpg"
-     height="300" style="margin:40px auto;" />
+     height="300" style="margin:20px auto;" />
 
 Il est aussi possible de publier un jeu de donn\xE9es sur des portails ou catalogues de donn\xE9es externes \xE0 la plateforme, cela est d\xE9cris plus en d\xE9tails \xE0 la section sur les *connecteurs de catalogues*.
 `},function(t,e,n){"use strict";n.r(e),e.default=`---
@@ -482,7 +482,7 @@ published: true
 Le catalogue de donn\xE9es est un moteur de recherche permettant d\u2019**acc\xE9der rapidement** aux jeux de donn\xE9es susceptibles d'int\xE9resser l'utilisateur. Outre le champ de recherche textuelle, il est possible d'acc\xE9der aux jeux de donn\xE9es par th\xE9matique ou par concept pr\xE9sent dans les donn\xE9es. Il est par exemple possible de lister tous les jeux de donn\xE9es g\xE9ographiques en filtrant par concept *Latitude*, ou toutes les donn\xE9es li\xE9es \xE0 des entreprises en filtrant par *SIREN*.
 
 <img src="./images/functional-presentation/search.jpg"
-     height="200" style="margin:40px auto;" />
+     height="100" style="margin:15px auto;" />
 
 
 La liste des jeux de donn\xE9es est parcourue au moyen d\u2019un m\xE9canisme de scroll infini, aussi bien adapt\xE9 \xE0 une utilisation **bureautique ou mobile**. Il est \xE9galement possible de trier les r\xE9sultats suivant diff\xE9rent crit\xE8res (Alphab\xE9tique, date de cr\xE9ation, ...). La liste des r\xE9sultats obtenus peut \xEAtre export\xE9e au format CSV en un clic.
@@ -496,7 +496,7 @@ En plus de permettre de naviguer vers la page de d\xE9tails d'un jeu de donn\xE9
 * Consulter le **sch\xE9ma des donn\xE9es**
 
 <img src="./images/functional-presentation/home-dataset.jpg"
-     height="200" style="margin:40px auto;" />
+     height="140" style="margin:15px auto;" />
 
 Le catalogue pr\xE9sente les jeux de donn\xE9es que l'utilisateur a le droit de voir. Si il n'est pas connect\xE9, il ne verra que les jeux en opendata, si il est connect\xE9 et membre de l'organisation propri\xE9taire du portail, il pourra en plus voir des jeux de donn\xE9es priv\xE9s.
 `},function(t,e,n){"use strict";n.r(e),e.default=`---
@@ -746,13 +746,13 @@ published: true
 Les notifications permettent aux utilisateur enregistr\xE9s de recevoir des alertes dans le portail ou par email lorsque certains \xE9v\xE9nements se produisent. Les alertes sont visibles sur la cloche de la barre de navigation et si l'utilisateur l'a choisi, il peut recevoir un **email d'alerte**.
 
 <img src="./images/functional-presentation/notifiy-pf-2.png"
-     height="200" style="margin:20px auto;" />
+     height="180" style="margin:15px auto;" />
 
 
 Les utilisateurs  peuvent **s'abonner** \xE0 l'ajout d'un jeu de donn\xE9es sur le portail ou dans une th\xE9matique en particulier. Il est aussi possible de s'abonner \xE0 la mise \xE0 jour d'un jeu de donn\xE9es en particulier.
 
 <img src="./images/functional-presentation/notifiy-pf-3.png"
-     height="200" style="margin:20px auto;" />
+     height="180" style="margin:15px auto;" />
 
 
 
@@ -1045,7 +1045,7 @@ Les visualisations interactives permettent de pr\xE9senter les donn\xE9es de man
 Les visualisations peuvent \xEAtre configur\xE9es gr\xE2ce \xE0 une interface graphique qui ne **requiert pas de comp\xE9tences en programmation**. Le menu de configuration se compose de diff\xE9rentes sections qui diff\xE8rent selon les applications. La plupart du temps, le menu est compos\xE9 de trois sections : la source de donn\xE9es, les options de rendu et les \xE9l\xE9ments li\xE9s \xE0 la navigation. Il est souvent possible de filtrer les donn\xE9es si on ne souhaite pas repr\xE9senter le jeu de donn\xE9es en entier.
 
 <img src="./images/functional-presentation/configuration-visu.jpg"
-     height="400" style="margin:40px auto;" />
+     height="300" style="margin:20px auto;" />
 
 Un aper\xE7u donne un rendu de la visualisation. Lorsque l\u2019on r\xE9alise des modifications sur le menu de configuration, elles sont directement repr\xE9sent\xE9es sur l'aper\xE7u. Il est ainsi possible de modifier et tester rapidement diff\xE9rents rendus de la visualisation, en **mode brouillon**. Lorsque le rendu est satisfaisant, l\u2019enregistrement permet de valider les modifications r\xE9alis\xE9es. Les modifications sont alors visibles sur toutes les publications de la visualisation.
 
@@ -1055,46 +1055,46 @@ Data Fair offre une grande vari\xE9t\xE9 de visualisations en constante progress
 
 #### Visualisations cartographiques
 
-<img src="./images/functional-presentation/visu-carto.jpg"
-     height="500" style="margin:40px auto;" />
-
 Plusieurs applications permettent d'afficher des donn\xE9es g\xE9olocalis\xE9es. *Infos localisations* permet d'afficher des **marqueurs** qui pr\xE9sentent au clic une **fiche d\xE9taill\xE9e**, \xE9ventuellement accompagn\xE9e d'une image. *Carto stats* affiche les donn\xE9es sous forme de **cercles color\xE9s et proportionnels** \xE0 une donn\xE9e dans une colonne, elle se pr\xEAte bien \xE0 la visualisation d'un **grand nombre de points**. *G\xE9o shapes* est quand \xE0 elle adapt\xE9e \xE0 l'affichage de **g\xE9om\xE9trie complexes**, par exemple un r\xE9seau routier ou un PLU.
+
+<img src="./images/functional-presentation/visu-carto.jpg"
+     height="300" style="margin:20px auto;" />
 
 D'autres applications sont adapt\xE9es aux donn\xE9es territorialis\xE9es, ce sont les donn\xE9es poss\xE9dant des code territoire : code commune, d\xE9partement ou m\xEAme code parcelles. *Infos parcelles* permet de projeter les donn\xE9es sur le **plan cadastral** fran\xE7ais. *Cartographie territoriale multi-niveaux* affiche une **carte choropl\xE8the** des territoires allant de l'IRIS \xE0 la r\xE9gion et est adapt\xE9e \xE0 pr\xE9senter des donn\xE9es comme les r\xE9sultats d'\xE9lections ou d'autres indicateurs. *Zones de chalandise* permet de **fusionner les g\xE9om\xE9tries des territoires** pour avoir des zones de couverture, par exemple le p\xE9rim\xE8tre d'action des gendarmeries.
 
 #### Visualisations en diagrammes
 
-<img src="./images/functional-presentation/visu-diag.jpg"
-     height="500" style="margin:40px auto;" />
-
 D\xE8s que les donn\xE9es poss\xE8dent des colonnes avec des types num\xE9riques, il est possible de param\xE9trer pour elles des visualisations en diagrammes. *Graphiques divers* permet de faire diff\xE9rents type de graphiques communs : **histogrammes, lignes, aires, camemberts**, ... *Diagramme de Sankey* est adapt\xE9 \xE0 la **visualisation de flux**. *Graphique en radar* permet de comparer les lignes de donn\xE9es sur **diff\xE9rents crit\xE8res**. *Comparaison de proportions* produit des diagrammes en gaufre, pour par exemple comparer la r\xE9partitions des \xE9l\xE9ments suivant diff\xE9rentes cat\xE9gories.
+
+<img src="./images/functional-presentation/visu-diag.jpg"
+     height="300" style="margin:20px auto;" />
 
 *Graphes / R\xE9seaux* et *R\xE9seau de relations* permettent de faire des **graphes**, dans le premiers cas en utilisant des n\u0153uds et des liens, et dans le second cas en se basant sur 2 crit\xE8res dans 2 colonnes diff\xE9rentes d'un jeu de donn\xE9es. Pour les **donn\xE9es hi\xE9rarchiques**, 2 visualisations sont disponibles : *Treemap* et *Diagramme Sunburst*, et sont bien adapt\xE9e pour visualiser des donn\xE9es de budget ou d'allocation d'aides.
 
 #### Visualisations temporelles
 
-<img src="./images/functional-presentation/visu-temp.jpg"
-     height="500" style="margin:40px auto;" />
-
 Les donn\xE9es ayant des concepts li\xE9s aux dates peuvent \xEAtre visualis\xE9es avec des visualisation temporelles. Certaines sont interactives, comme *S\xE9ries temporelles* qui permet de comparer des **courbes au cours du temps** (d\xE9c\xE8s li\xE9s au covid par exemple), ou *Diagramme Timeline*  et *Calendrier* pour visualiser les donn\xE9es ayant des dates de d\xE9but et dates de fin.
+
+<img src="./images/functional-presentation/visu-temp.jpg"
+     height="300" style="margin:20px auto;" />
 
 D'autres visualisation temporelles sont anim\xE9es : elles poss\xE8de un bouton lecture et l'utilisateur peut les regarder de mani\xE8re passive. Ces visualisations sont int\xE9ressantes pour les r\xE9seaux sociaux car elles permettent d'augmenter l'engagement des autres utilisateurs, qui n'ont pas a cliquer sur le lien pour voir le r\xE9sultat. *Bar chart race* permet de voir des courses de barres horizontales et est adapt\xE9 quand il y a un **nombre important d'\xE9l\xE9ments qui ont la valeur maximale**, par exemple pour voir le pr\xE9nom le plus donn\xE9 au cours du temps. *Periodic Series* permet d'analyser les **donn\xE9es cycliques** pour voir comment elle se comportent d'une p\xE9riode sur une autre (par exemple des temp\xE9ratures ou du trafic de v\xE9hicules).
 
 #### Visualisations textuelles
 
-<img src="./images/functional-presentation/visu-text.jpg"
-     height="500" style="margin:40px auto;" />
-
 Ce type de visualisations pr\xE9sente les donn\xE9es sous forme de texte, y compris les donn\xE9es num\xE9riques. *M\xE9triques* permet de mettre en avant des **chiffres cl\xE9s** sous la forme de tuiles. *Tableau synth\xE9tique* calcule des **agr\xE9gats sur 1 ou 2 axes**, et peut par exemple montrer des moyennes d'une valeur par d\xE9partements. *Simple Table* permet d'afficher quelques colonnes du jeu de donn\xE9es en proposant des **filtres ou une arborescence** pour acc\xE9der plus rapidement aux donn\xE9es (par exemple r\xE9gion > d\xE9partement > commune). *Nuage de mots* analyse la fr\xE9quence des diff\xE9rents termes d'un jeu de donn\xE9es, ou de l'une de ses colonnes, pour mettre en avant ceux qui sont les plus pr\xE9sents.
+
+<img src="./images/functional-presentation/visu-text.jpg"
+     height="150" style="margin:20px auto;" />
 
 Il est \xE9galement possible de cr\xE9er un moteur de recherche pour pouvoir explorer ses donn\xE9es sous formes de fiches avec *Liste et fiches*. Cela est bien adapt\xE9 quand les donn\xE9es poss\xE8dent des colonnes avec des textes longs, qui ne sont pas faciles \xE0 lire dans une vue tableau. Le rendu des fiches peut \xEAtre param\xE9tr\xE9 finement et il est m\xEAme possible de faire un rendu pdf du jeu de donn\xE9es. Cette application est bien adapt\xE9e pour r\xE9aliser des annuaires ou des catalogues.
 
 #### Gamification
 
-<img src="./images/functional-presentation/visu-jeu.jpg"
-     height="500" style="margin:40px auto;" />
-
 En plus des visualisations de donn\xE9es "traditionnelles", il est possible de configurer des mini-jeux. Le jeu est l'un des **meilleurs moyens d'apprentissage** et permet de m\xE9moriser certaines choses sans parfois m\xEAme s\u2019en rendre compte. Cela permet de rendre les donn\xE9es **plus attractives**, favorise l'engagement des utilisateurs qui peuvent r\xE9essayer les jeux plusieurs fois jusqu'\xE0 avoir un bon score et **augmenter la visibilit\xE9 des donn\xE9es** sur les r\xE9seaux sociaux via les m\xE9canismes de partage de scores et de "mise au d\xE9fi".
+
+<img src="./images/functional-presentation/visu-jeu.jpg"
+     height="150" style="margin:20px auto;" />
 
 *Jeu de localisation* est destin\xE9 aux donn\xE9es g\xE9olocalis\xE9es et demande a placer des \xE9l\xE9ments sur une carte. *Jeu de Quizz* permet de r\xE9aliser un questionnaire a choix multiples. *Jeu de tri* demande \xE0 l'utilisateur de trier des donn\xE9es par glisser / d\xE9poser pour les classer suivant un certain crit\xE8re, par exemple pour trier des aliments en fonction de leur empreinte carbone. Tous ces jeux prennent en compte le temps dans le calcul du score, pour \xE9viter la "triche" et inciter l'utilisateur a m\xE9moriser les bonnes r\xE9ponses par essai / erreur.
 
