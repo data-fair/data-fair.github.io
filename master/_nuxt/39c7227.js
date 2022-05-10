@@ -10,13 +10,13 @@
             `+s._s(u.title||u.id)+`
             `),u.published?s._e():f("v-icon",{attrs:{color:"error",small:""}},[s._v(`
               mdi-alert
-            `)])],1)],1)]})],2)]})],2)},o=[],b=n(8),p=n(35),h=n(16),S=n(33),C=n(50),T=n(37),L=n(30),D=n(38),k=n(43),A=n(158),j=n(351),w={props:["folder"],computed:{content:function(){var z=this;if(!!this.$route){var f=n(353),y=f.keys().filter(function(l){return l.startsWith("./install")||l.startsWith("./interoperate")||l.startsWith("./technical-architecture")?!0:l.includes("-".concat(z.$i18n.locale,".md"))}).map(function(l){return Object.assign(j(f(l).default).meta||{},{chapter:l.split("/")[1],id:l.split("/")[2].split(".").shift().replace("-".concat(z.$i18n.locale),"")})}).filter(function(l){return l.published||!0});return y.sort(function(l,u){return z.chapters.findIndex(function(c){return c.id===l.chapter})<z.chapters.findIndex(function(c){return c.id===u.chapter})?-1:z.chapters.findIndex(function(c){return c.id===l.chapter})>z.chapters.findIndex(function(c){return c.id===u.chapter})?1:l.section&&!u.section?-1:!l.section&&u.section?1:l.section<u.section?-1:l.section>u.section?1:l.subsection&&!u.subsection?-1:!l.subsection&&u.subsection?1:l.subsection<u.subsection?-1:1}),y}},chapters:function(){return[{id:"functional-presentation",title:this.$t("functional-presentation")},{id:"user-guide-backoffice",title:this.$t("user-guide-backoffice")},{id:"user-guide-frontoffice",title:this.$t("user-guide-frontoffice")},{id:"technical-architecture",title:this.$t("technical-architecture")},{id:"interoperate",title:this.$t("interoperate")},{id:"install",title:this.$t("install")}]}}},q=w,v=n(47),m=n(169),d=n(170),g=n(65),I=n.n(g),E=n(162),x=n(163),F=n(166),a=n(103),V=n(45),r=Object(v.a)(q,i,o,!1,null,null,null);typeof m.default=="function"&&Object(m.default)(r),typeof d.default=="function"&&Object(d.default)(r);var P=e.default=r.exports;I()(r,{VIcon:E.a,VList:x.a,VListGroup:F.a,VListItem:a.a,VListItemTitle:V.b})},,,,,function(t,e,n){"use strict";var i=n(121),o=n.n(i);e.default=o.a},function(t,e,n){"use strict";var i=n(122),o=n.n(i);e.default=o.a},,function(t,e,n){"use strict";var i=n(1),o=n(0);n(161),i.a.use(n(628),{moment:o})},,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,function(t,e,n){},,function(t,e,n){},,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,function(t,e,n){"use strict";var i=function(){var a=this,V=a.$createElement,r=a._self._c||V;return r("v-app",[r("v-navigation-drawer",{attrs:{app:"",fixed:"",width:"300"}},[r("v-list-item",{attrs:{to:a.localePath({name:"index"}),nuxt:"",exact:""}},[r("v-list-item-avatar",{staticClass:"brand-logo"},[r("v-img",{attrs:{src:"./logo.png"}})],1),a._v(" "),r("v-list-item-content",[r("v-list-item-title",{staticClass:"text-h5 font-weight-bold"},[a._v(`
+            `)])],1)],1)]})],2)]})],2)},o=[],b=n(8),p=n(35),h=n(16),S=n(33),C=n(50),T=n(37),L=n(30),D=n(38),k=n(43),A=n(158),j=n(351),w={props:["folder"],computed:{content:function(){var z=this;if(!!this.$route){var f=n(353),y=f.keys().filter(function(l){return l.startsWith("./install")||l.startsWith("./interoperate")||l.startsWith("./technical-architecture")?!0:l.includes("-".concat(z.$i18n.locale,".md"))}).map(function(l){return Object.assign(j(f(l).default).meta||{},{chapter:l.split("/")[1],id:l.split("/")[2].split(".").shift().replace("-".concat(z.$i18n.locale),"")})}).filter(function(l){return l.published||!0});return y.sort(function(l,u){return z.chapters.findIndex(function(c){return c.id===l.chapter})<z.chapters.findIndex(function(c){return c.id===u.chapter})?-1:z.chapters.findIndex(function(c){return c.id===l.chapter})>z.chapters.findIndex(function(c){return c.id===u.chapter})?1:l.section&&!u.section?-1:!l.section&&u.section?1:l.section<u.section?-1:l.section>u.section?1:l.subsection&&!u.subsection?-1:!l.subsection&&u.subsection?1:l.subsection<u.subsection?-1:1}),y}},chapters:function(){return[{id:"functional-presentation",title:this.$t("functional-presentation")},{id:"user-guide-backoffice",title:this.$t("user-guide-backoffice")},{id:"user-guide-frontoffice",title:this.$t("user-guide-frontoffice")},{id:"technical-architecture",title:this.$t("technical-architecture")},{id:"interoperate",title:this.$t("interoperate")},{id:"install",title:this.$t("install")}]}}},q=w,v=n(47),m=n(169),d=n(170),g=n(65),I=n.n(g),E=n(162),x=n(163),F=n(166),a=n(103),V=n(45),r=Object(v.a)(q,i,o,!1,null,null,null);typeof m.default=="function"&&Object(m.default)(r),typeof d.default=="function"&&Object(d.default)(r);var P=e.default=r.exports;I()(r,{VIcon:E.a,VList:x.a,VListGroup:F.a,VListItem:a.a,VListItemTitle:V.b})},,,,,function(t,e,n){"use strict";var i=n(121),o=n.n(i);e.default=o.a},function(t,e,n){"use strict";var i=n(122),o=n.n(i);e.default=o.a},,function(t,e,n){"use strict";var i=n(1),o=n(0);n(161),i.a.use(n(626),{moment:o})},,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,function(t,e,n){},,function(t,e,n){},,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,function(t,e,n){"use strict";var i=function(){var a=this,V=a.$createElement,r=a._self._c||V;return r("v-app",[r("v-navigation-drawer",{attrs:{app:"",fixed:"",width:"300"}},[r("v-list-item",{attrs:{to:a.localePath({name:"index"}),nuxt:"",exact:""}},[r("v-list-item-avatar",{staticClass:"brand-logo"},[r("v-img",{attrs:{src:"./logo.png"}})],1),a._v(" "),r("v-list-item-content",[r("v-list-item-title",{staticClass:"text-h5 font-weight-bold"},[a._v(`
           Data Fair
         `)])],1)],1),a._v(" "),r("v-divider"),a._v(" "),r("folder-menu")],1),a._v(" "),r("v-main",[r("v-speed-dial",{attrs:{direction:"bottom",transition:"fade-transition",absolute:"",top:"",right:""},scopedSlots:a._u([{key:"activator",fn:function(){return[r("v-btn",{staticStyle:{"font-weight":"bold"},attrs:{icon:"",color:"primary"}},[a._v(`
           `+a._s(a.$i18n.locale)+`
         `)])]},proxy:!0}])},[a._v(" "),a._l(a.$i18n.locales.filter(function(P){return P!==a.$i18n.locale}),function(P){return r("v-btn",{key:P,staticStyle:{"font-weight":"bold"},attrs:{to:a.switchLocalePath(P),icon:"",nuxt:""}},[a._v(`
         `+a._s(P)+`
-      `)])})],2),a._v(" "),r("nuxt")],1),a._v(" "),r("v-footer",{staticClass:"pa-3"},[r("v-spacer"),a._v(" "),r("div",[a._v("Maintained by "),r("a",{attrs:{href:"https://koumoul.com"}},[a._v("Koumoul")])])],1)],1)},o=[],b=n(164),p={components:{FolderMenu:b.default}},h=p,S=n(609),C=n(47),T=n(65),L=n.n(T),D=n(640),k=n(632),A=n(641),j=n(642),w=n(350),q=n(103),v=n(165),m=n(45),d=n(643),g=n(646),I=n(644),E=n(645),x=Object(C.a)(h,i,o,!1,null,null,null),F=e.a=x.exports;L()(x,{FolderMenu:n(164).default}),L()(x,{VApp:D.a,VBtn:k.a,VDivider:A.a,VFooter:j.a,VImg:w.a,VListItem:q.a,VListItemAvatar:v.a,VListItemContent:m.a,VListItemTitle:m.b,VMain:d.a,VNavigationDrawer:g.a,VSpacer:I.a,VSpeedDial:E.a})},function(t,e,n){"use strict";var i=function(){var j=this,w=j.$createElement,q=j._self._c||w;return q("v-app",[q("v-main",[q("nuxt")],1)],1)},o=[],b={},p=b,h=n(621),S=n(47),C=n(65),T=n.n(C),L=n(640),D=n(643),k=Object(S.a)(p,i,o,!1,null,null,null),A=e.a=k.exports;T()(k,{VApp:L.a,VMain:D.a})},,,,function(t,e,n){var i={"./about/overview-fr.md":355,"./functional-presentation/account-en.md":356,"./functional-presentation/account-fr.md":357,"./functional-presentation/analitycs-en.md":358,"./functional-presentation/analitycs-fr.md":359,"./functional-presentation/api-en.md":360,"./functional-presentation/api-fr.md":361,"./functional-presentation/api-stats-en.md":362,"./functional-presentation/api-stats-fr.md":363,"./functional-presentation/back-office-en.md":364,"./functional-presentation/back-office-fr.md":365,"./functional-presentation/connectors-en.md":366,"./functional-presentation/connectors-fr.md":367,"./functional-presentation/contact-en.md":368,"./functional-presentation/contact-fr.md":369,"./functional-presentation/content-pages-en.md":370,"./functional-presentation/content-pages-fr.md":371,"./functional-presentation/dataset-details-en.md":372,"./functional-presentation/dataset-details-fr.md":373,"./functional-presentation/dataset-management-en.md":374,"./functional-presentation/dataset-management-fr.md":375,"./functional-presentation/datasets-catalog-en.md":376,"./functional-presentation/datasets-catalog-fr.md":377,"./functional-presentation/home-en.md":378,"./functional-presentation/home-fr.md":379,"./functional-presentation/introduction-en.md":380,"./functional-presentation/introduction-fr.md":381,"./functional-presentation/notify-en.md":382,"./functional-presentation/notify-fr.md":383,"./functional-presentation/portal-config-en.md":384,"./functional-presentation/portal-config-fr.md":385,"./functional-presentation/portal-en.md":386,"./functional-presentation/portal-fr.md":387,"./functional-presentation/processings-en.md":388,"./functional-presentation/processings-fr.md":389,"./functional-presentation/user-management-en.md":390,"./functional-presentation/user-management-fr.md":391,"./functional-presentation/visu-config-en.md":392,"./functional-presentation/visu-config-fr.md":393,"./functional-presentation/visualization-details-en.md":394,"./functional-presentation/visualization-details-fr.md":395,"./functional-presentation/visualizations-catalog-en.md":396,"./functional-presentation/visualizations-catalog-fr.md":397,"./install/config.md":398,"./install/install.md":399,"./interoperate/api.md":400,"./interoperate/applications.md":401,"./interoperate/collectors.md":402,"./interoperate/connectors.md":403,"./interoperate/services.md":404,"./technical-architecture/analytics.md":405,"./technical-architecture/backup.md":406,"./technical-architecture/capture.md":407,"./technical-architecture/connectors.md":408,"./technical-architecture/data-fair.md":409,"./technical-architecture/http-log.md":410,"./technical-architecture/introduction.md":411,"./technical-architecture/notify.md":412,"./technical-architecture/portal.md":413,"./technical-architecture/processings.md":414,"./technical-architecture/simple-directory.md":415,"./technical-architecture/thumbor.md":416,"./user-guide-backoffice/add-reuse-en.md":417,"./user-guide-backoffice/add-reuse-fr.md":418,"./user-guide-backoffice/analytics-en.md":419,"./user-guide-backoffice/analytics-fr.md":420,"./user-guide-backoffice/api-en.md":421,"./user-guide-backoffice/api-fr.md":422,"./user-guide-backoffice/attachements-en.md":423,"./user-guide-backoffice/attachements-fr.md":424,"./user-guide-backoffice/bar-chart-race-en.md":425,"./user-guide-backoffice/bar-chart-race-fr.md":426,"./user-guide-backoffice/carto-stats-en.md":427,"./user-guide-backoffice/carto-stats-fr.md":428,"./user-guide-backoffice/catalogues-en.md":429,"./user-guide-backoffice/catalogues-fr.md":430,"./user-guide-backoffice/catchment-area-en.md":431,"./user-guide-backoffice/catchment-area-fr.md":432,"./user-guide-backoffice/charts-en.md":433,"./user-guide-backoffice/charts-fr.md":434,"./user-guide-backoffice/concept-en.md":435,"./user-guide-backoffice/concept-fr.md":436,"./user-guide-backoffice/content-en.md":437,"./user-guide-backoffice/content-fr.md":438,"./user-guide-backoffice/dashboard-en.md":439,"./user-guide-backoffice/dashboard-fr.md":440,"./user-guide-backoffice/datasets-en.md":441,"./user-guide-backoffice/datasets-fr.md":442,"./user-guide-backoffice/div-admin-en.md":443,"./user-guide-backoffice/div-admin-fr.md":444,"./user-guide-backoffice/edition-dataset-en.md":445,"./user-guide-backoffice/edition-dataset-fr.md":446,"./user-guide-backoffice/enrichment-en.md":447,"./user-guide-backoffice/enrichment-fr.md":448,"./user-guide-backoffice/file-formats-en.md":449,"./user-guide-backoffice/file-formats-fr.md":450,"./user-guide-backoffice/game-localisation-en.md":451,"./user-guide-backoffice/game-localisation-fr.md":452,"./user-guide-backoffice/game-quizz-en.md":453,"./user-guide-backoffice/game-quizz-fr.md":454,"./user-guide-backoffice/game-sort-en.md":455,"./user-guide-backoffice/game-sort-fr.md":456,"./user-guide-backoffice/geo-shapes-en.md":457,"./user-guide-backoffice/geo-shapes-fr.md":458,"./user-guide-backoffice/import-dataset-en.md":459,"./user-guide-backoffice/import-dataset-fr.md":460,"./user-guide-backoffice/infos-localisations-en.md":461,"./user-guide-backoffice/infos-localisations-fr.md":462,"./user-guide-backoffice/infos-parcelles-en.md":463,"./user-guide-backoffice/infos-parcelles-fr.md":464,"./user-guide-backoffice/licences-thematics-en.md":465,"./user-guide-backoffice/licences-thematics-fr.md":466,"./user-guide-backoffice/liste-fiches-en.md":467,"./user-guide-backoffice/liste-fiches-fr.md":468,"./user-guide-backoffice/members-en.md":469,"./user-guide-backoffice/members-fr.md":470,"./user-guide-backoffice/menu-en.md":471,"./user-guide-backoffice/menu-fr.md":472,"./user-guide-backoffice/navigation-en.md":473,"./user-guide-backoffice/navigation-fr.md":474,"./user-guide-backoffice/network-en.md":475,"./user-guide-backoffice/network-fr.md":476,"./user-guide-backoffice/organisation-en.md":477,"./user-guide-backoffice/organisation-fr.md":478,"./user-guide-backoffice/parameter-reuse-en.md":479,"./user-guide-backoffice/parameter-reuse-fr.md":480,"./user-guide-backoffice/parameters-en.md":481,"./user-guide-backoffice/parameters-fr.md":482,"./user-guide-backoffice/periodic-series-en.md":483,"./user-guide-backoffice/periodic-series-fr.md":484,"./user-guide-backoffice/portal-en.md":485,"./user-guide-backoffice/portal-fr.md":486,"./user-guide-backoffice/processing-en.md":487,"./user-guide-backoffice/processing-fr.md":488,"./user-guide-backoffice/proportion-en.md":489,"./user-guide-backoffice/proportion-fr.md":490,"./user-guide-backoffice/relations-en.md":491,"./user-guide-backoffice/relations-fr.md":492,"./user-guide-backoffice/reuses-carto-en.md":493,"./user-guide-backoffice/reuses-carto-fr.md":494,"./user-guide-backoffice/reuses-en.md":495,"./user-guide-backoffice/reuses-fr.md":496,"./user-guide-backoffice/reuses-game-en.md":497,"./user-guide-backoffice/reuses-game-fr.md":498,"./user-guide-backoffice/reuses-graphics-en.md":499,"./user-guide-backoffice/reuses-graphics-fr.md":500,"./user-guide-backoffice/reuses-text-en.md":501,"./user-guide-backoffice/reuses-text-fr.md":502,"./user-guide-backoffice/sankey-en.md":503,"./user-guide-backoffice/sankey-fr.md":504,"./user-guide-backoffice/sigin-en.md":505,"./user-guide-backoffice/sigin-fr.md":506,"./user-guide-backoffice/sunburst-en.md":507,"./user-guide-backoffice/sunburst-fr.md":508,"./user-guide-backoffice/update-dataset-en.md":509,"./user-guide-backoffice/update-dataset-fr.md":510,"./user-guide-backoffice/webhooks-en.md":511,"./user-guide-backoffice/webhooks-fr.md":512,"./user-guide-backoffice/word-cloud-en.md":513,"./user-guide-backoffice/word-cloud-fr.md":514,"./user-guide-frontoffice/contentpage-en.md":515,"./user-guide-frontoffice/contentpage-fr.md":516,"./user-guide-frontoffice/datapage-en.md":517,"./user-guide-frontoffice/datapage-fr.md":518,"./user-guide-frontoffice/datasetpage-en.md":519,"./user-guide-frontoffice/datasetpage-fr.md":520,"./user-guide-frontoffice/homepage-en.md":521,"./user-guide-frontoffice/homepage-fr.md":522,"./user-guide-frontoffice/use-portal-en.md":523,"./user-guide-frontoffice/use-portal-fr.md":524,"./user-guide-frontoffice/visualisation-en.md":525,"./user-guide-frontoffice/visualisation-fr.md":526,"./user-guide-frontoffice/visualisationspage-en.md":527,"./user-guide-frontoffice/visualisationspage-fr.md":528};function o(p){var h=b(p);return n(h)}function b(p){if(!n.o(i,p)){var h=new Error("Cannot find module '"+p+"'");throw h.code="MODULE_NOT_FOUND",h}return i[p]}o.keys=function(){return Object.keys(i)},o.resolve=b,t.exports=o,o.id=353},,function(t,e,n){"use strict";n.r(e),e.default=`Data Fair permet d'enrichir et de partager facilement ses donn\xE9es pour pouvoir ensuite les utiliser dans des applications. Le partage des donn\xE9es peut se faire en mode priv\xE9 (private data) ou public (open data). Les donn\xE9es partageables sont des donn\xE9es de type tabulaire ou g\xE9ographiques. Data Fair permet de mettre facilement des donn\xE9es \xE0 disposition, mais les m\xE9tadonn\xE9es sont minimes et **ce n'est donc pas un service de catalogage**. Il peut donc \xEAtre un excellent compl\xE9ment \xE0 un service comme [udata](https://github.com/opendatateam/udata) utilis\xE9 sur le site [data.gouv.fr](http://data.gouv.fr).
+      `)])})],2),a._v(" "),r("nuxt")],1),a._v(" "),r("v-footer",{staticClass:"pa-3"},[r("v-spacer"),a._v(" "),r("div",[a._v("Maintained by "),r("a",{attrs:{href:"https://koumoul.com"}},[a._v("Koumoul")])])],1)],1)},o=[],b=n(164),p={components:{FolderMenu:b.default}},h=p,S=n(607),C=n(47),T=n(65),L=n.n(T),D=n(638),k=n(630),A=n(639),j=n(640),w=n(350),q=n(103),v=n(165),m=n(45),d=n(641),g=n(644),I=n(642),E=n(643),x=Object(C.a)(h,i,o,!1,null,null,null),F=e.a=x.exports;L()(x,{FolderMenu:n(164).default}),L()(x,{VApp:D.a,VBtn:k.a,VDivider:A.a,VFooter:j.a,VImg:w.a,VListItem:q.a,VListItemAvatar:v.a,VListItemContent:m.a,VListItemTitle:m.b,VMain:d.a,VNavigationDrawer:g.a,VSpacer:I.a,VSpeedDial:E.a})},function(t,e,n){"use strict";var i=function(){var j=this,w=j.$createElement,q=j._self._c||w;return q("v-app",[q("v-main",[q("nuxt")],1)],1)},o=[],b={},p=b,h=n(619),S=n(47),C=n(65),T=n.n(C),L=n(638),D=n(641),k=Object(S.a)(p,i,o,!1,null,null,null),A=e.a=k.exports;T()(k,{VApp:L.a,VMain:D.a})},,,,function(t,e,n){var i={"./about/overview-fr.md":355,"./functional-presentation/account-en.md":356,"./functional-presentation/account-fr.md":357,"./functional-presentation/api-en.md":358,"./functional-presentation/api-fr.md":359,"./functional-presentation/back-office-en.md":360,"./functional-presentation/back-office-fr.md":361,"./functional-presentation/connectors-en.md":362,"./functional-presentation/connectors-fr.md":363,"./functional-presentation/contact-en.md":364,"./functional-presentation/contact-fr.md":365,"./functional-presentation/content-pages-en.md":366,"./functional-presentation/content-pages-fr.md":367,"./functional-presentation/dataset-details-en.md":368,"./functional-presentation/dataset-details-fr.md":369,"./functional-presentation/dataset-management-en.md":370,"./functional-presentation/dataset-management-fr.md":371,"./functional-presentation/datasets-catalog-en.md":372,"./functional-presentation/datasets-catalog-fr.md":373,"./functional-presentation/home-en.md":374,"./functional-presentation/home-fr.md":375,"./functional-presentation/introduction-en.md":376,"./functional-presentation/introduction-fr.md":377,"./functional-presentation/metrics-en.md":378,"./functional-presentation/metrics-fr.md":379,"./functional-presentation/notify-en.md":380,"./functional-presentation/notify-fr.md":381,"./functional-presentation/portal-config-en.md":382,"./functional-presentation/portal-config-fr.md":383,"./functional-presentation/portal-en.md":384,"./functional-presentation/portal-fr.md":385,"./functional-presentation/processings-en.md":386,"./functional-presentation/processings-fr.md":387,"./functional-presentation/user-management-en.md":388,"./functional-presentation/user-management-fr.md":389,"./functional-presentation/visu-config-en.md":390,"./functional-presentation/visu-config-fr.md":391,"./functional-presentation/visualization-details-en.md":392,"./functional-presentation/visualization-details-fr.md":393,"./functional-presentation/visualizations-catalog-en.md":394,"./functional-presentation/visualizations-catalog-fr.md":395,"./install/config.md":396,"./install/install.md":397,"./interoperate/api.md":398,"./interoperate/applications.md":399,"./interoperate/collectors.md":400,"./interoperate/connectors.md":401,"./interoperate/services.md":402,"./technical-architecture/analytics.md":403,"./technical-architecture/backup.md":404,"./technical-architecture/capture.md":405,"./technical-architecture/connectors.md":406,"./technical-architecture/data-fair.md":407,"./technical-architecture/http-log.md":408,"./technical-architecture/introduction.md":409,"./technical-architecture/notify.md":410,"./technical-architecture/portal.md":411,"./technical-architecture/processings.md":412,"./technical-architecture/simple-directory.md":413,"./technical-architecture/thumbor.md":414,"./user-guide-backoffice/add-reuse-en.md":415,"./user-guide-backoffice/add-reuse-fr.md":416,"./user-guide-backoffice/analytics-en.md":417,"./user-guide-backoffice/analytics-fr.md":418,"./user-guide-backoffice/api-en.md":419,"./user-guide-backoffice/api-fr.md":420,"./user-guide-backoffice/attachements-en.md":421,"./user-guide-backoffice/attachements-fr.md":422,"./user-guide-backoffice/bar-chart-race-en.md":423,"./user-guide-backoffice/bar-chart-race-fr.md":424,"./user-guide-backoffice/carto-stats-en.md":425,"./user-guide-backoffice/carto-stats-fr.md":426,"./user-guide-backoffice/catalogues-en.md":427,"./user-guide-backoffice/catalogues-fr.md":428,"./user-guide-backoffice/catchment-area-en.md":429,"./user-guide-backoffice/catchment-area-fr.md":430,"./user-guide-backoffice/charts-en.md":431,"./user-guide-backoffice/charts-fr.md":432,"./user-guide-backoffice/concept-en.md":433,"./user-guide-backoffice/concept-fr.md":434,"./user-guide-backoffice/content-en.md":435,"./user-guide-backoffice/content-fr.md":436,"./user-guide-backoffice/dashboard-en.md":437,"./user-guide-backoffice/dashboard-fr.md":438,"./user-guide-backoffice/datasets-en.md":439,"./user-guide-backoffice/datasets-fr.md":440,"./user-guide-backoffice/div-admin-en.md":441,"./user-guide-backoffice/div-admin-fr.md":442,"./user-guide-backoffice/edition-dataset-en.md":443,"./user-guide-backoffice/edition-dataset-fr.md":444,"./user-guide-backoffice/enrichment-en.md":445,"./user-guide-backoffice/enrichment-fr.md":446,"./user-guide-backoffice/file-formats-en.md":447,"./user-guide-backoffice/file-formats-fr.md":448,"./user-guide-backoffice/game-localisation-en.md":449,"./user-guide-backoffice/game-localisation-fr.md":450,"./user-guide-backoffice/game-quizz-en.md":451,"./user-guide-backoffice/game-quizz-fr.md":452,"./user-guide-backoffice/game-sort-en.md":453,"./user-guide-backoffice/game-sort-fr.md":454,"./user-guide-backoffice/geo-shapes-en.md":455,"./user-guide-backoffice/geo-shapes-fr.md":456,"./user-guide-backoffice/import-dataset-en.md":457,"./user-guide-backoffice/import-dataset-fr.md":458,"./user-guide-backoffice/infos-localisations-en.md":459,"./user-guide-backoffice/infos-localisations-fr.md":460,"./user-guide-backoffice/infos-parcelles-en.md":461,"./user-guide-backoffice/infos-parcelles-fr.md":462,"./user-guide-backoffice/licences-thematics-en.md":463,"./user-guide-backoffice/licences-thematics-fr.md":464,"./user-guide-backoffice/liste-fiches-en.md":465,"./user-guide-backoffice/liste-fiches-fr.md":466,"./user-guide-backoffice/members-en.md":467,"./user-guide-backoffice/members-fr.md":468,"./user-guide-backoffice/menu-en.md":469,"./user-guide-backoffice/menu-fr.md":470,"./user-guide-backoffice/navigation-en.md":471,"./user-guide-backoffice/navigation-fr.md":472,"./user-guide-backoffice/network-en.md":473,"./user-guide-backoffice/network-fr.md":474,"./user-guide-backoffice/organisation-en.md":475,"./user-guide-backoffice/organisation-fr.md":476,"./user-guide-backoffice/parameter-reuse-en.md":477,"./user-guide-backoffice/parameter-reuse-fr.md":478,"./user-guide-backoffice/parameters-en.md":479,"./user-guide-backoffice/parameters-fr.md":480,"./user-guide-backoffice/periodic-series-en.md":481,"./user-guide-backoffice/periodic-series-fr.md":482,"./user-guide-backoffice/portal-en.md":483,"./user-guide-backoffice/portal-fr.md":484,"./user-guide-backoffice/processing-en.md":485,"./user-guide-backoffice/processing-fr.md":486,"./user-guide-backoffice/proportion-en.md":487,"./user-guide-backoffice/proportion-fr.md":488,"./user-guide-backoffice/relations-en.md":489,"./user-guide-backoffice/relations-fr.md":490,"./user-guide-backoffice/reuses-carto-en.md":491,"./user-guide-backoffice/reuses-carto-fr.md":492,"./user-guide-backoffice/reuses-en.md":493,"./user-guide-backoffice/reuses-fr.md":494,"./user-guide-backoffice/reuses-game-en.md":495,"./user-guide-backoffice/reuses-game-fr.md":496,"./user-guide-backoffice/reuses-graphics-en.md":497,"./user-guide-backoffice/reuses-graphics-fr.md":498,"./user-guide-backoffice/reuses-text-en.md":499,"./user-guide-backoffice/reuses-text-fr.md":500,"./user-guide-backoffice/sankey-en.md":501,"./user-guide-backoffice/sankey-fr.md":502,"./user-guide-backoffice/sigin-en.md":503,"./user-guide-backoffice/sigin-fr.md":504,"./user-guide-backoffice/sunburst-en.md":505,"./user-guide-backoffice/sunburst-fr.md":506,"./user-guide-backoffice/update-dataset-en.md":507,"./user-guide-backoffice/update-dataset-fr.md":508,"./user-guide-backoffice/webhooks-en.md":509,"./user-guide-backoffice/webhooks-fr.md":510,"./user-guide-backoffice/word-cloud-en.md":511,"./user-guide-backoffice/word-cloud-fr.md":512,"./user-guide-frontoffice/contentpage-en.md":513,"./user-guide-frontoffice/contentpage-fr.md":514,"./user-guide-frontoffice/datapage-en.md":515,"./user-guide-frontoffice/datapage-fr.md":516,"./user-guide-frontoffice/datasetpage-en.md":517,"./user-guide-frontoffice/datasetpage-fr.md":518,"./user-guide-frontoffice/homepage-en.md":519,"./user-guide-frontoffice/homepage-fr.md":520,"./user-guide-frontoffice/use-portal-en.md":521,"./user-guide-frontoffice/use-portal-fr.md":522,"./user-guide-frontoffice/visualisation-en.md":523,"./user-guide-frontoffice/visualisation-fr.md":524,"./user-guide-frontoffice/visualisationspage-en.md":525,"./user-guide-frontoffice/visualisationspage-fr.md":526};function o(p){var h=b(p);return n(h)}function b(p){if(!n.o(i,p)){var h=new Error("Cannot find module '"+p+"'");throw h.code="MODULE_NOT_FOUND",h}return i[p]}o.keys=function(){return Object.keys(i)},o.resolve=b,t.exports=o,o.id=353},,function(t,e,n){"use strict";n.r(e),e.default=`Data Fair permet d'enrichir et de partager facilement ses donn\xE9es pour pouvoir ensuite les utiliser dans des applications. Le partage des donn\xE9es peut se faire en mode priv\xE9 (private data) ou public (open data). Les donn\xE9es partageables sont des donn\xE9es de type tabulaire ou g\xE9ographiques. Data Fair permet de mettre facilement des donn\xE9es \xE0 disposition, mais les m\xE9tadonn\xE9es sont minimes et **ce n'est donc pas un service de catalogage**. Il peut donc \xEAtre un excellent compl\xE9ment \xE0 un service comme [udata](https://github.com/opendatateam/udata) utilis\xE9 sur le site [data.gouv.fr](http://data.gouv.fr).
 
 Ce service permet d'exposer facilement ses donn\xE9es via une API web, **contractualis\xE9e et document\xE9e**, ce qui permet aux d\xE9veloppeurs de les **r\xE9utiliser facilement dans leurs applications**. De plus les donn\xE9es peuvent \xEAtre **s\xE9mantis\xE9es, ce qui permet ensuite de les enrichir** avec d'autres donn\xE9es s\xE9mantis\xE9es. Ainsi, des donn\xE9es qui ont une adresse peuvent par exemple \xEAtre compl\xE9t\xE9es par des coordonn\xE9es GPS, ce qui permet ensuite de les afficher sur une carte. Mais bien qu'il puisse \xEAtre utilis\xE9 pour de l'enrichissement, Data Fair **n'est pas un atelier de traitement de la donn\xE9e**. Il est plut\xF4t compl\xE9mentaire et permet de publier de la donn\xE9e pr\xE9trait\xE9e.
 
@@ -84,140 +84,6 @@ Les utilisateurs qui cr\xE9ent des comptes par eux m\xEAme ont leur donn\xE9es s
 
 Il est \xE9galement possible de configurer une connexion \xE0 un annuaire d'utilisateur externe au travers du protocole LDAP.
 `},function(t,e,n){"use strict";n.r(e),e.default=`---
-title: Portal analytics
-section: 3
-subsection : 12
-updated: 2020-12-09
-description : Portal usage statistics
-published: true
----
-
-Analytics let you measure the statistics of frequentation of the platform.  
-It is possible to use **Matomo Analytics** (old piwik) or **Google Analytics** as a tracking system.
-
-### Matomo Analytics
-[Matomo Analytics](https://fr.matomo.org/) displays statistics in various visualizations: tables, graphs and maps. By selecting the different representations of statistics, it is possible to customize its dashboards.  
-It is also possible to **anonymize the data** and record user journeys while complying with the recommendations of the [CNIL](https://www.cnil.fr/professionnel).
-
-![Matomo](./images/functional-presentation/matomo.jpg)
-
-It is possible to process personal data by activating the following features:
-* **Right of access**: visitors can have access to their personal data
-* **Right to portability**: visitor data may be retrieved in a machine-readable format
-* **Right to be forgotten**: respect for the privacy of users by deleting their personal data
-* **Right to withdraw consent**: visitors can revoke their consent at any time
-* **Right to object**: visitors can easily opt out of being tracked
-* **Anonymization features**: in one click, it is possible to anonymize personal data such as IP addresses, location and many more
-* **Support for the "Do Not Track" functionality of browsers**: use of web browser settings regarding privacy settings
-* **Delete historical data**: this data is automatically deleted from the database
-* **Anonymization of historical data**: this data can be kept by anonymizing it.
-
-### Google Analytics
-
-The statistics under [Google Analytics](https://analytics.google.com/) are also available in different visualizations: tables, graphs and maps. It is also possible to customize its dashboards.
-
-![Google Analytics](./images/functional-presentation/google-analytics.jpg)
-
-### Configuration
-
-The configuration of the user tracking system consists of two points.  
-1. Configure the tracking system on the portal  
-2. Configure events
-
-<p>
-</p>
-
-**Configure the tracking system on the portal**
-
-This process is available on the portal configuration.  
-For **Google Analytics** you will need the *id number* and for **Matomo analytics** you will need the *tracker url* and *your site ID*.
-
-![Configuration](./images/functional-presentation/config-GA-1.jpg)
-
-
-**Configure events**
-This process is available in the Data Fair settings in the *Outside calls (webhooks)* category.
-
-You can define **which events** you want to track in your analytics:
-* A new dataset has been created
-* A dataset encountered an error
-* A dataset has been finalized and is online
-* A dataset has been published to a catalog
-* A new reuse has been created
-* A reuse encountered an error
-* A reuse has been published on a catalog
-* A dataset file has been updated
-
-![Configuration](./images/functional-presentation/config-GA-2.jpg)
-`},function(t,e,n){"use strict";n.r(e),e.default=`---
-title: Analytics du portail
-section: 3
-subsection : 12
-updated: 2020-12-09
-description : Statistiques d\u2019utilisation du portail
-published: true
----
-
-Ce module permet de comptabiliser les diff\xE9rentes statistiques de fr\xE9quentation de la plateforme.  
-Il est possible d'utiliser **Matomo Analytics** (ancienne piwik) ou **Google Analytics** comme syst\xE8me de suivi.
-
-### Matomo Analytics
-Les statistiques sous [Matomo Analytics](https://fr.matomo.org/) sont disponibles sous diff\xE9rentes formes : tableaux, graphiques et cartes. En s\xE9lectionnant les diff\xE9rentes repr\xE9sentations des statistiques, il est possible de personnaliser ses tableaux de bord.  
-Il est \xE9galement possible d'**anonymiser les donn\xE9es** et d\u2019enregistrer les parcours utilisateurs tout en \xE9tant en conformit\xE9 avec les recommandations de la [CNIL](https://www.cnil.fr/professionnel).
-
-![Matomo](./images/functional-presentation/matomo.jpg)
-
-Il est possible de traiter des donn\xE9es personnelles en activant les fonctionnalit\xE9s suivantes :
-* **Droit d'acc\xE8s** : les visiteurs peuvent avoir acc\xE8s \xE0 leurs donn\xE9es personnelles
-* **Droit \xE0 la portabilit\xE9** : les donn\xE9es des visiteurs peuvent \xEAtre r\xE9cup\xE9r\xE9es dans un format lisible par une machine
-* **Droit \xE0 l'oubli** : respect de la vie priv\xE9e des utilisateurs en supprimant leurs donn\xE9es personnelles
-* **Droit de retirer son consentement** : les visiteurs peuvent revenir sur le consentement qu'ils ont accord\xE9 \xE0 n'importe quel moment
-* **Droit d\u2019opposition** : les visiteurs peuvent facilement choisir de ne plus \xEAtre suivis
-* **Fonctionnalit\xE9s d'anonymisation** : en un clic, il est possible d'anonymiser les donn\xE9es personnelles comme les adresses IP, la localisation et bien d'autres
-* **Support de la fonctionnalit\xE9 "Ne pas pister" des navigateurs** : utilisation des r\xE9glages du navigateur web concernant les param\xE8tres relatifs \xE0 la vie priv\xE9e
-* **Suppression des donn\xE9es historis\xE9es** : ces donn\xE9es sont supprim\xE9es automatiquement de la base de donn\xE9es
-* **Anonymisation des donn\xE9es historis\xE9es** : on peut garder ces donn\xE9es en les anonymisant.
-
-### Google Analytics
-
-Les statistiques sous [Google Analytics](https://analytics.google.com/) sont aussi disponibles sous diff\xE9rentes formes : tableaux, graphiques et cartes. Il est aussi possible de personnaliser ses tableaux de bord.
-
-![Google Analytics](./images/functional-presentation/google-analytics.jpg)
-
-### Configuration
-
-La configuration du syst\xE8me de suivi des utilisateurs se compose en deux points.  
-1. Configuration du syst\xE8me de suivi sur le portail  
-2. Configuration des \xE9v\xE9nements
-
-<p>
-</p>
-
-**Configuration du syst\xE8me de suivi sur le portail**
-
-Ce point de configuration est disponible sur la configuration du portail.
-Pour **Google Analytics** vous aurez besoin du *num\xE9ro d'identifiant* et pour **Matomo analytics**, vous aurez besoin de l'*url du tracker* et de l'*identifiant de votre site*.
-
-![Configuration](./images/functional-presentation/config-GA-1.jpg)
-
-
-**Configuration des \xE9v\xE9nements**
-Ce point de configuration est disponible dans les param\xE8tres de Data Fair \xE0 la cat\xE9gorie *Appels exterieurs (webhooks)*.
-
-Vous pouvez d\xE9finir **quels \xE9v\xE9nements** vous souhaitez suivre dans vos Analytics :
-* Un nouveau jeu de donn\xE9es a \xE9t\xE9 cr\xE9\xE9
-* Un jeu de donn\xE9es a rencontr\xE9 une erreur
-* Un jeu de donn\xE9es a \xE9t\xE9 finalis\xE9 et mis en ligne
-* Un jeu de donn\xE9es a \xE9t\xE9 publi\xE9 sur un catalogue
-* Un jeu de donn\xE9es a \xE9t\xE9 t\xE9l\xE9charg\xE9 dans un format fichier
-* Une nouvelle r\xE9utilisation a \xE9t\xE9 cr\xE9\xE9e
-* Une r\xE9utilisation a rencontr\xE9 une erreur
-* Une r\xE9utilisation a \xE9t\xE9 publi\xE9e sur un catalogue
-* Le fichier d'un jeu de donn\xE9es a \xE9t\xE9 mis \xE0 jour
-* Un extrait filtr\xE9 d'un jeu de donn\xE9es a \xE9t\xE9 t\xE9l\xE9charg\xE9 dans un format fichier
-
-![Configuration](./images/functional-presentation/config-GA-2.jpg)
-`},function(t,e,n){"use strict";n.r(e),e.default=`---
 title: API Acces
 section: 2
 subsection : 9
@@ -258,30 +124,6 @@ Un autre avantage d\u2019utiliser cette sp\xE9cification est l\u2019**interop\xE
 
 Il est possible d'utiliser l'API pour **moissonner les donn\xE9es d'un portail**. Par exemple, le site https://opendatarchives.fr/ moissonne r\xE9guli\xE8rement les donn\xE9es du portail https://data.ademe.fr/ propuls\xE9 par Data Fair.
 `},function(t,e,n){"use strict";n.r(e),e.default=`---
-title: API statistics
-section: 3
-subsection : 13
-updated: 2020-12-09
-description : API statistics
-published: false
----
-Data Fair and the various associated services make extensive use of cache mechanisms to improve access times to resources, so precise statistics on the use of the various access points of the platform can only be extracted afterwards. A module allows to extract **usage statistics** of APIs from the HTTP logs of services such as Nginx.
-
-API access logs are published on Data Fair as a private dataset. Dataset can be used for consultation like another dataset, we can make visualizations on it and it is planned to create a content page presenting different views of this data in the form of a dashboard.
-`},function(t,e,n){"use strict";n.r(e),e.default=`---
-title: Statistiques de l'API
-section: 3
-subsection : 13
-updated: 2020-12-09
-description : Statistiques des API
-published: false
----
-Dans la mesure ou Data Fair et les diff\xE9rents services associ\xE9s utilisent beaucoup les m\xE9canismes de cache pour am\xE9liorer les temps d'acc\xE8s aux ressources, des statistiques pr\xE9cises d'utilisation des diff\xE9rents points d'acc\xE8s de la plateforme ne peuvent \xEAtre extraites qu'apr\xE8s coup. Un module permet d'extraire des **statistiques d'utilisation** des API \xE0 partir des logs HTTP de services tels que Nginx.
-
-Les logs d'acc\xE8s aux API sont publi\xE9s sur Data Fair sous la forme d'un jeu de donn\xE9es priv\xE9s. Ce jeu de donn\xE9es peut \xEAtre utilis\xE9 en consultation comme un autre jeu de donn\xE9es, on peut faire des visualisations dessus et il est pr\xE9vu de r\xE9aliser une page de contenu pr\xE9sentant diff\xE9rentes vues de ces donn\xE9es sous la forme d\u2019un tableau de bord.
-
-![Cl\xE9 d'api](./images/functional-presentation/metrics.jpg)
-`},function(t,e,n){"use strict";n.r(e),e.default=`---
 title: Back Office
 section: 3
 description : Back Office
@@ -305,8 +147,7 @@ L'acc\xE8s au back office est bien s\xFBr restreint \xE0 des utilisateurs authen
 `},function(t,e,n){"use strict";n.r(e),e.default=`---
 title: Catalog connectors
 section: 3
-subsection : 7
-updated: 2020-12-09
+subsection : 6
 description : Catalog connectors
 published: true
 ---
@@ -330,8 +171,7 @@ It is possible to add new catalog connectors by following the instructions in [t
 `},function(t,e,n){"use strict";n.r(e),e.default=`---
 title: Connecteurs de catalogues
 section: 3
-subsection : 7
-updated: 2020-12-09
+subsection : 6
 description : Connecteurs de catalogues
 published: true
 ---
@@ -340,18 +180,20 @@ Les connecteurs permettent d\u2019interagir avec d\u2019autres plateformes ou se
 
 En **\xE9criture**, l\u2019id\xE9e est de pouvoir pousser des m\xE9tadonn\xE9es dans d\u2019autres **catalogues**. Un exemple de catalogue est le catalogue de donn\xE9es ouvertes national [data.gouv.fr](https://www.data.gouv.fr/fr/) : les jeux de donn\xE9es publi\xE9s \xE0 l\u2019aide de Data Fair peuvent \xEAtre synchronis\xE9s automatiquement et toute modification dans les m\xE9tadonn\xE9es est propag\xE9e vers le catalogue distant.
 
-Le fait de pousser les m\xE9tadonn\xE9es vers un catalogue plut\xF4t que de se faire moissonner par lui offre plusieurs avantages dont le fait de propager imm\xE9diatement les modifications.
+Le fait de pousser les m\xE9tadonn\xE9es vers un catalogue plut\xF4t que de se faire moissonner par lui offre plusieurs avantages dont le fait de propager imm\xE9diatement les modifications. De plus, si il y a des modification de l'API de Data Fair, le connecteur continuera de fonctionner alors qu'un moissonneur pourrait devenir inop\xE9rant.
 
-Les connecteurs peuvent \xE9ventuellement pousser les donn\xE9es vers ces catalogues mais il est pr\xE9f\xE9rable d\u2019\xE9viter cela \xE0 cause des probl\xE8mes de duplication et synchronisation de donn\xE9es. Comme mentionn\xE9 pr\xE9c\xE9demment, les donn\xE9es sont index\xE9e de mani\xE8re tr\xE8s performante et il est pr\xE9f\xE9rable de requ\xEAter les donn\xE9es directement \xE0 partir de Data Fair.
+Les connecteurs peuvent \xE9ventuellement pousser les donn\xE9es vers ces catalogues mais il est pr\xE9f\xE9rable d\u2019\xE9viter cela \xE0 cause des probl\xE8mes de duplication et synchronisation de donn\xE9es. Comme mentionn\xE9 pr\xE9c\xE9demment, les donn\xE9es sont index\xE9e de mani\xE8re tr\xE8s performante avec Data Fair et il est pr\xE9f\xE9rable de requ\xEAter les donn\xE9es directement \xE0 partir des APIs qu'il offre.
 
-![Connecteur vers le catalogue data.gouv.fr](./images/functional-presentation/catalogues.jpg)
+<img src="./images/functional-presentation/catalogues.jpg"
+     height="200" style="margin:40px auto;" />
 
 En ce qui concerne la **lecture**, l\u2019approche est par contre diff\xE9rente et les connecteurs se comportent plut\xF4t comme des **moissonneurs de m\xE9tadonn\xE9es et de donn\xE9es**. On peut ainsi pour chaque connecteur param\xE9trer les fr\xE9quences de collecte et les types de sources que l\u2019on souhaite moissonner.
 
 Le fait d'int\xE9grer les donn\xE9es \xE0 la plateforme permet de les indexer et de pouvoir centraliser les contr\xF4les d\u2019acc\xE8s, pr\xE9requis indispensable si l\u2019on souhaite pouvoir **fusionner** les donn\xE9es ou consulter diff\xE9rentes sources sur une visualisation.
 
 Il est possible de rajouter de nouveaux connecteurs de catalogues en suivant les instructions dans [cette section](./interoperate/connectors).
-`},function(t,e,n){"use strict";n.r(e),e.default=`---
+
+Par rapport aux traitements p\xE9riodiques, les connecteurs de catalogue ont pour principale diff\xE9rence de pouvoir traiter **plusieurs sources de donn\xE9es qui sont r\xE9f\xE9renc\xE9es via une API** qui les liste. La fr\xE9quence de synchronisation est en g\xE9n\xE9ral plus faible que pour les traitements p\xE9riodiques.`},function(t,e,n){"use strict";n.r(e),e.default=`---
 title: Contact form
 section: 2
 subsection : 10
@@ -639,20 +481,24 @@ published: true
 
 Le catalogue de donn\xE9es est un moteur de recherche permettant d\u2019**acc\xE9der rapidement** aux jeux de donn\xE9es susceptibles d'int\xE9resser l'utilisateur. Outre le champ de recherche textuelle, il est possible d'acc\xE9der aux jeux de donn\xE9es par th\xE9matique ou par concept pr\xE9sent dans les donn\xE9es. Il est par exemple possible de lister tous les jeux de donn\xE9es g\xE9ographiques en filtrant par concept *Latitude*, ou toutes les donn\xE9es li\xE9es \xE0 des entreprises en filtrant par *SIREN*.
 
-![recherche](./images/functional-presentation/search.jpg)
+<img src="./images/functional-presentation/search.jpg"
+     height="200" style="margin:40px auto;" />
+
 
 La liste des jeux de donn\xE9es est parcourue au moyen d\u2019un m\xE9canisme de scroll infini, aussi bien adapt\xE9 \xE0 une utilisation **bureautique ou mobile**. Il est \xE9galement possible de trier les r\xE9sultats suivant diff\xE9rent crit\xE8res (Alphab\xE9tique, date de cr\xE9ation, ...). La liste des r\xE9sultats obtenus peut \xEAtre export\xE9e au format CSV en un clic.
 
-Les r\xE9sultats sur cette page sont pr\xE9sent\xE9s sous forme de vignettes qui affichent des informations comme le titre du jeu de donn\xE9es, sa date de mise \xE0 jour ou les th\xE9matiques qui lui sont associ\xE9es. Un bout de la description est \xE9galement affich\xE9, mais il peut \xEAtre remplac\xE9 par une image pour faire un catalogue plus "visuel".
+Les r\xE9sultats sur cette page sont pr\xE9sent\xE9s sous forme de vignettes qui affichent des informations comme le titre du jeu de donn\xE9es, sa date de mise \xE0 jour ou les th\xE9matiques qui lui sont associ\xE9e. Un bout de la description est \xE9galement affich\xE9, mais il peut \xEAtre remplac\xE9 par une image pour faire un catalogue plus "visuel".
 
 En plus de permettre de naviguer vers la page de d\xE9tails d'un jeu de donn\xE9es, les vignettes pr\xE9sentent des boutons d'action permettant de :
 * Visualiser les donn\xE9es avec une **vue tabulaire** dans laquelle on peut trier les colonnes, paginer, effectuer des recherches fulltext et t\xE9l\xE9charger les donn\xE9es filtr\xE9es
-* Visualiser les donn\xE9es avec une **vue cartographique** quand les donn\xE9es le permettent
+* Eventuellement visualiser les donn\xE9es avec une **vue cartographique** quand les donn\xE9es le permettent.
 * Acc\xE9der \xE0 la **documentation interactive de l\u2019API**
 * Consulter le **sch\xE9ma des donn\xE9es**
-<p></p>
 
-![Catalogue de donn\xE9es](./images/functional-presentation/home-dataset.jpg)
+<img src="./images/functional-presentation/home-dataset.jpg"
+     height="200" style="margin:40px auto;" />
+
+Le catalogue pr\xE9sente les jeux de donn\xE9es que l'utilisateur a le droit de voir. Si il n'est pas connect\xE9, il ne verra que les jeux en opendata, si il est connect\xE9 et membre de l'organisation propri\xE9taire du portail, il pourra en plus voir des jeux de donn\xE9es priv\xE9s.
 `},function(t,e,n){"use strict";n.r(e),e.default=`---
 title: Home page
 section: 2
@@ -763,6 +609,112 @@ Data Fair permet de mettre en place une organisation centr\xE9e autour de la don
 * Mise en place de traitements p\xE9riodiques permettant d'alimenter automatiquement la plateforme en donn\xE9es
 * Cadre s\xE9curis\xE9, code source ouvert et utilisation de standards
 `},function(t,e,n){"use strict";n.r(e),e.default=`---
+title: Usage metrics
+section: 3
+subsection : 7
+description : Usage metrics
+published: true
+---
+
+Analytics let you measure the statistics of frequentation of the platform.  
+It is possible to use **Matomo Analytics** (old piwik) or **Google Analytics** as a tracking system.
+
+### Matomo Analytics
+[Matomo Analytics](https://fr.matomo.org/) displays statistics in various visualizations: tables, graphs and maps. By selecting the different representations of statistics, it is possible to customize its dashboards.  
+It is also possible to **anonymize the data** and record user journeys while complying with the recommendations of the [CNIL](https://www.cnil.fr/professionnel).
+
+![Matomo](./images/functional-presentation/matomo.jpg)
+
+It is possible to process personal data by activating the following features:
+* **Right of access**: visitors can have access to their personal data
+* **Right to portability**: visitor data may be retrieved in a machine-readable format
+* **Right to be forgotten**: respect for the privacy of users by deleting their personal data
+* **Right to withdraw consent**: visitors can revoke their consent at any time
+* **Right to object**: visitors can easily opt out of being tracked
+* **Anonymization features**: in one click, it is possible to anonymize personal data such as IP addresses, location and many more
+* **Support for the "Do Not Track" functionality of browsers**: use of web browser settings regarding privacy settings
+* **Delete historical data**: this data is automatically deleted from the database
+* **Anonymization of historical data**: this data can be kept by anonymizing it.
+
+### Google Analytics
+
+The statistics under [Google Analytics](https://analytics.google.com/) are also available in different visualizations: tables, graphs and maps. It is also possible to customize its dashboards.
+
+![Google Analytics](./images/functional-presentation/google-analytics.jpg)
+
+### Configuration
+
+The configuration of the user tracking system consists of two points.  
+1. Configure the tracking system on the portal  
+2. Configure events
+
+<p>
+</p>
+
+**Configure the tracking system on the portal**
+
+This process is available on the portal configuration.  
+For **Google Analytics** you will need the *id number* and for **Matomo analytics** you will need the *tracker url* and *your site ID*.
+
+![Configuration](./images/functional-presentation/config-GA-1.jpg)
+
+
+**Configure events**
+This process is available in the Data Fair settings in the *Outside calls (webhooks)* category.
+
+You can define **which events** you want to track in your analytics:
+* A new dataset has been created
+* A dataset encountered an error
+* A dataset has been finalized and is online
+* A dataset has been published to a catalog
+* A new reuse has been created
+* A reuse encountered an error
+* A reuse has been published on a catalog
+* A dataset file has been updated
+
+![Configuration](./images/functional-presentation/config-GA-2.jpg)
+
+
+Data Fair and the various associated services make extensive use of cache mechanisms to improve access times to resources, so precise statistics on the use of the various access points of the platform can only be extracted afterwards. A module allows to extract **usage statistics** of APIs from the HTTP logs of services such as Nginx.
+
+API access logs are published on Data Fair as a private dataset. Dataset can be used for consultation like another dataset, we can make visualizations on it and it is planned to create a content page presenting different views of this data in the form of a dashboard.
+`},function(t,e,n){"use strict";n.r(e),e.default=`---
+title: M\xE9triques d\u2019utilisation
+section: 3
+subsection : 7
+description : M\xE9triques d\u2019utilisation
+published: true
+---
+
+Il y a deux modules pour suivre l'utilisation de la plateforme. Le premier est les **analytics** et correspond au suivi des parcours des utilisateurs sur le portail de donn\xE9es. Cela permet de voir quelles pages sont consult\xE9es, d'ou viennent les utilisateurs, le temps qu'il passent sur les pages, ... Le second correspond \xE0 des **mesures de consommation des APIs** et permet de voir comment la plateforme est utilis\xE9e par les autres syst\xE8mes d'informations ou les sites externes.
+
+### Analytics
+
+Il est possible d'utiliser **Matomo Analytics** (anciennement Piwik) ou **Google Analytics** comme syst\xE8me de suivi. Cela se fait simplement par configuration du portail de donn\xE9es en renseignant quelques champs dans un formaulaire.
+
+#### Matomo Analytics
+
+La configuration se fait avec l'*url du tracker* et l'*identifiant de votre site*. Les statistiques sous [Matomo Analytics](https://fr.matomo.org/) sont disponibles sous diff\xE9rentes formes : tableaux, graphiques et cartes. En s\xE9lectionnant les diff\xE9rentes repr\xE9sentations des statistiques, il est possible de  personnaliser ses tableaux de bord. Il est \xE9galement possible d'**anonymiser les donn\xE9es** et d\u2019enregistrer les parcours utilisateurs tout en \xE9tant en conformit\xE9 avec les recommandations de la [CNIL](https://www.cnil.fr/professionnel).
+
+<img src="./images/functional-presentation/matomo.jpg"
+     height="300" style="margin:40px auto;" />
+
+#### Google Analytics
+
+La configuration se fait gr\xE2ce au *numero d'identifiant*. Les statistiques sous [Google Analytics](https://analytics.google.com/) sont aussi disponibles sous diff\xE9rentes formes : tableaux, graphiques et cartes. Il est aussi possible de personnaliser ses tableaux de bord.
+
+<img src="./images/functional-presentation/google-analytics.jpg"
+     height="300" style="margin:40px auto;" />
+
+
+### Utilisation des APIs
+
+Dans la mesure ou Data Fair et les diff\xE9rents services associ\xE9s utilisent beaucoup les m\xE9canismes de cache pour am\xE9liorer les temps d'acc\xE8s aux ressources, des statistiques pr\xE9cises d'utilisation des diff\xE9rents points d'acc\xE8s de la plateforme doivent \xEAtre extraits avec un service sp\xE9cifique.
+
+Dans un souci de **respect du RGPD**, les donn\xE9es collect\xE9es sont anonymis\xE9es et agr\xE9g\xE9es \xE0 la journ\xE9e. On peut acc\xE9der \xE0 des statistiques pour chaque jeu de donn\xE9es : **nombre d'appels d'API et nombre de t\xE9l\xE9chargements**. Les m\xE9triques sont aggr\xE9g\xE9es par groupes d'utilisateurs (organisation propri\xE9taire, utilisateurs authentifi\xE9s externes, anonymes, ...) ou par domaine d'appel. Des chiffres cl\xE9s sont pr\xE9sent\xE9s sur la p\xE9riode demand\xE9e, avec une comparaison sur la p\xE9riode pr\xE9c\xE9dente, ce qui permet de voir l'utilisation de certaines donn\xE9es augmente ou diminue.
+
+<img src="./images/functional-presentation/metrics.jpg"
+     height="500" style="margin:40px auto;" />`},function(t,e,n){"use strict";n.r(e),e.default=`---
 title: Portal notification
 section: 2
 subsection : 8
@@ -7404,4 +7356,4 @@ Chaque visualisation est pr\xE9sent\xE9 sous forme d'une fiche contenant le titr
 Les boutons d'actions vous permettent d'acc\xE9der \xE0 la visualisation dans une fen\xEAtre ou en plein \xE9cran.
 
 Un clic sur la fiche vous fait naviguer vers la page de la visualisation.
-`},,,function(t,e,n){n(532),t.exports=n(533)},,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,function(t,e,n){"use strict";var i=n(206),o=n.n(i)},,,,,,,,,,,,function(t,e,n){"use strict";var i=n(208),o=n.n(i)},function(t,e,n){"use strict";n.r(e);var i=n(7),o=n.n(i),b=n(6),p=n.n(b),h=n(8),S=n.n(h),C=n(11),T=n.n(C),L=n(12),D=n.n(L),k=n(3),A=n(1),j=n(55);function w(v,m){var d=Object.keys(v);if(Object.getOwnPropertySymbols){var g=Object.getOwnPropertySymbols(v);m&&(g=g.filter(function(I){return Object.getOwnPropertyDescriptor(v,I).enumerable})),d.push.apply(d,g)}return d}function q(v){for(var m=1;m<arguments.length;m++){var d=arguments[m]!=null?arguments[m]:{};m%2?w(Object(d),!0).forEach(function(g){Object(k.a)(v,g,d[g])}):Object.getOwnPropertyDescriptors?Object.defineProperties(v,Object.getOwnPropertyDescriptors(d)):w(Object(d)).forEach(function(g){Object.defineProperty(v,g,Object.getOwnPropertyDescriptor(d,g))})}return v}A.a.use(j.a),e.default=function(){return new j.a.Store({state:{env:{}},mutations:{setAny:function(m,d){Object.assign(m,d)}},actions:{nuxtServerInit:function(m,d){var g=m.commit,I=m.dispatch,E=d.req,x=d.env,F=d.app;g("setAny",{env:q({},x)})}}})}},,,,,function(t,e,n){var i={"./af":210,"./af.js":210,"./ar":211,"./ar-dz":212,"./ar-dz.js":212,"./ar-kw":213,"./ar-kw.js":213,"./ar-ly":214,"./ar-ly.js":214,"./ar-ma":215,"./ar-ma.js":215,"./ar-sa":216,"./ar-sa.js":216,"./ar-tn":217,"./ar-tn.js":217,"./ar.js":211,"./az":218,"./az.js":218,"./be":219,"./be.js":219,"./bg":220,"./bg.js":220,"./bm":221,"./bm.js":221,"./bn":222,"./bn-bd":223,"./bn-bd.js":223,"./bn.js":222,"./bo":224,"./bo.js":224,"./br":225,"./br.js":225,"./bs":226,"./bs.js":226,"./ca":227,"./ca.js":227,"./cs":228,"./cs.js":228,"./cv":229,"./cv.js":229,"./cy":230,"./cy.js":230,"./da":231,"./da.js":231,"./de":232,"./de-at":233,"./de-at.js":233,"./de-ch":234,"./de-ch.js":234,"./de.js":232,"./dv":235,"./dv.js":235,"./el":236,"./el.js":236,"./en-au":237,"./en-au.js":237,"./en-ca":238,"./en-ca.js":238,"./en-gb":239,"./en-gb.js":239,"./en-ie":240,"./en-ie.js":240,"./en-il":241,"./en-il.js":241,"./en-in":242,"./en-in.js":242,"./en-nz":243,"./en-nz.js":243,"./en-sg":244,"./en-sg.js":244,"./eo":245,"./eo.js":245,"./es":246,"./es-do":247,"./es-do.js":247,"./es-mx":248,"./es-mx.js":248,"./es-us":249,"./es-us.js":249,"./es.js":246,"./et":250,"./et.js":250,"./eu":251,"./eu.js":251,"./fa":252,"./fa.js":252,"./fi":253,"./fi.js":253,"./fil":254,"./fil.js":254,"./fo":255,"./fo.js":255,"./fr":161,"./fr-ca":256,"./fr-ca.js":256,"./fr-ch":257,"./fr-ch.js":257,"./fr.js":161,"./fy":258,"./fy.js":258,"./ga":259,"./ga.js":259,"./gd":260,"./gd.js":260,"./gl":261,"./gl.js":261,"./gom-deva":262,"./gom-deva.js":262,"./gom-latn":263,"./gom-latn.js":263,"./gu":264,"./gu.js":264,"./he":265,"./he.js":265,"./hi":266,"./hi.js":266,"./hr":267,"./hr.js":267,"./hu":268,"./hu.js":268,"./hy-am":269,"./hy-am.js":269,"./id":270,"./id.js":270,"./is":271,"./is.js":271,"./it":272,"./it-ch":273,"./it-ch.js":273,"./it.js":272,"./ja":274,"./ja.js":274,"./jv":275,"./jv.js":275,"./ka":276,"./ka.js":276,"./kk":277,"./kk.js":277,"./km":278,"./km.js":278,"./kn":279,"./kn.js":279,"./ko":280,"./ko.js":280,"./ku":281,"./ku.js":281,"./ky":282,"./ky.js":282,"./lb":283,"./lb.js":283,"./lo":284,"./lo.js":284,"./lt":285,"./lt.js":285,"./lv":286,"./lv.js":286,"./me":287,"./me.js":287,"./mi":288,"./mi.js":288,"./mk":289,"./mk.js":289,"./ml":290,"./ml.js":290,"./mn":291,"./mn.js":291,"./mr":292,"./mr.js":292,"./ms":293,"./ms-my":294,"./ms-my.js":294,"./ms.js":293,"./mt":295,"./mt.js":295,"./my":296,"./my.js":296,"./nb":297,"./nb.js":297,"./ne":298,"./ne.js":298,"./nl":299,"./nl-be":300,"./nl-be.js":300,"./nl.js":299,"./nn":301,"./nn.js":301,"./oc-lnc":302,"./oc-lnc.js":302,"./pa-in":303,"./pa-in.js":303,"./pl":304,"./pl.js":304,"./pt":305,"./pt-br":306,"./pt-br.js":306,"./pt.js":305,"./ro":307,"./ro.js":307,"./ru":308,"./ru.js":308,"./sd":309,"./sd.js":309,"./se":310,"./se.js":310,"./si":311,"./si.js":311,"./sk":312,"./sk.js":312,"./sl":313,"./sl.js":313,"./sq":314,"./sq.js":314,"./sr":315,"./sr-cyrl":316,"./sr-cyrl.js":316,"./sr.js":315,"./ss":317,"./ss.js":317,"./sv":318,"./sv.js":318,"./sw":319,"./sw.js":319,"./ta":320,"./ta.js":320,"./te":321,"./te.js":321,"./tet":322,"./tet.js":322,"./tg":323,"./tg.js":323,"./th":324,"./th.js":324,"./tk":325,"./tk.js":325,"./tl-ph":326,"./tl-ph.js":326,"./tlh":327,"./tlh.js":327,"./tr":328,"./tr.js":328,"./tzl":329,"./tzl.js":329,"./tzm":330,"./tzm-latn":331,"./tzm-latn.js":331,"./tzm.js":330,"./ug-cn":332,"./ug-cn.js":332,"./uk":333,"./uk.js":333,"./ur":334,"./ur.js":334,"./uz":335,"./uz-latn":336,"./uz-latn.js":336,"./uz.js":335,"./vi":337,"./vi.js":337,"./x-pseudo":338,"./x-pseudo.js":338,"./yo":339,"./yo.js":339,"./zh-cn":340,"./zh-cn.js":340,"./zh-hk":341,"./zh-hk.js":341,"./zh-mo":342,"./zh-mo.js":342,"./zh-tw":343,"./zh-tw.js":343};function o(p){var h=b(p);return n(h)}function b(p){if(!n.o(i,p)){var h=new Error("Cannot find module '"+p+"'");throw h.code="MODULE_NOT_FOUND",h}return i[p]}o.keys=function(){return Object.keys(i)},o.resolve=b,t.exports=o,o.id=627}]),[[531,20,2,21]]]);
+`},,,function(t,e,n){n(530),t.exports=n(531)},,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,function(t,e,n){"use strict";var i=n(206),o=n.n(i)},,,,,,,,,,,,function(t,e,n){"use strict";var i=n(208),o=n.n(i)},function(t,e,n){"use strict";n.r(e);var i=n(7),o=n.n(i),b=n(6),p=n.n(b),h=n(8),S=n.n(h),C=n(11),T=n.n(C),L=n(12),D=n.n(L),k=n(3),A=n(1),j=n(55);function w(v,m){var d=Object.keys(v);if(Object.getOwnPropertySymbols){var g=Object.getOwnPropertySymbols(v);m&&(g=g.filter(function(I){return Object.getOwnPropertyDescriptor(v,I).enumerable})),d.push.apply(d,g)}return d}function q(v){for(var m=1;m<arguments.length;m++){var d=arguments[m]!=null?arguments[m]:{};m%2?w(Object(d),!0).forEach(function(g){Object(k.a)(v,g,d[g])}):Object.getOwnPropertyDescriptors?Object.defineProperties(v,Object.getOwnPropertyDescriptors(d)):w(Object(d)).forEach(function(g){Object.defineProperty(v,g,Object.getOwnPropertyDescriptor(d,g))})}return v}A.a.use(j.a),e.default=function(){return new j.a.Store({state:{env:{}},mutations:{setAny:function(m,d){Object.assign(m,d)}},actions:{nuxtServerInit:function(m,d){var g=m.commit,I=m.dispatch,E=d.req,x=d.env,F=d.app;g("setAny",{env:q({},x)})}}})}},,,,,function(t,e,n){var i={"./af":210,"./af.js":210,"./ar":211,"./ar-dz":212,"./ar-dz.js":212,"./ar-kw":213,"./ar-kw.js":213,"./ar-ly":214,"./ar-ly.js":214,"./ar-ma":215,"./ar-ma.js":215,"./ar-sa":216,"./ar-sa.js":216,"./ar-tn":217,"./ar-tn.js":217,"./ar.js":211,"./az":218,"./az.js":218,"./be":219,"./be.js":219,"./bg":220,"./bg.js":220,"./bm":221,"./bm.js":221,"./bn":222,"./bn-bd":223,"./bn-bd.js":223,"./bn.js":222,"./bo":224,"./bo.js":224,"./br":225,"./br.js":225,"./bs":226,"./bs.js":226,"./ca":227,"./ca.js":227,"./cs":228,"./cs.js":228,"./cv":229,"./cv.js":229,"./cy":230,"./cy.js":230,"./da":231,"./da.js":231,"./de":232,"./de-at":233,"./de-at.js":233,"./de-ch":234,"./de-ch.js":234,"./de.js":232,"./dv":235,"./dv.js":235,"./el":236,"./el.js":236,"./en-au":237,"./en-au.js":237,"./en-ca":238,"./en-ca.js":238,"./en-gb":239,"./en-gb.js":239,"./en-ie":240,"./en-ie.js":240,"./en-il":241,"./en-il.js":241,"./en-in":242,"./en-in.js":242,"./en-nz":243,"./en-nz.js":243,"./en-sg":244,"./en-sg.js":244,"./eo":245,"./eo.js":245,"./es":246,"./es-do":247,"./es-do.js":247,"./es-mx":248,"./es-mx.js":248,"./es-us":249,"./es-us.js":249,"./es.js":246,"./et":250,"./et.js":250,"./eu":251,"./eu.js":251,"./fa":252,"./fa.js":252,"./fi":253,"./fi.js":253,"./fil":254,"./fil.js":254,"./fo":255,"./fo.js":255,"./fr":161,"./fr-ca":256,"./fr-ca.js":256,"./fr-ch":257,"./fr-ch.js":257,"./fr.js":161,"./fy":258,"./fy.js":258,"./ga":259,"./ga.js":259,"./gd":260,"./gd.js":260,"./gl":261,"./gl.js":261,"./gom-deva":262,"./gom-deva.js":262,"./gom-latn":263,"./gom-latn.js":263,"./gu":264,"./gu.js":264,"./he":265,"./he.js":265,"./hi":266,"./hi.js":266,"./hr":267,"./hr.js":267,"./hu":268,"./hu.js":268,"./hy-am":269,"./hy-am.js":269,"./id":270,"./id.js":270,"./is":271,"./is.js":271,"./it":272,"./it-ch":273,"./it-ch.js":273,"./it.js":272,"./ja":274,"./ja.js":274,"./jv":275,"./jv.js":275,"./ka":276,"./ka.js":276,"./kk":277,"./kk.js":277,"./km":278,"./km.js":278,"./kn":279,"./kn.js":279,"./ko":280,"./ko.js":280,"./ku":281,"./ku.js":281,"./ky":282,"./ky.js":282,"./lb":283,"./lb.js":283,"./lo":284,"./lo.js":284,"./lt":285,"./lt.js":285,"./lv":286,"./lv.js":286,"./me":287,"./me.js":287,"./mi":288,"./mi.js":288,"./mk":289,"./mk.js":289,"./ml":290,"./ml.js":290,"./mn":291,"./mn.js":291,"./mr":292,"./mr.js":292,"./ms":293,"./ms-my":294,"./ms-my.js":294,"./ms.js":293,"./mt":295,"./mt.js":295,"./my":296,"./my.js":296,"./nb":297,"./nb.js":297,"./ne":298,"./ne.js":298,"./nl":299,"./nl-be":300,"./nl-be.js":300,"./nl.js":299,"./nn":301,"./nn.js":301,"./oc-lnc":302,"./oc-lnc.js":302,"./pa-in":303,"./pa-in.js":303,"./pl":304,"./pl.js":304,"./pt":305,"./pt-br":306,"./pt-br.js":306,"./pt.js":305,"./ro":307,"./ro.js":307,"./ru":308,"./ru.js":308,"./sd":309,"./sd.js":309,"./se":310,"./se.js":310,"./si":311,"./si.js":311,"./sk":312,"./sk.js":312,"./sl":313,"./sl.js":313,"./sq":314,"./sq.js":314,"./sr":315,"./sr-cyrl":316,"./sr-cyrl.js":316,"./sr.js":315,"./ss":317,"./ss.js":317,"./sv":318,"./sv.js":318,"./sw":319,"./sw.js":319,"./ta":320,"./ta.js":320,"./te":321,"./te.js":321,"./tet":322,"./tet.js":322,"./tg":323,"./tg.js":323,"./th":324,"./th.js":324,"./tk":325,"./tk.js":325,"./tl-ph":326,"./tl-ph.js":326,"./tlh":327,"./tlh.js":327,"./tr":328,"./tr.js":328,"./tzl":329,"./tzl.js":329,"./tzm":330,"./tzm-latn":331,"./tzm-latn.js":331,"./tzm.js":330,"./ug-cn":332,"./ug-cn.js":332,"./uk":333,"./uk.js":333,"./ur":334,"./ur.js":334,"./uz":335,"./uz-latn":336,"./uz-latn.js":336,"./uz.js":335,"./vi":337,"./vi.js":337,"./x-pseudo":338,"./x-pseudo.js":338,"./yo":339,"./yo.js":339,"./zh-cn":340,"./zh-cn.js":340,"./zh-hk":341,"./zh-hk.js":341,"./zh-mo":342,"./zh-mo.js":342,"./zh-tw":343,"./zh-tw.js":343};function o(p){var h=b(p);return n(h)}function b(p){if(!n.o(i,p)){var h=new Error("Cannot find module '"+p+"'");throw h.code="MODULE_NOT_FOUND",h}return i[p]}o.keys=function(){return Object.keys(i)},o.resolve=b,t.exports=o,o.id=625}]),[[529,20,2,21]]]);
