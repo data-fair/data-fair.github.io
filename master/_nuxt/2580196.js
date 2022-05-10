@@ -196,7 +196,7 @@ La configuration du syst\xE8me de suivi des utilisateurs se compose en deux poin
 **Configuration du syst\xE8me de suivi sur le portail**
 
 Ce point de configuration est disponible sur la configuration du portail.
-Pour **Google Analytics** vous aurez besoin du *numero d'identifiant* et pour **Matomo analytics**, vous aurez besoin de l'*url du tracker* et de l'*identifiant de votre site*.
+Pour **Google Analytics** vous aurez besoin du *num\xE9ro d'identifiant* et pour **Matomo analytics**, vous aurez besoin de l'*url du tracker* et de l'*identifiant de votre site*.
 
 ![Configuration](./images/functional-presentation/config-GA-1.jpg)
 
@@ -204,7 +204,7 @@ Pour **Google Analytics** vous aurez besoin du *numero d'identifiant* et pour **
 **Configuration des \xE9v\xE9nements**
 Ce point de configuration est disponible dans les param\xE8tres de Data Fair \xE0 la cat\xE9gorie *Appels exterieurs (webhooks)*.
 
-Vous pouvez d\xE9finir **quels \xE9v\xE9nements** vous souhaitez suivre dans vos analytics :
+Vous pouvez d\xE9finir **quels \xE9v\xE9nements** vous souhaitez suivre dans vos Analytics :
 * Un nouveau jeu de donn\xE9es a \xE9t\xE9 cr\xE9\xE9
 * Un jeu de donn\xE9es a rencontr\xE9 une erreur
 * Un jeu de donn\xE9es a \xE9t\xE9 finalis\xE9 et mis en ligne
@@ -246,7 +246,7 @@ description : APIs propos\xE9es et int\xE9gration globale
 published: true
 ---
 
-L\u2019ensemble des fonctionnalit\xE9s de la plateforme est disponible au travers d\u2019**APIs Rest document\xE9es**. Ces APIs peuvent \xEAtre appel\xE9e en dehors du portail, mais pour les acc\xE8s restreints il faut passer par l'utilisation d'une **cl\xE9 d'API**. Lors de l\u2019ajout d\u2019une cl\xE9 d\u2019api, il est possible de restreindre l\u2019acc\xE8s \xE0 une seule fonction. Il est ensuite possible de restreindre l\u2019acc\xE8s \xE0 une IP ou \xE0 un nom de domaine pr\xE9cis.
+L\u2019ensemble des fonctionnalit\xE9s de la plateforme est disponible au travers d\u2019**APIs Rest document\xE9es**. Ces APIs peuvent \xEAtre appel\xE9es en dehors du portail, mais pour les acc\xE8s restreints il faut passer par l'utilisation d'une **cl\xE9 d'API**. Lors de l\u2019ajout d\u2019une cl\xE9 d\u2019api, il est possible de restreindre l\u2019acc\xE8s \xE0 une seule fonction. Il est ensuite possible de restreindre l\u2019acc\xE8s \xE0 une IP ou \xE0 un nom de domaine pr\xE9cis.
 
 La documentation des APIs est r\xE9alis\xE9e en suivant la sp\xE9cification **OpenAPI 3.0**. Cela permet une documentation claire et compr\xE9hensible au travers d\u2019une documentation interactive. La prise en main des APIs par les d\xE9veloppeurs est ainsi plus rapide.
 
@@ -299,9 +299,10 @@ description : Gestion des contenus (Back Office)
 published: true
 ---
 
-Le **back office** permet de g\xE9rer diff\xE9rents \xE9l\xE9ments sur la plateforme :  les donn\xE9es, les visualisations, les portails, les membres des organisations, les permissions, les connecteurs vers d'autres catalogues de donn\xE9es (en entr\xE9e ou en sortie) et les traitements p\xE9riodiques. Il permet \xE9galement d'acc\xE8der \xE0 des m\xE9triques d'exploitation.
+Le **back office** permet de g\xE9rer diff\xE9rents \xE9l\xE9ments sur la plateforme :  les donn\xE9es, les visualisations, les portails, les membres des organisations, les permissions, les connecteurs vers d'autres catalogues de donn\xE9es (en entr\xE9e ou en sortie) et les traitements p\xE9riodiques. Il permet \xE9galement d'acc\xE9der \xE0 des m\xE9triques d'exploitation.
 
-L'acc\xE8s au back office est bien s\xFBr restreint \xE0 des utilisateurs authentifi\xE9s, en particulier aux utilisateurs ayant les r\xF4les d'administrateur ou de contributeur.`},function(t,e,n){"use strict";n.r(e),e.default=`---
+L'acc\xE8s au back office est bien s\xFBr restreint \xE0 des utilisateurs authentifi\xE9s, en particulier aux utilisateurs ayant les r\xF4les d'administrateur ou de contributeur.
+`},function(t,e,n){"use strict";n.r(e),e.default=`---
 title: Catalog connectors
 section: 3
 subsection : 7
@@ -551,11 +552,11 @@ Les jeux de donn\xE9es permettent de mettre \xE0 disposition de l'utilisateur de
 
 Il existe plusieurs types de jeux de donn\xE9es sur la plateforme, les fichiers, les jeux de donn\xE9es incr\xE9mentaux, les jeux de donn\xE9es virtuels et des jeux de donn\xE9es externes.
 
-* Les **jeux de donn\xE9es fichiers** correspondent \xE0 des donn\xE9es sous format tabulaire ou cartographique charg\xE9s sur la plateforme. Plusieurs formats de fichiers sont support\xE9s tels que le CSV, TSV, OpenDocument, XLS, XLSX, GeoJson, KML, KMZ, ESRI Shapefile, GPX et iCalendar. Suivant les besoins de nouveaux formats de fichiers sont r\xE9guli\xE8rement ajout\xE9s. Quand un fichier est charg\xE9, il est converti dans un format plus standard en interne, puis analys\xE9 automatiquement pour d\xE9terminer le sch\xE9ma du jeu de donn\xE9es. Le contributeur peut ensuite modifier ce sch\xE9ma, par exemple d\xE9terminer qu'une colonne aura sa donn\xE9e index\xE9e en tant que chaine de caract\xE8re plutot que nombre entier.
+* Les **jeux de donn\xE9es fichiers** correspondent \xE0 des donn\xE9es sous format tabulaire ou cartographique charg\xE9s sur la plateforme. Plusieurs formats de fichiers sont support\xE9s tels que le CSV, TSV, OpenDocument, XLS, XLSX, GeoJson, KML, KMZ, ESRI Shapefile, GPX et iCalendar. Suivant les besoins de nouveaux formats de fichiers sont r\xE9guli\xE8rement ajout\xE9s. Quand un fichier est charg\xE9, il est converti dans un format plus standard en interne, puis analys\xE9 automatiquement pour d\xE9terminer le sch\xE9ma du jeu de donn\xE9es. Le contributeur peut ensuite modifier ce sch\xE9ma, par exemple d\xE9terminer qu'une colonne aura sa donn\xE9e index\xE9e en tant que chaine de caract\xE8re plut\xF4t que nombre entier.
 
 * Les **jeux de donn\xE9es incr\xE9mentaux** sont des donn\xE9es stock\xE9es en base et sont plut\xF4t adapt\xE9s \xE0 des donn\xE9es qui \xE9voluent r\xE9guli\xE8rement, ou mises \xE0 jour par des personnes m\xE9tier qui veulent juste modifier quelques lignes. La cr\xE9ation de ce type de jeu de donn\xE9es se fait en \xE9ditant son sch\xE9ma de donn\xE9es : on d\xE9fini chaque colonne et son type. Pour des donn\xE9es produites par des syst\xE8mes informatiques (donn\xE9es IOT par exemple), ces jeux de donn\xE9es sont g\xE9n\xE9ralement mis \xE0 jour par API. Dans le cas de mises \xE0 jour manuelles par des agents, ils sont mis \xE0 jour via un formulaire de saisie.
 
-* Les **jeux de donn\xE9es virtuels** correspondent \xE0 des vues d\u2019un ou plusieurs jeux de donn\xE9es. Ils permettent d\u2019avoir un contr\xF4le d\u2019acc\xE8s plus pouss\xE9. Ils peuvent par exemple servir \xE0 cr\xE9er une vue publique, restreinte \xE0 certaines lignes et certaines colonnes, d\u2019un jeu de donn\xE9es plus complet qui reste priv\xE9. On peut par exemple restreindre un jeu de donn\xE9es national \xE0 un seul d\xE9partement. L'autre cas d'usage de ce type de jeu de donn\xE9es est d'op\xE9rer avec des donn\xE9es millesim\xE9es ou territorialis\xE9es : on peut ainsi publier des donn\xE9es chaque ann\xE9e via un fichier qui a toujours le m\xEAme format puis faire une vue qui regroupe les diff\xE9rentes ann\xE9es.
+* Les **jeux de donn\xE9es virtuels** correspondent \xE0 des vues d\u2019un ou plusieurs jeux de donn\xE9es. Ils permettent d\u2019avoir un contr\xF4le d\u2019acc\xE8s plus pouss\xE9. Ils peuvent par exemple servir \xE0 cr\xE9er une vue publique, restreinte \xE0 certaines lignes et certaines colonnes, d\u2019un jeu de donn\xE9es plus complet qui reste priv\xE9. On peut par exemple restreindre un jeu de donn\xE9es national \xE0 un seul d\xE9partement. L'autre cas d'usage de ce type de jeu de donn\xE9es est d'op\xE9rer avec des donn\xE9es mill\xE9sim\xE9es ou territorialis\xE9es : on peut ainsi publier des donn\xE9es chaque ann\xE9e via un fichier qui a toujours le m\xEAme format puis faire une vue qui regroupe les diff\xE9rentes ann\xE9es.
 
 * Les **jeux de donn\xE9es externes** n'ont pas de donn\xE9es index\xE9es sur la plateforme. Ils permettent de renseigner des m\xE9tadonn\xE9es (titre, description, licence, ...) et d'y associer des donn\xE9es dans des formats qui ne sont pas exploitables par la plateforme (PDF, Archive Zip, ...) ou de cataloguer des donn\xE9es pr\xE9sentes sur d'autres plateforme en renseignant un lien dans la description.
 
@@ -570,11 +571,11 @@ Un libell\xE9 et une description permettent d'avoir des ent\xEAtes de colonne pl
 
 Le dernier \xE9l\xE9ment qui peut \xEAtre renseign\xE9, et qui a une importance consid\xE9rable, est le **type m\xE9tier** associ\xE9 au champ. Cela se fait en s\xE9lectionnant un **concept issu d'un th\xE9saurus**. Il y a une base de concepts communs \xE0 toute la plateforme, et il est possible de **rajouter ses propres concepts**. Ceux-ci sont en g\xE9n\xE9ral li\xE9s \xE0 du vocabulaire issu du Web S\xE9mantique, le concept de code postal a par exemple l'identifiant \`http://schema.org/postalCode\`.
 
-Ce typage m\xE9tier **augmente la r\xE9utibilisabilit\xE9** des donn\xE9es et permet 2 choses au sein de la plateforme : **l'enrichissement \xE0 partir d'autres donn\xE9es**, et la proposition de **visualisations adapt\xE9es** (en simplifiant le param\xE9trage de celles-ci) : les concepts *latitude* et *longitude* permettent par exemple de param\xE9trer des cartes avec des marqueurs.
+Ce typage m\xE9tier **augmente la r\xE9utilisabilit\xE9** des donn\xE9es et permet 2 choses au sein de la plateforme : **l'enrichissement \xE0 partir d'autres donn\xE9es**, et la proposition de **visualisations adapt\xE9es** (en simplifiant le param\xE9trage de celles-ci) : les concepts *latitude* et *longitude* permettent par exemple de param\xE9trer des cartes avec des marqueurs.
 
 ### M\xE9tadonn\xE9es et pi\xE8ces jointes
 
-Certaines m\xE9tadonn\xE9es sont pr\xE9remplies, commes les dates de mise \xE0 jour des m\xE9tadonn\xE9es ou des donn\xE9es, et l'utilisateur les a cr\xE9e ou modifi\xE9. La page d\u2019\xE9dition d\u2019un jeu de donn\xE9es permet de modifier les diff\xE9rente m\xE9tadonn\xE9es de ce jeu. Il est possible de modifier le titre et la description, de d\xE9finir une **licence d'utilisation** et d'associer des **th\xE9matiques**. Les listes de licences et th\xE9matiques utilisables sont communes \xE0 toute l'organisation et peuvent \xEAtre \xE9dit\xE9es par les administrateurs.
+Certaines m\xE9tadonn\xE9es sont pr\xE9remplies, comme les dates de mise \xE0 jour des m\xE9tadonn\xE9es ou des donn\xE9es, et l'utilisateur les a cr\xE9e ou modifi\xE9. La page d\u2019\xE9dition d\u2019un jeu de donn\xE9es permet de modifier les diff\xE9rente m\xE9tadonn\xE9es de ce jeu. Il est possible de modifier le titre et la description, de d\xE9finir une **licence d'utilisation** et d'associer des **th\xE9matiques**. Les listes de licences et th\xE9matiques utilisables sont communes \xE0 toute l'organisation et peuvent \xEAtre \xE9dit\xE9es par les administrateurs.
 
 Il est possible d\u2019associer des **pi\xE8ces jointes \xE0 chaque ligne** d\u2019un jeu de donn\xE9es. Cela se fait en associant une archive au format zip qui contient les fichiers \xE0 associer. Il faut aussi qu\u2019il y ait dans le jeu de donn\xE9es une colonne contenant les noms des fichiers \xE0 associer \xE0 chaque ligne. Deux types de fichiers peuvent \xEAtre li\xE9s aux lignes : des images (png, jpg, ...) ou des documents (pdf, docx, xlsx, ...). Dans le cas des documents, ils peuvent \xEAtre index\xE9s **fulltext** par la plateforme pour que les recherches tiennent compte du contenu de ces documents.
 
@@ -681,7 +682,7 @@ Dans le cadre d'une d\xE9marche de communication, il est \xE9galement possible d
 
 Pour les visiteurs r\xE9guliers, des sections pr\xE9sentent les **derniers jeux de donn\xE9es ajout\xE9s** ainsi que les derni\xE8res visualisations r\xE9alis\xE9es, avec une navigation rapide pour voir plus en d\xE9tails ces nouveaux contenus.
 
-Il est possible de personnaliser quels \xE9l\xE9ments sont affich\xE9s sur cette page, d'afficher une banni\xE8re plut\xF4t qu'un texte \xE9ditorialis\xE9 ou m\xEAme d'utiliser une visualisation \xE0 la place de la banni\xE8re ! Cette derni\xE8re option permet d'avoir un **caroussel avec des liens de navigation**.
+Il est possible de personnaliser quels \xE9l\xE9ments sont affich\xE9s sur cette page, d'afficher une banni\xE8re plut\xF4t qu'un texte \xE9ditorialis\xE9 ou m\xEAme d'utiliser une visualisation \xE0 la place de la banni\xE8re ! Cette derni\xE8re option permet d'avoir un **carrousel avec des liens de navigation**.
 `},function(t,e,n){"use strict";n.r(e),e.default=`---
 title: Introduction
 section: 1
@@ -1094,7 +1095,7 @@ Les visualisations peuvent \xEAtre configur\xE9es gr\xE2ce \xE0 une interface gr
 <img src="./images/functional-presentation/configuration-visu.jpg"
      height="400" style="margin:40px auto;" />
 
-Un aper\xE7u donne un rendu de la visualisation. Lorsque l\u2019on r\xE9alise des modifications sur le menu de configuration, elles sont directement repr\xE9sent\xE9es sur l'aper\xE7u. Il est ainsi possible de modifier et tester rapidement diff\xE9rents rendus de la visualisation, en **mode brouillon**. Lorsque le rendu est satisfaissant, l\u2019enregistrement permet de valider les modifications r\xE9alis\xE9es. Les modifications sont alors visibles sur toutes les publications de la visualisation.
+Un aper\xE7u donne un rendu de la visualisation. Lorsque l\u2019on r\xE9alise des modifications sur le menu de configuration, elles sont directement repr\xE9sent\xE9es sur l'aper\xE7u. Il est ainsi possible de modifier et tester rapidement diff\xE9rents rendus de la visualisation, en **mode brouillon**. Lorsque le rendu est satisfaisant, l\u2019enregistrement permet de valider les modifications r\xE9alis\xE9es. Les modifications sont alors visibles sur toutes les publications de la visualisation.
 
 ### Types de visualisations
 Data Fair offre une grande vari\xE9t\xE9 de visualisations en constante progression, il y a ce jour pr\xE8s d'une **trentaine de visualisations diff\xE9rentes**. ([Cette section](./interoperate/applications) d\xE9crit en d\xE9tails la mani\xE8re de les cr\xE9er).
@@ -1107,7 +1108,7 @@ Data Fair offre une grande vari\xE9t\xE9 de visualisations en constante progress
 
 Plusieurs applications permettent d'afficher des donn\xE9es g\xE9olocalis\xE9es. *Infos localisations* permet d'afficher des **marqueurs** qui pr\xE9sentent au clic une **fiche d\xE9taill\xE9e**, \xE9ventuellement accompagn\xE9e d'une image. *Carto stats* affiche les donn\xE9es sous forme de **cercles color\xE9s et proportionnels** \xE0 une donn\xE9e dans une colonne, elle se pr\xEAte bien \xE0 la visualisation d'un **grand nombre de points**. *G\xE9o shapes* est quand \xE0 elle adapt\xE9e \xE0 l'affichage de **g\xE9om\xE9trie complexes**, par exemple un r\xE9seau routier ou un PLU.
 
-D'autres applications sont adapt\xE9es aux donn\xE9es territorialis\xE9es, ce sont les donn\xE9es poss\xE9dant des code territoire : code commune, d\xE9partement ou m\xEAme code parcelles. *Infos parcelles* permet de projeter les donn\xE9es sur le **plan cadastral** fran\xE7ais. *Cartographie territoriale multi-niveaux* affiche une **carte choropl\xE8the** des terrtoires allant de l'IRIS \xE0 la r\xE9gion et est adapt\xE9e \xE0 pr\xE9senter des donn\xE9es comme les r\xE9sultats d'\xE9lections ou d'autres indicateurs. *Zones de chalandise* permet de **fusionner les g\xE9om\xE9tries des territoires** pour avoir des zones de couverture, par exemple le perim\xE8tre d'action des gendarmeries.
+D'autres applications sont adapt\xE9es aux donn\xE9es territorialis\xE9es, ce sont les donn\xE9es poss\xE9dant des code territoire : code commune, d\xE9partement ou m\xEAme code parcelles. *Infos parcelles* permet de projeter les donn\xE9es sur le **plan cadastral** fran\xE7ais. *Cartographie territoriale multi-niveaux* affiche une **carte choropl\xE8the** des territoires allant de l'IRIS \xE0 la r\xE9gion et est adapt\xE9e \xE0 pr\xE9senter des donn\xE9es comme les r\xE9sultats d'\xE9lections ou d'autres indicateurs. *Zones de chalandise* permet de **fusionner les g\xE9om\xE9tries des territoires** pour avoir des zones de couverture, par exemple le p\xE9rim\xE8tre d'action des gendarmeries.
 
 #### Visualisations en diagrammes
 
