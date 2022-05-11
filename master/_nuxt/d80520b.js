@@ -992,8 +992,7 @@ Permissions par d\xE9faut des diff\xE9rents r\xF4les d\u2019une organisation :
 
 En plus de leur r\xF4le, les utilisateurs peuvent \xEAtre assign\xE9 \xE0 un d\xE9partement de l'organisation. Cela permet une forme de cloisonnement et d'avoir des groupes d'utilisateurs qui g\xE8rent chacun leurs donn\xE9es de leur cot\xE9. Les utilisateurs qui ne sont pas restreints \xE0 un d\xE9partement peuvent voir (ou modifier si ils ont un r\xF4le de *contributeur* ou *administrateur*) toutes les ressources de l'organisation.
 
-Un *contributeur* d'un d\xE9partement ne peux mettre \xE0 jour que les jeux de donn\xE9es de ce d\xE9partement, et quand il cr\xE9\xE9 un jeu de donn\xE9es, celui ci est forc\xE9ment rattach\xE9 au d\xE9partement du *contributeur*. De la m\xEAme mani\xE8re, un administrateur rattach\xE9 \xE0 un d\xE9partement ne peut publier des jeux de donn\xE9es que sur un portail rattach\xE9 \xE0 son d\xE9partement. Par contre, un administrateur g\xE9n\xE9ral de l'organisation peut publier ce m\xEAme jeu de donn\xE9es sur un portail plus global \xE0 l'organisation.
-`},function(t,e,n){"use strict";n.r(e),e.default=`---
+Un *contributeur* d'un d\xE9partement ne peux mettre \xE0 jour que les jeux de donn\xE9es de ce d\xE9partement, et quand il cr\xE9\xE9 un jeu de donn\xE9es, celui ci est forc\xE9ment rattach\xE9 au d\xE9partement du *contributeur*. De la m\xEAme mani\xE8re, un administrateur rattach\xE9 \xE0 un d\xE9partement ne peut publier des jeux de donn\xE9es que sur un portail rattach\xE9 \xE0 son d\xE9partement. Par contre, un administrateur g\xE9n\xE9ral de l'organisation peut publier ce m\xEAme jeu de donn\xE9es sur un portail plus global \xE0 l'organisation.`},function(t,e,n){"use strict";n.r(e),e.default=`---
 title: Configure visualizations
 section: 3
 subsection : 2
