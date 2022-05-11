@@ -398,7 +398,7 @@ Il existe plusieurs types de jeux de donn\xE9es sur la plateforme, les fichiers,
 
 * Les **jeux de donn\xE9es incr\xE9mentaux** sont des donn\xE9es stock\xE9es en base et sont plut\xF4t adapt\xE9s \xE0 des donn\xE9es qui \xE9voluent r\xE9guli\xE8rement, ou mises \xE0 jour par des personnes m\xE9tier qui veulent juste modifier quelques lignes. La cr\xE9ation de ce type de jeu de donn\xE9es se fait en \xE9ditant son sch\xE9ma de donn\xE9es : on d\xE9fini chaque colonne et son type. Pour des donn\xE9es produites par des syst\xE8mes informatiques (donn\xE9es IOT par exemple), ces jeux de donn\xE9es sont g\xE9n\xE9ralement mis \xE0 jour par API. Dans le cas de mises \xE0 jour manuelles par des agents, ils sont mis \xE0 jour via un formulaire de saisie.
 
-* Les **jeux de donn\xE9es virtuels** correspondent \xE0 des vues d\u2019un ou plusieurs jeux de donn\xE9es. Ils permettent d\u2019avoir un contr\xF4le d\u2019acc\xE8s plus pouss\xE9. Ils peuvent par exemple servir \xE0 cr\xE9er une vue publique, restreinte \xE0 certaines lignes et certaines colonnes, d\u2019un jeu de donn\xE9es plus complet qui reste priv\xE9. On peut par exemple restreindre un jeu de donn\xE9es national \xE0 un seul d\xE9partement. L'autre cas d'usage de ce type de jeu de donn\xE9es est d'op\xE9rer avec des donn\xE9es mill\xE9sim\xE9es ou territorialis\xE9es : on peut ainsi publier des donn\xE9es chaque ann\xE9e via un fichier qui a toujours le m\xEAme format puis faire une vue qui regroupe les diff\xE9rentes ann\xE9es.
+* Les **jeux de donn\xE9es virtuels** correspondent \xE0 des vues d\u2019un ou plusieurs jeux de donn\xE9es. Ils permettent d\u2019avoir un contr\xF4le d\u2019acc\xE8s plus pouss\xE9. Ils peuvent par exemple servir \xE0 cr\xE9er une vue publique, restreinte \xE0 certaines lignes et certaines colonnes, d\u2019un jeu de donn\xE9es plus complet qui reste priv\xE9. Cela permet aussi de faire de l'anonymisation de donn\xE9es. On peut par exemple restreindre un jeu de donn\xE9es national \xE0 un seul d\xE9partement. L'autre cas d'usage de ce type de jeu de donn\xE9es est d'op\xE9rer avec des donn\xE9es mill\xE9sim\xE9es ou territorialis\xE9es : on peut ainsi publier des donn\xE9es chaque ann\xE9e via un fichier qui a toujours le m\xEAme format puis faire une vue qui regroupe les diff\xE9rentes ann\xE9es.
 
 * Les **jeux de donn\xE9es externes** n'ont pas de donn\xE9es index\xE9es sur la plateforme. Ils permettent de renseigner des m\xE9tadonn\xE9es (titre, description, licence, ...) et d'y associer des donn\xE9es dans des formats qui ne sont pas exploitables par la plateforme (PDF, Archive Zip, ...) ou de cataloguer des donn\xE9es pr\xE9sentes sur d'autres plateforme en renseignant un lien dans la description.
 
@@ -450,7 +450,10 @@ Les visualisations peuvent mettre en avant un probl\xE8me dans les donn\xE9es ou
      height="300" style="margin:20px auto;" />
 
 Il est aussi possible de publier un jeu de donn\xE9es sur des portails ou catalogues de donn\xE9es externes \xE0 la plateforme, cela est d\xE9cris plus en d\xE9tails \xE0 la section sur les *connecteurs de catalogues*.
-`},function(t,e,n){"use strict";n.r(e),e.default=`---
+
+### Journal des \xE9v\xE9nements
+
+Chaque \xE9tape du traitement d'un jeu de donn\xE9es laisse des traces dans le journal associ\xE9. On peut ainsi voir combien de temps ont dur\xE9 les diff\xE9rentes actions ou les erreurs remont\xE9es.`},function(t,e,n){"use strict";n.r(e),e.default=`---
 title: Data catalog
 section: 2
 subsection : 2
@@ -524,7 +527,7 @@ published: true
 La page d'accueil est le point d\u2019entr\xE9e principal du portail de donn\xE9es. Elle permet **d'acc\xE9der rapidement aux donn\xE9es** \xE0 partir des th\xE9matiques et d'un champ de recherche textuelle. Des **chiffres cl\xE9s** permettent de quantifier les donn\xE9es pr\xE9sentes sur le portail.
 
 Il est possible de mettre en avant du **contenu \xE9ditorial** (texte expliquant la d\xE9marche ou pr\xE9sentant le portail) ainsi qu'une visualisation de donn\xE9es qui est directement utilisable sur cette page. On peut, par exemple, mettre en avant une carte pr\xE9sentant la localisation de centres de vaccination, ou les menus des cantines pour la semaine.
-Dans le cadre d'une d\xE9marche de communication, il est \xE9galement possible d'afficher un fil tweeter sur cette page.
+Dans le cadre d'une d\xE9marche de communication, il est \xE9galement possible d'afficher un fil Twitter sur cette page.
 
 Pour les visiteurs r\xE9guliers, des sections pr\xE9sentent les **derniers jeux de donn\xE9es ajout\xE9s** ainsi que les derni\xE8res visualisations r\xE9alis\xE9es, avec une navigation rapide pour voir plus en d\xE9tails ces nouveaux contenus.
 
