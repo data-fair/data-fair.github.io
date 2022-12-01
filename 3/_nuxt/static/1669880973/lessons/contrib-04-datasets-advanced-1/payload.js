@@ -1,0 +1,1 @@
+__NUXT_JSONP__("lessons/contrib-04-datasets-advanced-1", {data:[{}],fetch:{},mutations:[]});
