@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/en/lessons/contrib-11-crowdsourcing", {data:[{}],fetch:{},mutations:[]});

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/en/lessons/admin-04-permissions-publish", {data:[{}],fetch:{},mutations:[]});

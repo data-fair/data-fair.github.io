@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/en/lessons/contrib-08-automatic-updates", {data:[{}],fetch:{},mutations:[]});

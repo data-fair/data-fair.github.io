@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/en/lessons/admin-02-manage-metadata", {data:[{}],fetch:{},mutations:[]});
