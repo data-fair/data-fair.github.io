@@ -1,5 +1,5 @@
 User-agent: *
 Disallow: /2/
-Disallow: /3/
+Disallow: /master/
 
-Sitemap: https://data-fair.github.io/master/sitemap.xml
+Sitemap: https://data-fair.github.io/3/sitemap.xml
