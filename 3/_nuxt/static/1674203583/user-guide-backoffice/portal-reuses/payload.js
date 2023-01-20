@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/user-guide-backoffice/portal-reuses", {data:[{}],fetch:{},mutations:[]});
