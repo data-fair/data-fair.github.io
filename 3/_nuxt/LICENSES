@@ -1,4 +1,30 @@
 /*!
+ * The buffer module from node.js, for the browser.
+ *
+ * @author   Feross Aboukhadijeh <http://feross.org>
+ * @license  MIT
+ */
+
+/*!
+ * vue-client-only v0.0.0-semantic-release
+ * (c) 2021-present egoist <0x142857@gmail.com>
+ * Released under the MIT License.
+ */
+
+/*!
+ * vue-no-ssr v1.1.1
+ * (c) 2018-present egoist <0x142857@gmail.com>
+ * Released under the MIT License.
+ */
+
+/*! ieee754. BSD-3-Clause License. Feross Aboukhadijeh <https://feross.org/opensource> */
+
+//! moment.js
+
+//! moment.js locale configuration
+
+
+/*!
   * vue-router v3.5.3
   * (c) 2021 Evan You
   * @license MIT
@@ -31,29 +57,3 @@
 /*! @license DOMPurify 2.4.0 | (c) Cure53 and other contributors | Released under the Apache license 2.0 and Mozilla Public License 2.0 | github.com/cure53/DOMPurify/blob/2.4.0/LICENSE */
 
 /*! Check if previously processed */
-
-
-/*!
- * The buffer module from node.js, for the browser.
- *
- * @author   Feross Aboukhadijeh <http://feross.org>
- * @license  MIT
- */
-
-/*!
- * vue-client-only v0.0.0-semantic-release
- * (c) 2021-present egoist <0x142857@gmail.com>
- * Released under the MIT License.
- */
-
-/*!
- * vue-no-ssr v1.1.1
- * (c) 2018-present egoist <0x142857@gmail.com>
- * Released under the MIT License.
- */
-
-/*! ieee754. BSD-3-Clause License. Feross Aboukhadijeh <https://feross.org/opensource> */
-
-//! moment.js
-
-//! moment.js locale configuration
