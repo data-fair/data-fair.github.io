@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/en/lessons/admin-03-configure-portal", {data:[{}],fetch:{},mutations:[]});

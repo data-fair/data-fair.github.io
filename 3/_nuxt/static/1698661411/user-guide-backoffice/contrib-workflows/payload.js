@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/user-guide-backoffice/contrib-workflows", {data:[{}],fetch:{},mutations:[]});

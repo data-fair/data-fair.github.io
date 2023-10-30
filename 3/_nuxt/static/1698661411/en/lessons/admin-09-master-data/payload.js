@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/en/lessons/admin-09-master-data", {data:[{}],fetch:{},mutations:[]});
