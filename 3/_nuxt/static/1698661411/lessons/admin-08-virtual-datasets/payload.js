@@ -1,1 +1,0 @@
-__NUXT_JSONP__("/lessons/admin-08-virtual-datasets", {data:[{}],fetch:{},mutations:[]});

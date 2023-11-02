@@ -1,1 +1,0 @@
-__NUXT_JSONP__("/lessons/contrib-10-api-usage", {data:[{}],fetch:{},mutations:[]});

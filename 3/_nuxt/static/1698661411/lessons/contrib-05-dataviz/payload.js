@@ -1,1 +1,0 @@
-__NUXT_JSONP__("/lessons/contrib-05-dataviz", {data:[{}],fetch:{},mutations:[]});
