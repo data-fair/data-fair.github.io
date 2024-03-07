@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/lessons/contributor", {data:[{}],fetch:{},mutations:[]});

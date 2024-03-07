@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/functional-presentation/visualization-details", {data:[{}],fetch:{},mutations:[]});
