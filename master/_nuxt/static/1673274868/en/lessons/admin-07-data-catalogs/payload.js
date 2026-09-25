@@ -1,1 +1,0 @@
-__NUXT_JSONP__("/en/lessons/admin-07-data-catalogs", {data:[{}],fetch:{},mutations:[]});

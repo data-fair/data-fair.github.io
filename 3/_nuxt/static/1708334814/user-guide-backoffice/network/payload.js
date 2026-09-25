@@ -1,1 +1,0 @@
-__NUXT_JSONP__("/user-guide-backoffice/network", {data:[{}],fetch:{},mutations:[]});

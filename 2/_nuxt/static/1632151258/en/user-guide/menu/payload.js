@@ -1,1 +1,0 @@
-__NUXT_JSONP__("/en/user-guide/menu", {data:[{}],fetch:{},mutations:[]});

@@ -1,1 +1,0 @@
-__NUXT_JSONP__("/user-guide-backoffice/sankey", {data:[{}],fetch:{},mutations:[]});

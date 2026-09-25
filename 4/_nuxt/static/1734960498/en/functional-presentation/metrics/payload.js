@@ -1,1 +1,0 @@
-__NUXT_JSONP__("/en/functional-presentation/metrics", {data:[{}],fetch:{},mutations:[]});

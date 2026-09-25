@@ -1,1 +1,0 @@
-__NUXT_JSONP__("/en/user-guide-backoffice/game-quizz", {data:[{}],fetch:{},mutations:[]});

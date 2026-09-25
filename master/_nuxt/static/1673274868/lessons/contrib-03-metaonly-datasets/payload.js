@@ -1,1 +1,0 @@
-__NUXT_JSONP__("/lessons/contrib-03-metaonly-datasets", {data:[{}],fetch:{},mutations:[]});

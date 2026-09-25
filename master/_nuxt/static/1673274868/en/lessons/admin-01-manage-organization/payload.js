@@ -1,1 +1,0 @@
-__NUXT_JSONP__("/en/lessons/admin-01-manage-organization", {data:[{}],fetch:{},mutations:[]});
